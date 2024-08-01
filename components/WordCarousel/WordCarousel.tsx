@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, View, Text, Dimensions, ActivityIndicator } from 'react-native';
 import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const { width, height } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
 const DEFAULT_LANGUAGE_PATH = '../../languages/de/en/a1.json';
 const timerDuration = 10000; // Change this value to configure the timer duration
+const LAST_INDEX_KEY = 'lastWordIndex';
 
 interface Word {
   word_1: string;
@@ -23,8 +25,12 @@ const WordCarousel: React.FC = () => {
   useEffect(() => {
     const loadWords = async () => {
       try {
+        const savedIndex = await AsyncStorage.getItem(LAST_INDEX_KEY);
         const wordsList: Word[] = require(DEFAULT_LANGUAGE_PATH);
         setWords(wordsList);
+        if (savedIndex !== null) {
+          setCurrentIndex(parseInt(savedIndex, 10));
+        }
         setLoading(false);
       } catch (error) {
         console.error('Error loading words:', error);
@@ -35,6 +41,10 @@ const WordCarousel: React.FC = () => {
     startTimer();
     return () => clearInterval(intervalRef.current as NodeJS.Timeout);
   }, []);
+
+  useEffect(() => {
+    AsyncStorage.setItem(LAST_INDEX_KEY, currentIndex.toString());
+  }, [currentIndex]);
 
   const startTimer = () => {
     if (intervalRef.current) {
