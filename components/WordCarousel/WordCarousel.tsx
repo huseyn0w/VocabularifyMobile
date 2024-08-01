@@ -1,20 +1,37 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, ActivityIndicator } from 'react-native';
 import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
 
 const { width, height } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
+const DEFAULT_LANGUAGE_PATH = '../../languages/de/en/a1.json';
+const timerDuration = 10000; // Change this value to configure the timer duration
 
-const words = ['Hello', 'World', 'React', 'Native', 'Expo', 'TypeScript', 'JavaScript', 'Mobile', 'Development', 'Awesome'];
+interface Word {
+  word_1: string;
+  word_2: string;
+}
 
-const WordSwiper: React.FC = () => {
+const WordCarousel: React.FC = () => {
+  const [words, setWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const timerDuration = 10000; // Change this value to configure the timer duration
   const translateX = useSharedValue(0);
 
   useEffect(() => {
+    const loadWords = async () => {
+      try {
+        const wordsList: Word[] = require(DEFAULT_LANGUAGE_PATH);
+        setWords(wordsList);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error loading words:', error);
+      }
+    };
+
+    loadWords();
     startTimer();
     return () => clearInterval(intervalRef.current as NodeJS.Timeout);
   }, []);
@@ -59,6 +76,14 @@ const WordSwiper: React.FC = () => {
     };
   });
 
+  if (loading) {
+    return (
+      <View style={styles.container}>
+        <ActivityIndicator size="large" color="#0000ff" />
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <PanGestureHandler
@@ -66,7 +91,8 @@ const WordSwiper: React.FC = () => {
         onHandlerStateChange={handleGestureStateChange}
       >
         <Animated.View style={[styles.wordContainer, animatedStyle]}>
-          <Text style={styles.word}>{words[currentIndex]}</Text>
+          <Text style={styles.word}>{words[currentIndex].word_1}</Text>
+          <Text style={styles.translation}>{words[currentIndex].word_2}</Text>
         </Animated.View>
       </PanGestureHandler>
     </View>
@@ -91,6 +117,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  translation: {
+    fontSize: 24,
+    color: 'grey',
+    textAlign: 'center',
+    marginTop: 10,
+  },
 });
 
-export default WordSwiper;
+export default WordCarousel;
