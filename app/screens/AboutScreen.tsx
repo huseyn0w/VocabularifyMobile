@@ -1,10 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { useThemeContext } from '../context/ThemeContext';
 
 const AboutScreen: React.FC = () => {
+  const { theme } = useThemeContext();
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>This is the about screen</Text>
+    <View style={[styles.container, { backgroundColor: theme.background }]}>
+      <Text style={[styles.text, { color: theme.text }]}>This is the About screen</Text>
     </View>
   );
 };

@@ -4,6 +4,7 @@ import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-n
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { useThemeContext } from '../context/ThemeContext';
 
 const { width, height } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
@@ -16,7 +17,8 @@ interface Word {
   word_2: string;
 }
 
-const WordCarousel: React.FC = () => {
+const HomeScreen: React.FC = () => {
+  const { theme } = useThemeContext();
   const [words, setWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -94,16 +96,16 @@ const WordCarousel: React.FC = () => {
 
   if (loading) {
     return (
-      <View style={styles.container}>
-        <ActivityIndicator size="large" color="#0000ff" />
+      <View style={[styles.container, { backgroundColor: theme.background }]}>
+        <ActivityIndicator size="large" color={theme.text} />
       </View>
     );
   }
 
   if (words.length === 0) {
     return (
-      <View style={styles.container}>
-        <Text style={styles.noWordsText}>No words available</Text>
+      <View style={[styles.container, { backgroundColor: theme.background }]}>
+        <Text style={[styles.noWordsText, { color: theme.text }]}>No words available</Text>
       </View>
     );
   }
@@ -111,8 +113,8 @@ const WordCarousel: React.FC = () => {
   const currentWord = words[currentIndex];
 
   return (
-    <GestureHandlerRootView style={styles.container}>
-      <View style={styles.container}>
+    <GestureHandlerRootView style={[styles.container, { backgroundColor: theme.background }]}>
+      <View style={[styles.container, { backgroundColor: theme.background }]}>
         <PanGestureHandler
           onGestureEvent={handleGestureEvent}
           onHandlerStateChange={handleGestureStateChange}
@@ -120,8 +122,8 @@ const WordCarousel: React.FC = () => {
           <Animated.View style={[styles.wordContainer, animatedStyle]}>
             {currentWord && (
               <>
-                <Text style={styles.word}>{currentWord.word_1}</Text>
-                <Text style={styles.translation}>{currentWord.word_2}</Text>
+                <Text style={[styles.word, { color: theme.text }]}>{currentWord.word_1}</Text>
+                <Text style={[styles.translation, { color: theme.text }]}>{currentWord.word_2}</Text>
               </>
             )}
           </Animated.View>
@@ -136,7 +138,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
   },
   wordContainer: {
     width: width,
@@ -151,15 +152,13 @@ const styles = StyleSheet.create({
   },
   translation: {
     fontSize: 24,
-    color: 'grey',
     textAlign: 'center',
     marginTop: 10,
   },
   noWordsText: {
     fontSize: 24,
-    color: 'grey',
     textAlign: 'center',
   },
 });
 
-export default WordCarousel;
+export default HomeScreen;

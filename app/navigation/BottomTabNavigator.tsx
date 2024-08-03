@@ -3,10 +3,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen';
 import SettingsStackNavigator from './SettingsStackNavigator';
+import { useThemeContext } from '../context/ThemeContext';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNavigator = () => {
+  const { theme } = useThemeContext();
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -23,9 +26,11 @@ const BottomTabNavigator = () => {
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: 'tomato',
+        tabBarActiveTintColor: theme.text,
         tabBarInactiveTintColor: 'gray',
-        tabBarStyle: [{ display: 'flex' }, null],
+        tabBarStyle: {
+          backgroundColor: theme.background,
+        },
       })}
     >
       <Tab.Screen name="Main" component={HomeScreen} />

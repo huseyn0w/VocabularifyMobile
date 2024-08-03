@@ -5,6 +5,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 import ModeScreen from '../screens/ModeScreen';
 import LanguageScreen from '../screens/LanguageScreen';
 import AboutScreen from '../screens/AboutScreen';
+import BackgroundScreen from '../screens/BackgroundScreen';
 
 const Stack = createStackNavigator<SettingsStackParamList>();
 
@@ -23,6 +24,7 @@ const SettingsStackNavigator = () => {
       <Stack.Screen name="ModeScreen" component={ModeScreen} options={{ title: 'Mode' }} />
       <Stack.Screen name="LanguageScreen" component={LanguageScreen} options={{ title: 'Language' }} />
       <Stack.Screen name="AboutScreen" component={AboutScreen} options={{ title: 'About' }} />
+      <Stack.Screen name="BackgroundScreen" component={BackgroundScreen} options={{ title: 'Background' }} />
     </Stack.Navigator>
   );
 };
