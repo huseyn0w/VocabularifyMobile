@@ -18,10 +18,10 @@ const BottomTabNavigator = () => {
 
           if (route.name === 'Main') {
             iconName = 'home';
-          } else if (route.name === 'SettingsMain') {
+          } else if (route.name === 'Settings') {
             iconName = 'settings';
           } else {
-            iconName = 'home'; // Default icon
+            iconName = 'home';
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -34,7 +34,7 @@ const BottomTabNavigator = () => {
       })}
     >
       <Tab.Screen name="Main" component={HomeScreen} />
-      <Tab.Screen name="SettingsMain" component={SettingsStackNavigator} options={{ headerShown: false }} />
+      <Tab.Screen name="Settings" component={SettingsStackNavigator} options={{ headerShown: false }} />
     </Tab.Navigator>
   );
 };
