@@ -7,7 +7,7 @@ import { ActivityIndicator, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 import WelcomeScreen from './screens/WelcomeScreen';
-import { ThemeProvider } from './context/ThemeContext';
+import { ThemeProvider, useThemeContext } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
 
 const Stack = createStackNavigator();
@@ -41,7 +41,7 @@ const App = () => {
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             {!initialSettings && (
               <Stack.Screen name="Welcome" component={WelcomeScreen} />
-            )} 
+            )}
             <Stack.Screen name="Main" component={BottomTabNavigator} />
           </Stack.Navigator>
         </NavigationContainer>

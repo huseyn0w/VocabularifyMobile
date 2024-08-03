@@ -6,13 +6,22 @@ import ModeScreen from '../screens/ModeScreen';
 import LanguageScreen from '../screens/LanguageScreen';
 import AboutScreen from '../screens/AboutScreen';
 import BackgroundScreen from '../screens/BackgroundScreen';
+import { useThemeContext } from '../context/ThemeContext';
 
 const Stack = createStackNavigator<SettingsStackParamList>();
 
 const SettingsStackNavigator = () => {
+  const { theme } = useThemeContext();
+
   return (
     <Stack.Navigator
       screenOptions={{
+        headerStyle: {
+          backgroundColor: theme.headerBackground, // Use the theme's header background color
+        },
+        headerTitleStyle: {
+          color: theme.text, // Use the theme's text color for the header title
+        },
         transitionSpec: {
           open: TransitionSpecs.TransitionIOSSpec,
           close: TransitionSpecs.TransitionIOSSpec,

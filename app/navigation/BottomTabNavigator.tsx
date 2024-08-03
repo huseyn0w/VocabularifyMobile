@@ -13,6 +13,12 @@ const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        headerStyle: {
+          backgroundColor: theme.headerBackground, // Use the theme's header background color
+        },
+        headerTitleStyle: {
+          color: theme.text, // Use the theme's text color for the header title
+        },
         tabBarIcon: ({ color, size }) => {
           let iconName: keyof typeof Ionicons.glyphMap;
 
