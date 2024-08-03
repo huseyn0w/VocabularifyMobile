@@ -16,7 +16,7 @@ const BottomTabNavigator = () => {
         tabBarIcon: ({ color, size }) => {
           let iconName: keyof typeof Ionicons.glyphMap;
 
-          if (route.name === 'Main') {
+          if (route.name === 'Home') {
             iconName = 'home';
           } else if (route.name === 'Settings') {
             iconName = 'settings';
@@ -33,7 +33,7 @@ const BottomTabNavigator = () => {
         },
       })}
     >
-      <Tab.Screen name="Main" component={HomeScreen} />
+      <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Settings" component={SettingsStackNavigator} options={{ headerShown: false }} />
     </Tab.Navigator>
   );
