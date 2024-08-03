@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { StyleSheet, View, Text, Dimensions, ActivityIndicator } from 'react-native';
 import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
@@ -30,7 +30,8 @@ const WordCarousel: React.FC = () => {
         const wordsList: Word[] = require(DEFAULT_LANGUAGE_PATH);
         setWords(wordsList);
         if (savedIndex !== null) {
-          setCurrentIndex(parseInt(savedIndex, 10));
+          const index = parseInt(savedIndex, 10);
+          setCurrentIndex(index < wordsList.length ? index : 0);
         }
         setLoading(false);
       } catch (error) {
@@ -44,17 +45,21 @@ const WordCarousel: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    AsyncStorage.setItem(LAST_INDEX_KEY, currentIndex.toString());
-  }, [currentIndex]);
+    if (words.length > 0) {
+      AsyncStorage.setItem(LAST_INDEX_KEY, currentIndex.toString());
+    }
+  }, [currentIndex, words.length]);
 
-  const startTimer = () => {
+  const startTimer = useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-    intervalRef.current = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, timerDuration);
-  };
+    if (words.length > 0) {
+      intervalRef.current = setInterval(() => {
+        setCurrentIndex(prevIndex => (prevIndex + 1) % words.length);
+      }, timerDuration);
+    }
+  }, [words.length]);
 
   const handleGestureEvent = (event: PanGestureHandlerGestureEvent) => {
     translateX.value = event.nativeEvent.translationX;
@@ -72,12 +77,12 @@ const WordCarousel: React.FC = () => {
   };
 
   const showPreviousWord = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + words.length) % words.length);
+    setCurrentIndex(prevIndex => (prevIndex - 1 + words.length) % words.length);
     startTimer();
   };
 
   const showNextWord = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
+    setCurrentIndex(prevIndex => (prevIndex + 1) % words.length);
     startTimer();
   };
 
@@ -95,19 +100,33 @@ const WordCarousel: React.FC = () => {
     );
   }
 
+  if (words.length === 0) {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.noWordsText}>No words available</Text>
+      </View>
+    );
+  }
+
+  const currentWord = words[currentIndex];
+
   return (
     <GestureHandlerRootView style={styles.container}>
-    <View style={styles.container}>
-      <PanGestureHandler
-        onGestureEvent={handleGestureEvent}
-        onHandlerStateChange={handleGestureStateChange}
-      >
-        <Animated.View style={[styles.wordContainer, animatedStyle]}>
-          <Text style={styles.word}>{words[currentIndex].word_1}</Text>
-          <Text style={styles.translation}>{words[currentIndex].word_2}</Text>
-        </Animated.View>
-      </PanGestureHandler>
-    </View>
+      <View style={styles.container}>
+        <PanGestureHandler
+          onGestureEvent={handleGestureEvent}
+          onHandlerStateChange={handleGestureStateChange}
+        >
+          <Animated.View style={[styles.wordContainer, animatedStyle]}>
+            {currentWord && (
+              <>
+                <Text style={styles.word}>{currentWord.word_1}</Text>
+                <Text style={styles.translation}>{currentWord.word_2}</Text>
+              </>
+            )}
+          </Animated.View>
+        </PanGestureHandler>
+      </View>
     </GestureHandlerRootView>
   );
 };
@@ -135,6 +154,11 @@ const styles = StyleSheet.create({
     color: 'grey',
     textAlign: 'center',
     marginTop: 10,
+  },
+  noWordsText: {
+    fontSize: 24,
+    color: 'grey',
+    textAlign: 'center',
   },
 });
 
