@@ -39,9 +39,6 @@ const styles = StyleSheet.create({
   section: {
     backgroundColor: '#FFFFFF',
     borderRadius: 10,
-    overflow: 'hidden',
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
     borderColor: '#C7C7CC',
   },
   item: {
