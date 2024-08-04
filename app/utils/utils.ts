@@ -1,5 +1,3 @@
-// utils/utils.ts
-
 import { Ionicons } from '@expo/vector-icons';
 
 export const getTabBarIconName = (routeName: string): keyof typeof Ionicons.glyphMap => {

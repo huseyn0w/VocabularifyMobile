@@ -30,7 +30,7 @@ const SettingsStackNavigator = () => {
       }}
     >
       <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{ title: 'Settings' }} />
-      <Stack.Screen name="ModeScreen" component={LearningModeScreen} options={{ title: 'Learning mode' }} />
+      <Stack.Screen name="LearningModeScreen" component={LearningModeScreen} options={{ title: 'Learning mode' }} />
       <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen} options={{ title: 'Language Settings' }} />
       <Stack.Screen name="AboutScreen" component={AboutScreen} options={{ title: 'About' }} />
       <Stack.Screen name="BackgroundScreen" component={BackgroundScreen} options={{ title: 'Background' }} />

@@ -20,10 +20,11 @@ interface Word {
 
 const HomeScreen: React.FC = () => {
   const { theme } = useThemeContext();
-  const { settings } = useLanguageContext();
+  const { settings, mode } = useLanguageContext();
   const [words, setWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showTranslation, setShowTranslation] = useState<boolean>(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const translateX = useSharedValue(0);
 
@@ -36,7 +37,7 @@ const HomeScreen: React.FC = () => {
         const savedIndex = await AsyncStorage.getItem(LAST_INDEX_KEY);
         const value = savedIndex ? parseInt(savedIndex, 10) : 0;
         setCurrentIndex(value);
-        
+
         setLoading(false);
       } catch (error) {
         console.error('Error loading words:', error);
@@ -73,6 +74,18 @@ const HomeScreen: React.FC = () => {
       }, timerDuration);
     }
   }, [words.length]);
+
+  useEffect(() => {
+    if (mode === 'showWordThenTranslation') {
+      setShowTranslation(false);
+      const timeout = setTimeout(() => {
+        setShowTranslation(true);
+      }, 5000);
+      return () => clearTimeout(timeout);
+    } else {
+      setShowTranslation(true);
+    }
+  }, [currentIndex, mode]);
 
   const handleGestureEvent = (event: PanGestureHandlerGestureEvent) => {
     translateX.value = event.nativeEvent.translationX;
@@ -134,7 +147,7 @@ const HomeScreen: React.FC = () => {
             {currentWord && (
               <>
                 <Text style={[styles.word, { color: theme.text }]}>{currentWord.word_1}</Text>
-                <Text style={[styles.translation, { color: theme.text }]}>{currentWord.word_2}</Text>
+                {showTranslation && <Text style={[styles.translation, { color: theme.text }]}>{currentWord.word_2}</Text>}
               </>
             )}
           </Animated.View>

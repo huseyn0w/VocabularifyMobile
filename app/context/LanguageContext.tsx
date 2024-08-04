@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { LANGUAGE_KEY } from '../utils/constants'
-
+import { LANGUAGE_KEY, MODE_KEY } from '../utils/constants';
 
 interface LanguageSettings {
   fromLanguage: string;
@@ -12,16 +11,19 @@ interface LanguageSettings {
 interface LanguageContextProps {
   settings: LanguageSettings;
   setSettings: (settings: LanguageSettings) => void;
+  mode: string;
+  setMode: (mode: string) => void;
 }
 
 interface LanguageProviderProps {
-    children: ReactNode;
-  }
+  children: ReactNode;
+}
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [settings, setSettings] = useState<LanguageSettings>({ fromLanguage: 'en', toLanguage: 'de', level: 'a1' });
+  const [mode, setMode] = useState<string>('showBoth');
 
   useEffect(() => {
     const loadSettings = async () => {
@@ -30,8 +32,12 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         if (savedSettings) {
           setSettings(JSON.parse(savedSettings));
         }
+        const savedMode = await AsyncStorage.getItem(MODE_KEY);
+        if (savedMode) {
+          setMode(savedMode);
+        }
       } catch (error) {
-        console.error('Failed to load language settings', error);
+        console.error('Failed to load settings', error);
       }
     };
 
@@ -42,8 +48,12 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     AsyncStorage.setItem(LANGUAGE_KEY, JSON.stringify(settings));
   }, [settings]);
 
+  useEffect(() => {
+    AsyncStorage.setItem(MODE_KEY, mode);
+  }, [mode]);
+
   return (
-    <LanguageContext.Provider value={{ settings, setSettings }}>
+    <LanguageContext.Provider value={{ settings, setSettings, mode, setMode }}>
       {children}
     </LanguageContext.Provider>
   );

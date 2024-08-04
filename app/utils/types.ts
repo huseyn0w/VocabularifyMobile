@@ -1,7 +1,7 @@
 // types.ts
 export type SettingsStackParamList = {
   SettingsScreen: undefined;
-  ModeScreen: undefined;
+  LearningModeScreen: undefined;
   LanguageSettingsScreen: undefined;
   AboutScreen: undefined;
   BackgroundScreen: undefined;
