@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen';
 import SettingsStackNavigator from './SettingsStackNavigator';
 import { useThemeContext } from '../context/ThemeContext';
+import { getTabBarIconName } from '../utils/utils';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,22 +15,13 @@ const BottomTabNavigator = () => {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         headerStyle: {
-          backgroundColor: theme.headerBackground, // Use the theme's header background color
+          backgroundColor: theme.headerBackground,
         },
         headerTitleStyle: {
-          color: theme.text, // Use the theme's text color for the header title
+          color: theme.text,
         },
         tabBarIcon: ({ color, size }) => {
-          let iconName: keyof typeof Ionicons.glyphMap;
-
-          if (route.name === 'Home') {
-            iconName = 'home';
-          } else if (route.name === 'Settings') {
-            iconName = 'settings';
-          } else {
-            iconName = 'home';
-          }
-
+          const iconName = getTabBarIconName(route.name);
           return <Ionicons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: theme.text,
