@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { SettingsStackParamList } from '../types';
+import { SettingsStackParamList } from '../utils/types';
 import { useThemeContext } from '../context/ThemeContext';
 
 type SettingsScreenNavigationProp = StackNavigationProp<SettingsStackParamList, 'BackgroundScreen'>;

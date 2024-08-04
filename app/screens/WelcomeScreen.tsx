@@ -3,17 +3,17 @@ import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Alert } from 'rea
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { RootStackParamList } from '../types'; // Import the types
 import { useLanguageContext } from '../context/LanguageContext';
 import { useThemeContext } from '../context/ThemeContext';
-import {Language, availableCombinations, languages, levels} from '../types'
+import { Language, availableCombinations, languages, levels, RootStackParamList } from '../utils/types'
+import { LANGUAGE_KEY } from '../utils/constants'
 
 type WelcomeScreenNavigationProp = NavigationProp<RootStackParamList, 'Welcome'>;
 
 const WelcomeScreen: React.FC = () => {
   const { theme } = useThemeContext();
   const { setSettings } = useLanguageContext();
-  const navigation = useNavigation<WelcomeScreenNavigationProp>(); // Use the navigation type
+  const navigation = useNavigation<WelcomeScreenNavigationProp>();
   const [fromLanguage, setFromLanguage] = useState<Language | null>(null);
   const [toLanguage, setToLanguage] = useState<Language | null>(null);
   const [level, setLevel] = useState<string | null>(null);
@@ -21,9 +21,9 @@ const WelcomeScreen: React.FC = () => {
   const handleSaveSettings = async () => {
     if (fromLanguage && toLanguage && level) {
       const settings = { fromLanguage: fromLanguage.toLowerCase(), toLanguage: toLanguage.toLowerCase(), level: level.toLowerCase() };
-      await AsyncStorage.setItem('languageSettings', JSON.stringify(settings));
+      await AsyncStorage.setItem(LANGUAGE_KEY, JSON.stringify(settings));
       setSettings(settings);
-      navigation.navigate('Main'); // Navigate to Main
+      navigation.navigate('Main');
     }
   };
 
@@ -61,7 +61,7 @@ const WelcomeScreen: React.FC = () => {
         <Text style={[styles.title, { color: theme.text }]}>I want to learn</Text>
         <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
           {languages
-            .filter(language => availableCombinations[language].length > 0) // Filter out languages with empty combinations
+            .filter(language => availableCombinations[language].length > 0)
             .map(language => (
               <TouchableOpacity
                 key={language}

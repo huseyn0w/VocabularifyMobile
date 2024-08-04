@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { useLanguageContext } from '../context/LanguageContext';
 import { useThemeContext } from '../context/ThemeContext';
-import {Language, availableCombinations, languages, levels} from '../types'
+import {Language, availableCombinations, languages, levels} from '../utils/types'
 
 
 const LanguageScreen: React.FC = () => {

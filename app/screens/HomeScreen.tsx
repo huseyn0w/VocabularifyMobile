@@ -7,11 +7,11 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useThemeContext } from '../context/ThemeContext';
 import { useLanguageContext } from '../context/LanguageContext';
 import loadLanguageFile from '../utils/loadLanguageFile';
+import { LAST_INDEX_KEY } from '../utils/constants';
 
 const { width, height } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
-const LAST_INDEX_KEY = 'lastWordIndex';
-const timerDuration = 10000; // Change this value to configure the timer duration
+const timerDuration = 10000;
 
 interface Word {
   word_1: string;
@@ -22,7 +22,7 @@ const HomeScreen: React.FC = () => {
   const { theme } = useThemeContext();
   const { settings } = useLanguageContext();
   const [words, setWords] = useState<Word[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const translateX = useSharedValue(0);
@@ -32,23 +32,36 @@ const HomeScreen: React.FC = () => {
       try {
         const wordsList: Word[] = await loadLanguageFile(settings.fromLanguage, settings.toLanguage, settings.level);
         setWords(wordsList);
-        setCurrentIndex(0); // Reset to first word
+
+        const savedIndex = await AsyncStorage.getItem(LAST_INDEX_KEY);
+        const value = savedIndex ? parseInt(savedIndex, 10) : 0;
+        setCurrentIndex(value);
+        
         setLoading(false);
       } catch (error) {
         console.error('Error loading words:', error);
+        setLoading(false);
       }
     };
 
     loadWords();
-    startTimer();
-    return () => clearInterval(intervalRef.current as NodeJS.Timeout);
-  }, [settings]); // Add settings as dependency to reload words when settings change
+  }, [settings]);
 
   useEffect(() => {
-    if (words.length > 0) {
+    if (currentIndex !== null && words.length > 0) {
       AsyncStorage.setItem(LAST_INDEX_KEY, currentIndex.toString());
     }
+  }, [currentIndex]);
+
+  useEffect(() => {
+    if (currentIndex !== null && words.length > 0) {
+      startTimer();
+    }
   }, [currentIndex, words.length]);
+
+  useEffect(() => {
+    setCurrentIndex(0); // Reset to first word when settings change
+  }, [settings]);
 
   const startTimer = useCallback(() => {
     if (intervalRef.current) {
@@ -56,7 +69,7 @@ const HomeScreen: React.FC = () => {
     }
     if (words.length > 0) {
       intervalRef.current = setInterval(() => {
-        setCurrentIndex(prevIndex => (prevIndex + 1) % words.length);
+        setCurrentIndex(prevIndex => (prevIndex !== null ? (prevIndex + 1) % words.length : 0));
       }, timerDuration);
     }
   }, [words.length]);
@@ -77,12 +90,12 @@ const HomeScreen: React.FC = () => {
   };
 
   const showPreviousWord = () => {
-    setCurrentIndex(prevIndex => (prevIndex - 1 + words.length) % words.length);
+    setCurrentIndex(prevIndex => (prevIndex !== null ? (prevIndex - 1 + words.length) % words.length : 0));
     startTimer();
   };
 
   const showNextWord = () => {
-    setCurrentIndex(prevIndex => (prevIndex + 1) % words.length);
+    setCurrentIndex(prevIndex => (prevIndex !== null ? (prevIndex + 1) % words.length : 0));
     startTimer();
   };
 
@@ -92,7 +105,7 @@ const HomeScreen: React.FC = () => {
     };
   });
 
-  if (loading) {
+  if (loading || currentIndex === null) {
     return (
       <View style={[styles.container, { backgroundColor: theme.background }]}>
         <ActivityIndicator size="large" color={theme.text} />

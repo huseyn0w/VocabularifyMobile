@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { SettingsStackParamList } from '../types';
+import { SettingsStackParamList } from '../utils/types';
 import { useThemeContext } from '../context/ThemeContext';
 
 type SettingsScreenNavigationProp = StackNavigationProp<
@@ -25,11 +25,11 @@ const SettingsScreen: React.FC<Props> = ({ navigation }) => {
         <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('LanguageScreen')}>
           <Text style={[styles.text, { color: theme.text }]}>Language</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('AboutScreen')}>
-          <Text style={[styles.text, { color: theme.text }]}>About</Text>
-        </TouchableOpacity>
         <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('BackgroundScreen')}>
           <Text style={[styles.text, { color: theme.text }]}>Background</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('AboutScreen')}>
+          <Text style={[styles.text, { color: theme.text }]}>About</Text>
         </TouchableOpacity>
       </View>
     </View>

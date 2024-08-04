@@ -7,8 +7,9 @@ import { ActivityIndicator, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 import WelcomeScreen from './screens/WelcomeScreen';
-import { ThemeProvider, useThemeContext } from './context/ThemeContext';
+import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
+import { LANGUAGE_KEY } from './utils/constants'
 
 const Stack = createStackNavigator();
 
@@ -18,7 +19,7 @@ const App = () => {
 
   useEffect(() => {
     const checkInitialSettings = async () => {
-      const settings = await AsyncStorage.getItem('languageSettings');
+      const settings = await AsyncStorage.getItem(LANGUAGE_KEY);
       setInitialSettings(settings !== null);
       setLoading(false);
     };

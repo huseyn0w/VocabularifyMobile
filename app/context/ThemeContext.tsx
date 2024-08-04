@@ -8,14 +8,14 @@ const themes = {
     text: '#000000',
     border: '#C7C7CC',
     sectionBackground: '#fff',
-    headerBackground: '#FFFFFF', // Added header background color for light theme
+    headerBackground: '#FFFFFF',
   },
   dark: {
     background: '#121212',
     text: '#FFFFFF',
     border: '#3A3A3A',
     sectionBackground: '#1E1E1E',
-    headerBackground: '#000000', // Added header background color for dark theme
+    headerBackground: '#000000',
   },
 };
 

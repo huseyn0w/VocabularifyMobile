@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator, TransitionSpecs, CardStyleInterpolators } from '@react-navigation/stack';
-import { SettingsStackParamList } from '../types';
+import { SettingsStackParamList } from '../utils/types';
 import SettingsScreen from '../screens/SettingsScreen';
 import ModeScreen from '../screens/ModeScreen';
 import LanguageScreen from '../screens/LanguageScreen';
