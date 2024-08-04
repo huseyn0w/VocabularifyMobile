@@ -2,8 +2,8 @@ import React from 'react';
 import { createStackNavigator, TransitionSpecs, CardStyleInterpolators } from '@react-navigation/stack';
 import { SettingsStackParamList } from '../utils/types';
 import SettingsScreen from '../screens/SettingsScreen';
-import ModeScreen from '../screens/ModeScreen';
-import LanguageScreen from '../screens/LanguageScreen';
+import LearningModeScreen from '../screens/LearningModeScreen';
+import LanguageSettingsScreen from '../screens/LanguageSettingsScreen';
 import AboutScreen from '../screens/AboutScreen';
 import BackgroundScreen from '../screens/BackgroundScreen';
 import { useThemeContext } from '../context/ThemeContext';
@@ -30,8 +30,8 @@ const SettingsStackNavigator = () => {
       }}
     >
       <Stack.Screen name="SettingsScreen" component={SettingsScreen} options={{ title: 'Settings' }} />
-      <Stack.Screen name="ModeScreen" component={ModeScreen} options={{ title: 'Mode' }} />
-      <Stack.Screen name="LanguageScreen" component={LanguageScreen} options={{ title: 'Language' }} />
+      <Stack.Screen name="ModeScreen" component={LearningModeScreen} options={{ title: 'Learning mode' }} />
+      <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen} options={{ title: 'Language Settings' }} />
       <Stack.Screen name="AboutScreen" component={AboutScreen} options={{ title: 'About' }} />
       <Stack.Screen name="BackgroundScreen" component={BackgroundScreen} options={{ title: 'Background' }} />
     </Stack.Navigator>

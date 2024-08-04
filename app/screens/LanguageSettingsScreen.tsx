@@ -5,7 +5,7 @@ import { useThemeContext } from '../context/ThemeContext';
 import {Language, availableCombinations, languages, levels} from '../utils/types'
 
 
-const LanguageScreen: React.FC = () => {
+const LanguageSettingsScreen: React.FC = () => {
   const { settings, setSettings } = useLanguageContext();
   const { theme } = useThemeContext();
 
@@ -45,7 +45,7 @@ const LanguageScreen: React.FC = () => {
 
         {settings.fromLanguage && (
           <>
-            <Text style={[styles.title, { color: theme.text }]}>From Language</Text>
+            <Text style={[styles.title, { color: theme.text }]}>From</Text>
             <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
               {filteredToLanguages.map(language => (
                 <TouchableOpacity
@@ -114,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LanguageScreen;
+export default LanguageSettingsScreen;

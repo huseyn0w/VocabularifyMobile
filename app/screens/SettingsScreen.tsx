@@ -25,10 +25,10 @@ const SettingsScreen: React.FC<Props> = ({ navigation }) => {
     <View style={[styles.container, { backgroundColor: theme.background }]}>
       <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
         <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('ModeScreen')}>
-          <Text style={[styles.text, { color: theme.text }]}>Mode</Text>
+          <Text style={[styles.text, { color: theme.text }]}>Learning Mode</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('LanguageScreen')}>
-          <Text style={[styles.text, { color: theme.text }]}>Language</Text>
+        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('LanguageSettingsScreen')}>
+          <Text style={[styles.text, { color: theme.text }]}>Language settings</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('BackgroundScreen')}>
           <Text style={[styles.text, { color: theme.text }]}>Background</Text>

@@ -81,7 +81,7 @@ const WelcomeScreen: React.FC = () => {
 
         {fromLanguage && (
           <>
-            <Text style={[styles.title, { color: theme.text }]}>From Language</Text>
+            <Text style={[styles.title, { color: theme.text }]}>From</Text>
             <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
               {filteredToLanguages.map(language => (
                 <TouchableOpacity

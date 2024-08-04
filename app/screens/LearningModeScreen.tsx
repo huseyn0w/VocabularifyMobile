@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useThemeContext } from '../context/ThemeContext';
 
-const ModeScreen: React.FC = () => {
+const LearningModeScreen: React.FC = () => {
   const { theme } = useThemeContext();
 
   return (
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ModeScreen;
+export default LearningModeScreen;

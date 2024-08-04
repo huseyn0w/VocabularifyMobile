@@ -2,7 +2,7 @@
 export type SettingsStackParamList = {
   SettingsScreen: undefined;
   ModeScreen: undefined;
-  LanguageScreen: undefined;
+  LanguageSettingsScreen: undefined;
   AboutScreen: undefined;
   BackgroundScreen: undefined;
 };
