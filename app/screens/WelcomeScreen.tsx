@@ -6,20 +6,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { RootStackParamList } from '../types'; // Import the types
 import { useLanguageContext } from '../context/LanguageContext';
 import { useThemeContext } from '../context/ThemeContext';
+import {Language, availableCombinations, languages, levels} from '../types'
 
-const languages = ['English', 'German', 'Russian', 'French'] as const;
-const levels = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
-
-type Language = typeof languages[number];
-
-const availableCombinations: Record<Language, Language[]> = {
-  English: ['German', 'French'],
-  German: ['English', 'Russian'],
-  Russian: [],
-  French: ['English']
-};
-
-// Define the navigation prop type
 type WelcomeScreenNavigationProp = NavigationProp<RootStackParamList, 'Welcome'>;
 
 const WelcomeScreen: React.FC = () => {
@@ -80,8 +68,8 @@ const WelcomeScreen: React.FC = () => {
                 style={[styles.item, { borderBottomColor: theme.border }]}
                 onPress={() => {
                   setFromLanguage(language);
-                  setToLanguage(null); // Reset toLanguage when fromLanguage changes
-                  setLevel(null); // Reset level when fromLanguage changes
+                  setToLanguage(null);
+                  setLevel(null);
                 }}
               >
                 <Text style={[styles.text, { color: theme.text }]}>

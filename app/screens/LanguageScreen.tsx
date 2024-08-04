@@ -2,18 +2,8 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { useLanguageContext } from '../context/LanguageContext';
 import { useThemeContext } from '../context/ThemeContext';
+import {Language, availableCombinations, languages, levels} from '../types'
 
-const languages = ['English', 'German', 'Russian', 'French'] as const;
-const levels = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
-
-type Language = typeof languages[number];
-
-const availableCombinations: Record<Language, Language[]> = {
-  English: ['German', 'French', 'Russian'],
-  German: ['English', 'Russian'],
-  Russian: ['German'],
-  French: ['English']
-};
 
 const LanguageScreen: React.FC = () => {
   const { settings, setSettings } = useLanguageContext();
@@ -38,7 +28,9 @@ const LanguageScreen: React.FC = () => {
       <ScrollView contentContainerStyle={[styles.contentContainer, { backgroundColor: theme.background }]}>
         <Text style={[styles.title, { color: theme.text }]}>I want to learn</Text>
         <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
-          {languages.map(language => (
+          {languages
+          .filter(language => availableCombinations[language].length > 0)
+          .map(language => (
             <TouchableOpacity
               key={language}
               style={[styles.item, { borderBottomColor: theme.border }]}

@@ -17,10 +17,10 @@ const SettingsStackNavigator = () => {
     <Stack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: theme.headerBackground, // Use the theme's header background color
+          backgroundColor: theme.headerBackground,
         },
         headerTitleStyle: {
-          color: theme.text, // Use the theme's text color for the header title
+          color: theme.text,
         },
         transitionSpec: {
           open: TransitionSpecs.TransitionIOSSpec,
