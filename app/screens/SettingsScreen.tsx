@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Linking } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { SettingsStackParamList } from '../utils/types';
 import { useThemeContext } from '../context/ThemeContext';
+import { PAYPAY_DONATION_URL } from '../utils/constants'
 
 type SettingsScreenNavigationProp = StackNavigationProp<
   SettingsStackParamList,
@@ -15,6 +16,10 @@ type Props = {
 
 const SettingsScreen: React.FC<Props> = ({ navigation }) => {
   const { theme } = useThemeContext();
+
+  const handleDonatePress = () => {
+    Linking.openURL(PAYPAY_DONATION_URL);
+  };
 
   return (
     <View style={[styles.container, { backgroundColor: theme.background }]}>
@@ -32,6 +37,9 @@ const SettingsScreen: React.FC<Props> = ({ navigation }) => {
           <Text style={[styles.text, { color: theme.text }]}>About</Text>
         </TouchableOpacity>
       </View>
+      <TouchableOpacity style={styles.donateButton} onPress={handleDonatePress}>
+        <Image source={require('../../assets/images/paypal_donate.png')} style={styles.donateImage} />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -52,6 +60,17 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
+  },
+  donateButton: {
+    position: 'absolute',
+    bottom: 20,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  donateImage: {
+    width: 200,
+    height: 50,
   },
 });
 

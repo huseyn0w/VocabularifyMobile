@@ -60,7 +60,7 @@ const HomeScreen: React.FC = () => {
   }, [currentIndex, words.length]);
 
   useEffect(() => {
-    setCurrentIndex(0); // Reset to first word when settings change
+    setCurrentIndex(0);
   }, [settings]);
 
   const startTimer = useCallback(() => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Linking, TouchableOpacity, ScrollView } from 'react-native';
 import { useThemeContext } from '../context/ThemeContext';
+import { PAYPAY_DONATION_URL } from '../utils/constants'
 
 const AboutScreen: React.FC = () => {
   const { theme } = useThemeContext();
@@ -16,7 +17,7 @@ const AboutScreen: React.FC = () => {
         <LinkButton url="https://github.com/huseyn0w/VocabularifyMobile" label="🚀 GitHub Project" theme={theme} />
         <LinkButton url="https://github.com/huseyn0w/Vocabularify" label="🖥️ Desktop version" theme={theme} />
         <LinkButton url="https://ehuseynov.net" label="👨‍💻 About the Author" theme={theme} />
-        <LinkButton url="https://www.paypal.com/donate/?hosted_button_id=MMANJ7TC2SJMN" label="💖 Donate" theme={theme} />
+        <LinkButton url={PAYPAY_DONATION_URL} label="💖 Like the app? Donate" theme={theme} />
       </View>
       <Text style={[styles.footer, { color: theme.text }]}>
         Created by Elman Huseynov.
