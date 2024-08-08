@@ -7,7 +7,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useThemeContext } from '../context/ThemeContext';
 import { useLanguageContext } from '../context/LanguageContext';
 import loadLanguageFile from '../utils/loadLanguageFile';
-import { LAST_INDEX_KEY } from '../utils/constants';
+import { LAST_INDEX_KEY, SHOW_TRANSLATION_DELAY } from '../utils/constants';
 
 const { width, height } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
@@ -80,7 +80,7 @@ const HomeScreen: React.FC = () => {
       setShowTranslation(false);
       const timeout = setTimeout(() => {
         setShowTranslation(true);
-      }, 5000);
+      }, SHOW_TRANSLATION_DELAY);
       return () => clearTimeout(timeout);
     } else {
       setShowTranslation(true);
