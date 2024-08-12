@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { useLanguageContext } from '../context/LanguageContext';
 import { useThemeContext } from '../context/ThemeContext';

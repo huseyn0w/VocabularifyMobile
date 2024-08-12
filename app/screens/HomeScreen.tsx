@@ -142,6 +142,9 @@ const HomeScreen: React.FC = () => {
   return (
     <GestureHandlerRootView style={[styles.container, { backgroundColor: theme.background }]}>
       <View style={[styles.container, { backgroundColor: theme.background }]}>
+        <View style={styles.instructionsContainer}>
+          <Text style={[styles.instructionsText, { color: theme.text }]}>*Swipe left or right to change words*</Text>
+        </View>
         <PanGestureHandler
           onGestureEvent={handleGestureEvent}
           onHandlerStateChange={handleGestureStateChange}
@@ -202,6 +205,17 @@ const styles = StyleSheet.create({
   progressText: {
     marginTop: 5,
     fontSize: 16,
+  },
+  instructionsContainer: {
+    position: 'absolute',
+    top: 20,
+    alignItems: 'center',
+  },
+  instructionsText: {
+    fontSize: 16,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontStyle: 'italic',
   },
 });
 
