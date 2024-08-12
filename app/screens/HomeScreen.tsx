@@ -4,14 +4,14 @@ import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-n
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { ProgressBar } from 'react-native-paper';
 import { useThemeContext } from '../context/ThemeContext';
 import { useLanguageContext } from '../context/LanguageContext';
 import loadLanguageFile from '../utils/loadLanguageFile';
-import { LAST_INDEX_KEY, SHOW_TRANSLATION_DELAY } from '../utils/constants';
+import { LAST_INDEX_KEY, SHOW_TRANSLATION_DELAY, CHANGE_WORD_TIMEOUT_DURATION } from '../utils/constants';
 
 const { width, height } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
-const timerDuration = 10000;
 
 interface Word {
   word_1: string;
@@ -71,7 +71,7 @@ const HomeScreen: React.FC = () => {
     if (words.length > 0) {
       intervalRef.current = setInterval(() => {
         setCurrentIndex(prevIndex => (prevIndex !== null ? (prevIndex + 1) % words.length : 0));
-      }, timerDuration);
+      }, CHANGE_WORD_TIMEOUT_DURATION);
     }
   }, [words.length]);
 
@@ -135,6 +135,7 @@ const HomeScreen: React.FC = () => {
   }
 
   const currentWord = words[currentIndex];
+  const progress = (currentIndex + 1) / words.length;
 
   return (
     <GestureHandlerRootView style={[styles.container, { backgroundColor: theme.background }]}>
@@ -152,6 +153,14 @@ const HomeScreen: React.FC = () => {
             )}
           </Animated.View>
         </PanGestureHandler>
+        <View style={styles.progressContainer}>
+          <ProgressBar 
+            progress={progress} 
+            color={theme.text}
+            style={{ width: width * 0.8 }}
+          />
+          <Text style={[styles.progressText, { color: theme.text }]}>{`${currentIndex + 1} / ${words.length}`}</Text>
+        </View>
       </View>
     </GestureHandlerRootView>
   );
@@ -182,6 +191,15 @@ const styles = StyleSheet.create({
   noWordsText: {
     fontSize: 24,
     textAlign: 'center',
+  },
+  progressContainer: {
+    position: 'absolute',
+    bottom: 50,
+    alignItems: 'center',
+  },
+  progressText: {
+    marginTop: 5,
+    fontSize: 16,
   },
 });
 
