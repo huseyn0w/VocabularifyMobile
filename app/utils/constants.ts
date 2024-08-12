@@ -4,3 +4,4 @@ export const PAYPAY_DONATION_URL = 'https://www.paypal.com/donate/?hosted_button
 export const MODE_KEY = 'learningMode'
 export const SHOW_TRANSLATION_DELAY = 3000
 export const CHANGE_WORD_TIMEOUT_DURATION = 5000
+export const FREQUENCY_KEY = 'WORDS_FREQUENCY'

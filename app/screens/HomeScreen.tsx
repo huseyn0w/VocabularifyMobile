@@ -1,3 +1,5 @@
+// HomeScreen.tsx
+
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { StyleSheet, View, Text, Dimensions, ActivityIndicator } from 'react-native';
 import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-native-gesture-handler';
@@ -8,7 +10,7 @@ import { ProgressBar } from 'react-native-paper';
 import { useThemeContext } from '../context/ThemeContext';
 import { useLanguageContext } from '../context/LanguageContext';
 import loadLanguageFile from '../utils/loadLanguageFile';
-import { LAST_INDEX_KEY, SHOW_TRANSLATION_DELAY, CHANGE_WORD_TIMEOUT_DURATION } from '../utils/constants';
+import { LAST_INDEX_KEY, SHOW_TRANSLATION_DELAY } from '../utils/constants';
 
 const { width, height } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
@@ -20,7 +22,7 @@ interface Word {
 
 const HomeScreen: React.FC = () => {
   const { theme } = useThemeContext();
-  const { settings, mode } = useLanguageContext();
+  const { settings, mode, frequency } = useLanguageContext();
   const [words, setWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
@@ -58,7 +60,7 @@ const HomeScreen: React.FC = () => {
     if (currentIndex !== null && words.length > 0) {
       startTimer();
     }
-  }, [currentIndex, words.length]);
+  }, [currentIndex, words.length, frequency]);
 
   useEffect(() => {
     setCurrentIndex(0);
@@ -71,9 +73,9 @@ const HomeScreen: React.FC = () => {
     if (words.length > 0) {
       intervalRef.current = setInterval(() => {
         setCurrentIndex(prevIndex => (prevIndex !== null ? (prevIndex + 1) % words.length : 0));
-      }, CHANGE_WORD_TIMEOUT_DURATION);
+      }, frequency);
     }
-  }, [words.length]);
+  }, [words.length, frequency]);
 
   useEffect(() => {
     if (mode === 'showWordThenTranslation') {

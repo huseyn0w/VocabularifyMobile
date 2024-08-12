@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { LANGUAGE_KEY, MODE_KEY } from '../utils/constants';
+import { LANGUAGE_KEY, MODE_KEY, FREQUENCY_KEY } from '../utils/constants';
 
 interface LanguageSettings {
   fromLanguage: string;
@@ -13,6 +13,8 @@ interface LanguageContextProps {
   setSettings: (settings: LanguageSettings) => void;
   mode: string;
   setMode: (mode: string) => void;
+  frequency: number;
+  setFrequency: (frequency: number) => void;
 }
 
 interface LanguageProviderProps {
@@ -24,6 +26,7 @@ const LanguageContext = createContext<LanguageContextProps | undefined>(undefine
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [settings, setSettings] = useState<LanguageSettings>({ fromLanguage: 'en', toLanguage: 'de', level: 'a1' });
   const [mode, setMode] = useState<string>('showBoth');
+  const [frequency, setFrequency] = useState<number>(5000);
 
   useEffect(() => {
     const loadSettings = async () => {
@@ -35,6 +38,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         const savedMode = await AsyncStorage.getItem(MODE_KEY);
         if (savedMode) {
           setMode(savedMode);
+        }
+        const savedFrequency = await AsyncStorage.getItem(FREQUENCY_KEY);
+        if (savedFrequency) {
+          setFrequency(parseInt(savedFrequency, 10));
         }
       } catch (error) {
         console.error('Failed to load settings', error);
@@ -52,8 +59,12 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     AsyncStorage.setItem(MODE_KEY, mode);
   }, [mode]);
 
+  useEffect(() => {
+    AsyncStorage.setItem(FREQUENCY_KEY, frequency.toString());
+  }, [frequency]);
+
   return (
-    <LanguageContext.Provider value={{ settings, setSettings, mode, setMode }}>
+    <LanguageContext.Provider value={{ settings, setSettings, mode, setMode, frequency, setFrequency }}>
       {children}
     </LanguageContext.Provider>
   );
