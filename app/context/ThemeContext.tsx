@@ -9,6 +9,7 @@ const themes = {
     border: '#C7C7CC',
     sectionBackground: '#fff',
     headerBackground: '#FFFFFF',
+    cardBackground: '#FFFFFF', // Added cardBackground
   },
   dark: {
     background: '#121212',
@@ -16,6 +17,7 @@ const themes = {
     border: '#3A3A3A',
     sectionBackground: '#1E1E1E',
     headerBackground: '#000000',
+    cardBackground: '#1E1E1E', // Added cardBackground
   },
 };
 

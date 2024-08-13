@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { StyleSheet, View, Text, Dimensions, ActivityIndicator } from 'react-native';
 import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-native-gesture-handler';
-import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
+import Animated, { useSharedValue, useAnimatedStyle, withSpring, runOnJS, interpolate } from 'react-native-reanimated';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { ProgressBar } from 'react-native-paper';
@@ -29,6 +29,8 @@ const HomeScreen: React.FC = () => {
   const [showTranslation, setShowTranslation] = useState<boolean>(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const translateX = useSharedValue(0);
+  const translateY = useSharedValue(0);
+  const rotate = useSharedValue(0);
 
   useEffect(() => {
     const loadWords = async () => {
@@ -72,7 +74,7 @@ const HomeScreen: React.FC = () => {
     }
     if (words.length > 0) {
       intervalRef.current = setInterval(() => {
-        setCurrentIndex(prevIndex => (prevIndex !== null ? (prevIndex + 1) % words.length : 0));
+        runOnJS(showNextWord)();
       }, frequency);
     }
   }, [words.length, frequency]);
@@ -91,16 +93,20 @@ const HomeScreen: React.FC = () => {
 
   const handleGestureEvent = (event: PanGestureHandlerGestureEvent) => {
     translateX.value = event.nativeEvent.translationX;
+    translateY.value = event.nativeEvent.translationY;
+    rotate.value = event.nativeEvent.translationX / width;
   };
 
   const handleGestureStateChange = (event: PanGestureHandlerGestureEvent) => {
     if (event.nativeEvent.state === State.END) {
       if (event.nativeEvent.translationX > SWIPE_THRESHOLD) {
-        showPreviousWord();
+        runOnJS(showPreviousWord)();
       } else if (event.nativeEvent.translationX < -SWIPE_THRESHOLD) {
-        showNextWord();
+        runOnJS(showNextWord)();
       }
       translateX.value = withSpring(0);
+      translateY.value = withSpring(0);
+      rotate.value = withSpring(0);
     }
   };
 
@@ -115,8 +121,18 @@ const HomeScreen: React.FC = () => {
   };
 
   const animatedStyle = useAnimatedStyle(() => {
+    const opacity = interpolate(
+      translateX.value,
+      [-width / 2, 0, width / 2], // Adjusted range for faster fadeout
+      [0, 1, 0]
+    );
     return {
-      transform: [{ translateX: translateX.value }],
+      transform: [
+        { translateX: translateX.value },
+        { translateY: translateY.value },
+        { rotate: `${rotate.value * 15}deg` }
+      ],
+      opacity: opacity,
     };
   });
 
@@ -178,10 +194,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   wordContainer: {
-    width: width,
-    height: height,
+    width: width * 0.8,
+    height: height * 0.6,
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 10,
+    elevation: 5,
   },
   word: {
     fontSize: 32,
