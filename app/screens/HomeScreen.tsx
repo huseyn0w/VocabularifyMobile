@@ -1,5 +1,3 @@
-// HomeScreen.tsx
-
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { StyleSheet, View, Text, Dimensions, ActivityIndicator } from 'react-native';
 import { PanGestureHandler, PanGestureHandlerGestureEvent, State } from 'react-native-gesture-handler';
@@ -7,7 +5,7 @@ import Animated, { useSharedValue, useAnimatedStyle, withSpring, runOnJS, interp
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { ProgressBar } from 'react-native-paper';
-import { useThemeContext, themes } from '../context/ThemeContext';
+import { useThemeContext } from '../context/ThemeContext';
 import { useLanguageContext } from '../context/LanguageContext';
 import loadLanguageFile from '../utils/loadLanguageFile';
 import { LAST_INDEX_KEY, SHOW_TRANSLATION_DELAY } from '../utils/constants';
@@ -100,9 +98,9 @@ const HomeScreen: React.FC = () => {
   const handleGestureStateChange = (event: PanGestureHandlerGestureEvent) => {
     if (event.nativeEvent.state === State.END) {
       if (event.nativeEvent.translationX > SWIPE_THRESHOLD) {
-        runOnJS(showNextWord)();
+        runOnJS(showNextWord)(); // Swiped right, show next word
       } else if (event.nativeEvent.translationX < -SWIPE_THRESHOLD) {
-        runOnJS(showPreviousWord)();
+        runOnJS(showPreviousWord)(); // Swiped left, show previous word
       }
       translateX.value = withSpring(0);
       translateY.value = withSpring(0);
@@ -123,14 +121,9 @@ const HomeScreen: React.FC = () => {
   const animatedStyle = useAnimatedStyle(() => {
     const opacity = interpolate(
       translateX.value,
-      [-width / 2, 0, width / 2], // Adjusted range for faster fadeout
+      [-width / 2, 0, width / 2],
       [0, 1, 0]
     );
-  
-    const isDarkMode = theme === themes.dark;
-    const shadowColor = isDarkMode ? '#fff' : '#000';
-    const shadowOpacity = isDarkMode ? 0.3 : 0.5;
-  
     return {
       transform: [
         { translateX: translateX.value },
@@ -138,11 +131,6 @@ const HomeScreen: React.FC = () => {
         { rotate: `${rotate.value * 15}deg` }
       ],
       opacity: opacity,
-      shadowColor: shadowColor,
-      shadowOffset: { width: 0, height: 10 },
-      shadowOpacity: shadowOpacity,
-      shadowRadius: 20,
-      backgroundColor: theme.cardBackground, // Added card background color
     };
   });
 
@@ -175,7 +163,7 @@ const HomeScreen: React.FC = () => {
           onGestureEvent={handleGestureEvent}
           onHandlerStateChange={handleGestureStateChange}
         >
-          <Animated.View style={[styles.wordContainer, animatedStyle]}>
+          <Animated.View style={[styles.wordContainer, animatedStyle, { backgroundColor: theme.cardBackground }]}>
             {currentWord && (
               <>
                 <Text style={[styles.word, { color: theme.text }]}>{currentWord.word_1}</Text>
@@ -210,6 +198,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
     elevation: 5,
+    marginBottom: 40, // Added margin to create space between card and progress bar
   },
   word: {
     fontSize: 32,
