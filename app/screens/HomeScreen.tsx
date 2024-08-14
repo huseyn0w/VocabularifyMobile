@@ -7,7 +7,7 @@ import Animated, { useSharedValue, useAnimatedStyle, withSpring, runOnJS, interp
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { ProgressBar } from 'react-native-paper';
-import { useThemeContext } from '../context/ThemeContext';
+import { useThemeContext, themes } from '../context/ThemeContext';
 import { useLanguageContext } from '../context/LanguageContext';
 import loadLanguageFile from '../utils/loadLanguageFile';
 import { LAST_INDEX_KEY, SHOW_TRANSLATION_DELAY } from '../utils/constants';
@@ -100,9 +100,9 @@ const HomeScreen: React.FC = () => {
   const handleGestureStateChange = (event: PanGestureHandlerGestureEvent) => {
     if (event.nativeEvent.state === State.END) {
       if (event.nativeEvent.translationX > SWIPE_THRESHOLD) {
-        runOnJS(showPreviousWord)();
-      } else if (event.nativeEvent.translationX < -SWIPE_THRESHOLD) {
         runOnJS(showNextWord)();
+      } else if (event.nativeEvent.translationX < -SWIPE_THRESHOLD) {
+        runOnJS(showPreviousWord)();
       }
       translateX.value = withSpring(0);
       translateY.value = withSpring(0);
@@ -126,6 +126,11 @@ const HomeScreen: React.FC = () => {
       [-width / 2, 0, width / 2], // Adjusted range for faster fadeout
       [0, 1, 0]
     );
+  
+    const isDarkMode = theme === themes.dark;
+    const shadowColor = isDarkMode ? '#fff' : '#000';
+    const shadowOpacity = isDarkMode ? 0.3 : 0.5;
+  
     return {
       transform: [
         { translateX: translateX.value },
@@ -133,6 +138,11 @@ const HomeScreen: React.FC = () => {
         { rotate: `${rotate.value * 15}deg` }
       ],
       opacity: opacity,
+      shadowColor: shadowColor,
+      shadowOffset: { width: 0, height: 10 },
+      shadowOpacity: shadowOpacity,
+      shadowRadius: 20,
+      backgroundColor: theme.cardBackground, // Added card background color
     };
   });
 

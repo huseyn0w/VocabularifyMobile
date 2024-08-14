@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import { useColorScheme } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const themes = {
+export const themes = {
   light: {
     background: '#EFEFF4',
     text: '#000000',
