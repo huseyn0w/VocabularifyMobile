@@ -6,7 +6,7 @@ import Animated, { FadeInDown, FadeIn, Easing, useReducedMotion } from 'react-na
 import { useLanguageContext } from '../context/LanguageContext';
 import { Language, RootStackParamList } from '../utils/types';
 import { setLanguageSettings } from '../services/storage';
-import { duration } from '../theme/tokens';
+import { duration, letterSpacing } from '../theme/tokens';
 import ScreenContainer from '../components/ScreenContainer';
 import LanguageSelector from '../components/LanguageSelector';
 
@@ -59,14 +59,14 @@ const WelcomeScreen: React.FC = () => {
   return (
     <SafeAreaView className="flex-1 bg-bg">
       <ScreenContainer scroll>
-        <Animated.View entering={headerEntering} className="mb-8 mt-4">
-          <Text className="font-sans text-sm uppercase tracking-[2px] text-accent">
-            Welcome
+        <Animated.View entering={headerEntering} className="mb-8 mt-6">
+          <Text
+            className="font-display-semibold text-5xl leading-[52px] text-ink"
+            style={{ letterSpacing: letterSpacing.display }}
+          >
+            Set up your{'\n'}vocabulary journey
           </Text>
-          <Text className="mt-2 font-display-semibold text-4xl leading-[42px] text-ink">
-            Let's set up your{'\n'}vocabulary journey
-          </Text>
-          <Text className="mt-3 font-sans text-base leading-6 text-ink-muted">
+          <Text className="mt-4 font-sans text-base leading-6 text-ink-muted">
             Choose what you want to learn and where you're starting from.
           </Text>
         </Animated.View>

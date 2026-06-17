@@ -11,35 +11,35 @@
  */
 @layer base {
   :root {
-    /* Light — warm "paper" surfaces */
-    --color-bg: 247 245 241;          /* #F7F5F1 */
+    /* Light — gallery white (true neutral, no warm-cream tint) */
+    --color-bg: 250 250 249;          /* #FAFAF9 */
     --color-surface: 255 255 255;     /* #FFFFFF */
     --color-card: 255 255 255;        /* #FFFFFF */
     --color-elevated: 255 255 255;    /* #FFFFFF */
-    --color-border: 230 226 218;      /* #E6E2DA */
+    --color-border: 231 230 227;      /* #E7E6E3 */
 
-    --color-ink: 26 25 22;            /* #1A1916 */
-    --color-ink-muted: 115 110 100;   /* #736E64 */
-    --color-ink-subtle: 167 161 149;  /* #A7A195 */
+    --color-ink: 22 21 26;            /* #16151A — near-black */
+    --color-ink-muted: 94 92 102;     /* #5E5C66 */
+    --color-ink-subtle: 142 140 149;  /* #8E8C95 */
 
-    --color-accent: 182 92 63;        /* #B65C3F — terracotta clay */
-    --color-accent-foreground: 251 247 243; /* #FBF7F3 */
+    --color-accent: 138 109 40;       /* #8A6D28 — deep bronze (brass for light) */
+    --color-accent-foreground: 250 250 249; /* #FAFAF9 */
   }
 
   .dark:root,
   .dark {
-    /* Dark — true-deep, slightly warm */
-    --color-bg: 14 14 16;             /* #0E0E10 */
-    --color-surface: 22 22 24;        /* #161618 */
-    --color-card: 26 26 29;           /* #1A1A1D */
-    --color-elevated: 34 34 38;       /* #222226 */
-    --color-border: 44 44 48;         /* #2C2C30 */
+    /* Dark — "midnight gallery" (the signature). Near-black ink, brushed brass. */
+    --color-bg: 11 11 13;             /* #0B0B0D */
+    --color-surface: 20 20 23;        /* #141417 */
+    --color-card: 23 23 27;           /* #17171B */
+    --color-elevated: 31 31 36;       /* #1F1F24 */
+    --color-border: 45 45 52;         /* #2D2D34 */
 
-    --color-ink: 244 242 238;         /* #F4F2EE */
-    --color-ink-muted: 160 155 146;   /* #A09B92 */
-    --color-ink-subtle: 110 106 99;   /* #6E6A63 */
+    --color-ink: 242 239 232;         /* #F2EFE8 — warm off-white */
+    --color-ink-muted: 159 154 145;   /* #9F9A91 */
+    --color-ink-subtle: 112 108 100;  /* #706C64 */
 
-    --color-accent: 214 118 79;       /* #D6764F */
-    --color-accent-foreground: 26 18 9; /* #1A1209 */
+    --color-accent: 201 162 75;       /* #C9A24B — brushed brass */
+    --color-accent-foreground: 26 21 5; /* #1A1505 */
   }
 }

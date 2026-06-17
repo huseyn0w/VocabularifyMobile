@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import Animated, { FadeInDown, FadeIn, Easing, useReducedMotion } from 'react-native-reanimated';
 import { PAYPAY_DONATION_URL } from '../utils/constants';
-import { duration } from '../theme/tokens';
+import { duration, letterSpacing } from '../theme/tokens';
 import ScreenContainer from '../components/ScreenContainer';
 import LinkRow from '../components/LinkRow';
 
@@ -15,14 +15,15 @@ const AboutScreen: React.FC = () => {
 
   return (
     <ScreenContainer scroll>
-      <Animated.View entering={entering} className="mb-8 mt-4">
-        <Text className="font-sans text-sm uppercase tracking-[2px] text-accent">
-          About
+      <Animated.View entering={entering} className="mb-8 mt-6">
+        <Text
+          className="font-display-semibold text-5xl leading-[52px] text-ink"
+          style={{ letterSpacing: letterSpacing.display }}
+        >
+          Vocabularify
         </Text>
-        <Text className="mt-2 font-display-semibold text-4xl text-ink">Vocabulary Booster</Text>
-        <Text className="mt-3 font-sans text-base leading-6 text-ink-muted">
-          Vocabulary Booster is designed to help you expand your vocabulary effortlessly —
-          one word at a time, at your own pace.
+        <Text className="mt-4 font-sans text-base leading-6 text-ink-muted">
+          A quiet way to expand your vocabulary — one word at a time, at your own pace.
         </Text>
       </Animated.View>
 

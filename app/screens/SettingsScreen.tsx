@@ -43,9 +43,7 @@ const SettingsScreen: React.FC<Props> = ({ navigation }) => (
       />
     </Section>
 
-    <Text className="mb-2.5 ml-1 font-semibold text-xs uppercase tracking-[1.5px] text-ink-subtle">
-      Support
-    </Text>
+    <Text className="mb-3 ml-1 font-semibold text-sm text-ink-muted">Support</Text>
     <LinkRow url={PAYPAY_DONATION_URL} label="Donate via PayPal" icon="heart-outline" />
   </ScreenContainer>
 );

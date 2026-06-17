@@ -22,11 +22,13 @@ import { useThemeColors } from '../hooks/useThemeColors';
 import { useWordList } from '../hooks/useWordList';
 import { useFlashcardDeck } from '../hooks/useFlashcardDeck';
 import ProgressBar from '../components/ProgressBar';
-import { duration } from '../theme/tokens';
+import { duration, letterSpacing, shadow } from '../theme/tokens';
 
 const { width } = Dimensions.get('window');
 const SWIPE_THRESHOLD = 0.25 * width;
 const CARD_WIDTH = width * 0.84;
+
+const pad = (n: number) => String(n).padStart(2, '0');
 
 const HomeScreen: React.FC = () => {
   const colors = useThemeColors();
@@ -40,6 +42,14 @@ const HomeScreen: React.FC = () => {
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
   const rotate = useSharedValue(0);
+
+  // Restrained mount entrance: the card settles in from 0.96 + fade (never from 0).
+  const mounted = useSharedValue(reducedMotion ? 1 : 0);
+  useEffect(() => {
+    mounted.value = reducedMotion
+      ? 1
+      : withTiming(1, { duration: duration.slower, easing: Easing.bezier(0.23, 1, 0.32, 1) });
+  }, [reducedMotion, mounted]);
 
   // Tasteful translation reveal — fades/slides in when showTranslation flips.
   const revealProgress = useSharedValue(showTranslation ? 1 : 0);
@@ -82,19 +92,21 @@ const HomeScreen: React.FC = () => {
   };
 
   const animatedCardStyle = useAnimatedStyle(() => {
-    const opacity = interpolate(
+    const dragOpacity = interpolate(
       translateX.value,
       [-width / 2, 0, width / 2],
       [0.35, 1, 0.35],
       Extrapolation.CLAMP,
     );
+    const mountScale = interpolate(mounted.value, [0, 1], [0.96, 1], Extrapolation.CLAMP);
     return {
       transform: [
         { translateX: translateX.value },
         { translateY: translateY.value },
         { rotate: `${rotate.value * 8}deg` },
+        { scale: mountScale },
       ],
-      opacity,
+      opacity: dragOpacity * mounted.value,
     };
   });
 
@@ -144,11 +156,8 @@ const HomeScreen: React.FC = () => {
                 width: CARD_WIDTH,
                 aspectRatio: 0.72,
                 paddingHorizontal: 28,
-                shadowColor: colors.ink,
-                shadowOffset: { width: 0, height: 12 },
-                shadowOpacity: 0.12,
-                shadowRadius: 28,
-                elevation: 12,
+                shadowColor: colors.accentSoft,
+                ...shadow.glow.native,
               },
               animatedCardStyle,
             ]}
@@ -156,14 +165,15 @@ const HomeScreen: React.FC = () => {
             {current && (
               <>
                 <Text
-                  className="text-center font-display-semibold text-4xl text-ink"
+                  className="text-center font-display-semibold text-5xl text-ink"
+                  style={{ letterSpacing: letterSpacing.display }}
                   numberOfLines={3}
                   adjustsFontSizeToFit
                 >
                   {current.word_1}
                 </Text>
-                <Animated.View style={revealStyle} className="mt-4">
-                  <Text className="text-center font-sans text-xl text-ink-muted">
+                <Animated.View style={revealStyle} className="mt-5">
+                  <Text className="text-center font-display text-2xl text-ink-muted">
                     {current.word_2}
                   </Text>
                 </Animated.View>
@@ -173,12 +183,16 @@ const HomeScreen: React.FC = () => {
         </PanGestureHandler>
 
         <View className="absolute inset-x-0 bottom-14 items-center px-8">
+          <View
+            className="mb-3 flex-row items-baseline self-stretch justify-between"
+            style={{ width: CARD_WIDTH, alignSelf: 'center' }}
+          >
+            <Text className="font-semibold text-base text-ink">{pad(currentIndex + 1)}</Text>
+            <Text className="font-medium text-sm text-ink-subtle">{pad(total)}</Text>
+          </View>
           <ProgressBar progress={progress} style={{ width: CARD_WIDTH }} />
-          <Text className="mt-3 font-medium text-sm text-ink-subtle">
-            {`${currentIndex + 1} / ${total}`}
-          </Text>
-          <Text className="mt-6 font-sans text-xs uppercase tracking-[1.5px] text-ink-subtle">
-            Swipe to change words
+          <Text className="mt-6 font-sans text-sm tracking-[0.3px] text-ink-subtle">
+            swipe to continue
           </Text>
         </View>
       </View>

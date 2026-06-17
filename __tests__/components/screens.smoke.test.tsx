@@ -22,13 +22,13 @@ describe('screen smoke tests', () => {
     renderWithProviders(<HomeScreen />);
     // The deck loads asynchronously; assert we eventually leave a stable state.
     await waitFor(() => {
-      expect(screen.queryByText('Swipe to change words')).toBeTruthy();
+      expect(screen.queryByText('swipe to continue')).toBeTruthy();
     });
   });
 
   it('Welcome renders the intro copy and the learn options', async () => {
     renderWithProviders(<WelcomeScreen />);
-    expect(await screen.findByText('Welcome')).toBeTruthy();
+    expect(await screen.findByText(/vocabulary journey/i)).toBeTruthy();
     expect(screen.getByText('I want to learn')).toBeTruthy();
   });
 
@@ -62,7 +62,7 @@ describe('screen smoke tests', () => {
 
   it('About renders its copy', async () => {
     renderWithProviders(<AboutScreen />);
-    expect(await screen.findByText('Vocabulary Booster')).toBeTruthy();
+    expect(await screen.findByText('Vocabularify')).toBeTruthy();
     expect(screen.getByText('GitHub project')).toBeTruthy();
   });
 });

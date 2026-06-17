@@ -28,15 +28,16 @@ beforeEach(async () => {
 });
 
 describe('HomeScreen', () => {
-  it('renders the current word and a "1 / N" progress label from the stubbed list', async () => {
+  it('renders the current word and a zero-padded progress counter from the stubbed list', async () => {
     renderWithProviders(<HomeScreen />);
 
     // First word_1 renders.
     expect(await screen.findByText('apfel')).toBeTruthy();
     // Its translation (word_2) renders (ShowBoth is the default mode).
     expect(screen.getByText('apple')).toBeTruthy();
-    // Progress label shows 1 / 3.
-    expect(screen.getByText(`1 / ${STUB_WORDS.length}`)).toBeTruthy();
+    // Progress counter shows the padded current index (01) and total (03).
+    expect(screen.getByText('01')).toBeTruthy();
+    expect(screen.getByText('03')).toBeTruthy();
   });
 
   it('resumes from the persisted last index', async () => {
@@ -45,7 +46,8 @@ describe('HomeScreen', () => {
 
     await waitFor(() => {
       expect(screen.getByText('kirsche')).toBeTruthy();
-      expect(screen.getByText(`3 / ${STUB_WORDS.length}`)).toBeTruthy();
+      // Current index 3 of 3 — both render as "03".
+      expect(screen.getAllByText('03').length).toBeGreaterThanOrEqual(1);
     });
   });
 });

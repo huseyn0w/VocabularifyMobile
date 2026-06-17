@@ -35,9 +35,7 @@ const Section: React.FC<SectionProps> = ({ title, children, index = 0, className
   return (
     <Animated.View entering={entering} className={`mb-6 ${className ?? ''}`} style={style}>
       {title ? (
-        <Text className="mb-2.5 ml-1 font-semibold text-xs uppercase tracking-[1.5px] text-ink-subtle">
-          {title}
-        </Text>
+        <Text className="mb-3 ml-1 font-semibold text-sm text-ink-muted">{title}</Text>
       ) : null}
       <View className="overflow-hidden rounded-xl border border-border bg-surface">
         {children}

@@ -1,5 +1,5 @@
 /**
- * Design tokens — single source of truth for the Vocabularify "quiet luxury" system.
+ * Design tokens — single source of truth for the Vocabularify "midnight gallery" system.
  *
  * These raw values mirror the CSS variables defined in `global.css` and the
  * Tailwind theme in `tailwind.config.js`. Use these constants from non-className
@@ -7,17 +7,19 @@
  * whole app references one palette.
  *
  * Palette rationale:
- *  - Warm, paper-like neutrals instead of clinical greys.
- *  - A single restrained accent: a warm terracotta "clay". It reads premium and
- *    editorial against the warm-paper surfaces, and deliberately avoids the
- *    generic AI indigo/violet. Used sparingly (primary actions, the active tab,
- *    focus accents) — never as a fill across large areas.
+ *  - Dark is the signature: a near-black "gallery at night" surface that reads
+ *    expensive and lets the typography and one jewel accent carry the identity.
+ *  - The accent is a brushed brass (deep bronze in light mode) — a single,
+ *    metallic jewel tone used sparingly (primary actions, active tab, the
+ *    flashcard's progress + glow). Never a fill across large areas.
+ *  - Light mode is a true-neutral gallery white (deliberately NOT a warm cream),
+ *    so the system stays distinctive in both schemes.
  */
 
 export const palette = {
   light: {
-    /** Warm near-white app background ("paper"). */
-    bg: '#F7F5F1',
+    /** Gallery white — true neutral, no warm tint. */
+    bg: '#FAFAF9',
     /** Slightly raised surface (sheets, grouped sections). */
     surface: '#FFFFFF',
     /** Cards / elevated surfaces. */
@@ -25,38 +27,42 @@ export const palette = {
     /** Higher elevation (popovers, pressed cards). */
     elevated: '#FFFFFF',
     /** Hairline borders / dividers. */
-    border: '#E6E2DA',
-    /** Primary text — near-black, warm. */
-    ink: '#1A1916',
+    border: '#E7E6E3',
+    /** Primary text — near-black. */
+    ink: '#16151A',
     /** Secondary / muted text. */
-    inkMuted: '#736E64',
+    inkMuted: '#5E5C66',
     /** Tertiary text (captions, disabled). */
-    inkSubtle: '#A7A195',
-    /** Single restrained accent — warm terracotta clay. */
-    accent: '#B65C3F',
+    inkSubtle: '#8E8C95',
+    /** Single jewel accent — deep bronze (the brass, darkened for light surfaces). */
+    accent: '#8A6D28',
+    /** Soft accent for glows / tints (low-opacity brass). */
+    accentSoft: '#C9A24B',
     /** Text/icon color that sits on top of the accent. */
-    accentForeground: '#FBF7F3',
+    accentForeground: '#FAFAF9',
   },
   dark: {
-    /** True-deep, slightly warm background. */
-    bg: '#0E0E10',
+    /** Midnight-gallery background — near-black. */
+    bg: '#0B0B0D',
     /** Raised surface. */
-    surface: '#161618',
-    /** Cards / elevated surfaces. */
-    card: '#1A1A1D',
+    surface: '#141417',
+    /** Cards / elevated surfaces (lighter than bg for elevation in the dark). */
+    card: '#17171B',
     /** Higher elevation. */
-    elevated: '#222226',
+    elevated: '#1F1F24',
     /** Hairline borders / dividers. */
-    border: '#2C2C30',
+    border: '#2D2D34',
     /** Primary text — warm off-white. */
-    ink: '#F4F2EE',
+    ink: '#F2EFE8',
     /** Secondary / muted text. */
-    inkMuted: '#A09B92',
+    inkMuted: '#9F9A91',
     /** Tertiary text. */
-    inkSubtle: '#6E6A63',
-    /** Accent — slightly lifted for contrast on dark surfaces. */
-    accent: '#D6764F',
-    accentForeground: '#1A1209',
+    inkSubtle: '#706C64',
+    /** Accent — brushed brass. */
+    accent: '#C9A24B',
+    /** Soft accent for glows / tints. */
+    accentSoft: '#C9A24B',
+    accentForeground: '#1A1505',
   },
 } as const;
 
@@ -112,6 +118,15 @@ export const radii = {
   full: 9999,
 } as const;
 
+/**
+ * Letter-spacing for display type (px). Fraunces wants a slight negative track
+ * at large sizes to feel set, not loose.
+ */
+export const letterSpacing = {
+  display: -0.5,
+  displayTight: -1,
+} as const;
+
 /** Motion durations (ms). */
 export const duration = {
   fast: 150,
@@ -130,38 +145,53 @@ export const easing = {
 
 /**
  * Shadow tokens. RN consumes the `native` variants; the `web` string mirrors
- * the Tailwind boxShadow utilities for parity.
+ * the Tailwind boxShadow utilities for parity. Shadows read in light mode; in
+ * the dark "gallery" scheme depth comes mainly from the lighter card surface +
+ * hairline border, with the `glow` token adding a faint brass halo on the hero.
  */
 export const shadow = {
   sm: {
     native: {
-      shadowColor: '#1A1916',
+      shadowColor: '#000000',
       shadowOffset: { width: 0, height: 1 },
       shadowOpacity: 0.06,
       shadowRadius: 2,
       elevation: 1,
     },
-    web: '0 1px 2px rgba(26, 25, 22, 0.06)',
+    web: '0 1px 2px rgba(0, 0, 0, 0.06)',
   },
   md: {
     native: {
-      shadowColor: '#1A1916',
+      shadowColor: '#000000',
       shadowOffset: { width: 0, height: 4 },
-      shadowOpacity: 0.08,
-      shadowRadius: 12,
+      shadowOpacity: 0.1,
+      shadowRadius: 14,
       elevation: 4,
     },
-    web: '0 4px 12px rgba(26, 25, 22, 0.08)',
+    web: '0 4px 14px rgba(0, 0, 0, 0.1)',
   },
   lg: {
     native: {
-      shadowColor: '#1A1916',
-      shadowOffset: { width: 0, height: 12 },
-      shadowOpacity: 0.12,
-      shadowRadius: 28,
-      elevation: 12,
+      shadowColor: '#000000',
+      shadowOffset: { width: 0, height: 16 },
+      shadowOpacity: 0.16,
+      shadowRadius: 32,
+      elevation: 14,
     },
-    web: '0 12px 28px rgba(26, 25, 22, 0.12)',
+    web: '0 16px 32px rgba(0, 0, 0, 0.16)',
+  },
+  /**
+   * Brass halo for the flashcard hero. Uses the soft-accent color so it reads as
+   * a refined glow in dark and a subtle warm lift in light. Pair with the
+   * resolved `accentSoft` as shadowColor at call sites that switch by scheme.
+   */
+  glow: {
+    native: {
+      shadowOffset: { width: 0, height: 8 },
+      shadowOpacity: 0.28,
+      shadowRadius: 36,
+      elevation: 16,
+    },
   },
 } as const;
 
@@ -169,6 +199,7 @@ export const tokens = {
   palette,
   fontFamily,
   fontSize,
+  letterSpacing,
   spacing,
   radii,
   duration,
