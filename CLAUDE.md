@@ -47,8 +47,9 @@ Navigation tree:
 
 ## Styling (NativeWind v4)
 
+- Visual identity is **"midnight gallery"**: dark is the signature scheme (near-black surfaces, warm off-white ink, a single brushed-brass jewel accent used sparingly — primary actions, active tab, the flashcard glow); light mode is a true-neutral gallery white (not a warm cream). Avoid reintroducing warm-paper/cream backgrounds or tracked-uppercase eyebrow labels above headings — both were deliberately removed as generic.
 - Style with `className`. The palette flips light/dark via CSS variables in `global.css`, referenced by `tailwind.config.js` (`darkMode: 'class'`).
-- **`app/theme/tokens.ts` is the single source of truth** for colors/spacing/radii/fonts/motion. Anything that can't take a class (reanimated worklets, navigation options, StatusBar) must read from tokens — do not hardcode hex.
+- **`app/theme/tokens.ts` is the single source of truth** for colors/spacing/radii/fonts/motion, and must stay in sync with `global.css`. Anything that can't take a class (reanimated worklets, navigation options, StatusBar) must read from tokens — do not hardcode hex.
 - Fonts: Plus Jakarta Sans (`font-sans`, UI) and Fraunces (`font-display`, the flashcard word / big titles).
 - Motion via reanimated, kept restrained: ease-out for enters, springs for the swipe gesture, press-scale ~0.97, and `useReducedMotion()` honored everywhere.
 - A patch (`patches/react-native-css-interop+0.2.5.patch`, applied via `postinstall`) is required because that package references a reanimated-4-only worklets plugin; keep it when bumping deps.
