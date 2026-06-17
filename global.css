@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens as CSS variables (space-separated RGB channels so they can be
+ * consumed via `rgb(var(--token) / <alpha-value>)` in tailwind.config.js).
+ * A single `.dark` class on the root flips the entire palette.
+ *
+ * Keep these in sync with app/theme/tokens.ts.
+ */
+@layer base {
+  :root {
+    /* Light — warm "paper" surfaces */
+    --color-bg: 247 245 241;          /* #F7F5F1 */
+    --color-surface: 255 255 255;     /* #FFFFFF */
+    --color-card: 255 255 255;        /* #FFFFFF */
+    --color-elevated: 255 255 255;    /* #FFFFFF */
+    --color-border: 230 226 218;      /* #E6E2DA */
+
+    --color-ink: 26 25 22;            /* #1A1916 */
+    --color-ink-muted: 115 110 100;   /* #736E64 */
+    --color-ink-subtle: 167 161 149;  /* #A7A195 */
+
+    --color-accent: 182 92 63;        /* #B65C3F — terracotta clay */
+    --color-accent-foreground: 251 247 243; /* #FBF7F3 */
+  }
+
+  .dark:root,
+  .dark {
+    /* Dark — true-deep, slightly warm */
+    --color-bg: 14 14 16;             /* #0E0E10 */
+    --color-surface: 22 22 24;        /* #161618 */
+    --color-card: 26 26 29;           /* #1A1A1D */
+    --color-elevated: 34 34 38;       /* #222226 */
+    --color-border: 44 44 48;         /* #2C2C30 */
+
+    --color-ink: 244 242 238;         /* #F4F2EE */
+    --color-ink-muted: 160 155 146;   /* #A09B92 */
+    --color-ink-subtle: 110 106 99;   /* #6E6A63 */
+
+    --color-accent: 214 118 79;       /* #D6764F */
+    --color-accent-foreground: 26 18 9; /* #1A1209 */
+  }
+}

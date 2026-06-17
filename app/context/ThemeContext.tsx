@@ -1,23 +1,24 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { useColorScheme } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useColorScheme as useRNColorScheme } from 'react-native';
+import { colorScheme as nwColorScheme } from 'nativewind';
+import { getTheme, setTheme as persistTheme } from '../services/storage';
 
 export const themes = {
   light: {
-    background: '#EFEFF4',
-    text: '#000000',
-    border: '#C7C7CC',
-    sectionBackground: '#fff',
+    background: '#F7F5F1',
+    text: '#1A1916',
+    border: '#E6E2DA',
+    sectionBackground: '#FFFFFF',
     headerBackground: '#FFFFFF',
-    cardBackground: '#FFFFFF', // Added cardBackground
+    cardBackground: '#FFFFFF',
   },
   dark: {
-    background: '#121212',
-    text: '#FFFFFF',
-    border: '#3A3A3A',
-    sectionBackground: '#1E1E1E',
-    headerBackground: '#000000',
-    cardBackground: '#1E1E1E', // Added cardBackground
+    background: '#0E0E10',
+    text: '#F4F2EE',
+    border: '#2C2C30',
+    sectionBackground: '#161618',
+    headerBackground: '#0E0E10',
+    cardBackground: '#1A1A1D',
   },
 };
 
@@ -40,32 +41,40 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const colorScheme = useColorScheme();
+  const systemColorScheme = useRNColorScheme();
   const [themeType, setThemeType] = useState<ThemeType>('system');
   const [theme, setTheme] = useState(themes.light);
 
   useEffect(() => {
     (async () => {
-      const storedTheme = await AsyncStorage.getItem('theme');
-      if (storedTheme) {
-        setThemeType(storedTheme as ThemeType);
-      }
+      setThemeType(await getTheme());
     })();
   }, []);
 
   useEffect(() => {
-    const currentTheme =
+    // Resolve the effective scheme from the user's setting.
+    const resolved =
       themeType === 'system'
-        ? colorScheme === 'dark'
-          ? themes.dark
-          : themes.light
-        : themes[themeType];
-    setTheme(currentTheme);
-  }, [themeType, colorScheme]);
+        ? systemColorScheme === 'dark'
+          ? 'dark'
+          : 'light'
+        : themeType;
+
+    // Drive NativeWind so the `.dark` class applies app-wide. When the user
+    // chooses "system" we hand control back to NativeWind's own system tracker.
+    if (themeType === 'system') {
+      nwColorScheme.set('system');
+    } else {
+      nwColorScheme.set(themeType);
+    }
+
+    // Keep the legacy color object in sync with the active scheme.
+    setTheme(resolved === 'dark' ? themes.dark : themes.light);
+  }, [themeType, systemColorScheme]);
 
   const handleSetThemeType = async (newTheme: ThemeType) => {
     setThemeType(newTheme);
-    await AsyncStorage.setItem('theme', newTheme);
+    await persistTheme(newTheme);
   };
 
   return (

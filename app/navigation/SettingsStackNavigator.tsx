@@ -6,22 +6,29 @@ import LearningModeScreen from '../screens/LearningModeScreen';
 import LanguageSettingsScreen from '../screens/LanguageSettingsScreen';
 import AboutScreen from '../screens/AboutScreen';
 import BackgroundScreen from '../screens/BackgroundScreen';
-import { useThemeContext } from '../context/ThemeContext';
+import { useThemeColors } from '../hooks/useThemeColors';
+import { fontFamily, fontSize } from '../theme/tokens';
 
 const Stack = createStackNavigator<SettingsStackParamList>();
 
 const SettingsStackNavigator = () => {
-  const { theme } = useThemeContext();
+  const colors = useThemeColors();
 
   return (
     <Stack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: theme.headerBackground,
+          backgroundColor: colors.bg,
+          shadowColor: 'transparent',
+          elevation: 0,
         },
         headerTitleStyle: {
-          color: theme.text,
+          color: colors.ink,
+          fontFamily: fontFamily.displaySemibold,
+          fontSize: fontSize.xl,
         },
+        headerTitleAlign: 'center',
+        headerTintColor: colors.accent,
         transitionSpec: {
           open: TransitionSpecs.TransitionIOSSpec,
           close: TransitionSpecs.TransitionIOSSpec,

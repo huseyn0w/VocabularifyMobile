@@ -1,18 +1,21 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { LANGUAGE_KEY, MODE_KEY, FREQUENCY_KEY } from '../utils/constants';
-
-interface LanguageSettings {
-  fromLanguage: string;
-  toLanguage: string;
-  level: string;
-}
+import {
+  getLanguageSettings,
+  setLanguageSettings as persistLanguageSettings,
+  getMode,
+  setMode as persistMode,
+  getFrequency,
+  setFrequency as persistFrequency,
+  DEFAULT_LANGUAGE_SETTINGS,
+} from '../services/storage';
+import { LanguageSettings, LearningMode } from '../utils/types';
+import { DEFAULT_FREQUENCY } from '../utils/constants';
 
 interface LanguageContextProps {
   settings: LanguageSettings;
   setSettings: (settings: LanguageSettings) => void;
-  mode: string;
-  setMode: (mode: string) => void;
+  mode: LearningMode;
+  setMode: (mode: LearningMode) => void;
   frequency: number;
   setFrequency: (frequency: number) => void;
 }
@@ -24,44 +27,50 @@ interface LanguageProviderProps {
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [settings, setSettings] = useState<LanguageSettings>({ fromLanguage: 'en', toLanguage: 'de', level: 'a1' });
-  const [mode, setMode] = useState<string>('showBoth');
-  const [frequency, setFrequency] = useState<number>(5000);
+  const [settings, setSettings] = useState<LanguageSettings>(DEFAULT_LANGUAGE_SETTINGS);
+  const [mode, setMode] = useState<LearningMode>(LearningMode.ShowBoth);
+  const [frequency, setFrequency] = useState<number>(DEFAULT_FREQUENCY);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     const loadSettings = async () => {
       try {
-        const savedSettings = await AsyncStorage.getItem(LANGUAGE_KEY);
+        // Reads + migrates the legacy { fromLanguage, toLanguage } shape.
+        const savedSettings = await getLanguageSettings();
         if (savedSettings) {
-          setSettings(JSON.parse(savedSettings));
+          setSettings(savedSettings);
         }
-        const savedMode = await AsyncStorage.getItem(MODE_KEY);
-        if (savedMode) {
-          setMode(savedMode);
-        }
-        const savedFrequency = await AsyncStorage.getItem(FREQUENCY_KEY);
-        if (savedFrequency) {
-          setFrequency(parseInt(savedFrequency, 10));
-        }
+        setMode(await getMode());
+        setFrequency(await getFrequency());
       } catch (error) {
         console.error('Failed to load settings', error);
+      } finally {
+        setHydrated(true);
       }
     };
 
     loadSettings();
   }, []);
 
+  // Persist only after the initial hydration so we don't overwrite stored
+  // values with defaults on first mount.
   useEffect(() => {
-    AsyncStorage.setItem(LANGUAGE_KEY, JSON.stringify(settings));
-  }, [settings]);
+    if (hydrated) {
+      persistLanguageSettings(settings);
+    }
+  }, [settings, hydrated]);
 
   useEffect(() => {
-    AsyncStorage.setItem(MODE_KEY, mode);
-  }, [mode]);
+    if (hydrated) {
+      persistMode(mode);
+    }
+  }, [mode, hydrated]);
 
   useEffect(() => {
-    AsyncStorage.setItem(FREQUENCY_KEY, frequency.toString());
-  }, [frequency]);
+    if (hydrated) {
+      persistFrequency(frequency);
+    }
+  }, [frequency, hydrated]);
 
   return (
     <LanguageContext.Provider value={{ settings, setSettings, mode, setMode, frequency, setFrequency }}>
