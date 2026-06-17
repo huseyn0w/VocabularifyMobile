@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
+# Vocabularify
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A calm, fully-offline vocabulary-learning app built with Expo / React Native. It shows flashcards (a word in the language you're learning plus its translation), auto-advances on a timer, and lets you swipe between cards. All data is bundled or stored locally — there is **no backend, no account, and no network access**.
 
-## Get started
+- **Stack:** Expo SDK 52 · React Native 0.76 · React 18.3 · TypeScript (strict)
+- **Styling:** NativeWind v4 (Tailwind for RN) with a token-based design system (light/dark)
+- **Navigation:** React Navigation v6 (manual, not file-based routing)
+- **State:** React Context + hooks, persisted with AsyncStorage
+- **Animation:** react-native-reanimated + react-native-gesture-handler
+- **Tests:** Jest (`jest-expo`) + React Native Testing Library
 
-1. Install dependencies
+## Prerequisites
 
-   ```bash
-   npm install
-   ```
+- **Node 22** (an `.nvmrc` is included — run `nvm use`)
+- **Xcode** (for the iOS simulator) and/or **Android Studio** (for an Android emulator)
+- For device builds: an [Expo / EAS](https://expo.dev) account and the EAS CLI (`npm i -g eas-cli`)
 
-2. Start the app
+> Note: there is intentionally **no Docker setup**. Containers cannot run the iOS/Android simulators (those require the host OS), and Metro/Expo are designed to run on the host, so Docker would add friction without benefit for this project.
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Getting started
 
 ```bash
-npm run reset-project
+nvm use          # Node 22
+npm install      # installs deps; postinstall applies patches/ (patch-package)
+npm start        # Expo dev server — press i (iOS), a (Android), or w (web)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Or target a platform directly:
 
-## Learn more
+```bash
+npm run ios       # open in iOS simulator
+npm run android   # open in Android emulator
+npm run web       # open in the browser (react-native-web)
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Scripts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+| Script | What it does |
+| --- | --- |
+| `npm start` | Start the Expo dev server |
+| `npm run ios` / `android` / `web` | Launch on a specific platform |
+| `npm test` | Run the Jest suite once |
+| `npm run test:watch` | Jest in watch mode |
+| `npm run test:coverage` | Jest with a coverage report |
+| `npm run lint` | ESLint via `expo lint` |
+| `npm run typecheck` | `tsc --noEmit` |
+| `npm run build:ios` / `build:android` | EAS production build |
+| `npm run submit:ios` / `submit:android` | EAS store submission |
 
-## Join the community
+## Architecture
 
-Join our community of developers creating universal apps.
+```
+app/
+  index.js              # Entry: registerRootComponent → providers → navigation
+  context/              # ThemeContext (light/dark/system), LanguageContext (settings/mode/frequency)
+  navigation/           # BottomTabNavigator (Home + Settings) and the Settings stack
+  screens/              # Home, Welcome (onboarding), Settings, LearningMode, LanguageSettings, Background, About
+  components/           # Shared UI primitives (Card, Section, ListRow, Button, ProgressBar, LanguageSelector, …)
+  hooks/                # useWordList, useFlashcardDeck, useThemeColors
+  services/             # storage.ts — typed AsyncStorage wrapper (validation + migration)
+  theme/                # tokens.ts — single source of truth for colors/spacing/radii/motion
+  utils/                # types, constants, loadLanguageFile (static word-list lookup)
+languages/<learning>/<known>/<level>.json   # bundled word lists ([{ word_1, word_2 }])
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Routing is manual React Navigation**, even though this is an Expo app — the entry point is `app/index.js` via `registerRootComponent`. There is no file-based routing; do not add route files expecting them to be picked up.
+
+**Styling** uses NativeWind `className`. Colors flip between light/dark via CSS variables defined in `global.css` and referenced from `tailwind.config.js`. Anything that can't take a class (reanimated worklets, navigation options, the status bar) reads the same values from `app/theme/tokens.ts` — keep that as the single source of truth.
+
+**Word data flow.** Vocabulary lives in static JSON arrays of `{ word_1, word_2 }` under `languages/<learning>/<known>/<level>.json`. `app/utils/loadLanguageFile.ts` maps a `learning-known-level` key to a `require()`'d file (Metro needs static requires). `useWordList` loads the array; `useFlashcardDeck` owns the current index, auto-advance timer, wrap-around, and reveal behavior; `HomeScreen` is a thin presentational layer over those hooks plus the swipe gesture.
+
+> **Naming note:** in `settings`, `learningLanguage` is the language being learned (rendered as `word_1`) and `knownLanguage` is the user's known language (`word_2`). Settings persisted by older versions used `fromLanguage`/`toLanguage`; `app/services/storage.ts` migrates that shape automatically on read.
+
+## Adding a language pair or level
+
+Three places must stay in sync:
+
+1. **Add the JSON file** at `languages/<learning>/<known>/<level>.json` — an array of `{ "word_1": "…", "word_2": "…" }`.
+2. **Register it** in the lookup map in `app/utils/loadLanguageFile.ts` (the static `require` is what bundles the file).
+3. **Expose the combination** in `availableCombinations` (and `languages` / `levels` if new) in `app/utils/types.ts` so the selector offers it.
+
+## Building & submitting
+
+See [docs/STORE_SUBMISSION.md](docs/STORE_SUBMISSION.md) for the full App Store / Google Play checklist. In short:
+
+```bash
+eas login
+eas build -p ios       # or: npm run build:ios
+eas build -p android   # or: npm run build:android
+eas submit -p ios      # or: npm run submit:ios
+eas submit -p android  # or: npm run submit:android
+```
+
+The app collects and transmits no data — see [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md), which backs the "Data Not Collected" declaration on both stores.

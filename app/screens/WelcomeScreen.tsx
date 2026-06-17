@@ -1,27 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Alert } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React, { useEffect, useState } from 'react';
+import { Text, Alert } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Animated, { FadeInDown, FadeIn, Easing, useReducedMotion } from 'react-native-reanimated';
 import { useLanguageContext } from '../context/LanguageContext';
-import { useThemeContext } from '../context/ThemeContext';
-import { Language, availableCombinations, languages, levels, RootStackParamList } from '../utils/types'
-import { LANGUAGE_KEY } from '../utils/constants'
+import { Language, RootStackParamList } from '../utils/types';
+import { setLanguageSettings } from '../services/storage';
+import { duration } from '../theme/tokens';
+import ScreenContainer from '../components/ScreenContainer';
+import LanguageSelector from '../components/LanguageSelector';
 
 type WelcomeScreenNavigationProp = NavigationProp<RootStackParamList, 'Welcome'>;
 
 const WelcomeScreen: React.FC = () => {
-  const { theme } = useThemeContext();
   const { setSettings } = useLanguageContext();
   const navigation = useNavigation<WelcomeScreenNavigationProp>();
-  const [fromLanguage, setFromLanguage] = useState<Language | null>(null);
-  const [toLanguage, setToLanguage] = useState<Language | null>(null);
+  const reducedMotion = useReducedMotion();
+  const [learningLanguage, setLearningLanguage] = useState<Language | null>(null);
+  const [knownLanguage, setKnownLanguage] = useState<Language | null>(null);
   const [level, setLevel] = useState<string | null>(null);
 
   const handleSaveSettings = async () => {
-    if (fromLanguage && toLanguage && level) {
-      const settings = { fromLanguage: fromLanguage.toLowerCase(), toLanguage: toLanguage.toLowerCase(), level: level.toLowerCase() };
-      await AsyncStorage.setItem(LANGUAGE_KEY, JSON.stringify(settings));
+    if (learningLanguage && knownLanguage && level) {
+      const settings = {
+        learningLanguage: learningLanguage.toLowerCase(),
+        knownLanguage: knownLanguage.toLowerCase(),
+        level: level.toLowerCase(),
+      };
+      await setLanguageSettings(settings);
       setSettings(settings);
       navigation.navigate('Main');
     }
@@ -29,128 +35,60 @@ const WelcomeScreen: React.FC = () => {
 
   const showConfirmation = () => {
     Alert.alert(
-      "Confirm Selection",
-      "Are you sure you want to save these settings?",
+      'Confirm Selection',
+      'Are you sure you want to save these settings?',
       [
-        {
-          text: "Cancel",
-          style: "cancel"
-        },
-        {
-          text: "OK",
-          onPress: handleSaveSettings
-        }
+        { text: 'Cancel', style: 'cancel' },
+        { text: 'OK', onPress: handleSaveSettings },
       ],
-      { cancelable: false }
+      { cancelable: false },
     );
   };
 
   useEffect(() => {
-    if (fromLanguage && toLanguage && level) {
+    if (learningLanguage && knownLanguage && level) {
       showConfirmation();
     }
-  }, [fromLanguage, toLanguage, level]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [learningLanguage, knownLanguage, level]);
 
-  const filteredToLanguages = fromLanguage ? availableCombinations[fromLanguage] : [];
+  const headerEntering = reducedMotion
+    ? FadeIn.duration(duration.base)
+    : FadeInDown.duration(duration.slow).easing(Easing.bezier(0.23, 1, 0.32, 1).factory());
 
   return (
-    <SafeAreaView style={[styles.container, { backgroundColor: theme.background }]}>
-      <ScrollView contentContainerStyle={styles.contentContainer}>
-        <Text style={[styles.title, { color: theme.text }]}>Welcome! Set your initial preferences</Text>
+    <SafeAreaView className="flex-1 bg-bg">
+      <ScreenContainer scroll>
+        <Animated.View entering={headerEntering} className="mb-8 mt-4">
+          <Text className="font-sans text-sm uppercase tracking-[2px] text-accent">
+            Welcome
+          </Text>
+          <Text className="mt-2 font-display-semibold text-4xl leading-[42px] text-ink">
+            Let's set up your{'\n'}vocabulary journey
+          </Text>
+          <Text className="mt-3 font-sans text-base leading-6 text-ink-muted">
+            Choose what you want to learn and where you're starting from.
+          </Text>
+        </Animated.View>
 
-        <Text style={[styles.title, { color: theme.text }]}>I want to learn</Text>
-        <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
-          {languages
-            .filter(language => availableCombinations[language].length > 0)
-            .map(language => (
-              <TouchableOpacity
-                key={language}
-                style={[styles.item, { borderBottomColor: theme.border }]}
-                onPress={() => {
-                  setFromLanguage(language);
-                  setToLanguage(null);
-                  setLevel(null);
-                }}
-              >
-                <Text style={[styles.text, { color: theme.text }]}>
-                  {language} {fromLanguage === language && '✓'}
-                </Text>
-              </TouchableOpacity>
-            ))}
-        </View>
-
-        {fromLanguage && (
-          <>
-            <Text style={[styles.title, { color: theme.text }]}>From</Text>
-            <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
-              {filteredToLanguages.map(language => (
-                <TouchableOpacity
-                  key={language}
-                  style={[styles.item, { borderBottomColor: theme.border }]}
-                  onPress={() => {
-                    setToLanguage(language);
-                    setLevel(null); // Reset level when toLanguage changes
-                  }}
-                >
-                  <Text style={[styles.text, { color: theme.text }]}>
-                    {language} {toLanguage === language && '✓'}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </>
-        )}
-
-        {toLanguage && (
-          <>
-            <Text style={[styles.title, { color: theme.text }]}>Level</Text>
-            <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
-              {levels.map(levelOption => (
-                <TouchableOpacity
-                  key={levelOption}
-                  style={[styles.item, { borderBottomColor: theme.border }]}
-                  onPress={() => setLevel(levelOption)}
-                >
-                  <Text style={[styles.text, { color: theme.text }]}>
-                    {levelOption} {level === levelOption && '✓'}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </>
-        )}
-      </ScrollView>
+        <LanguageSelector
+          learningLanguage={learningLanguage}
+          knownLanguage={knownLanguage}
+          level={level}
+          onSelectLearning={(language) => {
+            setLearningLanguage(language);
+            setKnownLanguage(null);
+            setLevel(null);
+          }}
+          onSelectKnown={(language) => {
+            setKnownLanguage(language);
+            setLevel(null);
+          }}
+          onSelectLevel={setLevel}
+        />
+      </ScreenContainer>
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  contentContainer: {
-    flexGrow: 1,
-    padding: 10,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginVertical: 10,
-    marginHorizontal: 20,
-  },
-  section: {
-    marginVertical: 10,
-    borderRadius: 10,
-    borderWidth: 1,
-  },
-  item: {
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    borderBottomWidth: 1,
-  },
-  text: {
-    fontSize: 18,
-  },
-});
 
 export default WelcomeScreen;

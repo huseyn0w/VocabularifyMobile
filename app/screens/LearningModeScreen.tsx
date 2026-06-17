@@ -1,87 +1,47 @@
-import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Linking } from 'react-native';
-import { StackNavigationProp } from '@react-navigation/stack';
-import { SettingsStackParamList } from '../utils/types';
-import { useThemeContext } from '../context/ThemeContext';
+import React from 'react';
+import { View, Text } from 'react-native';
+import { LearningMode } from '../utils/types';
 import { useLanguageContext } from '../context/LanguageContext';
-import { PAYPAY_DONATION_URL } from '../utils/constants';
+import ScreenContainer from '../components/ScreenContainer';
+import Section from '../components/Section';
+import ListRow from '../components/ListRow';
 
-type LearningModeScreenNavigationProp = StackNavigationProp<
-  SettingsStackParamList,
-  'LearningModeScreen'
->;
+const OPTIONS: { mode: LearningMode; title: string; subtitle: string }[] = [
+  {
+    mode: LearningMode.ShowBoth,
+    title: 'Word and translation',
+    subtitle: 'Show both at the same time.',
+  },
+  {
+    mode: LearningMode.ShowWordThenTranslation,
+    title: 'Word first, then translation',
+    subtitle: 'Reveal the translation after a short pause.',
+  },
+];
 
-type Props = {
-  navigation: LearningModeScreenNavigationProp;
-};
-
-const LearningModeScreen: React.FC<Props> = ({ navigation }) => {
-  const { theme } = useThemeContext();
+const LearningModeScreen: React.FC = () => {
   const { mode, setMode } = useLanguageContext();
 
-  const handleModeSelect = async (selectedMode: string) => {
-    setMode(selectedMode);
-  };
-
-  const handleDonatePress = () => {
-    Linking.openURL(PAYPAY_DONATION_URL);
-  };
-
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
-      <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
-        <TouchableOpacity
-          style={[styles.item, { borderBottomColor: theme.border }]}
-          onPress={() => handleModeSelect('showBoth')}
-        >
-          <Text style={[styles.text, { color: theme.text }]}>
-            Show Word and Translation Together {mode === 'showBoth' && '✓'}
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.item, { borderBottomColor: theme.border }]}
-          onPress={() => handleModeSelect('showWordThenTranslation')}
-        >
-          <Text style={[styles.text, { color: theme.text }]}>
-            Show Word First, Then Translation {mode === 'showWordThenTranslation' && '✓'}
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <TouchableOpacity style={styles.donateButton} onPress={handleDonatePress}>
-        <Image source={require('../../assets/images/paypal_donate.png')} style={styles.donateImage} />
-      </TouchableOpacity>
-    </View>
+    <ScreenContainer scroll>
+      <Section title="Learning mode" index={0}>
+        {OPTIONS.map((option, i) => (
+          <ListRow
+            key={option.mode}
+            selected={mode === option.mode}
+            isLast={i === OPTIONS.length - 1}
+            onPress={() => setMode(option.mode)}
+            label={
+              <View>
+                <Text className="font-medium text-base text-ink">{option.title}</Text>
+                <Text className="mt-1 font-sans text-sm text-ink-muted">{option.subtitle}</Text>
+              </View>
+            }
+          />
+        ))}
+      </Section>
+    </ScreenContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 5,
-  },
-  section: {
-    borderRadius: 10,
-    borderWidth: 1,
-  },
-  item: {
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    borderBottomWidth: 1,
-  },
-  text: {
-    fontSize: 18,
-  },
-  donateButton: {
-    position: 'absolute',
-    bottom: 20,
-    left: 0,
-    right: 0,
-    alignItems: 'center',
-  },
-  donateImage: {
-    width: 200,
-    height: 50,
-  },
-});
 
 export default LearningModeScreen;

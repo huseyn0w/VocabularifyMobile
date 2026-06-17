@@ -1,9 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Linking } from 'react-native';
+import { Text } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { SettingsStackParamList } from '../utils/types';
-import { useThemeContext } from '../context/ThemeContext';
-import { PAYPAY_DONATION_URL } from '../utils/constants'
+import { PAYPAY_DONATION_URL } from '../utils/constants';
+import ScreenContainer from '../components/ScreenContainer';
+import Section from '../components/Section';
+import ListRow from '../components/ListRow';
+import LinkRow from '../components/LinkRow';
 
 type SettingsScreenNavigationProp = StackNavigationProp<
   SettingsStackParamList,
@@ -14,64 +17,37 @@ type Props = {
   navigation: SettingsScreenNavigationProp;
 };
 
-const SettingsScreen: React.FC<Props> = ({ navigation }) => {
-  const { theme } = useThemeContext();
+const SettingsScreen: React.FC<Props> = ({ navigation }) => (
+  <ScreenContainer scroll>
+    <Section title="Preferences" index={0}>
+      <ListRow
+        label="Learning Mode"
+        chevron
+        onPress={() => navigation.navigate('LearningModeScreen')}
+      />
+      <ListRow
+        label="Language settings"
+        chevron
+        onPress={() => navigation.navigate('LanguageSettingsScreen')}
+      />
+      <ListRow
+        label="Background"
+        chevron
+        onPress={() => navigation.navigate('BackgroundScreen')}
+      />
+      <ListRow
+        label="About"
+        chevron
+        isLast
+        onPress={() => navigation.navigate('AboutScreen')}
+      />
+    </Section>
 
-  const handleDonatePress = () => {
-    Linking.openURL(PAYPAY_DONATION_URL);
-  };
-
-  return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
-      <View style={[styles.section, { backgroundColor: theme.sectionBackground, borderColor: theme.border }]}>
-        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('LearningModeScreen')}>
-          <Text style={[styles.text, { color: theme.text }]}>Learning Mode</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('LanguageSettingsScreen')}>
-          <Text style={[styles.text, { color: theme.text }]}>Language settings</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('BackgroundScreen')}>
-          <Text style={[styles.text, { color: theme.text }]}>Background</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.item, { borderBottomColor: theme.border }]} onPress={() => navigation.navigate('AboutScreen')}>
-          <Text style={[styles.text, { color: theme.text }]}>About</Text>
-        </TouchableOpacity>
-      </View>
-      <TouchableOpacity style={styles.donateButton} onPress={handleDonatePress}>
-        <Image source={require('../../assets/images/paypal_donate.png')} style={styles.donateImage} />
-      </TouchableOpacity>
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 5,
-  },
-  section: {
-    borderRadius: 10,
-    borderWidth: 1,
-  },
-  item: {
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    borderBottomWidth: 1,
-  },
-  text: {
-    fontSize: 18,
-  },
-  donateButton: {
-    position: 'absolute',
-    bottom: 20,
-    left: 0,
-    right: 0,
-    alignItems: 'center',
-  },
-  donateImage: {
-    width: 200,
-    height: 50,
-  },
-});
+    <Text className="mb-2.5 ml-1 font-semibold text-xs uppercase tracking-[1.5px] text-ink-subtle">
+      Support
+    </Text>
+    <LinkRow url={PAYPAY_DONATION_URL} label="Donate via PayPal" icon="heart-outline" />
+  </ScreenContainer>
+);
 
 export default SettingsScreen;
