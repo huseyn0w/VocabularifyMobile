@@ -12,18 +12,10 @@ export type RootStackParamList = {
   Main: undefined;
 };
 
-export type Language = typeof languages[number];
-
-export const languages = ['English', 'German', 'Russian', 'French'] as const;
-
-export const levels = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
-
-export const availableCombinations: Record<Language, Language[]> = {
-  English: ['German', 'French', 'Russian'],
-  German: ['English', 'Russian'],
-  Russian: [],
-  French: ['English'],
-};
+// Language list, levels, available pairs and per-language metadata are generated
+// from the on-disk languages/ tree — see scripts/generate-language-map.js.
+export type { Language, LanguageMeta } from './languageData';
+export { languages, levels, availableCombinations, LANGUAGE_META } from './languageData';
 
 /**
  * A single flashcard entry as stored in the language JSON files.
