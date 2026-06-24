@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-env node */
 'use strict';
 /**
  * Generates Mobile's static language artifacts from the on-disk languages/ tree.
