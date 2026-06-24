@@ -56,10 +56,10 @@ Navigation tree:
 
 ## Adding a language pair or level
 
-Three places must stay in sync:
-1. Add the JSON file at `languages/<learning>/<known>/<level>.json` (array of `{ "word_1": "...", "word_2": "..." }`).
-2. Register it in the lookup map in `app/utils/loadLanguageFile.ts` (the static `require` is what bundles it).
-3. Update `availableCombinations` (and `languages` / `levels` if new) in `app/utils/types.ts`.
+The static require map and language metadata are **generated**, not hand-edited:
+1. Add the JSON file at `languages/<learning>/<known>/<level>.json` (array of `{ "word_1": "...", "word_2": "..." }`), using the 2-letter code dirs (`en`, `de`, …).
+2. Run `npm run generate:languages`. This scans `languages/` and regenerates `app/utils/loadLanguageFile.ts` (the static `require` map Metro bundles) and `app/utils/languageData.ts` (`languages` / `levels` / `availableCombinations` / `LANGUAGE_META`). Both files carry a `DO NOT EDIT` header — never hand-edit them; `app/utils/types.ts` re-exports the data from `languageData.ts`.
+3. The generator's `META` map (`scripts/generate-language-map.js`) is the single source of truth for code↔name↔flag and mirrors Desktop's `LANGUAGE_META`; add a new language there first. Commit the regenerated output. The parity guard test (`__tests__/unit/languageParity.test.ts`) verifies every pair resolves to a real on-disk file.
 
 ## Testing
 
