@@ -38,24 +38,26 @@ describe('LanguageSettingsScreen', () => {
   it('selecting a learning language reveals the matching known-language options', async () => {
     renderWithProviders(<LanguageSettingsScreen />);
     // Default settings start with english/german/a1 already populated, so the
-    // "From" section shows English's combinations: German, French, Russian.
+    // "From" section shows English's known options (every other language, since
+    // the full matrix makes any language learnable from any other). Rows render
+    // as "<flag> <name>".
     await screen.findByText('I want to learn');
     expect(screen.getByText('From')).toBeTruthy();
-    // French appears twice: once in the learn list and once as a known option
+    // Russian appears twice: once in the learn list and once as a known option
     // for English.
-    expect(screen.getAllByText('French')).toHaveLength(2);
+    expect(screen.getAllByText('🇷🇺 Russian')).toHaveLength(2);
 
-    // Switch the learning language to German -> known options become English +
-    // Russian only (no French). French should now appear only in the learn list,
-    // not as a known option. German appears twice (learn list + currently
-    // selected known option); the first occurrence is the learn-list row.
-    fireEvent.press(screen.getAllByText('German')[0]);
+    // Switch the learning language to Russian (press its learn-list row, the
+    // first occurrence) -> known options become every language EXCEPT Russian.
+    // Russian then appears only in the learn list (a language is never a known
+    // option of itself), and English becomes a selectable known option.
+    fireEvent.press(screen.getAllByText('🇷🇺 Russian')[0]);
 
     await waitFor(() => {
-      expect(screen.getByText('Russian')).toBeTruthy();
-      // French is no longer a known option (German -> [English, Russian]); it
-      // only remains in the learn list, so exactly one occurrence.
-      expect(screen.getAllByText('French')).toHaveLength(1);
+      // English is now a known option for Russian: learn list + known option.
+      expect(screen.getAllByText('🇬🇧 English')).toHaveLength(2);
+      // Russian is no longer a known option of itself; only the learn-list row.
+      expect(screen.getAllByText('🇷🇺 Russian')).toHaveLength(1);
     });
   });
 
@@ -83,7 +85,7 @@ describe('WelcomeScreen via LanguageSelector', () => {
 
     // At this point the only rows on screen are the learn list, so "English"
     // is unambiguous. Pick it -> the "From" section appears.
-    fireEvent.press(screen.getByText('English'));
+    fireEvent.press(screen.getByText('🇬🇧 English'));
 
     const fromHeader = await screen.findByText('From');
     expect(fromHeader).toBeTruthy();
@@ -91,7 +93,7 @@ describe('WelcomeScreen via LanguageSelector', () => {
     // Pick a known language -> "Level" section appears. German appears in both
     // the learn list and the "From" options; the last occurrence is the known
     // option in the "From" section.
-    const germanRows = screen.getAllByText('German');
+    const germanRows = screen.getAllByText('🇩🇪 German');
     fireEvent.press(germanRows[germanRows.length - 1]);
     expect(await screen.findByText('Level')).toBeTruthy();
     expect(screen.getByText('A1')).toBeTruthy();

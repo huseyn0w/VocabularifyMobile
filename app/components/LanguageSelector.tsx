@@ -1,5 +1,5 @@
 import React from 'react';
-import { Language, availableCombinations, languages, levels } from '../utils/types';
+import { Language, LANGUAGE_META, availableCombinations, languages, levels } from '../utils/types';
 import Section from './Section';
 import SelectableRow from './SelectableRow';
 
@@ -17,6 +17,9 @@ interface LanguageSelectorProps {
 
 const matchesLanguage = (selected: string | null, option: Language): boolean =>
   selected != null && selected.toLowerCase() === option.toLowerCase();
+
+const languageLabel = (language: Language): string =>
+  `${LANGUAGE_META[language].flag} ${language}`;
 
 const toLanguageKey = (selected: string | null): Language | null => {
   if (!selected) return null;
@@ -52,7 +55,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         {learnableLanguages.map((language, i) => (
           <SelectableRow
             key={language}
-            label={language}
+            label={languageLabel(language)}
             selected={matchesLanguage(learningLanguage, language)}
             onPress={() => onSelectLearning(language)}
             isLast={i === learnableLanguages.length - 1}
@@ -65,7 +68,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
           {knownOptions.map((language, i) => (
             <SelectableRow
               key={language}
-              label={language}
+              label={languageLabel(language)}
               selected={matchesLanguage(knownLanguage, language)}
               onPress={() => onSelectKnown(language)}
               isLast={i === knownOptions.length - 1}
