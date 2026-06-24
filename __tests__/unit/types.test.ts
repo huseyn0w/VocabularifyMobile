@@ -15,7 +15,9 @@ describe('LearningMode constants', () => {
 
 describe('language metadata', () => {
   it('lists the supported languages and levels', () => {
-    expect(languages).toEqual(['English', 'German', 'Russian', 'French']);
+    expect([...languages].sort()).toEqual([
+      'English', 'French', 'German', 'Italian', 'Russian', 'Spanish', 'Turkish',
+    ]);
     expect(levels).toEqual(['A1', 'A2', 'B1', 'B2', 'C1']);
   });
 
