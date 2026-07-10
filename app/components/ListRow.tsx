@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react';
-import { View, Text } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import PressableScale from './PressableScale';
-import { useThemeColors } from '../hooks/useThemeColors';
+import React, { ReactNode } from "react";
+import { View, Text } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import PressableScale from "./PressableScale";
+import { useThemeColors } from "../hooks/useThemeColors";
 
 interface ListRowProps {
   label: ReactNode;
@@ -20,7 +20,7 @@ interface ListRowProps {
 /**
  * Pressable row inside a `Section`. Generous touch target, hairline divider
  * between rows, and a subtle press-scale. Trailing slot resolves to a custom
- * node, an accent checkmark (selected), or a chevron (chevron) — in that order.
+ * node, an accent checkmark (selected), or a chevron (chevron) - in that order.
  */
 const ListRow: React.FC<ListRowProps> = ({
   label,
@@ -44,11 +44,13 @@ const ListRow: React.FC<ListRowProps> = ({
     <PressableScale onPress={onPress} disabled={!onPress}>
       <View
         className={`min-h-[56px] flex-row items-center justify-between px-4 py-3.5 ${
-          isLast ? '' : 'border-b border-border'
+          isLast ? "" : "border-b border-border"
         }`}
       >
-        {typeof label === 'string' ? (
-          <Text className="flex-1 pr-3 font-medium text-base text-ink">{label}</Text>
+        {typeof label === "string" ? (
+          <Text className="flex-1 pr-3 font-medium text-base text-ink">
+            {label}
+          </Text>
         ) : (
           <View className="flex-1 pr-3">{label}</View>
         )}

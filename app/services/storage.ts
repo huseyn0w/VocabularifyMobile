@@ -1,54 +1,54 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   LanguageSettings,
   LegacyLanguageSettings,
   LearningMode,
-} from '../utils/types';
-import { DEFAULT_FREQUENCY } from '../utils/constants';
+} from "../utils/types";
+import { DEFAULT_FREQUENCY } from "../utils/constants";
 
 /**
  * Centralized, typed wrapper around AsyncStorage.
  *
  * All keys live here. Every getter validates the stored value at runtime and
- * falls back to a typed default — stored JSON is never trusted blindly, so
+ * falls back to a typed default - stored JSON is never trusted blindly, so
  * malformed or stale data can't crash the app.
  */
 
 export const STORAGE_KEYS = {
-  language: 'languageSettings',
-  lastIndex: 'lastWordIndex',
-  mode: 'learningMode',
-  frequency: 'WORDS_FREQUENCY',
-  theme: 'theme',
+  language: "languageSettings",
+  lastIndex: "lastWordIndex",
+  mode: "learningMode",
+  frequency: "WORDS_FREQUENCY",
+  theme: "theme",
 } as const;
 
 export const DEFAULT_LANGUAGE_SETTINGS: LanguageSettings = {
-  learningLanguage: 'english',
-  knownLanguage: 'german',
-  level: 'a1',
+  learningLanguage: "english",
+  knownLanguage: "german",
+  level: "a1",
 };
 
 // --- type guards -----------------------------------------------------------
 
 function isObject(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null;
+  return typeof value === "object" && value !== null;
 }
 
 function isNewSettings(value: unknown): value is LanguageSettings {
   return (
     isObject(value) &&
-    typeof value.learningLanguage === 'string' &&
-    typeof value.knownLanguage === 'string' &&
-    typeof value.level === 'string'
+    typeof value.learningLanguage === "string" &&
+    typeof value.knownLanguage === "string" &&
+    typeof value.level === "string"
   );
 }
 
 function isLegacySettings(value: unknown): value is LegacyLanguageSettings {
   return (
     isObject(value) &&
-    typeof value.fromLanguage === 'string' &&
-    typeof value.toLanguage === 'string' &&
-    typeof value.level === 'string'
+    typeof value.fromLanguage === "string" &&
+    typeof value.toLanguage === "string" &&
+    typeof value.level === "string"
   );
 }
 
@@ -137,7 +137,7 @@ export async function hasLanguageSettings(): Promise<boolean> {
 
 export async function getLastIndex(): Promise<number> {
   const value = await readJSON(STORAGE_KEYS.lastIndex);
-  return typeof value === 'number' && Number.isFinite(value) && value >= 0
+  return typeof value === "number" && Number.isFinite(value) && value >= 0
     ? Math.floor(value)
     : 0;
 }
@@ -171,7 +171,7 @@ export async function setMode(mode: LearningMode): Promise<void> {
 
 export async function getFrequency(): Promise<number> {
   const value = await readJSON(STORAGE_KEYS.frequency);
-  return typeof value === 'number' && Number.isFinite(value) && value > 0
+  return typeof value === "number" && Number.isFinite(value) && value > 0
     ? value
     : DEFAULT_FREQUENCY;
 }
@@ -182,13 +182,11 @@ export async function setFrequency(frequency: number): Promise<void> {
 
 // --- theme -----------------------------------------------------------------
 
-export type ThemeType = 'light' | 'dark' | 'system';
+export type ThemeType = "light" | "dark" | "system";
 
 export async function getTheme(): Promise<ThemeType> {
   const raw = await AsyncStorage.getItem(STORAGE_KEYS.theme);
-  return raw === 'light' || raw === 'dark' || raw === 'system'
-    ? raw
-    : 'system';
+  return raw === "light" || raw === "dark" || raw === "system" ? raw : "system";
 }
 
 export async function setTheme(theme: ThemeType): Promise<void> {

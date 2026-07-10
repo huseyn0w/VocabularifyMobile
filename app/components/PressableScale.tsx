@@ -1,13 +1,13 @@
-import React, { ReactNode } from 'react';
-import { Pressable, PressableProps, ViewStyle, StyleProp } from 'react-native';
+import React, { ReactNode } from "react";
+import { Pressable, PressableProps, ViewStyle, StyleProp } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   Easing,
   useReducedMotion,
-} from 'react-native-reanimated';
-import { duration } from '../theme/tokens';
+} from "react-native-reanimated";
+import { duration } from "../theme/tokens";
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
@@ -23,7 +23,7 @@ interface PressableScaleProps extends PressableProps {
  * Reusable pressable that gives subtle, restrained press feedback: a quick
  * scale-down to ~0.97 on press-in and an ease-out settle on release.
  *
- * Respects reduced-motion — when enabled, the scale transform is skipped and
+ * Respects reduced-motion - when enabled, the scale transform is skipped and
  * only the standard pressable behavior remains.
  */
 const PressableScale: React.FC<PressableScaleProps> = ({

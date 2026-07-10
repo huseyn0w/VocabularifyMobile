@@ -1,4 +1,4 @@
-# Privacy Policy — Vocabularify
+# Privacy Policy - Vocabularify
 
 _Last updated: 2026-06-17_
 

@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import { View, Text, Dimensions, ActivityIndicator } from 'react-native';
+import React, { useEffect } from "react";
+import { View, Text, Dimensions, ActivityIndicator } from "react-native";
 import {
   PanGestureHandler,
   PanGestureHandlerGestureEvent,
   State,
   GestureHandlerRootView,
-} from 'react-native-gesture-handler';
+} from "react-native-gesture-handler";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -16,19 +16,19 @@ import Animated, {
   Extrapolation,
   Easing,
   useReducedMotion,
-} from 'react-native-reanimated';
-import { useLanguageContext } from '../context/LanguageContext';
-import { useThemeColors } from '../hooks/useThemeColors';
-import { useWordList } from '../hooks/useWordList';
-import { useFlashcardDeck } from '../hooks/useFlashcardDeck';
-import ProgressBar from '../components/ProgressBar';
-import { duration, letterSpacing, shadow } from '../theme/tokens';
+} from "react-native-reanimated";
+import { useLanguageContext } from "../context/LanguageContext";
+import { useThemeColors } from "../hooks/useThemeColors";
+import { useWordList } from "../hooks/useWordList";
+import { useFlashcardDeck } from "../hooks/useFlashcardDeck";
+import ProgressBar from "../components/ProgressBar";
+import { duration, letterSpacing, shadow } from "../theme/tokens";
 
-const { width } = Dimensions.get('window');
+const { width } = Dimensions.get("window");
 const SWIPE_THRESHOLD = 0.25 * width;
 const CARD_WIDTH = width * 0.84;
 
-const pad = (n: number) => String(n).padStart(2, '0');
+const pad = (n: number) => String(n).padStart(2, "0");
 
 const HomeScreen: React.FC = () => {
   const colors = useThemeColors();
@@ -48,10 +48,13 @@ const HomeScreen: React.FC = () => {
   useEffect(() => {
     mounted.value = reducedMotion
       ? 1
-      : withTiming(1, { duration: duration.slower, easing: Easing.bezier(0.23, 1, 0.32, 1) });
+      : withTiming(1, {
+          duration: duration.slower,
+          easing: Easing.bezier(0.23, 1, 0.32, 1),
+        });
   }, [reducedMotion, mounted]);
 
-  // Tasteful translation reveal — fades/slides in when showTranslation flips.
+  // Tasteful translation reveal - fades/slides in when showTranslation flips.
   const revealProgress = useSharedValue(showTranslation ? 1 : 0);
   useEffect(() => {
     if (reducedMotion) {
@@ -86,7 +89,11 @@ const HomeScreen: React.FC = () => {
         velocity: event.nativeEvent.velocityX,
       };
       translateX.value = withSpring(0, springConfig);
-      translateY.value = withSpring(0, { damping: 18, stiffness: 180, mass: 0.6 });
+      translateY.value = withSpring(0, {
+        damping: 18,
+        stiffness: 180,
+        mass: 0.6,
+      });
       rotate.value = withSpring(0, { damping: 18, stiffness: 180 });
     }
   };
@@ -98,7 +105,12 @@ const HomeScreen: React.FC = () => {
       [0.35, 1, 0.35],
       Extrapolation.CLAMP,
     );
-    const mountScale = interpolate(mounted.value, [0, 1], [0.96, 1], Extrapolation.CLAMP);
+    const mountScale = interpolate(
+      mounted.value,
+      [0, 1],
+      [0.96, 1],
+      Extrapolation.CLAMP,
+    );
     return {
       transform: [
         { translateX: translateX.value },
@@ -116,7 +128,12 @@ const HomeScreen: React.FC = () => {
       {
         translateY: reducedMotion
           ? 0
-          : interpolate(revealProgress.value, [0, 1], [8, 0], Extrapolation.CLAMP),
+          : interpolate(
+              revealProgress.value,
+              [0, 1],
+              [8, 0],
+              Extrapolation.CLAMP,
+            ),
       },
     ],
   }));
@@ -132,7 +149,9 @@ const HomeScreen: React.FC = () => {
   if (total === 0) {
     return (
       <View className="flex-1 items-center justify-center bg-bg px-8">
-        <Text className="text-center font-display text-2xl text-ink">No words available</Text>
+        <Text className="text-center font-display text-2xl text-ink">
+          No words available
+        </Text>
         <Text className="mt-2 text-center font-sans text-base text-ink-muted">
           Choose a language pair in Settings to begin.
         </Text>
@@ -185,10 +204,14 @@ const HomeScreen: React.FC = () => {
         <View className="absolute inset-x-0 bottom-14 items-center px-8">
           <View
             className="mb-3 flex-row items-baseline self-stretch justify-between"
-            style={{ width: CARD_WIDTH, alignSelf: 'center' }}
+            style={{ width: CARD_WIDTH, alignSelf: "center" }}
           >
-            <Text className="font-semibold text-base text-ink">{pad(currentIndex + 1)}</Text>
-            <Text className="font-medium text-sm text-ink-subtle">{pad(total)}</Text>
+            <Text className="font-semibold text-base text-ink">
+              {pad(currentIndex + 1)}
+            </Text>
+            <Text className="font-medium text-sm text-ink-subtle">
+              {pad(total)}
+            </Text>
           </View>
           <ProgressBar progress={progress} style={{ width: CARD_WIDTH }} />
           <Text className="mt-6 font-sans text-sm tracking-[0.3px] text-ink-subtle">

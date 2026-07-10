@@ -1,5 +1,5 @@
 /**
- * Design tokens — single source of truth for the Vocabularify "midnight gallery" system.
+ * Design tokens - single source of truth for the Vocabularify "midnight gallery" system.
  *
  * These raw values mirror the CSS variables defined in `global.css` and the
  * Tailwind theme in `tailwind.config.js`. Use these constants from non-className
@@ -9,7 +9,7 @@
  * Palette rationale:
  *  - Dark is the signature: a near-black "gallery at night" surface that reads
  *    expensive and lets the typography and one jewel accent carry the identity.
- *  - The accent is a brushed brass (deep bronze in light mode) — a single,
+ *  - The accent is a brushed brass (deep bronze in light mode) - a single,
  *    metallic jewel tone used sparingly (primary actions, active tab, the
  *    flashcard's progress + glow). Never a fill across large areas.
  *  - Light mode is a true-neutral gallery white (deliberately NOT a warm cream),
@@ -18,64 +18,64 @@
 
 export const palette = {
   light: {
-    /** Gallery white — true neutral, no warm tint. */
-    bg: '#FAFAF9',
+    /** Gallery white - true neutral, no warm tint. */
+    bg: "#FAFAF9",
     /** Slightly raised surface (sheets, grouped sections). */
-    surface: '#FFFFFF',
+    surface: "#FFFFFF",
     /** Cards / elevated surfaces. */
-    card: '#FFFFFF',
+    card: "#FFFFFF",
     /** Higher elevation (popovers, pressed cards). */
-    elevated: '#FFFFFF',
+    elevated: "#FFFFFF",
     /** Hairline borders / dividers. */
-    border: '#E7E6E3',
-    /** Primary text — near-black. */
-    ink: '#16151A',
+    border: "#E7E6E3",
+    /** Primary text - near-black. */
+    ink: "#16151A",
     /** Secondary / muted text. */
-    inkMuted: '#5E5C66',
+    inkMuted: "#5E5C66",
     /** Tertiary text (captions, disabled). */
-    inkSubtle: '#8E8C95',
-    /** Single jewel accent — deep bronze (the brass, darkened for light surfaces). */
-    accent: '#8A6D28',
+    inkSubtle: "#8E8C95",
+    /** Single jewel accent - deep bronze (the brass, darkened for light surfaces). */
+    accent: "#8A6D28",
     /** Soft accent for glows / tints (low-opacity brass). */
-    accentSoft: '#C9A24B',
+    accentSoft: "#C9A24B",
     /** Text/icon color that sits on top of the accent. */
-    accentForeground: '#FAFAF9',
+    accentForeground: "#FAFAF9",
   },
   dark: {
-    /** Midnight-gallery background — near-black. */
-    bg: '#0B0B0D',
+    /** Midnight-gallery background - near-black. */
+    bg: "#0B0B0D",
     /** Raised surface. */
-    surface: '#141417',
+    surface: "#141417",
     /** Cards / elevated surfaces (lighter than bg for elevation in the dark). */
-    card: '#17171B',
+    card: "#17171B",
     /** Higher elevation. */
-    elevated: '#1F1F24',
+    elevated: "#1F1F24",
     /** Hairline borders / dividers. */
-    border: '#2D2D34',
-    /** Primary text — warm off-white. */
-    ink: '#F2EFE8',
+    border: "#2D2D34",
+    /** Primary text - warm off-white. */
+    ink: "#F2EFE8",
     /** Secondary / muted text. */
-    inkMuted: '#9F9A91',
+    inkMuted: "#9F9A91",
     /** Tertiary text. */
-    inkSubtle: '#706C64',
-    /** Accent — brushed brass. */
-    accent: '#C9A24B',
+    inkSubtle: "#706C64",
+    /** Accent - brushed brass. */
+    accent: "#C9A24B",
     /** Soft accent for glows / tints. */
-    accentSoft: '#C9A24B',
-    accentForeground: '#1A1505',
+    accentSoft: "#C9A24B",
+    accentForeground: "#1A1505",
   },
 } as const;
 
 export const fontFamily = {
   /** Refined geometric grotesk for all UI text. */
-  sans: 'PlusJakartaSans_400Regular',
-  sansMedium: 'PlusJakartaSans_500Medium',
-  sansSemibold: 'PlusJakartaSans_600SemiBold',
-  sansBold: 'PlusJakartaSans_700Bold',
+  sans: "PlusJakartaSans_400Regular",
+  sansMedium: "PlusJakartaSans_500Medium",
+  sansSemibold: "PlusJakartaSans_600SemiBold",
+  sansBold: "PlusJakartaSans_700Bold",
   /** Old-style soft-serif display, used for the flashcard word. */
-  display: 'Fraunces_500Medium',
-  displaySemibold: 'Fraunces_600SemiBold',
-  displayBold: 'Fraunces_700Bold',
+  display: "Fraunces_500Medium",
+  displaySemibold: "Fraunces_600SemiBold",
+  displayBold: "Fraunces_700Bold",
 } as const;
 
 /** Type scale (px). */
@@ -85,14 +85,14 @@ export const fontSize = {
   base: 16,
   lg: 18,
   xl: 20,
-  '2xl': 24,
-  '3xl': 30,
-  '4xl': 36,
-  '5xl': 48,
-  '6xl': 60,
+  "2xl": 24,
+  "3xl": 30,
+  "4xl": 36,
+  "5xl": 48,
+  "6xl": 60,
 } as const;
 
-/** Spacing scale (px) — 4pt base. */
+/** Spacing scale (px) - 4pt base. */
 export const spacing = {
   px: 1,
   0.5: 2,
@@ -114,7 +114,7 @@ export const radii = {
   md: 12,
   lg: 16,
   xl: 20,
-  '2xl': 28,
+  "2xl": 28,
   full: 9999,
 } as const;
 
@@ -152,33 +152,33 @@ export const easing = {
 export const shadow = {
   sm: {
     native: {
-      shadowColor: '#000000',
+      shadowColor: "#000000",
       shadowOffset: { width: 0, height: 1 },
       shadowOpacity: 0.06,
       shadowRadius: 2,
       elevation: 1,
     },
-    web: '0 1px 2px rgba(0, 0, 0, 0.06)',
+    web: "0 1px 2px rgba(0, 0, 0, 0.06)",
   },
   md: {
     native: {
-      shadowColor: '#000000',
+      shadowColor: "#000000",
       shadowOffset: { width: 0, height: 4 },
       shadowOpacity: 0.1,
       shadowRadius: 14,
       elevation: 4,
     },
-    web: '0 4px 14px rgba(0, 0, 0, 0.1)',
+    web: "0 4px 14px rgba(0, 0, 0, 0.1)",
   },
   lg: {
     native: {
-      shadowColor: '#000000',
+      shadowColor: "#000000",
       shadowOffset: { width: 0, height: 16 },
       shadowOpacity: 0.16,
       shadowRadius: 32,
       elevation: 14,
     },
-    web: '0 16px 32px rgba(0, 0, 0, 0.16)',
+    web: "0 16px 32px rgba(0, 0, 0, 0.16)",
   },
   /**
    * Brass halo for the flashcard hero. Uses the soft-accent color so it reads as

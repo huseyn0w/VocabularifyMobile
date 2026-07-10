@@ -1,17 +1,24 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import Animated, { FadeInDown, FadeIn, Easing, useReducedMotion } from 'react-native-reanimated';
-import { PAYPAY_DONATION_URL } from '../utils/constants';
-import { duration, letterSpacing } from '../theme/tokens';
-import ScreenContainer from '../components/ScreenContainer';
-import LinkRow from '../components/LinkRow';
+import React from "react";
+import { View, Text } from "react-native";
+import Animated, {
+  FadeInDown,
+  FadeIn,
+  Easing,
+  useReducedMotion,
+} from "react-native-reanimated";
+import { PAYPAY_DONATION_URL } from "../utils/constants";
+import { duration, letterSpacing } from "../theme/tokens";
+import ScreenContainer from "../components/ScreenContainer";
+import LinkRow from "../components/LinkRow";
 
 const AboutScreen: React.FC = () => {
   const reducedMotion = useReducedMotion();
 
   const entering = reducedMotion
     ? FadeIn.duration(duration.base)
-    : FadeInDown.duration(duration.slow).easing(Easing.bezier(0.23, 1, 0.32, 1).factory());
+    : FadeInDown.duration(duration.slow).easing(
+        Easing.bezier(0.23, 1, 0.32, 1).factory(),
+      );
 
   return (
     <ScreenContainer scroll>
@@ -23,7 +30,8 @@ const AboutScreen: React.FC = () => {
           Vocabularify
         </Text>
         <Text className="mt-4 font-sans text-base leading-6 text-ink-muted">
-          A quiet way to expand your vocabulary — one word at a time, at your own pace.
+          A quiet way to expand your vocabulary - one word at a time, at your
+          own pace.
         </Text>
       </Animated.View>
 
@@ -43,12 +51,20 @@ const AboutScreen: React.FC = () => {
           label="About the author"
           icon="person-outline"
         />
-        <LinkRow url={PAYPAY_DONATION_URL} label="Like the app? Donate" icon="heart-outline" />
+        <LinkRow
+          url={PAYPAY_DONATION_URL}
+          label="Like the app? Donate"
+          icon="heart-outline"
+        />
       </View>
 
       <View className="mt-auto items-center pt-6">
-        <Text className="font-medium text-sm text-ink-muted">Created by Elman Huseynov</Text>
-        <Text className="mt-1 font-sans text-xs text-ink-subtle">All rights reserved.</Text>
+        <Text className="font-medium text-sm text-ink-muted">
+          Created by Elman Huseynov
+        </Text>
+        <Text className="mt-1 font-sans text-xs text-ink-subtle">
+          All rights reserved.
+        </Text>
       </View>
     </ScreenContainer>
   );

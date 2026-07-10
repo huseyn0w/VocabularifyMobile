@@ -13,9 +13,14 @@ export type RootStackParamList = {
 };
 
 // Language list, levels, available pairs and per-language metadata are generated
-// from the on-disk languages/ tree — see scripts/generate-language-map.js.
-export type { Language, LanguageMeta } from './languageData';
-export { languages, levels, availableCombinations, LANGUAGE_META } from './languageData';
+// from the on-disk languages/ tree - see scripts/generate-language-map.js.
+export type { Language, LanguageMeta } from "./languageData";
+export {
+  languages,
+  levels,
+  availableCombinations,
+  LANGUAGE_META,
+} from "./languageData";
 
 /**
  * A single flashcard entry as stored in the language JSON files.
@@ -49,9 +54,9 @@ export interface LegacyLanguageSettings {
 
 /** Typed learning modes (replaces the magic strings). */
 export const LearningMode = {
-  ShowBoth: 'showBoth',
-  ShowWordThenTranslation: 'showWordThenTranslation',
+  ShowBoth: "showBoth",
+  ShowWordThenTranslation: "showWordThenTranslation",
 } as const;
 
 // eslint-disable-next-line @typescript-eslint/no-redeclare -- intentional const + type companion pattern
-export type LearningMode = typeof LearningMode[keyof typeof LearningMode];
+export type LearningMode = (typeof LearningMode)[keyof typeof LearningMode];
