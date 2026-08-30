@@ -22,7 +22,10 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.huseyn0w.vocabularify",
-      "buildNumber": "1"
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.huseyn0w.vocabularify",
