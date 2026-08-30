@@ -24,8 +24,14 @@ export {
 
 /**
  * A single flashcard entry as stored in the language JSON files.
- * `word_1` is rendered as the main word (the language being learned),
- * `word_2` is its translation (the user's known language).
+ *
+ * `word_1` is the KNOWN language and `word_2` the one being LEARNED - the
+ * orientation the files are generated in, and the one Desktop reads them
+ * with. The card shows `word_2` large and `word_2`'s translation, `word_1`,
+ * underneath.
+ *
+ * The field names are backwards to read; they are the on-disk format and are
+ * not worth a migration of 210 files.
  */
 export interface Word {
   word_1: string;
@@ -34,8 +40,8 @@ export interface Word {
 
 /**
  * The user's language selection.
- * `learningLanguage` is the language being LEARNED (rendered as `word_1`).
- * `knownLanguage` is the user's KNOWN language (rendered as `word_2`).
+ * `learningLanguage` is the language being LEARNED; its words live in the
+ * `word_2` column. `knownLanguage` is the user's KNOWN language, in `word_1`.
  *
  * NOTE: this replaces the old, inverted `{ fromLanguage, toLanguage }` shape.
  */

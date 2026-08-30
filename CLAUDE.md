@@ -43,16 +43,25 @@ Navigation tree:
 
 **Persistence is centralized** in `app/services/storage.ts` - a typed `AsyncStorage` wrapper that safely parses, validates, and migrates stored data (never trust raw JSON). It also migrates the legacy `{ fromLanguage, toLanguage }` settings shape (see naming note) to the current one on read.
 
-**Word data flow:** static JSON arrays of `{ word_1, word_2 }` live under `languages/<learning>/<known>/<level>.json`. `app/utils/loadLanguageFile.ts` maps a `learning-known-level` key to a `require()`'d file via a typed lookup map (Metro needs static requires). `useWordList` loads the array; `useFlashcardDeck` owns current index, auto-advance timer, wrap-around, and the reveal-after-delay for "word then translation" mode; `HomeScreen` is a thin presentational layer over those hooks plus the swipe gesture (reanimated + gesture-handler).
+**Word data flow:** static JSON arrays of `{ word_1, word_2 }` live under `languages/<learning>/<known>/<level>.json`. `app/utils/loadLanguageFile.ts` maps a `learning-known-level` key to a `require()`'d file via a typed lookup map (Metro needs static requires).
 
-**Naming note:** in `settings`, `learningLanguage` is the language being _learned_ (rendered as `word_1`) and `knownLanguage` is the user's known language (`word_2`). Older builds persisted these as `fromLanguage`/`toLanguage` (inverted-sounding names); the storage service migrates that automatically. Word files are bundled statically - they cannot be loaded by dynamic path.
+**Lessons and sentences:** a level may also ship `languages/<learning>/<known>/<level>.lessons.json`, a course laid out as lessons: `{ lessons: [{ count, sentences: [{ id, target, source, gloss }] }] }`. `count` is how many words of the word file belong to that lesson; `target` is the sentence in the language being learned, split into tokens (`{ t, c }` for a word backed by a taught concept, a bare string for glue - punctuation and obligatory articles); `gloss` maps concept id to `{ t: citation form, s: its translation }`.
+
+`app/utils/items.ts` turns a word list plus a course into the item list the deck cycles through - a lesson's words, then its sentences, then the next lesson - and owns the token-spacing rule. It mirrors Desktop's `src/shared/items.ts`; keep the two in step. A level with no course file yields the flat word list, so nothing regresses for the levels still awaiting one. As of the German A1 course, all 42 pairs ship an A1 course; only the six `de/*` ones cover the whole word file.
+
+`useItems` loads word file + course and assembles both; `useFlashcardDeck` owns the position, the auto-advance timer (a sentence holds the screen `SENTENCE_DWELL_MULTIPLIER` times as long as a word), wrap-around, lesson jumps, and the reveal-after-delay for "word then translation" mode. `HomeScreen` is a thin presentational layer over those hooks plus the swipe gesture (reanimated + gesture-handler): sideways moves one card, up and down moves a whole lesson.
+
+**Naming note:** in `settings`, `learningLanguage` is the language being _learned_ and `knownLanguage` is the user's known language. On disk that is inverted: `word_1` holds the known language and `word_2` the one being learned, and the card shows `word_2` large with `word_1` underneath. Older builds persisted the settings as `fromLanguage`/`toLanguage`; the storage service migrates that automatically. Word files are bundled statically - they cannot be loaded by dynamic path.
+
+**Position** is stored per deck (`<learning>:<known>:<level>`) under the `deckProgress` key, so switching pair or level no longer discards where the learner was. The index counts items, not words.
 
 ## Styling (NativeWind v4)
 
-- Visual identity is **"midnight gallery"**: dark is the signature scheme (near-black surfaces, warm off-white ink, a single brushed-brass jewel accent used sparingly - primary actions, active tab, the flashcard glow); light mode is a true-neutral gallery white (not a warm cream). Avoid reintroducing warm-paper/cream backgrounds or tracked-uppercase eyebrow labels above headings - both were deliberately removed as generic.
+- The palette is **Desktop's**, converted from its OKLCH source to sRGB once in `app/theme/tokens.ts` (each colour carries its OKLCH triple in a comment). Desktop's `index.html` holds the authoritative values; a change on either side is a mechanical re-conversion, not a re-eyeballing. Dark is the signature: a cool near-black field lit by one brass source; light is a cool paper white, not a warm cream. Avoid reintroducing warm-paper backgrounds or tracked-uppercase eyebrow labels - both were deliberately removed as generic.
+- `app/components/AmbientBackground.tsx` draws Desktop's two radial gradients - the vignette where light pools at the top, and the brass glow behind the card - as stacks of concentric circles, because RN has no radial gradient and the app carries no gradient library.
 - Style with `className`. The palette flips light/dark via CSS variables in `global.css`, referenced by `tailwind.config.js` (`darkMode: 'class'`).
 - **`app/theme/tokens.ts` is the single source of truth** for colors/spacing/radii/fonts/motion, and must stay in sync with `global.css`. Anything that can't take a class (reanimated worklets, navigation options, StatusBar) must read from tokens - do not hardcode hex.
-- Fonts: Plus Jakarta Sans (`font-sans`, UI) and Fraunces (`font-display`, the flashcard word / big titles).
+- **No bundled fonts.** Desktop renders in the system UI face and carries its voice in weight and tracking; the app does the same by leaving `fontFamily` unset, which gives San Francisco on iOS and Roboto on Android. `font-medium` / `font-semibold` / `font-bold` are Tailwind weight utilities again - do not re-add a `fontFamily` map to `tailwind.config.js`.
 - Motion via reanimated, kept restrained: ease-out for enters, springs for the swipe gesture, press-scale ~0.97, and `useReducedMotion()` honored everywhere.
 - A patch (`patches/react-native-css-interop+0.2.5.patch`, applied via `postinstall`) is required because that package references a reanimated-4-only worklets plugin; keep it when bumping deps.
 
@@ -61,8 +70,9 @@ Navigation tree:
 The static require map and language metadata are **generated**, not hand-edited:
 
 1. Add the JSON file at `languages/<learning>/<known>/<level>.json` (array of `{ "word_1": "...", "word_2": "..." }`), using the 2-letter code dirs (`en`, `de`, …).
-2. Run `npm run generate:languages`. This scans `languages/` and regenerates `app/utils/loadLanguageFile.ts` (the static `require` map Metro bundles) and `app/utils/languageData.ts` (`languages` / `levels` / `availableCombinations` / `LANGUAGE_META`). Both files carry a `DO NOT EDIT` header - never hand-edit them; `app/utils/types.ts` re-exports the data from `languageData.ts`.
-3. The generator's `META` map (`scripts/generate-language-map.js`) is the single source of truth for code↔name↔flag and mirrors Desktop's `LANGUAGE_META`; add a new language there first. Commit the regenerated output. The parity guard test (`__tests__/unit/languageParity.test.ts`) verifies every pair resolves to a real on-disk file.
+2. Optionally add the course at `languages/<learning>/<known>/<level>.lessons.json` - copy it from Desktop rather than writing it here; Desktop's `utils/generate_pairs.js` produces both files together, and its lint is what guarantees a sentence uses only words already taught.
+3. Run `npm run generate:languages`. This scans `languages/` and regenerates `app/utils/loadLanguageFile.ts` (the static `require` maps Metro bundles, for both word files and course files) and `app/utils/languageData.ts` (`languages` / `levels` / `availableCombinations` / `LANGUAGE_META`). Both files carry a `DO NOT EDIT` header - never hand-edit them; `app/utils/types.ts` re-exports the data from `languageData.ts`.
+4. The generator's `META` map (`scripts/generate-language-map.js`) is the single source of truth for code↔name↔flag and mirrors Desktop's `LANGUAGE_META`; add a new language there first. Commit the regenerated output. The parity guard tests (`__tests__/unit/languageParity.test.ts`) verify every pair resolves to a real on-disk file, and that each course fits its word file - which is what catches a stale or half-finished copy from Desktop.
 
 ## Testing
 

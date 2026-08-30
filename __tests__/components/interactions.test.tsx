@@ -74,29 +74,51 @@ describe('LanguageSettingsScreen', () => {
   });
 });
 
-describe('WelcomeScreen via LanguageSelector', () => {
-  it('selecting a learning language reveals known options, then a level reveals the Level section', async () => {
+describe('WelcomeScreen - three-step setup', () => {
+  it('walks target -> source -> level, one question at a time, and saves', async () => {
     renderWithProviders(<WelcomeScreen />);
-    await screen.findByText('I want to learn');
+    await screen.findByText(/want to learn\?/i);
 
-    // Initially no "From" / "Level" sections.
-    expect(screen.queryByText('From')).toBeNull();
-    expect(screen.queryByText('Level')).toBeNull();
+    // Step 1 shows only the target languages - no source list, no levels
+    // stacked under it the way the old scrolling screen did.
+    expect(screen.queryByText(/already speak\?/i)).toBeNull();
+    expect(screen.queryByText('A1')).toBeNull();
+    // Each language appears exactly once, so no disambiguation is needed.
+    expect(screen.getAllByText('🇩🇪 German')).toHaveLength(1);
 
-    // At this point the only rows on screen are the learn list, so "English"
-    // is unambiguous. Pick it -> the "From" section appears.
     fireEvent.press(screen.getByText('🇬🇧 English'));
+    expect(await screen.findByText(/already speak\?/i)).toBeTruthy();
+    // The chosen target is gone from the list: you cannot learn English from
+    // English.
+    expect(screen.queryByText('🇬🇧 English')).toBeNull();
 
-    const fromHeader = await screen.findByText('From');
-    expect(fromHeader).toBeTruthy();
-
-    // Pick a known language -> "Level" section appears. German appears in both
-    // the learn list and the "From" options; the last occurrence is the known
-    // option in the "From" section.
-    const germanRows = screen.getAllByText('🇩🇪 German');
-    fireEvent.press(germanRows[germanRows.length - 1]);
-    expect(await screen.findByText('Level')).toBeTruthy();
+    fireEvent.press(screen.getByText('🇩🇪 German'));
+    expect(await screen.findByText(/starting\?/i)).toBeTruthy();
     expect(screen.getByText('A1')).toBeTruthy();
+
+    fireEvent.press(screen.getByText('B1'));
+    await waitFor(async () => {
+      const stored = await AsyncStorage.getItem(STORAGE_KEYS.language);
+      expect(JSON.parse(stored as string)).toEqual({
+        learningLanguage: 'english',
+        knownLanguage: 'german',
+        level: 'b1',
+      });
+    });
+    expect(mockNavigation.navigate).toHaveBeenCalledWith('Main');
+  });
+
+  it('Back returns to the previous question', async () => {
+    renderWithProviders(<WelcomeScreen />);
+    await screen.findByText(/want to learn\?/i);
+
+    fireEvent.press(screen.getByText('🇬🇧 English'));
+    await screen.findByText(/already speak\?/i);
+
+    fireEvent.press(screen.getByText('Back'));
+    expect(await screen.findByText(/want to learn\?/i)).toBeTruthy();
+    // Back on the first step has nothing to return to, so it is not offered.
+    expect(screen.queryByText('Back')).toBeNull();
   });
 });
 

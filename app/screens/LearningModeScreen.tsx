@@ -34,7 +34,7 @@ const LearningModeScreen: React.FC = () => {
             label={
               <View>
                 <Text className="font-medium text-base text-ink">{option.title}</Text>
-                <Text className="mt-1 font-sans text-sm text-ink-muted">{option.subtitle}</Text>
+                <Text className="mt-1 text-sm text-ink-muted">{option.subtitle}</Text>
               </View>
             }
           />

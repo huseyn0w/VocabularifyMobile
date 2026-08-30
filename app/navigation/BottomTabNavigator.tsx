@@ -5,7 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import SettingsStackNavigator from './SettingsStackNavigator';
 import { useThemeColors } from '../hooks/useThemeColors';
 import { getTabBarIconName } from '../utils/utils';
-import { fontFamily, fontSize } from '../theme/tokens';
+import { fontWeight, fontSize } from '../theme/tokens';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,7 +23,7 @@ const BottomTabNavigator = () => {
         },
         headerTitleStyle: {
           color: colors.ink,
-          fontFamily: fontFamily.displaySemibold,
+          fontWeight: fontWeight.semibold,
           fontSize: fontSize.xl,
         },
         headerTitleAlign: 'center',
@@ -41,7 +41,7 @@ const BottomTabNavigator = () => {
         tabBarActiveTintColor: colors.accent,
         tabBarInactiveTintColor: colors.inkSubtle,
         tabBarLabelStyle: {
-          fontFamily: fontFamily.sansMedium,
+          fontWeight: fontWeight.medium,
           fontSize: fontSize.xs,
         },
         tabBarStyle: {

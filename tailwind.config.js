@@ -13,6 +13,7 @@ module.exports = {
         surface: 'rgb(var(--color-surface) / <alpha-value>)',
         card: 'rgb(var(--color-card) / <alpha-value>)',
         elevated: 'rgb(var(--color-elevated) / <alpha-value>)',
+        track: 'rgb(var(--color-track) / <alpha-value>)',
         border: 'rgb(var(--color-border) / <alpha-value>)',
         ink: {
           DEFAULT: 'rgb(var(--color-ink) / <alpha-value>)',
@@ -23,15 +24,6 @@ module.exports = {
           DEFAULT: 'rgb(var(--color-accent) / <alpha-value>)',
           foreground: 'rgb(var(--color-accent-foreground) / <alpha-value>)',
         },
-      },
-      fontFamily: {
-        sans: ['PlusJakartaSans_400Regular'],
-        medium: ['PlusJakartaSans_500Medium'],
-        semibold: ['PlusJakartaSans_600SemiBold'],
-        bold: ['PlusJakartaSans_700Bold'],
-        display: ['Fraunces_500Medium'],
-        'display-semibold': ['Fraunces_600SemiBold'],
-        'display-bold': ['Fraunces_700Bold'],
       },
       fontSize: {
         xs: '12px',

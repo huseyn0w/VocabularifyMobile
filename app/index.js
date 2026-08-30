@@ -4,18 +4,6 @@ import { registerRootComponent } from 'expo';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { ActivityIndicator, View } from 'react-native';
-import { useFonts } from 'expo-font';
-import {
-  PlusJakartaSans_400Regular,
-  PlusJakartaSans_500Medium,
-  PlusJakartaSans_600SemiBold,
-  PlusJakartaSans_700Bold,
-} from '@expo-google-fonts/plus-jakarta-sans';
-import {
-  Fraunces_500Medium,
-  Fraunces_600SemiBold,
-  Fraunces_700Bold,
-} from '@expo-google-fonts/fraunces';
 import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'react-native';
 import { ThemeProvider, useThemeContext } from './context/ThemeContext';
@@ -42,15 +30,6 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [initialSettings, setInitialSettings] = useState(null);
 
-  const [fontsLoaded] = useFonts({
-    PlusJakartaSans_400Regular,
-    PlusJakartaSans_500Medium,
-    PlusJakartaSans_600SemiBold,
-    PlusJakartaSans_700Bold,
-    Fraunces_500Medium,
-    Fraunces_600SemiBold,
-    Fraunces_700Bold,
-  });
 
   useEffect(() => {
     const checkInitialSettings = async () => {
@@ -63,7 +42,7 @@ const App = () => {
     checkInitialSettings();
   }, []);
 
-  if (loading || !fontsLoaded) {
+  if (loading) {
     // Smoke test: this view is styled entirely via NativeWind `className`.
     return (
       <View className="flex-1 items-center justify-center bg-bg">

@@ -1,0 +1,4703 @@
+{
+  "lessons": [
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_001",
+          "target": [
+            {
+              "t": "Merhaba",
+              "c": "hello"
+            },
+            "!",
+            {
+              "t": "Nasılsın",
+              "c": "how"
+            },
+            "?"
+          ],
+          "source": "Hello! How are you?",
+          "gloss": {
+            "hello": {
+              "t": "merhaba",
+              "s": "hello"
+            },
+            "how": {
+              "t": "nasıl",
+              "s": "how"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "gitmek",
+              "s": "to go"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_002",
+          "target": [
+            {
+              "t": "Ben",
+              "c": "i"
+            },
+            {
+              "t": "iyiyim",
+              "c": "good"
+            },
+            ",",
+            {
+              "t": "teşekkür ederim",
+              "c": "thank you"
+            },
+            "."
+          ],
+          "source": "I am good, thank you.",
+          "gloss": {
+            "good": {
+              "t": "iyi",
+              "s": "good"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "thank you": {
+              "t": "teşekkür ederim",
+              "s": "thank you"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "gitmek",
+              "s": "to go"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 7,
+      "sentences": [
+        {
+          "id": "a1_003",
+          "target": [
+            {
+              "t": "Evet",
+              "c": "yes"
+            },
+            ",",
+            {
+              "t": "çok",
+              "c": "very"
+            },
+            {
+              "t": "iyiyim",
+              "c": "good"
+            },
+            ",",
+            {
+              "t": "teşekkür ederim",
+              "c": "thank you"
+            },
+            "!"
+          ],
+          "source": "Yes, I am very good, thank you!",
+          "gloss": {
+            "good": {
+              "t": "iyi",
+              "s": "good"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "thank you": {
+              "t": "teşekkür ederim",
+              "s": "thank you"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "gitmek",
+              "s": "to go"
+            },
+            "very": {
+              "t": "çok",
+              "s": "very"
+            },
+            "yes": {
+              "t": "evet",
+              "s": "yes"
+            }
+          }
+        },
+        {
+          "id": "a1_004",
+          "target": [
+            {
+              "t": "Hayır",
+              "c": "no"
+            },
+            ",",
+            {
+              "t": "iyi",
+              "c": "good"
+            },
+            {
+              "t": "değilim",
+              "c": "not"
+            },
+            "."
+          ],
+          "source": "No, I am not good.",
+          "gloss": {
+            "good": {
+              "t": "iyi",
+              "s": "good"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "no": {
+              "t": "hayır",
+              "s": "no"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "gitmek",
+              "s": "to go"
+            }
+          }
+        },
+        {
+          "id": "a1_005",
+          "target": [
+            {
+              "t": "Evet",
+              "c": "yes"
+            },
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            ".",
+            {
+              "t": "Teşekkür ederim",
+              "c": "thank you"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "hoşça kal",
+              "c": "goodbye"
+            },
+            "!"
+          ],
+          "source": "Yes, please. Thank you and goodbye!",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "goodbye": {
+              "t": "hoşça kal",
+              "s": "goodbye"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "thank you": {
+              "t": "teşekkür ederim",
+              "s": "thank you"
+            },
+            "yes": {
+              "t": "evet",
+              "s": "yes"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 6,
+      "sentences": [
+        {
+          "id": "a1_006",
+          "target": [
+            {
+              "t": "Sen",
+              "c": "you"
+            },
+            {
+              "t": "neredesin",
+              "c": "where"
+            },
+            "?",
+            {
+              "t": "Ben",
+              "c": "i"
+            },
+            {
+              "t": "buradayım",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Where are you? I am here.",
+          "gloss": {
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "where": {
+              "t": "nerede",
+              "s": "where"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_007",
+          "target": [
+            {
+              "t": "O",
+              "c": "he"
+            },
+            {
+              "t": "burada",
+              "c": "here"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "o",
+              "c": "she"
+            },
+            {
+              "t": "orada",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "He is here and she is there.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "he": {
+              "t": "o",
+              "s": "he"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "she": {
+              "t": "o",
+              "s": "she"
+            },
+            "there": {
+              "t": "orada",
+              "s": "there"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_008",
+          "target": [
+            {
+              "t": "Biz",
+              "c": "we"
+            },
+            {
+              "t": "buradayız",
+              "c": "here"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "onlar",
+              "c": "they"
+            },
+            {
+              "t": "orada",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "We are here, and they are there.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "there": {
+              "t": "orada",
+              "s": "there"
+            },
+            "they": {
+              "t": "onlar",
+              "s": "they"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "we": {
+              "t": "biz",
+              "s": "we"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_009",
+          "target": [
+            {
+              "t": "Özür dilerim",
+              "c": "sorry"
+            },
+            "!",
+            {
+              "t": "Sen",
+              "c": "you"
+            },
+            {
+              "t": "kimsin",
+              "c": "who"
+            },
+            "?"
+          ],
+          "source": "Sorry! Who are you?",
+          "gloss": {
+            "sorry": {
+              "t": "özür dilerim",
+              "s": "sorry"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "who": {
+              "t": "kim",
+              "s": "who"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_010",
+          "target": [
+            {
+              "t": "Şimdi",
+              "c": "now"
+            },
+            {
+              "t": "zamanım",
+              "c": "time"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            ".",
+            {
+              "t": "Sen",
+              "c": "you"
+            },
+            "?"
+          ],
+          "source": "Now I have time. And you?",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "now": {
+              "t": "şimdi",
+              "s": "now"
+            },
+            "time": {
+              "t": "zaman",
+              "s": "time"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_011",
+          "target": [
+            {
+              "t": "O",
+              "c": "he"
+            },
+            {
+              "t": "burada",
+              "c": "here"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "biz",
+              "c": "we"
+            },
+            {
+              "t": "de",
+              "c": "also"
+            },
+            {
+              "t": "buradayız",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "He is here, and we are also here.",
+          "gloss": {
+            "also": {
+              "t": "de",
+              "s": "also"
+            },
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "he": {
+              "t": "o",
+              "s": "he"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "we": {
+              "t": "biz",
+              "s": "we"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_012",
+          "target": [
+            {
+              "t": "Sütlü",
+              "c": "milk"
+            },
+            {
+              "t": "kahve",
+              "c": "coffee"
+            },
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "!"
+          ],
+          "source": "Coffee with milk, please!",
+          "gloss": {
+            "coffee": {
+              "t": "kahve",
+              "s": "coffee"
+            },
+            "milk": {
+              "t": "süt",
+              "s": "milk"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "with": {
+              "t": "ile",
+              "s": "with"
+            }
+          }
+        },
+        {
+          "id": "a1_013",
+          "target": [
+            {
+              "t": "Sütsüz",
+              "c": "milk"
+            },
+            {
+              "t": "çay",
+              "c": "tea"
+            },
+            {
+              "t": "istiyorum",
+              "c": "to want"
+            },
+            "."
+          ],
+          "source": "I want tea without milk.",
+          "gloss": {
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "milk": {
+              "t": "süt",
+              "s": "milk"
+            },
+            "tea": {
+              "t": "çay",
+              "s": "tea"
+            },
+            "to want": {
+              "t": "istemek",
+              "s": "to want"
+            },
+            "without": {
+              "t": "-siz",
+              "s": "without"
+            }
+          }
+        },
+        {
+          "id": "a1_014",
+          "target": [
+            {
+              "t": "Sen",
+              "c": "you"
+            },
+            {
+              "t": "çay",
+              "c": "tea"
+            },
+            {
+              "t": "içiyorsun",
+              "c": "to drink"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "ben",
+              "c": "i"
+            },
+            {
+              "t": "su",
+              "c": "water"
+            },
+            {
+              "t": "içiyorum",
+              "c": "to drink"
+            },
+            "."
+          ],
+          "source": "You drink tea, and I drink water.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "tea": {
+              "t": "çay",
+              "s": "tea"
+            },
+            "to drink": {
+              "t": "içmek",
+              "s": "to drink"
+            },
+            "water": {
+              "t": "su",
+              "s": "water"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 6,
+      "sentences": [
+        {
+          "id": "a1_015",
+          "target": [
+            {
+              "t": "Ekmek",
+              "c": "bread"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "elma",
+              "c": "apple"
+            },
+            {
+              "t": "yiyorum",
+              "c": "to eat"
+            },
+            "."
+          ],
+          "source": "I eat bread and an apple.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "apple": {
+              "t": "elma",
+              "s": "apple"
+            },
+            "bread": {
+              "t": "ekmek",
+              "s": "bread"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "to eat": {
+              "t": "yemek",
+              "s": "to eat"
+            }
+          }
+        },
+        {
+          "id": "a1_016",
+          "target": [
+            {
+              "t": "Kahvaltı",
+              "c": "breakfast"
+            },
+            {
+              "t": "iyi",
+              "c": "good"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "daha fazla",
+              "c": "more"
+            },
+            {
+              "t": "ekmek",
+              "c": "bread"
+            },
+            {
+              "t": "istiyorum",
+              "c": "to want"
+            },
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "."
+          ],
+          "source": "Breakfast is good, but I want more bread, please.",
+          "gloss": {
+            "bread": {
+              "t": "ekmek",
+              "s": "bread"
+            },
+            "breakfast": {
+              "t": "kahvaltı",
+              "s": "breakfast"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "good": {
+              "t": "iyi",
+              "s": "good"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "more": {
+              "t": "daha",
+              "s": "more"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to want": {
+              "t": "istemek",
+              "s": "to want"
+            }
+          }
+        },
+        {
+          "id": "a1_017",
+          "target": [
+            {
+              "t": "Tuz",
+              "c": "salt"
+            },
+            {
+              "t": "ile",
+              "c": "with"
+            },
+            {
+              "t": "yumurta",
+              "c": "egg"
+            },
+            {
+              "t": "yiyor",
+              "c": "to eat"
+            },
+            "."
+          ],
+          "source": "He eats an egg with salt.",
+          "gloss": {
+            "egg": {
+              "t": "yumurta",
+              "s": "egg"
+            },
+            "he": {
+              "t": "o",
+              "s": "he"
+            },
+            "salt": {
+              "t": "tuz",
+              "s": "salt"
+            },
+            "to eat": {
+              "t": "yemek",
+              "s": "to eat"
+            },
+            "with": {
+              "t": "ile",
+              "s": "with"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_018",
+          "target": [
+            {
+              "t": "Bana",
+              "c": "i"
+            },
+            {
+              "t": "yardım edebilir",
+              "c": "to help"
+            },
+            "misin",
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "?"
+          ],
+          "source": "Can you help me, please?",
+          "gloss": {
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "to help": {
+              "t": "yardım etmek",
+              "s": "to help"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_019",
+          "target": [
+            {
+              "t": "Özür dilerim",
+              "c": "sorry"
+            },
+            ",",
+            {
+              "t": "seni",
+              "c": "you"
+            },
+            {
+              "t": "anlayamıyorum",
+              "c": "to understand"
+            },
+            ".",
+            {
+              "t": "Yavaş",
+              "c": "slow"
+            },
+            {
+              "t": "konuşabilir",
+              "c": "to speak"
+            },
+            "misin",
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "?"
+          ],
+          "source": "Sorry, I can not understand you. Can you speak slowly, please?",
+          "gloss": {
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "more": {
+              "t": "daha",
+              "s": "more"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "slow": {
+              "t": "yavaş",
+              "s": "slow"
+            },
+            "sorry": {
+              "t": "özür dilerim",
+              "s": "sorry"
+            },
+            "to speak": {
+              "t": "konuşmak",
+              "s": "to speak"
+            },
+            "to understand": {
+              "t": "anlamak",
+              "s": "to understand"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_020",
+          "target": [
+            {
+              "t": "Neden",
+              "c": "why"
+            },
+            {
+              "t": "buradasın",
+              "c": "here"
+            },
+            "?",
+            {
+              "t": "Buradayım",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "çünkü",
+              "c": "because"
+            },
+            {
+              "t": "öğrenmek",
+              "c": "to learn"
+            },
+            {
+              "t": "istiyorum",
+              "c": "to want"
+            },
+            "."
+          ],
+          "source": "Why are you here? I am here because I want to learn.",
+          "gloss": {
+            "because": {
+              "t": "çünkü",
+              "s": "because"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to learn": {
+              "t": "öğrenmek",
+              "s": "to learn"
+            },
+            "to want": {
+              "t": "istemek",
+              "s": "to want"
+            },
+            "why": {
+              "t": "neden",
+              "s": "why"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_021",
+          "target": [
+            {
+              "t": "Et",
+              "c": "meat"
+            },
+            {
+              "t": "veya",
+              "c": "or"
+            },
+            {
+              "t": "balık",
+              "c": "fish"
+            },
+            "?"
+          ],
+          "source": "Meat or fish?",
+          "gloss": {
+            "fish": {
+              "t": "balık",
+              "s": "fish"
+            },
+            "meat": {
+              "t": "et",
+              "s": "meat"
+            },
+            "or": {
+              "t": "veya",
+              "s": "or"
+            }
+          }
+        },
+        {
+          "id": "a1_022",
+          "target": [
+            {
+              "t": "Su",
+              "c": "water"
+            },
+            {
+              "t": "soğuk",
+              "c": "cold"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "çay",
+              "c": "tea"
+            },
+            {
+              "t": "çok",
+              "c": "very"
+            },
+            {
+              "t": "sıcak",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "The water is cold, but the tea is very hot.",
+          "gloss": {
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "cold": {
+              "t": "soğuk",
+              "s": "cold"
+            },
+            "hot": {
+              "t": "sıcak",
+              "s": "hot"
+            },
+            "tea": {
+              "t": "çay",
+              "s": "tea"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "very": {
+              "t": "çok",
+              "s": "very"
+            },
+            "water": {
+              "t": "su",
+              "s": "water"
+            }
+          }
+        },
+        {
+          "id": "a1_023",
+          "target": [
+            {
+              "t": "Param",
+              "c": "money"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "ekmek",
+              "c": "bread"
+            },
+            {
+              "t": "satın almak",
+              "c": "to buy"
+            },
+            {
+              "t": "istiyorum",
+              "c": "to want"
+            },
+            ".",
+            {
+              "t": "Market",
+              "c": "shop"
+            },
+            {
+              "t": "nerede",
+              "c": "where"
+            },
+            "?"
+          ],
+          "source": "I have money, and I want to buy bread. Where is the shop?",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "bread": {
+              "t": "ekmek",
+              "s": "bread"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "money": {
+              "t": "para",
+              "s": "money"
+            },
+            "shop": {
+              "t": "market",
+              "s": "shop"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to buy": {
+              "t": "satın almak",
+              "s": "to buy"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            },
+            "to want": {
+              "t": "istemek",
+              "s": "to want"
+            },
+            "where": {
+              "t": "nerede",
+              "s": "where"
+            }
+          }
+        },
+        {
+          "id": "a1_069",
+          "target": [
+            {
+              "t": "Balığı",
+              "c": "fish"
+            },
+            {
+              "t": "satın almak",
+              "c": "to buy"
+            },
+            {
+              "t": "istiyorum",
+              "c": "to want"
+            },
+            ".",
+            {
+              "t": "Ne kadar",
+              "c": "how much"
+            },
+            {
+              "t": "para",
+              "c": "money"
+            },
+            "?"
+          ],
+          "source": "I want to buy the fish. How much money?",
+          "gloss": {
+            "fish": {
+              "t": "balık",
+              "s": "fish"
+            },
+            "how much": {
+              "t": "ne kadar",
+              "s": "how much"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "money": {
+              "t": "para",
+              "s": "money"
+            },
+            "to buy": {
+              "t": "satın almak",
+              "s": "to buy"
+            },
+            "to want": {
+              "t": "istemek",
+              "s": "to want"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 10,
+      "sentences": [
+        {
+          "id": "a1_024",
+          "target": [
+            {
+              "t": "Bu",
+              "c": "this"
+            },
+            {
+              "t": "benim",
+              "c": "my"
+            },
+            {
+              "t": "evim",
+              "c": "house"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "çok",
+              "c": "very"
+            },
+            {
+              "t": "büyük",
+              "c": "big"
+            },
+            "."
+          ],
+          "source": "This is my house, and it is very big.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "big": {
+              "t": "büyük",
+              "s": "big"
+            },
+            "house": {
+              "t": "ev",
+              "s": "house"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "my": {
+              "t": "benim",
+              "s": "my"
+            },
+            "this": {
+              "t": "bu",
+              "s": "this"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "very": {
+              "t": "çok",
+              "s": "very"
+            }
+          }
+        },
+        {
+          "id": "a1_025",
+          "target": [
+            {
+              "t": "Odada",
+              "c": "room"
+            },
+            "bir",
+            {
+              "t": "masa",
+              "c": "table"
+            },
+            ",",
+            "bir",
+            {
+              "t": "sandalye",
+              "c": "chair"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            "bir",
+            {
+              "t": "yatak",
+              "c": "bed"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            "."
+          ],
+          "source": "The room has a table, a chair and a bed.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "bed": {
+              "t": "yatak",
+              "s": "bed"
+            },
+            "chair": {
+              "t": "sandalye",
+              "s": "chair"
+            },
+            "in": {
+              "t": "-de",
+              "s": "in"
+            },
+            "room": {
+              "t": "oda",
+              "s": "room"
+            },
+            "table": {
+              "t": "masa",
+              "s": "table"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            }
+          }
+        },
+        {
+          "id": "a1_026",
+          "target": [
+            {
+              "t": "Pardon",
+              "c": "sorry"
+            },
+            ",",
+            {
+              "t": "kapı",
+              "c": "door"
+            },
+            {
+              "t": "nerede",
+              "c": "where"
+            },
+            "?",
+            {
+              "t": "Pencere",
+              "c": "window"
+            },
+            {
+              "t": "orada",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "Sorry, where is the door? The window is there.",
+          "gloss": {
+            "door": {
+              "t": "kapı",
+              "s": "door"
+            },
+            "sorry": {
+              "t": "özür dilerim",
+              "s": "sorry"
+            },
+            "there": {
+              "t": "orada",
+              "s": "there"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "where": {
+              "t": "nerede",
+              "s": "where"
+            },
+            "window": {
+              "t": "pencere",
+              "s": "window"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_027",
+          "target": [
+            {
+              "t": "Pencereyi",
+              "c": "window"
+            },
+            {
+              "t": "aç",
+              "c": "to open"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "kapıyı",
+              "c": "door"
+            },
+            {
+              "t": "kapat",
+              "c": "to close"
+            },
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "!"
+          ],
+          "source": "Open the window and close the door, please!",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "door": {
+              "t": "kapı",
+              "s": "door"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "to close": {
+              "t": "kapatmak",
+              "s": "to close"
+            },
+            "to open": {
+              "t": "açmak",
+              "s": "to open"
+            },
+            "window": {
+              "t": "pencere",
+              "s": "window"
+            }
+          }
+        },
+        {
+          "id": "a1_028",
+          "target": [
+            {
+              "t": "Bu",
+              "c": "this"
+            },
+            {
+              "t": "kitap",
+              "c": "book"
+            },
+            {
+              "t": "yeni",
+              "c": "new"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "şu",
+              "c": "that"
+            },
+            {
+              "t": "kitap",
+              "c": "book"
+            },
+            {
+              "t": "eski",
+              "c": "old"
+            },
+            "."
+          ],
+          "source": "This book is new, and that book is old.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "book": {
+              "t": "kitap",
+              "s": "book"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "new": {
+              "t": "yeni",
+              "s": "new"
+            },
+            "old": {
+              "t": "eski",
+              "s": "old"
+            },
+            "that": {
+              "t": "şu",
+              "s": "that"
+            },
+            "this": {
+              "t": "bu",
+              "s": "this"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_029",
+          "target": [
+            {
+              "t": "Güzel",
+              "c": "beautiful"
+            },
+            ",",
+            {
+              "t": "küçük",
+              "c": "small"
+            },
+            "bir",
+            {
+              "t": "ev",
+              "c": "house"
+            },
+            {
+              "t": "görüyorum",
+              "c": "to see"
+            },
+            "."
+          ],
+          "source": "I can see a small, beautiful house.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "beautiful": {
+              "t": "güzel",
+              "s": "beautiful"
+            },
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "house": {
+              "t": "ev",
+              "s": "house"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "small": {
+              "t": "küçük",
+              "s": "small"
+            },
+            "to see": {
+              "t": "görmek",
+              "s": "to see"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_030",
+          "target": [
+            {
+              "t": "Aile",
+              "c": "family"
+            },
+            {
+              "t": "büyük",
+              "c": "big"
+            },
+            ":",
+            {
+              "t": "anne",
+              "c": "mother"
+            },
+            ",",
+            {
+              "t": "baba",
+              "c": "father"
+            },
+            ",",
+            {
+              "t": "oğlan",
+              "c": "son"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "kız",
+              "c": "daughter"
+            },
+            "."
+          ],
+          "source": "The family is big: a mother, a father, a son and a daughter.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "big": {
+              "t": "büyük",
+              "s": "big"
+            },
+            "daughter": {
+              "t": "kız",
+              "s": "daughter"
+            },
+            "family": {
+              "t": "aile",
+              "s": "family"
+            },
+            "father": {
+              "t": "baba",
+              "s": "father"
+            },
+            "mother": {
+              "t": "anne",
+              "s": "mother"
+            },
+            "son": {
+              "t": "oğlan",
+              "s": "son"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_031",
+          "target": [
+            {
+              "t": "Bütün",
+              "c": "all"
+            },
+            {
+              "t": "çocuklar",
+              "c": "child"
+            },
+            {
+              "t": "anne babaları",
+              "c": "parents"
+            },
+            {
+              "t": "ile",
+              "c": "with"
+            },
+            {
+              "t": "burada",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "All the children are here with the parents.",
+          "gloss": {
+            "all": {
+              "t": "bütün",
+              "s": "all"
+            },
+            "child": {
+              "t": "çocuk",
+              "s": "child"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "parents": {
+              "t": "anne baba",
+              "s": "parents"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "with": {
+              "t": "ile",
+              "s": "with"
+            }
+          }
+        },
+        {
+          "id": "a1_032",
+          "target": [
+            {
+              "t": "Anne",
+              "c": "mother"
+            },
+            {
+              "t": "burada",
+              "c": "here"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "baba",
+              "c": "father"
+            },
+            {
+              "t": "burada",
+              "c": "here"
+            },
+            {
+              "t": "değil",
+              "c": "not"
+            },
+            "."
+          ],
+          "source": "The mother is here, but the father is not here.",
+          "gloss": {
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "father": {
+              "t": "baba",
+              "s": "father"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "mother": {
+              "t": "anne",
+              "s": "mother"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_033",
+          "target": [
+            "Bir",
+            {
+              "t": "erkek kardeşim",
+              "c": "brother"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            "bir",
+            {
+              "t": "kız kardeşim",
+              "c": "sister"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            "."
+          ],
+          "source": "I have a brother and a sister.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "brother": {
+              "t": "erkek kardeş",
+              "s": "brother"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "sister": {
+              "t": "kız kardeş",
+              "s": "sister"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            }
+          }
+        },
+        {
+          "id": "a1_034",
+          "target": [
+            {
+              "t": "Adam",
+              "c": "man"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "kadın",
+              "c": "woman"
+            },
+            {
+              "t": "arkadaş",
+              "c": "friend"
+            },
+            "."
+          ],
+          "source": "The man and the woman are friends.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "friend": {
+              "t": "arkadaş",
+              "s": "friend"
+            },
+            "man": {
+              "t": "adam",
+              "s": "man"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "woman": {
+              "t": "kadın",
+              "s": "woman"
+            }
+          }
+        },
+        {
+          "id": "a1_035",
+          "target": [
+            {
+              "t": "Nerede",
+              "c": "where"
+            },
+            {
+              "t": "yaşadığını",
+              "c": "to live"
+            },
+            {
+              "t": "biliyorum",
+              "c": "to know"
+            },
+            ".",
+            {
+              "t": "Şu",
+              "c": "that"
+            },
+            {
+              "t": "adam",
+              "c": "man"
+            },
+            {
+              "t": "benim",
+              "c": "my"
+            },
+            {
+              "t": "arkadaşım",
+              "c": "friend"
+            },
+            "."
+          ],
+          "source": "I know where you live. That man is my friend.",
+          "gloss": {
+            "friend": {
+              "t": "arkadaş",
+              "s": "friend"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "man": {
+              "t": "adam",
+              "s": "man"
+            },
+            "my": {
+              "t": "benim",
+              "s": "my"
+            },
+            "that": {
+              "t": "şu",
+              "s": "that"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to know": {
+              "t": "bilmek",
+              "s": "to know"
+            },
+            "to live": {
+              "t": "yaşamak",
+              "s": "to live"
+            },
+            "where": {
+              "t": "nerede",
+              "s": "where"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_070",
+          "target": [
+            {
+              "t": "Merhaba",
+              "c": "hello"
+            },
+            "!",
+            {
+              "t": "İsmin",
+              "c": "name"
+            },
+            {
+              "t": "ne",
+              "c": "what"
+            },
+            "?"
+          ],
+          "source": "Hello! What is your name?",
+          "gloss": {
+            "hello": {
+              "t": "merhaba",
+              "s": "hello"
+            },
+            "how": {
+              "t": "nasıl",
+              "s": "how"
+            },
+            "name": {
+              "t": "isim",
+              "s": "name"
+            },
+            "this": {
+              "t": "bu",
+              "s": "this"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "what": {
+              "t": "ne",
+              "s": "what"
+            },
+            "your": {
+              "t": "senin",
+              "s": "your"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_036",
+          "target": [
+            {
+              "t": "Buraya",
+              "c": "here"
+            },
+            {
+              "t": "gel",
+              "c": "to come"
+            },
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "!",
+            {
+              "t": "Bu",
+              "c": "this"
+            },
+            {
+              "t": "sokak",
+              "c": "street"
+            },
+            {
+              "t": "büyük",
+              "c": "big"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "okul",
+              "c": "school"
+            },
+            {
+              "t": "burada",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Come here, please! This street is big, and the school is here.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "big": {
+              "t": "büyük",
+              "s": "big"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "school": {
+              "t": "okul",
+              "s": "school"
+            },
+            "street": {
+              "t": "sokak",
+              "s": "street"
+            },
+            "this": {
+              "t": "bu",
+              "s": "this"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to come": {
+              "t": "gelmek",
+              "s": "to come"
+            }
+          }
+        },
+        {
+          "id": "a1_037",
+          "target": [
+            {
+              "t": "Şehirde",
+              "c": "city"
+            },
+            {
+              "t": "yaşıyorum",
+              "c": "to live"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "senin",
+              "c": "your"
+            },
+            {
+              "t": "evine",
+              "c": "house"
+            },
+            {
+              "t": "geliyorum",
+              "c": "to come"
+            },
+            "."
+          ],
+          "source": "I live in the city, and I come to your house.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "city": {
+              "t": "şehir",
+              "s": "city"
+            },
+            "house": {
+              "t": "ev",
+              "s": "house"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "in": {
+              "t": "-de",
+              "s": "in"
+            },
+            "to": {
+              "t": "-e",
+              "s": "to"
+            },
+            "to come": {
+              "t": "gelmek",
+              "s": "to come"
+            },
+            "to live": {
+              "t": "yaşamak",
+              "s": "to live"
+            },
+            "your": {
+              "t": "senin",
+              "s": "your"
+            }
+          }
+        },
+        {
+          "id": "a1_038",
+          "target": [
+            {
+              "t": "Yeni",
+              "c": "new"
+            },
+            "bir",
+            {
+              "t": "arabamız",
+              "c": "car"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "okula",
+              "c": "school"
+            },
+            {
+              "t": "hızlı",
+              "c": "fast"
+            },
+            {
+              "t": "gidebiliyoruz",
+              "c": "to go"
+            },
+            "."
+          ],
+          "source": "We have a new car, and we can go to school fast.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "car": {
+              "t": "araba",
+              "s": "car"
+            },
+            "fast": {
+              "t": "hızlı",
+              "s": "fast"
+            },
+            "new": {
+              "t": "yeni",
+              "s": "new"
+            },
+            "school": {
+              "t": "okul",
+              "s": "school"
+            },
+            "to": {
+              "t": "-e",
+              "s": "to"
+            },
+            "to go": {
+              "t": "gitmek",
+              "s": "to go"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            },
+            "we": {
+              "t": "biz",
+              "s": "we"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_039",
+          "target": [
+            {
+              "t": "Sabah",
+              "c": "morning"
+            },
+            {
+              "t": "güzel",
+              "c": "beautiful"
+            },
+            "!",
+            {
+              "t": "Bugün",
+              "c": "today"
+            },
+            {
+              "t": "nasılsın",
+              "c": "how"
+            },
+            "?"
+          ],
+          "source": "The morning is beautiful! How are you today?",
+          "gloss": {
+            "beautiful": {
+              "t": "güzel",
+              "s": "beautiful"
+            },
+            "how": {
+              "t": "nasıl",
+              "s": "how"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "morning": {
+              "t": "sabah",
+              "s": "morning"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "gitmek",
+              "s": "to go"
+            },
+            "today": {
+              "t": "bugün",
+              "s": "today"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_040",
+          "target": [
+            {
+              "t": "Bugün",
+              "c": "today"
+            },
+            {
+              "t": "bütün",
+              "c": "all"
+            },
+            {
+              "t": "gün",
+              "c": "day"
+            },
+            {
+              "t": "çalışıyorum",
+              "c": "to work"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "bütün",
+              "c": "all"
+            },
+            {
+              "t": "gece",
+              "c": "night"
+            },
+            {
+              "t": "uyuyorum",
+              "c": "to sleep"
+            },
+            "."
+          ],
+          "source": "Today I work all day, and I sleep all night.",
+          "gloss": {
+            "all": {
+              "t": "bütün",
+              "s": "all"
+            },
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "day": {
+              "t": "gün",
+              "s": "day"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "night": {
+              "t": "gece",
+              "s": "night"
+            },
+            "to sleep": {
+              "t": "uyumak",
+              "s": "to sleep"
+            },
+            "to work": {
+              "t": "çalışmak",
+              "s": "to work"
+            },
+            "today": {
+              "t": "bugün",
+              "s": "today"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_042",
+          "target": [
+            {
+              "t": "Bugün",
+              "c": "today"
+            },
+            {
+              "t": "pazartesi",
+              "c": "monday"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "yarın",
+              "c": "tomorrow"
+            },
+            {
+              "t": "salı",
+              "c": "tuesday"
+            },
+            "."
+          ],
+          "source": "Today is Monday, and tomorrow is Tuesday.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "monday": {
+              "t": "pazartesi",
+              "s": "Monday"
+            },
+            "this": {
+              "t": "bu",
+              "s": "this"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "today": {
+              "t": "bugün",
+              "s": "today"
+            },
+            "tomorrow": {
+              "t": "yarın",
+              "s": "tomorrow"
+            },
+            "tuesday": {
+              "t": "salı",
+              "s": "Tuesday"
+            }
+          }
+        },
+        {
+          "id": "a1_043",
+          "target": [
+            {
+              "t": "Bugün",
+              "c": "today"
+            },
+            {
+              "t": "çarşamba",
+              "c": "wednesday"
+            },
+            "mı",
+            ",",
+            {
+              "t": "perşembe",
+              "c": "thursday"
+            },
+            "mi",
+            ",",
+            {
+              "t": "cuma",
+              "c": "friday"
+            },
+            "mı",
+            "?"
+          ],
+          "source": "Is today Wednesday, Thursday or Friday?",
+          "gloss": {
+            "friday": {
+              "t": "cuma",
+              "s": "Friday"
+            },
+            "or": {
+              "t": "veya",
+              "s": "or"
+            },
+            "this": {
+              "t": "bu",
+              "s": "this"
+            },
+            "thursday": {
+              "t": "perşembe",
+              "s": "Thursday"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "today": {
+              "t": "bugün",
+              "s": "today"
+            },
+            "wednesday": {
+              "t": "çarşamba",
+              "s": "Wednesday"
+            }
+          }
+        },
+        {
+          "id": "a1_044",
+          "target": [
+            {
+              "t": "Cumartesi",
+              "c": "saturday"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "pazar",
+              "c": "sunday"
+            },
+            {
+              "t": "iyi",
+              "c": "good"
+            },
+            ":",
+            {
+              "t": "bütün",
+              "c": "all"
+            },
+            {
+              "t": "gün",
+              "c": "day"
+            },
+            {
+              "t": "uyuyorum",
+              "c": "to sleep"
+            },
+            "."
+          ],
+          "source": "Saturday and Sunday are good: I sleep all day.",
+          "gloss": {
+            "all": {
+              "t": "bütün",
+              "s": "all"
+            },
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "day": {
+              "t": "gün",
+              "s": "day"
+            },
+            "good": {
+              "t": "iyi",
+              "s": "good"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "saturday": {
+              "t": "cumartesi",
+              "s": "Saturday"
+            },
+            "sunday": {
+              "t": "pazar",
+              "s": "Sunday"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to sleep": {
+              "t": "uyumak",
+              "s": "to sleep"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_045",
+          "target": [
+            {
+              "t": "İki",
+              "c": "two"
+            },
+            {
+              "t": "erkek kardeşim",
+              "c": "brother"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "bir",
+              "c": "one"
+            },
+            {
+              "t": "kız kardeşim",
+              "c": "sister"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            "."
+          ],
+          "source": "I have two brothers and one sister.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "brother": {
+              "t": "erkek kardeş",
+              "s": "brother"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "one": {
+              "t": "bir",
+              "s": "one"
+            },
+            "sister": {
+              "t": "kız kardeş",
+              "s": "sister"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            },
+            "two": {
+              "t": "iki",
+              "s": "two"
+            }
+          }
+        },
+        {
+          "id": "a1_046",
+          "target": [
+            {
+              "t": "Ne zaman",
+              "c": "when"
+            },
+            {
+              "t": "gelebilirsin",
+              "c": "to come"
+            },
+            "?",
+            {
+              "t": "Bugün",
+              "c": "today"
+            },
+            {
+              "t": "beş",
+              "c": "five"
+            },
+            {
+              "t": "saat",
+              "c": "hour"
+            },
+            {
+              "t": "çalışıyorum",
+              "c": "to work"
+            },
+            "."
+          ],
+          "source": "When can you come? I work five hours today.",
+          "gloss": {
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "five": {
+              "t": "beş",
+              "s": "five"
+            },
+            "hour": {
+              "t": "saat",
+              "s": "hour"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "to come": {
+              "t": "gelmek",
+              "s": "to come"
+            },
+            "to work": {
+              "t": "çalışmak",
+              "s": "to work"
+            },
+            "today": {
+              "t": "bugün",
+              "s": "today"
+            },
+            "when": {
+              "t": "ne zaman",
+              "s": "when"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_047",
+          "target": [
+            {
+              "t": "Evde",
+              "c": "house"
+            },
+            {
+              "t": "dört",
+              "c": "four"
+            },
+            {
+              "t": "oda",
+              "c": "room"
+            },
+            ",",
+            {
+              "t": "beş",
+              "c": "five"
+            },
+            {
+              "t": "pencere",
+              "c": "window"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "altı",
+              "c": "six"
+            },
+            {
+              "t": "kapı",
+              "c": "door"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            "."
+          ],
+          "source": "The house has four rooms, five windows and six doors.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "door": {
+              "t": "kapı",
+              "s": "door"
+            },
+            "five": {
+              "t": "beş",
+              "s": "five"
+            },
+            "four": {
+              "t": "dört",
+              "s": "four"
+            },
+            "house": {
+              "t": "ev",
+              "s": "house"
+            },
+            "in": {
+              "t": "-de",
+              "s": "in"
+            },
+            "room": {
+              "t": "oda",
+              "s": "room"
+            },
+            "six": {
+              "t": "altı",
+              "s": "six"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            },
+            "window": {
+              "t": "pencere",
+              "s": "window"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_048",
+          "target": [
+            "Bir",
+            {
+              "t": "haftada",
+              "c": "week"
+            },
+            {
+              "t": "yedi",
+              "c": "seven"
+            },
+            {
+              "t": "gün",
+              "c": "day"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "ben",
+              "c": "i"
+            },
+            {
+              "t": "beş",
+              "c": "five"
+            },
+            {
+              "t": "gün",
+              "c": "day"
+            },
+            {
+              "t": "çalışıyorum",
+              "c": "to work"
+            },
+            "."
+          ],
+          "source": "The week has seven days, and I work five days.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "day": {
+              "t": "gün",
+              "s": "day"
+            },
+            "five": {
+              "t": "beş",
+              "s": "five"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "in": {
+              "t": "-de",
+              "s": "in"
+            },
+            "seven": {
+              "t": "yedi",
+              "s": "seven"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            },
+            "to work": {
+              "t": "çalışmak",
+              "s": "to work"
+            },
+            "week": {
+              "t": "hafta",
+              "s": "week"
+            }
+          }
+        },
+        {
+          "id": "a1_049",
+          "target": [
+            {
+              "t": "On",
+              "c": "ten"
+            },
+            {
+              "t": "elma",
+              "c": "apple"
+            },
+            ",",
+            {
+              "t": "dokuz",
+              "c": "nine"
+            },
+            {
+              "t": "yumurta",
+              "c": "egg"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "sekiz",
+              "c": "eight"
+            },
+            {
+              "t": "balık",
+              "c": "fish"
+            },
+            {
+              "t": "istiyorum",
+              "c": "to want"
+            },
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "."
+          ],
+          "source": "I want ten apples, nine eggs and eight fish, please.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "apple": {
+              "t": "elma",
+              "s": "apple"
+            },
+            "egg": {
+              "t": "yumurta",
+              "s": "egg"
+            },
+            "eight": {
+              "t": "sekiz",
+              "s": "eight"
+            },
+            "fish": {
+              "t": "balık",
+              "s": "fish"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "nine": {
+              "t": "dokuz",
+              "s": "nine"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "ten": {
+              "t": "on",
+              "s": "ten"
+            },
+            "to want": {
+              "t": "istemek",
+              "s": "to want"
+            }
+          }
+        },
+        {
+          "id": "a1_050",
+          "target": [
+            {
+              "t": "Çocuk",
+              "c": "child"
+            },
+            {
+              "t": "on",
+              "c": "ten"
+            },
+            {
+              "t": "yaşında",
+              "c": "year",
+              "g": "yaş"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "her zaman",
+              "c": "always"
+            },
+            {
+              "t": "öğrenmek",
+              "c": "to learn"
+            },
+            {
+              "t": "istiyor",
+              "c": "to want"
+            },
+            "."
+          ],
+          "source": "The child is ten years old, and he always wants to learn.",
+          "gloss": {
+            "always": {
+              "t": "her zaman",
+              "s": "always"
+            },
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "child": {
+              "t": "çocuk",
+              "s": "child"
+            },
+            "he": {
+              "t": "o",
+              "s": "he"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "old": {
+              "t": "eski",
+              "s": "old"
+            },
+            "ten": {
+              "t": "on",
+              "s": "ten"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            },
+            "to learn": {
+              "t": "öğrenmek",
+              "s": "to learn"
+            },
+            "to want": {
+              "t": "istemek",
+              "s": "to want"
+            },
+            "year": {
+              "t": "yıl",
+              "s": "year"
+            }
+          }
+        },
+        {
+          "id": "a1_073",
+          "target": [
+            {
+              "t": "On",
+              "c": "ten"
+            },
+            ",",
+            {
+              "t": "dokuz",
+              "c": "nine"
+            },
+            ",",
+            {
+              "t": "sekiz",
+              "c": "eight"
+            },
+            ",",
+            {
+              "t": "yedi",
+              "c": "seven"
+            },
+            ",",
+            {
+              "t": "üç",
+              "c": "three"
+            },
+            ",",
+            {
+              "t": "iki",
+              "c": "two"
+            },
+            ",",
+            {
+              "t": "bir",
+              "c": "one"
+            },
+            ",",
+            {
+              "t": "sıfır",
+              "c": "zero"
+            },
+            "!"
+          ],
+          "source": "Ten, nine, eight, seven, three, two, one, zero!",
+          "gloss": {
+            "eight": {
+              "t": "sekiz",
+              "s": "eight"
+            },
+            "nine": {
+              "t": "dokuz",
+              "s": "nine"
+            },
+            "one": {
+              "t": "bir",
+              "s": "one"
+            },
+            "seven": {
+              "t": "yedi",
+              "s": "seven"
+            },
+            "ten": {
+              "t": "on",
+              "s": "ten"
+            },
+            "three": {
+              "t": "üç",
+              "s": "three"
+            },
+            "two": {
+              "t": "iki",
+              "s": "two"
+            },
+            "zero": {
+              "t": "sıfır",
+              "s": "zero"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_051",
+          "target": [
+            {
+              "t": "Ocak",
+              "c": "january"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "şubat",
+              "c": "february"
+            },
+            {
+              "t": "soğuk",
+              "c": "cold"
+            },
+            {
+              "t": "aylar",
+              "c": "month"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "haziran",
+              "c": "june"
+            },
+            {
+              "t": "sıcak",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "January and February are cold months, but June is hot.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "cold": {
+              "t": "soğuk",
+              "s": "cold"
+            },
+            "february": {
+              "t": "şubat",
+              "s": "February"
+            },
+            "hot": {
+              "t": "sıcak",
+              "s": "hot"
+            },
+            "january": {
+              "t": "ocak",
+              "s": "January"
+            },
+            "june": {
+              "t": "haziran",
+              "s": "June"
+            },
+            "month": {
+              "t": "ay",
+              "s": "month"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_052",
+          "target": [
+            {
+              "t": "Mart",
+              "c": "march"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "nisan",
+              "c": "april"
+            },
+            {
+              "t": "soğuk",
+              "c": "cold"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "mayıs",
+              "c": "may"
+            },
+            {
+              "t": "güzel",
+              "c": "beautiful"
+            },
+            "."
+          ],
+          "source": "March and April are cold, but May is beautiful.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "april": {
+              "t": "nisan",
+              "s": "April"
+            },
+            "beautiful": {
+              "t": "güzel",
+              "s": "beautiful"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "cold": {
+              "t": "soğuk",
+              "s": "cold"
+            },
+            "march": {
+              "t": "mart",
+              "s": "March"
+            },
+            "may": {
+              "t": "mayıs",
+              "s": "May"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_053",
+          "target": [
+            {
+              "t": "Burada",
+              "c": "here"
+            },
+            {
+              "t": "su",
+              "c": "water"
+            },
+            {
+              "t": "asla",
+              "c": "never"
+            },
+            {
+              "t": "soğuk",
+              "c": "cold"
+            },
+            {
+              "t": "olmaz",
+              "c": "to be"
+            },
+            ",",
+            {
+              "t": "çünkü",
+              "c": "because"
+            },
+            {
+              "t": "güneş",
+              "c": "sun"
+            },
+            {
+              "t": "her zaman",
+              "c": "always"
+            },
+            {
+              "t": "sıcak",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "The water is never cold here, because the sun is always hot.",
+          "gloss": {
+            "always": {
+              "t": "her zaman",
+              "s": "always"
+            },
+            "because": {
+              "t": "çünkü",
+              "s": "because"
+            },
+            "cold": {
+              "t": "soğuk",
+              "s": "cold"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "hot": {
+              "t": "sıcak",
+              "s": "hot"
+            },
+            "never": {
+              "t": "asla",
+              "s": "never"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "sun": {
+              "t": "güneş",
+              "s": "sun"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "water": {
+              "t": "su",
+              "s": "water"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 7,
+      "sentences": [
+        {
+          "id": "a1_054",
+          "target": [
+            {
+              "t": "Temmuz",
+              "c": "july"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "ağustos",
+              "c": "august"
+            },
+            {
+              "t": "sıcak",
+              "c": "hot"
+            },
+            {
+              "t": "aylar",
+              "c": "month"
+            },
+            ",",
+            {
+              "t": "ben",
+              "c": "i"
+            },
+            {
+              "t": "çok",
+              "c": "very"
+            },
+            {
+              "t": "mutluyum",
+              "c": "happy"
+            },
+            "."
+          ],
+          "source": "July and August are hot months, and I am very happy.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "august": {
+              "t": "ağustos",
+              "s": "August"
+            },
+            "happy": {
+              "t": "mutlu",
+              "s": "happy"
+            },
+            "hot": {
+              "t": "sıcak",
+              "s": "hot"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "july": {
+              "t": "temmuz",
+              "s": "July"
+            },
+            "month": {
+              "t": "ay",
+              "s": "month"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "very": {
+              "t": "çok",
+              "s": "very"
+            }
+          }
+        },
+        {
+          "id": "a1_055",
+          "target": [
+            {
+              "t": "Eylül",
+              "c": "september"
+            },
+            ",",
+            {
+              "t": "ekim",
+              "c": "october"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "kasım",
+              "c": "november"
+            },
+            {
+              "t": "soğuk",
+              "c": "cold"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "aralık",
+              "c": "december"
+            },
+            {
+              "t": "güzel",
+              "c": "beautiful"
+            },
+            "."
+          ],
+          "source": "September, October and November are cold, but December is beautiful.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "beautiful": {
+              "t": "güzel",
+              "s": "beautiful"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "cold": {
+              "t": "soğuk",
+              "s": "cold"
+            },
+            "december": {
+              "t": "aralık",
+              "s": "December"
+            },
+            "november": {
+              "t": "kasım",
+              "s": "November"
+            },
+            "october": {
+              "t": "ekim",
+              "s": "October"
+            },
+            "september": {
+              "t": "eylül",
+              "s": "September"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_056",
+          "target": [
+            {
+              "t": "Aralık",
+              "c": "december"
+            },
+            {
+              "t": "mutlu",
+              "c": "happy"
+            },
+            "bir",
+            {
+              "t": "ay",
+              "c": "month"
+            },
+            ":",
+            {
+              "t": "bütün",
+              "c": "all"
+            },
+            {
+              "t": "aile",
+              "c": "family"
+            },
+            {
+              "t": "burada",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "December is a happy month: all the family is here.",
+          "gloss": {
+            "all": {
+              "t": "bütün",
+              "s": "all"
+            },
+            "december": {
+              "t": "aralık",
+              "s": "December"
+            },
+            "family": {
+              "t": "aile",
+              "s": "family"
+            },
+            "happy": {
+              "t": "mutlu",
+              "s": "happy"
+            },
+            "here": {
+              "t": "burada",
+              "s": "here"
+            },
+            "month": {
+              "t": "ay",
+              "s": "month"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_057",
+          "target": [
+            {
+              "t": "Araba",
+              "c": "car"
+            },
+            {
+              "t": "kırmızı",
+              "c": "red"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "ev",
+              "c": "house"
+            },
+            {
+              "t": "beyaz",
+              "c": "white"
+            },
+            "."
+          ],
+          "source": "The car is red, and the house is white.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "car": {
+              "t": "araba",
+              "s": "car"
+            },
+            "house": {
+              "t": "ev",
+              "s": "house"
+            },
+            "red": {
+              "t": "kırmızı",
+              "s": "red"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "white": {
+              "t": "beyaz",
+              "s": "white"
+            }
+          }
+        },
+        {
+          "id": "a1_058",
+          "target": [
+            {
+              "t": "Bana",
+              "c": "i"
+            },
+            {
+              "t": "siyah",
+              "c": "black"
+            },
+            {
+              "t": "telefonu",
+              "c": "phone"
+            },
+            {
+              "t": "ver",
+              "c": "to give"
+            },
+            ",",
+            {
+              "t": "lütfen",
+              "c": "please"
+            },
+            "!"
+          ],
+          "source": "Give me the black phone, please!",
+          "gloss": {
+            "black": {
+              "t": "siyah",
+              "s": "black"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "phone": {
+              "t": "telefon",
+              "s": "phone"
+            },
+            "please": {
+              "t": "lütfen",
+              "s": "please"
+            },
+            "to give": {
+              "t": "vermek",
+              "s": "to give"
+            }
+          }
+        },
+        {
+          "id": "a1_059",
+          "target": [
+            {
+              "t": "Kapı",
+              "c": "door"
+            },
+            {
+              "t": "yeşil",
+              "c": "green"
+            },
+            ",",
+            {
+              "t": "pencere",
+              "c": "window"
+            },
+            {
+              "t": "mavi",
+              "c": "blue"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "sandalye",
+              "c": "chair"
+            },
+            {
+              "t": "sarı",
+              "c": "yellow"
+            },
+            "."
+          ],
+          "source": "The door is green, the window is blue, and the chair is yellow.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "blue": {
+              "t": "mavi",
+              "s": "blue"
+            },
+            "chair": {
+              "t": "sandalye",
+              "s": "chair"
+            },
+            "door": {
+              "t": "kapı",
+              "s": "door"
+            },
+            "green": {
+              "t": "yeşil",
+              "s": "green"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "window": {
+              "t": "pencere",
+              "s": "window"
+            },
+            "yellow": {
+              "t": "sarı",
+              "s": "yellow"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_060",
+          "target": [
+            {
+              "t": "Ben",
+              "c": "i"
+            },
+            {
+              "t": "köpeği",
+              "c": "dog"
+            },
+            {
+              "t": "seviyorum",
+              "c": "to love"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "çocuk",
+              "c": "child"
+            },
+            {
+              "t": "kediyi",
+              "c": "cat"
+            },
+            {
+              "t": "seviyor",
+              "c": "to love"
+            },
+            "."
+          ],
+          "source": "I love the dog, and the child loves the cat.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "cat": {
+              "t": "kedi",
+              "s": "cat"
+            },
+            "child": {
+              "t": "çocuk",
+              "s": "child"
+            },
+            "dog": {
+              "t": "köpek",
+              "s": "dog"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "to love": {
+              "t": "sevmek",
+              "s": "to love"
+            }
+          }
+        },
+        {
+          "id": "a1_061",
+          "target": [
+            {
+              "t": "Köpek",
+              "c": "dog"
+            },
+            {
+              "t": "kahverengi",
+              "c": "brown"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "kedi",
+              "c": "cat"
+            },
+            {
+              "t": "gri",
+              "c": "grey"
+            },
+            "."
+          ],
+          "source": "The dog is brown, and the cat is grey.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "brown": {
+              "t": "kahverengi",
+              "s": "brown"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "cat": {
+              "t": "kedi",
+              "s": "cat"
+            },
+            "dog": {
+              "t": "köpek",
+              "s": "dog"
+            },
+            "grey": {
+              "t": "gri",
+              "s": "grey"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_062",
+          "target": [
+            {
+              "t": "Turuncu",
+              "c": "orange"
+            },
+            {
+              "t": "kitabı",
+              "c": "book"
+            },
+            {
+              "t": "ya da",
+              "c": "or"
+            },
+            {
+              "t": "pembe",
+              "c": "pink"
+            },
+            {
+              "t": "telefonu",
+              "c": "phone"
+            },
+            {
+              "t": "bulamıyorum",
+              "c": "to find"
+            },
+            "."
+          ],
+          "source": "I can not find the orange book or the pink phone.",
+          "gloss": {
+            "book": {
+              "t": "kitap",
+              "s": "book"
+            },
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "or": {
+              "t": "veya",
+              "s": "or"
+            },
+            "orange": {
+              "t": "turuncu",
+              "s": "orange"
+            },
+            "phone": {
+              "t": "telefon",
+              "s": "phone"
+            },
+            "pink": {
+              "t": "pembe",
+              "s": "pink"
+            },
+            "to find": {
+              "t": "bulmak",
+              "s": "to find"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_063",
+          "target": [
+            {
+              "t": "Sokak",
+              "c": "street"
+            },
+            {
+              "t": "uzun",
+              "c": "long"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "gün",
+              "c": "day"
+            },
+            {
+              "t": "kısa",
+              "c": "short"
+            },
+            "."
+          ],
+          "source": "The street is long, but the day is short.",
+          "gloss": {
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "day": {
+              "t": "gün",
+              "s": "day"
+            },
+            "long": {
+              "t": "uzun",
+              "s": "long"
+            },
+            "short": {
+              "t": "kısa",
+              "s": "short"
+            },
+            "street": {
+              "t": "sokak",
+              "s": "street"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_064",
+          "target": [
+            {
+              "t": "Çocuğun",
+              "c": "child"
+            },
+            {
+              "t": "büyük",
+              "c": "big"
+            },
+            {
+              "t": "gözleri",
+              "c": "eye"
+            },
+            ",",
+            {
+              "t": "küçük",
+              "c": "small"
+            },
+            {
+              "t": "elleri",
+              "c": "hand"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "küçük",
+              "c": "small"
+            },
+            {
+              "t": "ayakları",
+              "c": "foot"
+            },
+            {
+              "t": "var",
+              "c": "to have"
+            },
+            "."
+          ],
+          "source": "The child has big eyes, small hands and small feet.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "big": {
+              "t": "büyük",
+              "s": "big"
+            },
+            "child": {
+              "t": "çocuk",
+              "s": "child"
+            },
+            "eye": {
+              "t": "göz",
+              "s": "eye"
+            },
+            "foot": {
+              "t": "ayak",
+              "s": "foot"
+            },
+            "hand": {
+              "t": "el",
+              "s": "hand"
+            },
+            "small": {
+              "t": "küçük",
+              "s": "small"
+            },
+            "to have": {
+              "t": "var",
+              "s": "to have"
+            }
+          }
+        },
+        {
+          "id": "a1_065",
+          "target": [
+            {
+              "t": "Kitapların",
+              "c": "book"
+            },
+            {
+              "t": "hepsini",
+              "c": "all",
+              "g": "hepsi"
+            },
+            {
+              "t": "alamıyorum",
+              "c": "to take"
+            },
+            ".",
+            {
+              "t": "Ne",
+              "c": "what"
+            },
+            {
+              "t": "yapabilirim",
+              "c": "to do"
+            },
+            "?",
+            {
+              "t": "Bana",
+              "c": "i"
+            },
+            {
+              "t": "yardım edebilir",
+              "c": "to help"
+            },
+            "misin",
+            "?"
+          ],
+          "source": "I can not take all the books. What can I do? Can you help me?",
+          "gloss": {
+            "all": {
+              "t": "bütün",
+              "s": "all"
+            },
+            "book": {
+              "t": "kitap",
+              "s": "book"
+            },
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "to do": {
+              "t": "yapmak",
+              "s": "to do"
+            },
+            "to help": {
+              "t": "yardım etmek",
+              "s": "to help"
+            },
+            "to take": {
+              "t": "almak",
+              "s": "to take"
+            },
+            "what": {
+              "t": "ne",
+              "s": "what"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_071",
+          "target": [
+            {
+              "t": "Başım",
+              "c": "head"
+            },
+            ",",
+            {
+              "t": "ellerim",
+              "c": "hand"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "ayaklarım",
+              "c": "foot"
+            },
+            {
+              "t": "soğuk",
+              "c": "cold"
+            },
+            "."
+          ],
+          "source": "My head, my hands and my feet are cold.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "cold": {
+              "t": "soğuk",
+              "s": "cold"
+            },
+            "foot": {
+              "t": "ayak",
+              "s": "foot"
+            },
+            "hand": {
+              "t": "el",
+              "s": "hand"
+            },
+            "head": {
+              "t": "baş",
+              "s": "head"
+            },
+            "my": {
+              "t": "benim",
+              "s": "my"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_066",
+          "target": [
+            {
+              "t": "İş",
+              "c": "work"
+            },
+            {
+              "t": "zor",
+              "c": "difficult"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "para",
+              "c": "money"
+            },
+            {
+              "t": "iyi",
+              "c": "good"
+            },
+            "."
+          ],
+          "source": "The work is difficult, but the money is good.",
+          "gloss": {
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "difficult": {
+              "t": "zor",
+              "s": "difficult"
+            },
+            "good": {
+              "t": "iyi",
+              "s": "good"
+            },
+            "money": {
+              "t": "para",
+              "s": "money"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "work": {
+              "t": "iş",
+              "s": "work"
+            }
+          }
+        },
+        {
+          "id": "a1_067",
+          "target": [
+            {
+              "t": "Kahve",
+              "c": "coffee"
+            },
+            {
+              "t": "kötü",
+              "c": "bad"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "pahalı",
+              "c": "expensive"
+            },
+            ".",
+            {
+              "t": "Çay",
+              "c": "tea"
+            },
+            {
+              "t": "iyi",
+              "c": "good"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "ucuz",
+              "c": "cheap"
+            },
+            "."
+          ],
+          "source": "The coffee is bad and expensive. The tea is good and cheap.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "bad": {
+              "t": "kötü",
+              "s": "bad"
+            },
+            "cheap": {
+              "t": "ucuz",
+              "s": "cheap"
+            },
+            "coffee": {
+              "t": "kahve",
+              "s": "coffee"
+            },
+            "expensive": {
+              "t": "pahalı",
+              "s": "expensive"
+            },
+            "good": {
+              "t": "iyi",
+              "s": "good"
+            },
+            "tea": {
+              "t": "çay",
+              "s": "tea"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_068",
+          "target": [
+            {
+              "t": "Okuyabiliyorum",
+              "c": "to read"
+            },
+            {
+              "t": "ve",
+              "c": "and"
+            },
+            {
+              "t": "yazabiliyorum",
+              "c": "to write"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "hızlı",
+              "c": "fast"
+            },
+            {
+              "t": "konuşamıyorum",
+              "c": "to speak"
+            },
+            "."
+          ],
+          "source": "I can read and write, but I can not speak fast.",
+          "gloss": {
+            "and": {
+              "t": "ve",
+              "s": "and"
+            },
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "can": {
+              "t": "-ebilmek",
+              "s": "can"
+            },
+            "fast": {
+              "t": "hızlı",
+              "s": "fast"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "to read": {
+              "t": "okumak",
+              "s": "to read"
+            },
+            "to speak": {
+              "t": "konuşmak",
+              "s": "to speak"
+            },
+            "to write": {
+              "t": "yazmak",
+              "s": "to write"
+            }
+          }
+        },
+        {
+          "id": "a1_072",
+          "target": [
+            {
+              "t": "Ne",
+              "c": "what"
+            },
+            {
+              "t": "diyorsun",
+              "c": "to say",
+              "g": "demek"
+            },
+            "?",
+            {
+              "t": "Bilmiyorum",
+              "c": "to know"
+            },
+            "!",
+            {
+              "t": "O",
+              "c": "it"
+            },
+            {
+              "t": "kolay",
+              "c": "easy"
+            },
+            {
+              "t": "değil",
+              "c": "not"
+            },
+            "."
+          ],
+          "source": "What do you say? I do not know! It is not easy.",
+          "gloss": {
+            "easy": {
+              "t": "kolay",
+              "s": "easy"
+            },
+            "i": {
+              "t": "ben",
+              "s": "I"
+            },
+            "it": {
+              "t": "o",
+              "s": "it"
+            },
+            "not": {
+              "t": "değil",
+              "s": "not"
+            },
+            "this": {
+              "t": "bu",
+              "s": "this"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "to do": {
+              "t": "yapmak",
+              "s": "to do"
+            },
+            "to know": {
+              "t": "bilmek",
+              "s": "to know"
+            },
+            "to say": {
+              "t": "söylemek",
+              "s": "to say"
+            },
+            "what": {
+              "t": "ne",
+              "s": "what"
+            },
+            "you": {
+              "t": "sen",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_041",
+          "target": [
+            {
+              "t": "Dün",
+              "c": "yesterday"
+            },
+            {
+              "t": "akşam",
+              "c": "evening"
+            },
+            {
+              "t": "zordu",
+              "c": "difficult"
+            },
+            {
+              "t": "ama",
+              "c": "but"
+            },
+            {
+              "t": "yarın",
+              "c": "tomorrow"
+            },
+            {
+              "t": "yeni",
+              "c": "new"
+            },
+            "bir",
+            {
+              "t": "gün",
+              "c": "day"
+            },
+            "."
+          ],
+          "source": "Yesterday evening was difficult, but tomorrow is a new day.",
+          "gloss": {
+            "but": {
+              "t": "ama",
+              "s": "but"
+            },
+            "day": {
+              "t": "gün",
+              "s": "day"
+            },
+            "difficult": {
+              "t": "zor",
+              "s": "difficult"
+            },
+            "evening": {
+              "t": "akşam",
+              "s": "evening"
+            },
+            "new": {
+              "t": "yeni",
+              "s": "new"
+            },
+            "to be": {
+              "t": "olmak",
+              "s": "to be"
+            },
+            "tomorrow": {
+              "t": "yarın",
+              "s": "tomorrow"
+            },
+            "yesterday": {
+              "t": "dün",
+              "s": "yesterday"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

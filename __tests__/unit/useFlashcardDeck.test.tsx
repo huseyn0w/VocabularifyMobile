@@ -2,6 +2,7 @@ import { act, renderHook, waitFor } from "@testing-library/react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFlashcardDeck } from "../../app/hooks/useFlashcardDeck";
 import { LearningMode, Word } from "../../app/utils/types";
+import { buildItems } from "../../app/utils/items";
 import { STORAGE_KEYS } from "../../app/services/storage";
 import { SHOW_TRANSLATION_DELAY } from "../../app/utils/constants";
 
@@ -10,6 +11,9 @@ const WORDS: Word[] = [
   { word_1: "zwei", word_2: "two" },
   { word_1: "drei", word_2: "three" },
 ];
+
+const ITEMS = buildItems(WORDS);
+const DECK = "german:english:a1";
 
 const FREQUENCY = 5000;
 
@@ -21,7 +25,8 @@ describe("useFlashcardDeck - navigation", () => {
   it("loads the persisted index, then next advances and wraps around at the end", async () => {
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),
@@ -29,7 +34,7 @@ describe("useFlashcardDeck - navigation", () => {
 
     await waitFor(() => expect(result.current.currentIndex).toBe(0));
     expect(result.current.total).toBe(3);
-    expect(result.current.current).toEqual(WORDS[0]);
+    expect(result.current.current).toEqual(ITEMS[0]);
 
     act(() => result.current.next());
     expect(result.current.currentIndex).toBe(1);
@@ -43,7 +48,8 @@ describe("useFlashcardDeck - navigation", () => {
   it("prev wraps to the end from index 0", async () => {
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),
@@ -51,13 +57,14 @@ describe("useFlashcardDeck - navigation", () => {
     await waitFor(() => expect(result.current.currentIndex).toBe(0));
 
     act(() => result.current.prev());
-    expect(result.current.currentIndex).toBe(WORDS.length - 1);
+    expect(result.current.currentIndex).toBe(ITEMS.length - 1);
   });
 
   it("persists the last index via the storage service when it changes", async () => {
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),
@@ -66,22 +73,23 @@ describe("useFlashcardDeck - navigation", () => {
 
     act(() => result.current.next());
     await waitFor(async () => {
-      const stored = await AsyncStorage.getItem(STORAGE_KEYS.lastIndex);
-      expect(JSON.parse(stored as string)).toBe(1);
+      const stored = await AsyncStorage.getItem(STORAGE_KEYS.deckIndex);
+      expect(JSON.parse(stored as string)[DECK]).toBe(1);
     });
   });
 
   it("starts from the persisted index when one is stored", async () => {
-    await AsyncStorage.setItem(STORAGE_KEYS.lastIndex, JSON.stringify(2));
+    await AsyncStorage.setItem(STORAGE_KEYS.deckIndex, JSON.stringify({ [DECK]: 2 }));
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),
     );
     await waitFor(() => expect(result.current.currentIndex).toBe(2));
-    expect(result.current.current).toEqual(WORDS[2]);
+    expect(result.current.current).toEqual(ITEMS[2]);
   });
 });
 
@@ -96,7 +104,8 @@ describe("useFlashcardDeck - auto-advance", () => {
   it("advances the index after `frequency` ms", async () => {
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),
@@ -117,7 +126,8 @@ describe("useFlashcardDeck - auto-advance", () => {
   it("clears the interval on unmount (no advance after unmount)", async () => {
     const { result, unmount } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),
@@ -148,7 +158,8 @@ describe("useFlashcardDeck - translation reveal", () => {
   it("showWordThenTranslation: starts false, becomes true after the reveal delay", async () => {
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowWordThenTranslation,
       }),
@@ -168,7 +179,8 @@ describe("useFlashcardDeck - translation reveal", () => {
   it("showBoth: keeps the translation shown", async () => {
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: WORDS,
+        items: ITEMS,
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),
@@ -184,7 +196,8 @@ describe("useFlashcardDeck - empty deck", () => {
   it("stays null with no words and next/prev are no-ops", async () => {
     const { result } = renderHook(() =>
       useFlashcardDeck({
-        words: [],
+        items: [],
+        deckKey: DECK,
         frequency: FREQUENCY,
         mode: LearningMode.ShowBoth,
       }),

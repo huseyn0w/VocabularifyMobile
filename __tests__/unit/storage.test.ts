@@ -5,8 +5,9 @@ import {
   getLanguageSettings,
   setLanguageSettings,
   hasLanguageSettings,
-  getLastIndex,
-  setLastIndex,
+  deckKey,
+  getDeckIndex,
+  setDeckIndex,
   getMode,
   setMode,
   getFrequency,
@@ -133,19 +134,32 @@ describe('round-trips per key', () => {
     expect(await getLanguageSettings()).toEqual(value);
   });
 
-  it('last index round-trips and floors / guards bad values', async () => {
-    await setLastIndex(42);
-    expect(await getLastIndex()).toBe(42);
+  it('deck position round-trips per deck and guards bad values', async () => {
+    const de = deckKey('german', 'russian', 'a1');
+    const fr = deckKey('french', 'english', 'a1');
 
-    // Defaults to 0 when unset.
+    await setDeckIndex(de, 42);
+    expect(await getDeckIndex(de)).toBe(42);
+
+    // A second deck keeps its own position rather than overwriting the first.
+    await setDeckIndex(fr, 7);
+    expect(await getDeckIndex(de)).toBe(42);
+    expect(await getDeckIndex(fr)).toBe(7);
+
+    // Defaults to 0 for a deck never opened, and when nothing is stored.
+    expect(await getDeckIndex(deckKey('italian', 'english', 'c1'))).toBe(0);
     await AsyncStorage.clear();
-    expect(await getLastIndex()).toBe(0);
+    expect(await getDeckIndex(de)).toBe(0);
 
-    // Negative / non-numeric stored values fall back to 0.
-    await AsyncStorage.setItem(STORAGE_KEYS.lastIndex, JSON.stringify(-5));
-    expect(await getLastIndex()).toBe(0);
-    await AsyncStorage.setItem(STORAGE_KEYS.lastIndex, JSON.stringify(3.9));
-    expect(await getLastIndex()).toBe(3);
+    // Negative positions are clamped and fractional ones floored.
+    await setDeckIndex(de, -5);
+    expect(await getDeckIndex(de)).toBe(0);
+    await setDeckIndex(de, 3.9);
+    expect(await getDeckIndex(de)).toBe(3);
+
+    // A malformed stored map falls back to 0 rather than throwing.
+    await AsyncStorage.setItem(STORAGE_KEYS.deckIndex, JSON.stringify({ [de]: 'nope' }));
+    expect(await getDeckIndex(de)).toBe(0);
   });
 
   it('mode round-trips', async () => {

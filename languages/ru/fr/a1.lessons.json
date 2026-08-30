@@ -1,0 +1,5009 @@
+{
+  "lessons": [
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_001",
+          "target": [
+            {
+              "t": "Привет",
+              "c": "hello"
+            },
+            "!",
+            {
+              "t": "Как",
+              "c": "how"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            "?"
+          ],
+          "source": "Bonjour ! Comment tu vas ?",
+          "gloss": {
+            "hello": {
+              "t": "привет",
+              "s": "bonjour"
+            },
+            "how": {
+              "t": "как",
+              "s": "comment"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to go": {
+              "t": "идти",
+              "s": "aller"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_002",
+          "target": [
+            {
+              "t": "Хорошо",
+              "c": "good"
+            },
+            ",",
+            {
+              "t": "спасибо",
+              "c": "thank you"
+            },
+            "."
+          ],
+          "source": "Je vais bien, merci.",
+          "gloss": {
+            "good": {
+              "t": "хороший",
+              "s": "bon"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "thank you": {
+              "t": "спасибо",
+              "s": "merci"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to go": {
+              "t": "идти",
+              "s": "aller"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 7,
+      "sentences": [
+        {
+          "id": "a1_003",
+          "target": [
+            {
+              "t": "Да",
+              "c": "yes"
+            },
+            ",",
+            {
+              "t": "очень",
+              "c": "very"
+            },
+            {
+              "t": "хорошо",
+              "c": "good"
+            },
+            ",",
+            {
+              "t": "спасибо",
+              "c": "thank you"
+            },
+            "!"
+          ],
+          "source": "Oui, je vais très bien, merci !",
+          "gloss": {
+            "good": {
+              "t": "хороший",
+              "s": "bon"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "thank you": {
+              "t": "спасибо",
+              "s": "merci"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to go": {
+              "t": "идти",
+              "s": "aller"
+            },
+            "very": {
+              "t": "очень",
+              "s": "très"
+            },
+            "yes": {
+              "t": "да",
+              "s": "oui"
+            }
+          }
+        },
+        {
+          "id": "a1_004",
+          "target": [
+            {
+              "t": "Нет",
+              "c": "no"
+            },
+            ",",
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "хорошо",
+              "c": "good"
+            },
+            "."
+          ],
+          "source": "Non, je ne vais pas bien.",
+          "gloss": {
+            "good": {
+              "t": "хороший",
+              "s": "bon"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "no": {
+              "t": "нет",
+              "s": "non"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to go": {
+              "t": "идти",
+              "s": "aller"
+            }
+          }
+        },
+        {
+          "id": "a1_005",
+          "target": [
+            {
+              "t": "Да",
+              "c": "yes"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            ".",
+            {
+              "t": "Спасибо",
+              "c": "thank you"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "до свидания",
+              "c": "goodbye"
+            },
+            "!"
+          ],
+          "source": "Oui, s'il te plaît. Merci et au revoir !",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "goodbye": {
+              "t": "до свидания",
+              "s": "au revoir"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "thank you": {
+              "t": "спасибо",
+              "s": "merci"
+            },
+            "yes": {
+              "t": "да",
+              "s": "oui"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_006",
+          "target": [
+            {
+              "t": "Где",
+              "c": "where"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            "?",
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Tu es où ? Je suis ici.",
+          "gloss": {
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "where": {
+              "t": "где",
+              "s": "où"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_007",
+          "target": [
+            {
+              "t": "Он",
+              "c": "he"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "а",
+              "c": "but",
+              "g": "а"
+            },
+            {
+              "t": "она",
+              "c": "she"
+            },
+            {
+              "t": "там",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "Il est ici et elle est là.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "he": {
+              "t": "он",
+              "s": "il"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "she": {
+              "t": "она",
+              "s": "elle"
+            },
+            "there": {
+              "t": "там",
+              "s": "là"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_008",
+          "target": [
+            {
+              "t": "Мы",
+              "c": "we"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "а",
+              "c": "but",
+              "g": "а"
+            },
+            {
+              "t": "они",
+              "c": "they"
+            },
+            {
+              "t": "там",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "Nous sommes ici, et ils sont là.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "there": {
+              "t": "там",
+              "s": "là"
+            },
+            "they": {
+              "t": "они",
+              "s": "ils"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "we": {
+              "t": "мы",
+              "s": "nous"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_009",
+          "target": [
+            {
+              "t": "Прости",
+              "c": "sorry",
+              "g": "простить"
+            },
+            "!",
+            {
+              "t": "Кто",
+              "c": "who"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            "?"
+          ],
+          "source": "Pardon ! Tu es qui ?",
+          "gloss": {
+            "sorry": {
+              "t": "извините",
+              "s": "pardon"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "who": {
+              "t": "кто",
+              "s": "qui"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_010",
+          "target": [
+            {
+              "t": "Сейчас",
+              "c": "now"
+            },
+            "у",
+            {
+              "t": "меня",
+              "c": "i"
+            },
+            {
+              "t": "есть",
+              "c": "to have",
+              "g": "быть"
+            },
+            {
+              "t": "время",
+              "c": "time"
+            },
+            ".",
+            {
+              "t": "И",
+              "c": "and"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            "?"
+          ],
+          "source": "Maintenant j'ai le temps. Et toi ?",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "now": {
+              "t": "сейчас",
+              "s": "maintenant"
+            },
+            "time": {
+              "t": "время",
+              "s": "le temps"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_011",
+          "target": [
+            {
+              "t": "Он",
+              "c": "he"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "мы",
+              "c": "we"
+            },
+            {
+              "t": "тоже",
+              "c": "also"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Il est ici, et nous sommes aussi ici.",
+          "gloss": {
+            "also": {
+              "t": "тоже",
+              "s": "aussi"
+            },
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "he": {
+              "t": "он",
+              "s": "il"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "we": {
+              "t": "мы",
+              "s": "nous"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_012",
+          "target": [
+            {
+              "t": "Кофе",
+              "c": "coffee"
+            },
+            {
+              "t": "с",
+              "c": "with"
+            },
+            {
+              "t": "молоком",
+              "c": "milk"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "!"
+          ],
+          "source": "Un café avec du lait, s'il te plaît !",
+          "gloss": {
+            "coffee": {
+              "t": "кофе",
+              "s": "le café"
+            },
+            "milk": {
+              "t": "молоко",
+              "s": "le lait"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "with": {
+              "t": "с",
+              "s": "avec"
+            }
+          }
+        },
+        {
+          "id": "a1_013",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "хочу",
+              "c": "to want"
+            },
+            {
+              "t": "чай",
+              "c": "tea"
+            },
+            {
+              "t": "без",
+              "c": "without"
+            },
+            {
+              "t": "молока",
+              "c": "milk"
+            },
+            "."
+          ],
+          "source": "Je veux du thé sans lait.",
+          "gloss": {
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "milk": {
+              "t": "молоко",
+              "s": "le lait"
+            },
+            "tea": {
+              "t": "чай",
+              "s": "le thé"
+            },
+            "to want": {
+              "t": "хотеть",
+              "s": "vouloir"
+            },
+            "without": {
+              "t": "без",
+              "s": "sans"
+            }
+          }
+        },
+        {
+          "id": "a1_014",
+          "target": [
+            {
+              "t": "Ты",
+              "c": "you"
+            },
+            {
+              "t": "пьёшь",
+              "c": "to drink"
+            },
+            {
+              "t": "чай",
+              "c": "tea"
+            },
+            ",",
+            {
+              "t": "а",
+              "c": "but",
+              "g": "а"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "пью",
+              "c": "to drink"
+            },
+            {
+              "t": "воду",
+              "c": "water"
+            },
+            "."
+          ],
+          "source": "Tu bois du thé, et je bois de l'eau.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "tea": {
+              "t": "чай",
+              "s": "le thé"
+            },
+            "to drink": {
+              "t": "пить",
+              "s": "boire"
+            },
+            "water": {
+              "t": "вода",
+              "s": "l'eau"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 6,
+      "sentences": [
+        {
+          "id": "a1_015",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "ем",
+              "c": "to eat"
+            },
+            {
+              "t": "хлеб",
+              "c": "bread"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "яблоко",
+              "c": "apple"
+            },
+            "."
+          ],
+          "source": "Je mange du pain et une pomme.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "apple": {
+              "t": "яблоко",
+              "s": "la pomme"
+            },
+            "bread": {
+              "t": "хлеб",
+              "s": "le pain"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "to eat": {
+              "t": "есть",
+              "s": "manger"
+            }
+          }
+        },
+        {
+          "id": "a1_016",
+          "target": [
+            {
+              "t": "Завтрак",
+              "c": "breakfast"
+            },
+            {
+              "t": "хороший",
+              "c": "good"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "хочу",
+              "c": "to want"
+            },
+            {
+              "t": "больше",
+              "c": "more"
+            },
+            {
+              "t": "хлеба",
+              "c": "bread"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "."
+          ],
+          "source": "Le petit-déjeuner est bon, mais je veux plus de pain, s'il te plaît.",
+          "gloss": {
+            "bread": {
+              "t": "хлеб",
+              "s": "le pain"
+            },
+            "breakfast": {
+              "t": "завтрак",
+              "s": "le petit-déjeuner"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "good": {
+              "t": "хороший",
+              "s": "bon"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "more": {
+              "t": "больше",
+              "s": "plus"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to want": {
+              "t": "хотеть",
+              "s": "vouloir"
+            }
+          }
+        },
+        {
+          "id": "a1_017",
+          "target": [
+            {
+              "t": "Он",
+              "c": "he"
+            },
+            {
+              "t": "ест",
+              "c": "to eat"
+            },
+            {
+              "t": "яйцо",
+              "c": "egg"
+            },
+            {
+              "t": "с",
+              "c": "with"
+            },
+            {
+              "t": "солью",
+              "c": "salt"
+            },
+            "."
+          ],
+          "source": "Il mange un œuf avec du sel.",
+          "gloss": {
+            "egg": {
+              "t": "яйцо",
+              "s": "l'œuf"
+            },
+            "he": {
+              "t": "он",
+              "s": "il"
+            },
+            "salt": {
+              "t": "соль",
+              "s": "le sel"
+            },
+            "to eat": {
+              "t": "есть",
+              "s": "manger"
+            },
+            "with": {
+              "t": "с",
+              "s": "avec"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_018",
+          "target": [
+            {
+              "t": "Ты",
+              "c": "you"
+            },
+            {
+              "t": "можешь",
+              "c": "can"
+            },
+            {
+              "t": "помочь",
+              "c": "to help"
+            },
+            {
+              "t": "мне",
+              "c": "i"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "?"
+          ],
+          "source": "Tu peux m'aider, s'il te plaît ?",
+          "gloss": {
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "to help": {
+              "t": "помогать",
+              "s": "aider"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_019",
+          "target": [
+            {
+              "t": "Прости",
+              "c": "sorry",
+              "g": "простить"
+            },
+            ",",
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "могу",
+              "c": "can"
+            },
+            {
+              "t": "понять",
+              "c": "to understand"
+            },
+            {
+              "t": "тебя",
+              "c": "you"
+            },
+            ".",
+            {
+              "t": "Можешь",
+              "c": "can"
+            },
+            {
+              "t": "говорить",
+              "c": "to speak"
+            },
+            {
+              "t": "медленно",
+              "c": "slow"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "?"
+          ],
+          "source": "Pardon, je ne peux pas te comprendre. Tu peux parler lentement, s'il te plaît ?",
+          "gloss": {
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "more": {
+              "t": "больше",
+              "s": "plus"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "slow": {
+              "t": "медленный",
+              "s": "lent"
+            },
+            "sorry": {
+              "t": "извините",
+              "s": "pardon"
+            },
+            "to speak": {
+              "t": "говорить",
+              "s": "parler"
+            },
+            "to understand": {
+              "t": "понимать",
+              "s": "comprendre"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_020",
+          "target": [
+            {
+              "t": "Почему",
+              "c": "why"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            "?",
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "потому что",
+              "c": "because"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "хочу",
+              "c": "to want"
+            },
+            {
+              "t": "учиться",
+              "c": "to learn"
+            },
+            "."
+          ],
+          "source": "Pourquoi tu es ici ? Je suis ici parce que je veux apprendre.",
+          "gloss": {
+            "because": {
+              "t": "потому что",
+              "s": "parce que"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to learn": {
+              "t": "учить",
+              "s": "apprendre"
+            },
+            "to want": {
+              "t": "хотеть",
+              "s": "vouloir"
+            },
+            "why": {
+              "t": "почему",
+              "s": "pourquoi"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_021",
+          "target": [
+            {
+              "t": "Мясо",
+              "c": "meat"
+            },
+            {
+              "t": "или",
+              "c": "or"
+            },
+            {
+              "t": "рыба",
+              "c": "fish"
+            },
+            "?"
+          ],
+          "source": "Viande ou poisson ?",
+          "gloss": {
+            "fish": {
+              "t": "рыба",
+              "s": "le poisson"
+            },
+            "meat": {
+              "t": "мясо",
+              "s": "la viande"
+            },
+            "or": {
+              "t": "или",
+              "s": "ou"
+            }
+          }
+        },
+        {
+          "id": "a1_022",
+          "target": [
+            {
+              "t": "Вода",
+              "c": "water"
+            },
+            {
+              "t": "холодная",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "чай",
+              "c": "tea"
+            },
+            {
+              "t": "очень",
+              "c": "very"
+            },
+            {
+              "t": "горячий",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "L'eau est froide, mais le thé est très chaud.",
+          "gloss": {
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "cold": {
+              "t": "холодный",
+              "s": "froid"
+            },
+            "hot": {
+              "t": "горячий",
+              "s": "chaud"
+            },
+            "tea": {
+              "t": "чай",
+              "s": "le thé"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "very": {
+              "t": "очень",
+              "s": "très"
+            },
+            "water": {
+              "t": "вода",
+              "s": "l'eau"
+            }
+          }
+        },
+        {
+          "id": "a1_023",
+          "target": [
+            "У",
+            {
+              "t": "меня",
+              "c": "i"
+            },
+            {
+              "t": "есть",
+              "c": "to have",
+              "g": "быть"
+            },
+            {
+              "t": "деньги",
+              "c": "money"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "хочу",
+              "c": "to want"
+            },
+            {
+              "t": "купить",
+              "c": "to buy",
+              "g": "купить"
+            },
+            {
+              "t": "хлеб",
+              "c": "bread"
+            },
+            ".",
+            {
+              "t": "Где",
+              "c": "where"
+            },
+            {
+              "t": "магазин",
+              "c": "shop"
+            },
+            "?"
+          ],
+          "source": "J'ai de l'argent, et je veux acheter du pain. Où est le magasin ?",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "bread": {
+              "t": "хлеб",
+              "s": "le pain"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "money": {
+              "t": "деньги",
+              "s": "l'argent"
+            },
+            "shop": {
+              "t": "магазин",
+              "s": "le magasin"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to buy": {
+              "t": "покупать",
+              "s": "acheter"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            },
+            "to want": {
+              "t": "хотеть",
+              "s": "vouloir"
+            },
+            "where": {
+              "t": "где",
+              "s": "où"
+            }
+          }
+        },
+        {
+          "id": "a1_069",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "хочу",
+              "c": "to want"
+            },
+            {
+              "t": "купить",
+              "c": "to buy",
+              "g": "купить"
+            },
+            {
+              "t": "рыбу",
+              "c": "fish"
+            },
+            ".",
+            {
+              "t": "Сколько",
+              "c": "how much"
+            },
+            {
+              "t": "денег",
+              "c": "money"
+            },
+            "?"
+          ],
+          "source": "Je veux acheter du poisson. Combien d'argent ?",
+          "gloss": {
+            "fish": {
+              "t": "рыба",
+              "s": "le poisson"
+            },
+            "how much": {
+              "t": "сколько",
+              "s": "combien"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "money": {
+              "t": "деньги",
+              "s": "l'argent"
+            },
+            "to buy": {
+              "t": "покупать",
+              "s": "acheter"
+            },
+            "to want": {
+              "t": "хотеть",
+              "s": "vouloir"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 10,
+      "sentences": [
+        {
+          "id": "a1_024",
+          "target": [
+            {
+              "t": "Это",
+              "c": "this"
+            },
+            {
+              "t": "мой",
+              "c": "my"
+            },
+            {
+              "t": "дом",
+              "c": "house"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "он",
+              "c": "it"
+            },
+            {
+              "t": "очень",
+              "c": "very"
+            },
+            {
+              "t": "большой",
+              "c": "big"
+            },
+            "."
+          ],
+          "source": "C'est ma maison, et elle est très grande.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "big": {
+              "t": "большой",
+              "s": "grand"
+            },
+            "house": {
+              "t": "дом",
+              "s": "la maison"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "my": {
+              "t": "мой",
+              "s": "mon"
+            },
+            "this": {
+              "t": "этот",
+              "s": "ce"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "very": {
+              "t": "очень",
+              "s": "très"
+            }
+          }
+        },
+        {
+          "id": "a1_025",
+          "target": [
+            {
+              "t": "В",
+              "c": "in"
+            },
+            {
+              "t": "комнате",
+              "c": "room"
+            },
+            {
+              "t": "есть",
+              "c": "to have",
+              "g": "быть"
+            },
+            {
+              "t": "стол",
+              "c": "table"
+            },
+            ",",
+            {
+              "t": "стул",
+              "c": "chair"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "кровать",
+              "c": "bed"
+            },
+            "."
+          ],
+          "source": "La chambre a une table, une chaise et un lit.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "bed": {
+              "t": "кровать",
+              "s": "le lit"
+            },
+            "chair": {
+              "t": "стул",
+              "s": "la chaise"
+            },
+            "in": {
+              "t": "в",
+              "s": "dans"
+            },
+            "room": {
+              "t": "комната",
+              "s": "la chambre"
+            },
+            "table": {
+              "t": "стол",
+              "s": "la table"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            }
+          }
+        },
+        {
+          "id": "a1_026",
+          "target": [
+            {
+              "t": "Прости",
+              "c": "sorry",
+              "g": "простить"
+            },
+            ",",
+            {
+              "t": "где",
+              "c": "where"
+            },
+            {
+              "t": "дверь",
+              "c": "door"
+            },
+            "?",
+            {
+              "t": "Окно",
+              "c": "window"
+            },
+            {
+              "t": "там",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "Pardon, où est la porte ? La fenêtre est là.",
+          "gloss": {
+            "door": {
+              "t": "дверь",
+              "s": "la porte"
+            },
+            "sorry": {
+              "t": "извините",
+              "s": "pardon"
+            },
+            "there": {
+              "t": "там",
+              "s": "là"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "where": {
+              "t": "где",
+              "s": "où"
+            },
+            "window": {
+              "t": "окно",
+              "s": "la fenêtre"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_027",
+          "target": [
+            {
+              "t": "Открой",
+              "c": "to open"
+            },
+            {
+              "t": "окно",
+              "c": "window"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "закрой",
+              "c": "to close"
+            },
+            {
+              "t": "дверь",
+              "c": "door"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "!"
+          ],
+          "source": "Ouvre la fenêtre et ferme la porte, s'il te plaît !",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "door": {
+              "t": "дверь",
+              "s": "la porte"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "to close": {
+              "t": "закрывать",
+              "s": "fermer"
+            },
+            "to open": {
+              "t": "открывать",
+              "s": "ouvrir"
+            },
+            "window": {
+              "t": "окно",
+              "s": "la fenêtre"
+            }
+          }
+        },
+        {
+          "id": "a1_028",
+          "target": [
+            {
+              "t": "Эта",
+              "c": "this"
+            },
+            {
+              "t": "книга",
+              "c": "book"
+            },
+            {
+              "t": "новая",
+              "c": "new"
+            },
+            ",",
+            {
+              "t": "а",
+              "c": "but",
+              "g": "а"
+            },
+            {
+              "t": "та",
+              "c": "that"
+            },
+            {
+              "t": "старая",
+              "c": "old"
+            },
+            "."
+          ],
+          "source": "Ce livre-ci est nouveau, et ce livre-là est vieux.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "book": {
+              "t": "книга",
+              "s": "le livre"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "new": {
+              "t": "новый",
+              "s": "nouveau"
+            },
+            "old": {
+              "t": "старый",
+              "s": "vieux"
+            },
+            "that": {
+              "t": "тот",
+              "s": "ça"
+            },
+            "this": {
+              "t": "этот",
+              "s": "ce"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_029",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "вижу",
+              "c": "to see"
+            },
+            {
+              "t": "маленький",
+              "c": "small"
+            },
+            ",",
+            {
+              "t": "красивый",
+              "c": "beautiful"
+            },
+            {
+              "t": "дом",
+              "c": "house"
+            },
+            "."
+          ],
+          "source": "Je peux voir une belle petite maison.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "beautiful": {
+              "t": "красивый",
+              "s": "beau"
+            },
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "house": {
+              "t": "дом",
+              "s": "la maison"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "small": {
+              "t": "маленький",
+              "s": "petit"
+            },
+            "to see": {
+              "t": "видеть",
+              "s": "voir"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_030",
+          "target": [
+            {
+              "t": "Семья",
+              "c": "family"
+            },
+            {
+              "t": "большая",
+              "c": "big"
+            },
+            ":",
+            {
+              "t": "мать",
+              "c": "mother"
+            },
+            ",",
+            {
+              "t": "отец",
+              "c": "father"
+            },
+            ",",
+            {
+              "t": "сын",
+              "c": "son"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "дочь",
+              "c": "daughter"
+            },
+            "."
+          ],
+          "source": "La famille est grande : une mère, un père, un fils et une fille.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "big": {
+              "t": "большой",
+              "s": "grand"
+            },
+            "daughter": {
+              "t": "дочь",
+              "s": "la fille"
+            },
+            "family": {
+              "t": "семья",
+              "s": "la famille"
+            },
+            "father": {
+              "t": "отец",
+              "s": "le père"
+            },
+            "mother": {
+              "t": "мать",
+              "s": "la mère"
+            },
+            "son": {
+              "t": "сын",
+              "s": "le fils"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_031",
+          "target": [
+            {
+              "t": "Все",
+              "c": "all"
+            },
+            {
+              "t": "дети",
+              "c": "child"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            {
+              "t": "с",
+              "c": "with"
+            },
+            {
+              "t": "родителями",
+              "c": "parents"
+            },
+            "."
+          ],
+          "source": "Tous les enfants sont ici avec les parents.",
+          "gloss": {
+            "all": {
+              "t": "все",
+              "s": "tout"
+            },
+            "child": {
+              "t": "ребёнок",
+              "s": "l'enfant"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "parents": {
+              "t": "родители",
+              "s": "les parents"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "with": {
+              "t": "с",
+              "s": "avec"
+            }
+          }
+        },
+        {
+          "id": "a1_032",
+          "target": [
+            {
+              "t": "Мать",
+              "c": "mother"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "отец",
+              "c": "father"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "La mère est ici, mais le père n'est pas ici.",
+          "gloss": {
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "father": {
+              "t": "отец",
+              "s": "le père"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "mother": {
+              "t": "мать",
+              "s": "la mère"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_033",
+          "target": [
+            "У",
+            {
+              "t": "меня",
+              "c": "i"
+            },
+            {
+              "t": "есть",
+              "c": "to have",
+              "g": "быть"
+            },
+            {
+              "t": "брат",
+              "c": "brother"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "сестра",
+              "c": "sister"
+            },
+            "."
+          ],
+          "source": "J'ai un frère et une sœur.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "brother": {
+              "t": "брат",
+              "s": "le frère"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "sister": {
+              "t": "сестра",
+              "s": "la sœur"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            }
+          }
+        },
+        {
+          "id": "a1_034",
+          "target": [
+            {
+              "t": "Мужчина",
+              "c": "man"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "женщина",
+              "c": "woman"
+            },
+            "—",
+            {
+              "t": "друзья",
+              "c": "friend"
+            },
+            "."
+          ],
+          "source": "L'homme et la femme sont amis.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "friend": {
+              "t": "друг",
+              "s": "l'ami"
+            },
+            "man": {
+              "t": "мужчина",
+              "s": "l'homme"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "woman": {
+              "t": "женщина",
+              "s": "la femme"
+            }
+          }
+        },
+        {
+          "id": "a1_035",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "знаю",
+              "c": "to know"
+            },
+            ",",
+            {
+              "t": "где",
+              "c": "where"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            {
+              "t": "живёшь",
+              "c": "to live"
+            },
+            ".",
+            {
+              "t": "Тот",
+              "c": "that"
+            },
+            {
+              "t": "мужчина",
+              "c": "man"
+            },
+            "—",
+            {
+              "t": "мой",
+              "c": "my"
+            },
+            {
+              "t": "друг",
+              "c": "friend"
+            },
+            "."
+          ],
+          "source": "Je sais où tu habites. Cet homme est mon ami.",
+          "gloss": {
+            "friend": {
+              "t": "друг",
+              "s": "l'ami"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "man": {
+              "t": "мужчина",
+              "s": "l'homme"
+            },
+            "my": {
+              "t": "мой",
+              "s": "mon"
+            },
+            "that": {
+              "t": "тот",
+              "s": "ça"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to know": {
+              "t": "знать",
+              "s": "savoir"
+            },
+            "to live": {
+              "t": "жить",
+              "s": "habiter"
+            },
+            "where": {
+              "t": "где",
+              "s": "où"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_070",
+          "target": [
+            {
+              "t": "Привет",
+              "c": "hello"
+            },
+            "!",
+            {
+              "t": "Как",
+              "c": "how"
+            },
+            {
+              "t": "твоё",
+              "c": "your"
+            },
+            {
+              "t": "имя",
+              "c": "name"
+            },
+            "?"
+          ],
+          "source": "Bonjour ! C'est quoi, ton nom ?",
+          "gloss": {
+            "hello": {
+              "t": "привет",
+              "s": "bonjour"
+            },
+            "how": {
+              "t": "как",
+              "s": "comment"
+            },
+            "name": {
+              "t": "имя",
+              "s": "le nom"
+            },
+            "this": {
+              "t": "этот",
+              "s": "ce"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "what": {
+              "t": "что",
+              "s": "quoi"
+            },
+            "your": {
+              "t": "твой",
+              "s": "ton"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_036",
+          "target": [
+            {
+              "t": "Приходи",
+              "c": "to come"
+            },
+            {
+              "t": "сюда",
+              "c": "here",
+              "g": "сюда"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "!",
+            {
+              "t": "Эта",
+              "c": "this"
+            },
+            {
+              "t": "улица",
+              "c": "street"
+            },
+            {
+              "t": "большая",
+              "c": "big"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "школа",
+              "c": "school"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Viens ici, s'il te plaît ! Cette rue est grande, et l'école est ici.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "big": {
+              "t": "большой",
+              "s": "grand"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "school": {
+              "t": "школа",
+              "s": "l'école"
+            },
+            "street": {
+              "t": "улица",
+              "s": "la rue"
+            },
+            "this": {
+              "t": "этот",
+              "s": "ce"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to come": {
+              "t": "приходить",
+              "s": "venir"
+            }
+          }
+        },
+        {
+          "id": "a1_037",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "живу",
+              "c": "to live"
+            },
+            {
+              "t": "в",
+              "c": "in"
+            },
+            {
+              "t": "городе",
+              "c": "city"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "прихожу",
+              "c": "to come"
+            },
+            {
+              "t": "в",
+              "c": "to",
+              "g": "в"
+            },
+            {
+              "t": "твой",
+              "c": "your"
+            },
+            {
+              "t": "дом",
+              "c": "house"
+            },
+            "."
+          ],
+          "source": "J'habite dans la ville, et je viens à ta maison.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "city": {
+              "t": "город",
+              "s": "la ville"
+            },
+            "house": {
+              "t": "дом",
+              "s": "la maison"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "in": {
+              "t": "в",
+              "s": "dans"
+            },
+            "to": {
+              "t": "к",
+              "s": "à"
+            },
+            "to come": {
+              "t": "приходить",
+              "s": "venir"
+            },
+            "to live": {
+              "t": "жить",
+              "s": "habiter"
+            },
+            "your": {
+              "t": "твой",
+              "s": "ton"
+            }
+          }
+        },
+        {
+          "id": "a1_038",
+          "target": [
+            "У",
+            {
+              "t": "нас",
+              "c": "we"
+            },
+            {
+              "t": "есть",
+              "c": "to have",
+              "g": "быть"
+            },
+            {
+              "t": "новая",
+              "c": "new"
+            },
+            {
+              "t": "машина",
+              "c": "car"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "мы",
+              "c": "we"
+            },
+            {
+              "t": "можем",
+              "c": "can"
+            },
+            {
+              "t": "быстро",
+              "c": "fast"
+            },
+            {
+              "t": "поехать",
+              "c": "to go",
+              "g": "ехать"
+            },
+            {
+              "t": "в",
+              "c": "to",
+              "g": "в"
+            },
+            {
+              "t": "школу",
+              "c": "school"
+            },
+            "."
+          ],
+          "source": "Nous avons une nouvelle voiture, et nous pouvons aller à l'école rapidement.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "car": {
+              "t": "машина",
+              "s": "la voiture"
+            },
+            "fast": {
+              "t": "быстрый",
+              "s": "rapide"
+            },
+            "new": {
+              "t": "новый",
+              "s": "nouveau"
+            },
+            "school": {
+              "t": "школа",
+              "s": "l'école"
+            },
+            "to": {
+              "t": "к",
+              "s": "à"
+            },
+            "to go": {
+              "t": "идти",
+              "s": "aller"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            },
+            "we": {
+              "t": "мы",
+              "s": "nous"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_039",
+          "target": [
+            {
+              "t": "Утро",
+              "c": "morning"
+            },
+            {
+              "t": "красивое",
+              "c": "beautiful"
+            },
+            "!",
+            {
+              "t": "Как",
+              "c": "how"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            {
+              "t": "сегодня",
+              "c": "today"
+            },
+            "?"
+          ],
+          "source": "Le matin est beau ! Comment tu vas aujourd'hui ?",
+          "gloss": {
+            "beautiful": {
+              "t": "красивый",
+              "s": "beau"
+            },
+            "how": {
+              "t": "как",
+              "s": "comment"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "morning": {
+              "t": "утро",
+              "s": "le matin"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to go": {
+              "t": "идти",
+              "s": "aller"
+            },
+            "today": {
+              "t": "сегодня",
+              "s": "aujourd'hui"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_040",
+          "target": [
+            {
+              "t": "Сегодня",
+              "c": "today"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "работаю",
+              "c": "to work"
+            },
+            {
+              "t": "весь",
+              "c": "all"
+            },
+            {
+              "t": "день",
+              "c": "day"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "сплю",
+              "c": "to sleep"
+            },
+            {
+              "t": "всю",
+              "c": "all"
+            },
+            {
+              "t": "ночь",
+              "c": "night"
+            },
+            "."
+          ],
+          "source": "Aujourd'hui je travaille toute la journée, et je dors toute la nuit.",
+          "gloss": {
+            "all": {
+              "t": "все",
+              "s": "tout"
+            },
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "day": {
+              "t": "день",
+              "s": "le jour"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "night": {
+              "t": "ночь",
+              "s": "la nuit"
+            },
+            "to sleep": {
+              "t": "спать",
+              "s": "dormir"
+            },
+            "to work": {
+              "t": "работать",
+              "s": "travailler"
+            },
+            "today": {
+              "t": "сегодня",
+              "s": "aujourd'hui"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_042",
+          "target": [
+            {
+              "t": "Сегодня",
+              "c": "today"
+            },
+            {
+              "t": "понедельник",
+              "c": "monday"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "завтра",
+              "c": "tomorrow"
+            },
+            {
+              "t": "вторник",
+              "c": "tuesday"
+            },
+            "."
+          ],
+          "source": "Aujourd'hui, c'est lundi, et demain, c'est mardi.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "monday": {
+              "t": "понедельник",
+              "s": "le lundi"
+            },
+            "this": {
+              "t": "этот",
+              "s": "ce"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "today": {
+              "t": "сегодня",
+              "s": "aujourd'hui"
+            },
+            "tomorrow": {
+              "t": "завтра",
+              "s": "demain"
+            },
+            "tuesday": {
+              "t": "вторник",
+              "s": "le mardi"
+            }
+          }
+        },
+        {
+          "id": "a1_043",
+          "target": [
+            {
+              "t": "Сегодня",
+              "c": "today"
+            },
+            {
+              "t": "среда",
+              "c": "wednesday"
+            },
+            ",",
+            {
+              "t": "четверг",
+              "c": "thursday"
+            },
+            {
+              "t": "или",
+              "c": "or"
+            },
+            {
+              "t": "пятница",
+              "c": "friday"
+            },
+            "?"
+          ],
+          "source": "Aujourd'hui, c'est mercredi, jeudi ou vendredi ?",
+          "gloss": {
+            "friday": {
+              "t": "пятница",
+              "s": "le vendredi"
+            },
+            "or": {
+              "t": "или",
+              "s": "ou"
+            },
+            "this": {
+              "t": "этот",
+              "s": "ce"
+            },
+            "thursday": {
+              "t": "четверг",
+              "s": "le jeudi"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "today": {
+              "t": "сегодня",
+              "s": "aujourd'hui"
+            },
+            "wednesday": {
+              "t": "среда",
+              "s": "le mercredi"
+            }
+          }
+        },
+        {
+          "id": "a1_044",
+          "target": [
+            {
+              "t": "Суббота",
+              "c": "saturday"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "воскресенье",
+              "c": "sunday"
+            },
+            {
+              "t": "хорошие",
+              "c": "good"
+            },
+            ":",
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "сплю",
+              "c": "to sleep"
+            },
+            {
+              "t": "весь",
+              "c": "all"
+            },
+            {
+              "t": "день",
+              "c": "day"
+            },
+            "."
+          ],
+          "source": "Samedi et dimanche sont bons : je dors toute la journée.",
+          "gloss": {
+            "all": {
+              "t": "все",
+              "s": "tout"
+            },
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "day": {
+              "t": "день",
+              "s": "le jour"
+            },
+            "good": {
+              "t": "хороший",
+              "s": "bon"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "saturday": {
+              "t": "суббота",
+              "s": "le samedi"
+            },
+            "sunday": {
+              "t": "воскресенье",
+              "s": "le dimanche"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to sleep": {
+              "t": "спать",
+              "s": "dormir"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_045",
+          "target": [
+            "У",
+            {
+              "t": "меня",
+              "c": "i"
+            },
+            {
+              "t": "есть",
+              "c": "to have",
+              "g": "быть"
+            },
+            {
+              "t": "два",
+              "c": "two"
+            },
+            {
+              "t": "брата",
+              "c": "brother"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "одна",
+              "c": "one"
+            },
+            {
+              "t": "сестра",
+              "c": "sister"
+            },
+            "."
+          ],
+          "source": "J'ai deux frères et une sœur.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "brother": {
+              "t": "брат",
+              "s": "le frère"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "one": {
+              "t": "один",
+              "s": "un"
+            },
+            "sister": {
+              "t": "сестра",
+              "s": "la sœur"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            },
+            "two": {
+              "t": "два",
+              "s": "deux"
+            }
+          }
+        },
+        {
+          "id": "a1_046",
+          "target": [
+            {
+              "t": "Когда",
+              "c": "when"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            {
+              "t": "можешь",
+              "c": "can"
+            },
+            {
+              "t": "прийти",
+              "c": "to come"
+            },
+            "?",
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "работаю",
+              "c": "to work"
+            },
+            {
+              "t": "пять",
+              "c": "five"
+            },
+            {
+              "t": "часов",
+              "c": "hour"
+            },
+            {
+              "t": "сегодня",
+              "c": "today"
+            },
+            "."
+          ],
+          "source": "Tu peux venir quand ? Je travaille cinq heures aujourd'hui.",
+          "gloss": {
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "five": {
+              "t": "пять",
+              "s": "cinq"
+            },
+            "hour": {
+              "t": "час",
+              "s": "l'heure"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "to come": {
+              "t": "приходить",
+              "s": "venir"
+            },
+            "to work": {
+              "t": "работать",
+              "s": "travailler"
+            },
+            "today": {
+              "t": "сегодня",
+              "s": "aujourd'hui"
+            },
+            "when": {
+              "t": "когда",
+              "s": "quand"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_047",
+          "target": [
+            {
+              "t": "В",
+              "c": "in"
+            },
+            {
+              "t": "доме",
+              "c": "house"
+            },
+            {
+              "t": "четыре",
+              "c": "four"
+            },
+            {
+              "t": "комнаты",
+              "c": "room"
+            },
+            ",",
+            {
+              "t": "пять",
+              "c": "five"
+            },
+            {
+              "t": "окон",
+              "c": "window"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "шесть",
+              "c": "six"
+            },
+            {
+              "t": "дверей",
+              "c": "door"
+            },
+            "."
+          ],
+          "source": "La maison a quatre chambres, cinq fenêtres et six portes.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "door": {
+              "t": "дверь",
+              "s": "la porte"
+            },
+            "five": {
+              "t": "пять",
+              "s": "cinq"
+            },
+            "four": {
+              "t": "четыре",
+              "s": "quatre"
+            },
+            "house": {
+              "t": "дом",
+              "s": "la maison"
+            },
+            "in": {
+              "t": "в",
+              "s": "dans"
+            },
+            "room": {
+              "t": "комната",
+              "s": "la chambre"
+            },
+            "six": {
+              "t": "шесть",
+              "s": "six"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            },
+            "window": {
+              "t": "окно",
+              "s": "la fenêtre"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_048",
+          "target": [
+            {
+              "t": "В",
+              "c": "in"
+            },
+            {
+              "t": "неделе",
+              "c": "week"
+            },
+            {
+              "t": "семь",
+              "c": "seven"
+            },
+            {
+              "t": "дней",
+              "c": "day"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "работаю",
+              "c": "to work"
+            },
+            {
+              "t": "пять",
+              "c": "five"
+            },
+            {
+              "t": "дней",
+              "c": "day"
+            },
+            "."
+          ],
+          "source": "La semaine a sept jours, et je travaille cinq jours.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "day": {
+              "t": "день",
+              "s": "le jour"
+            },
+            "five": {
+              "t": "пять",
+              "s": "cinq"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "in": {
+              "t": "в",
+              "s": "dans"
+            },
+            "seven": {
+              "t": "семь",
+              "s": "sept"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            },
+            "to work": {
+              "t": "работать",
+              "s": "travailler"
+            },
+            "week": {
+              "t": "неделя",
+              "s": "la semaine"
+            }
+          }
+        },
+        {
+          "id": "a1_049",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "хочу",
+              "c": "to want"
+            },
+            {
+              "t": "десять",
+              "c": "ten"
+            },
+            {
+              "t": "яблок",
+              "c": "apple"
+            },
+            ",",
+            {
+              "t": "девять",
+              "c": "nine"
+            },
+            {
+              "t": "яиц",
+              "c": "egg"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "восемь",
+              "c": "eight"
+            },
+            {
+              "t": "рыб",
+              "c": "fish"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "."
+          ],
+          "source": "Je veux dix pommes, neuf œufs et huit poissons, s'il te plaît.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "apple": {
+              "t": "яблоко",
+              "s": "la pomme"
+            },
+            "egg": {
+              "t": "яйцо",
+              "s": "l'œuf"
+            },
+            "eight": {
+              "t": "восемь",
+              "s": "huit"
+            },
+            "fish": {
+              "t": "рыба",
+              "s": "le poisson"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "nine": {
+              "t": "девять",
+              "s": "neuf"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "ten": {
+              "t": "десять",
+              "s": "dix"
+            },
+            "to want": {
+              "t": "хотеть",
+              "s": "vouloir"
+            }
+          }
+        },
+        {
+          "id": "a1_050",
+          "target": [
+            {
+              "t": "Ребёнку",
+              "c": "child"
+            },
+            {
+              "t": "десять",
+              "c": "ten"
+            },
+            {
+              "t": "лет",
+              "c": "year"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "он",
+              "c": "he"
+            },
+            {
+              "t": "всегда",
+              "c": "always"
+            },
+            {
+              "t": "хочет",
+              "c": "to want"
+            },
+            {
+              "t": "учиться",
+              "c": "to learn"
+            },
+            "."
+          ],
+          "source": "L'enfant a dix ans, et il veut toujours apprendre.",
+          "gloss": {
+            "always": {
+              "t": "всегда",
+              "s": "toujours"
+            },
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "child": {
+              "t": "ребёнок",
+              "s": "l'enfant"
+            },
+            "he": {
+              "t": "он",
+              "s": "il"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "old": {
+              "t": "старый",
+              "s": "vieux"
+            },
+            "ten": {
+              "t": "десять",
+              "s": "dix"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            },
+            "to learn": {
+              "t": "учить",
+              "s": "apprendre"
+            },
+            "to want": {
+              "t": "хотеть",
+              "s": "vouloir"
+            },
+            "year": {
+              "t": "год",
+              "s": "l'année"
+            }
+          }
+        },
+        {
+          "id": "a1_073",
+          "target": [
+            {
+              "t": "Десять",
+              "c": "ten"
+            },
+            ",",
+            {
+              "t": "девять",
+              "c": "nine"
+            },
+            ",",
+            {
+              "t": "восемь",
+              "c": "eight"
+            },
+            ",",
+            {
+              "t": "семь",
+              "c": "seven"
+            },
+            ",",
+            {
+              "t": "три",
+              "c": "three"
+            },
+            ",",
+            {
+              "t": "два",
+              "c": "two"
+            },
+            ",",
+            {
+              "t": "один",
+              "c": "one"
+            },
+            ",",
+            {
+              "t": "ноль",
+              "c": "zero"
+            },
+            "!"
+          ],
+          "source": "Dix, neuf, huit, sept, trois, deux, un, zéro !",
+          "gloss": {
+            "eight": {
+              "t": "восемь",
+              "s": "huit"
+            },
+            "nine": {
+              "t": "девять",
+              "s": "neuf"
+            },
+            "one": {
+              "t": "один",
+              "s": "un"
+            },
+            "seven": {
+              "t": "семь",
+              "s": "sept"
+            },
+            "ten": {
+              "t": "десять",
+              "s": "dix"
+            },
+            "three": {
+              "t": "три",
+              "s": "trois"
+            },
+            "two": {
+              "t": "два",
+              "s": "deux"
+            },
+            "zero": {
+              "t": "ноль",
+              "s": "zéro"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_051",
+          "target": [
+            {
+              "t": "Январь",
+              "c": "january"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "февраль",
+              "c": "february"
+            },
+            "—",
+            {
+              "t": "холодные",
+              "c": "cold"
+            },
+            {
+              "t": "месяцы",
+              "c": "month"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "июнь",
+              "c": "june"
+            },
+            {
+              "t": "горячий",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "Janvier et février sont des mois froids, mais juin est chaud.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "cold": {
+              "t": "холодный",
+              "s": "froid"
+            },
+            "february": {
+              "t": "февраль",
+              "s": "février"
+            },
+            "hot": {
+              "t": "горячий",
+              "s": "chaud"
+            },
+            "january": {
+              "t": "январь",
+              "s": "janvier"
+            },
+            "june": {
+              "t": "июнь",
+              "s": "juin"
+            },
+            "month": {
+              "t": "месяц",
+              "s": "le mois"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_052",
+          "target": [
+            {
+              "t": "Март",
+              "c": "march"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "апрель",
+              "c": "april"
+            },
+            {
+              "t": "холодные",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "май",
+              "c": "may"
+            },
+            {
+              "t": "красивый",
+              "c": "beautiful"
+            },
+            "."
+          ],
+          "source": "Mars et avril sont froids, mais mai est beau.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "april": {
+              "t": "апрель",
+              "s": "avril"
+            },
+            "beautiful": {
+              "t": "красивый",
+              "s": "beau"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "cold": {
+              "t": "холодный",
+              "s": "froid"
+            },
+            "march": {
+              "t": "март",
+              "s": "mars"
+            },
+            "may": {
+              "t": "май",
+              "s": "mai"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_053",
+          "target": [
+            {
+              "t": "Вода",
+              "c": "water"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            {
+              "t": "никогда",
+              "c": "never"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "холодная",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "потому что",
+              "c": "because"
+            },
+            {
+              "t": "солнце",
+              "c": "sun"
+            },
+            {
+              "t": "всегда",
+              "c": "always"
+            },
+            {
+              "t": "горячо",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "L'eau n'est jamais froide ici, parce que le soleil est toujours chaud.",
+          "gloss": {
+            "always": {
+              "t": "всегда",
+              "s": "toujours"
+            },
+            "because": {
+              "t": "потому что",
+              "s": "parce que"
+            },
+            "cold": {
+              "t": "холодный",
+              "s": "froid"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "hot": {
+              "t": "горячий",
+              "s": "chaud"
+            },
+            "never": {
+              "t": "никогда",
+              "s": "jamais"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "sun": {
+              "t": "солнце",
+              "s": "le soleil"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "water": {
+              "t": "вода",
+              "s": "l'eau"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 7,
+      "sentences": [
+        {
+          "id": "a1_054",
+          "target": [
+            {
+              "t": "Июль",
+              "c": "july"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "август",
+              "c": "august"
+            },
+            "—",
+            {
+              "t": "горячие",
+              "c": "hot"
+            },
+            {
+              "t": "месяцы",
+              "c": "month"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "очень",
+              "c": "very"
+            },
+            {
+              "t": "счастлив",
+              "c": "happy"
+            },
+            "."
+          ],
+          "source": "Juillet et août sont des mois chauds, et je suis très heureux.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "august": {
+              "t": "август",
+              "s": "août"
+            },
+            "happy": {
+              "t": "счастливый",
+              "s": "heureux"
+            },
+            "hot": {
+              "t": "горячий",
+              "s": "chaud"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "july": {
+              "t": "июль",
+              "s": "juillet"
+            },
+            "month": {
+              "t": "месяц",
+              "s": "le mois"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "very": {
+              "t": "очень",
+              "s": "très"
+            }
+          }
+        },
+        {
+          "id": "a1_055",
+          "target": [
+            {
+              "t": "Сентябрь",
+              "c": "september"
+            },
+            ",",
+            {
+              "t": "октябрь",
+              "c": "october"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "ноябрь",
+              "c": "november"
+            },
+            {
+              "t": "холодные",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "декабрь",
+              "c": "december"
+            },
+            {
+              "t": "красивый",
+              "c": "beautiful"
+            },
+            "."
+          ],
+          "source": "Septembre, octobre et novembre sont froids, mais décembre est beau.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "beautiful": {
+              "t": "красивый",
+              "s": "beau"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "cold": {
+              "t": "холодный",
+              "s": "froid"
+            },
+            "december": {
+              "t": "декабрь",
+              "s": "décembre"
+            },
+            "november": {
+              "t": "ноябрь",
+              "s": "novembre"
+            },
+            "october": {
+              "t": "октябрь",
+              "s": "octobre"
+            },
+            "september": {
+              "t": "сентябрь",
+              "s": "septembre"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_056",
+          "target": [
+            {
+              "t": "Декабрь",
+              "c": "december"
+            },
+            "—",
+            {
+              "t": "счастливый",
+              "c": "happy"
+            },
+            {
+              "t": "месяц",
+              "c": "month"
+            },
+            ":",
+            {
+              "t": "вся",
+              "c": "all"
+            },
+            {
+              "t": "семья",
+              "c": "family"
+            },
+            {
+              "t": "здесь",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Décembre est un mois heureux : toute la famille est ici.",
+          "gloss": {
+            "all": {
+              "t": "все",
+              "s": "tout"
+            },
+            "december": {
+              "t": "декабрь",
+              "s": "décembre"
+            },
+            "family": {
+              "t": "семья",
+              "s": "la famille"
+            },
+            "happy": {
+              "t": "счастливый",
+              "s": "heureux"
+            },
+            "here": {
+              "t": "здесь",
+              "s": "ici"
+            },
+            "month": {
+              "t": "месяц",
+              "s": "le mois"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_057",
+          "target": [
+            {
+              "t": "Машина",
+              "c": "car"
+            },
+            {
+              "t": "красная",
+              "c": "red"
+            },
+            ",",
+            {
+              "t": "а",
+              "c": "but",
+              "g": "а"
+            },
+            {
+              "t": "дом",
+              "c": "house"
+            },
+            {
+              "t": "белый",
+              "c": "white"
+            },
+            "."
+          ],
+          "source": "La voiture est rouge, et la maison est blanche.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "car": {
+              "t": "машина",
+              "s": "la voiture"
+            },
+            "house": {
+              "t": "дом",
+              "s": "la maison"
+            },
+            "red": {
+              "t": "красный",
+              "s": "rouge"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "white": {
+              "t": "белый",
+              "s": "blanc"
+            }
+          }
+        },
+        {
+          "id": "a1_058",
+          "target": [
+            {
+              "t": "Дай",
+              "c": "to give",
+              "g": "дать"
+            },
+            {
+              "t": "мне",
+              "c": "i"
+            },
+            {
+              "t": "чёрный",
+              "c": "black"
+            },
+            {
+              "t": "телефон",
+              "c": "phone"
+            },
+            ",",
+            {
+              "t": "пожалуйста",
+              "c": "please"
+            },
+            "!"
+          ],
+          "source": "Donne-moi le téléphone noir, s'il te plaît !",
+          "gloss": {
+            "black": {
+              "t": "чёрный",
+              "s": "noir"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "phone": {
+              "t": "телефон",
+              "s": "le téléphone"
+            },
+            "please": {
+              "t": "пожалуйста",
+              "s": "s'il vous plaît"
+            },
+            "to give": {
+              "t": "давать",
+              "s": "donner"
+            }
+          }
+        },
+        {
+          "id": "a1_059",
+          "target": [
+            {
+              "t": "Дверь",
+              "c": "door"
+            },
+            {
+              "t": "зелёная",
+              "c": "green"
+            },
+            ",",
+            {
+              "t": "окно",
+              "c": "window"
+            },
+            {
+              "t": "синее",
+              "c": "blue"
+            },
+            ",",
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "стул",
+              "c": "chair"
+            },
+            {
+              "t": "жёлтый",
+              "c": "yellow"
+            },
+            "."
+          ],
+          "source": "La porte est verte, la fenêtre est bleue, et la chaise est jaune.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "blue": {
+              "t": "синий",
+              "s": "bleu"
+            },
+            "chair": {
+              "t": "стул",
+              "s": "la chaise"
+            },
+            "door": {
+              "t": "дверь",
+              "s": "la porte"
+            },
+            "green": {
+              "t": "зелёный",
+              "s": "vert"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "window": {
+              "t": "окно",
+              "s": "la fenêtre"
+            },
+            "yellow": {
+              "t": "жёлтый",
+              "s": "jaune"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_060",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "люблю",
+              "c": "to love"
+            },
+            {
+              "t": "собаку",
+              "c": "dog"
+            },
+            ",",
+            {
+              "t": "а",
+              "c": "but",
+              "g": "а"
+            },
+            {
+              "t": "ребёнок",
+              "c": "child"
+            },
+            {
+              "t": "любит",
+              "c": "to love"
+            },
+            {
+              "t": "кошку",
+              "c": "cat"
+            },
+            "."
+          ],
+          "source": "J'aime le chien, et l'enfant aime le chat.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "cat": {
+              "t": "кошка",
+              "s": "le chat"
+            },
+            "child": {
+              "t": "ребёнок",
+              "s": "l'enfant"
+            },
+            "dog": {
+              "t": "собака",
+              "s": "le chien"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "to love": {
+              "t": "любить",
+              "s": "aimer"
+            }
+          }
+        },
+        {
+          "id": "a1_061",
+          "target": [
+            {
+              "t": "Собака",
+              "c": "dog"
+            },
+            {
+              "t": "коричневая",
+              "c": "brown"
+            },
+            ",",
+            {
+              "t": "а",
+              "c": "but",
+              "g": "а"
+            },
+            {
+              "t": "кошка",
+              "c": "cat"
+            },
+            {
+              "t": "серая",
+              "c": "grey"
+            },
+            "."
+          ],
+          "source": "Le chien est marron, et le chat est gris.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "brown": {
+              "t": "коричневый",
+              "s": "marron"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "cat": {
+              "t": "кошка",
+              "s": "le chat"
+            },
+            "dog": {
+              "t": "собака",
+              "s": "le chien"
+            },
+            "grey": {
+              "t": "серый",
+              "s": "gris"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_062",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "могу",
+              "c": "can"
+            },
+            {
+              "t": "найти",
+              "c": "to find",
+              "g": "найти"
+            },
+            {
+              "t": "оранжевую",
+              "c": "orange"
+            },
+            {
+              "t": "книгу",
+              "c": "book"
+            },
+            {
+              "t": "или",
+              "c": "or"
+            },
+            {
+              "t": "розовый",
+              "c": "pink"
+            },
+            {
+              "t": "телефон",
+              "c": "phone"
+            },
+            "."
+          ],
+          "source": "Je ne peux pas trouver le livre orange ou le téléphone rose.",
+          "gloss": {
+            "book": {
+              "t": "книга",
+              "s": "le livre"
+            },
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "or": {
+              "t": "или",
+              "s": "ou"
+            },
+            "orange": {
+              "t": "оранжевый",
+              "s": "orange"
+            },
+            "phone": {
+              "t": "телефон",
+              "s": "le téléphone"
+            },
+            "pink": {
+              "t": "розовый",
+              "s": "rose"
+            },
+            "to find": {
+              "t": "находить",
+              "s": "trouver"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_063",
+          "target": [
+            {
+              "t": "Улица",
+              "c": "street"
+            },
+            {
+              "t": "длинная",
+              "c": "long"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "день",
+              "c": "day"
+            },
+            {
+              "t": "короткий",
+              "c": "short"
+            },
+            "."
+          ],
+          "source": "La rue est longue, mais le jour est court.",
+          "gloss": {
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "day": {
+              "t": "день",
+              "s": "le jour"
+            },
+            "long": {
+              "t": "длинный",
+              "s": "long"
+            },
+            "short": {
+              "t": "короткий",
+              "s": "court"
+            },
+            "street": {
+              "t": "улица",
+              "s": "la rue"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_064",
+          "target": [
+            "У",
+            {
+              "t": "ребёнка",
+              "c": "child"
+            },
+            {
+              "t": "большие",
+              "c": "big"
+            },
+            {
+              "t": "глаза",
+              "c": "eye"
+            },
+            ",",
+            {
+              "t": "маленькие",
+              "c": "small"
+            },
+            {
+              "t": "руки",
+              "c": "hand"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "ноги",
+              "c": "foot"
+            },
+            "."
+          ],
+          "source": "L'enfant a de grands yeux, de petites mains et de petits pieds.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "big": {
+              "t": "большой",
+              "s": "grand"
+            },
+            "child": {
+              "t": "ребёнок",
+              "s": "l'enfant"
+            },
+            "eye": {
+              "t": "глаз",
+              "s": "l'œil"
+            },
+            "foot": {
+              "t": "нога",
+              "s": "le pied"
+            },
+            "hand": {
+              "t": "рука",
+              "s": "la main"
+            },
+            "small": {
+              "t": "маленький",
+              "s": "petit"
+            },
+            "to have": {
+              "t": "иметь",
+              "s": "avoir"
+            }
+          }
+        },
+        {
+          "id": "a1_065",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "могу",
+              "c": "can"
+            },
+            {
+              "t": "взять",
+              "c": "to take",
+              "g": "взять"
+            },
+            {
+              "t": "все",
+              "c": "all"
+            },
+            {
+              "t": "книги",
+              "c": "book"
+            },
+            ".",
+            {
+              "t": "Что",
+              "c": "what"
+            },
+            {
+              "t": "я",
+              "c": "i"
+            },
+            {
+              "t": "могу",
+              "c": "can"
+            },
+            {
+              "t": "сделать",
+              "c": "to do",
+              "g": "сделать"
+            },
+            "?",
+            {
+              "t": "Ты",
+              "c": "you"
+            },
+            {
+              "t": "можешь",
+              "c": "can"
+            },
+            {
+              "t": "помочь",
+              "c": "to help"
+            },
+            {
+              "t": "мне",
+              "c": "i"
+            },
+            "?"
+          ],
+          "source": "Je ne peux pas prendre tous les livres. Je peux faire quoi ? Tu peux m'aider ?",
+          "gloss": {
+            "all": {
+              "t": "все",
+              "s": "tout"
+            },
+            "book": {
+              "t": "книга",
+              "s": "le livre"
+            },
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "to do": {
+              "t": "делать",
+              "s": "faire"
+            },
+            "to help": {
+              "t": "помогать",
+              "s": "aider"
+            },
+            "to take": {
+              "t": "брать",
+              "s": "prendre"
+            },
+            "what": {
+              "t": "что",
+              "s": "quoi"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_071",
+          "target": [
+            {
+              "t": "Моя",
+              "c": "my"
+            },
+            {
+              "t": "голова",
+              "c": "head"
+            },
+            ",",
+            {
+              "t": "мои",
+              "c": "my"
+            },
+            {
+              "t": "руки",
+              "c": "hand"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "мои",
+              "c": "my"
+            },
+            {
+              "t": "ноги",
+              "c": "foot"
+            },
+            {
+              "t": "холодные",
+              "c": "cold"
+            },
+            "."
+          ],
+          "source": "Ma tête, mes mains et mes pieds sont froids.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "cold": {
+              "t": "холодный",
+              "s": "froid"
+            },
+            "foot": {
+              "t": "нога",
+              "s": "le pied"
+            },
+            "hand": {
+              "t": "рука",
+              "s": "la main"
+            },
+            "head": {
+              "t": "голова",
+              "s": "la tête"
+            },
+            "my": {
+              "t": "мой",
+              "s": "mon"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_066",
+          "target": [
+            {
+              "t": "Работа",
+              "c": "work"
+            },
+            {
+              "t": "трудная",
+              "c": "difficult"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "деньги",
+              "c": "money"
+            },
+            {
+              "t": "хорошие",
+              "c": "good"
+            },
+            "."
+          ],
+          "source": "Le travail est difficile, mais l'argent est bon.",
+          "gloss": {
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "difficult": {
+              "t": "трудный",
+              "s": "difficile"
+            },
+            "good": {
+              "t": "хороший",
+              "s": "bon"
+            },
+            "money": {
+              "t": "деньги",
+              "s": "l'argent"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "work": {
+              "t": "работа",
+              "s": "le travail"
+            }
+          }
+        },
+        {
+          "id": "a1_067",
+          "target": [
+            {
+              "t": "Кофе",
+              "c": "coffee"
+            },
+            {
+              "t": "плохой",
+              "c": "bad"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "дорогой",
+              "c": "expensive"
+            },
+            ".",
+            {
+              "t": "Чай",
+              "c": "tea"
+            },
+            {
+              "t": "хороший",
+              "c": "good"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "дешёвый",
+              "c": "cheap"
+            },
+            "."
+          ],
+          "source": "Le café est mauvais et cher. Le thé est bon et bon marché.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "bad": {
+              "t": "плохой",
+              "s": "mauvais"
+            },
+            "cheap": {
+              "t": "дешёвый",
+              "s": "bon marché"
+            },
+            "coffee": {
+              "t": "кофе",
+              "s": "le café"
+            },
+            "expensive": {
+              "t": "дорогой",
+              "s": "cher"
+            },
+            "good": {
+              "t": "хороший",
+              "s": "bon"
+            },
+            "tea": {
+              "t": "чай",
+              "s": "le thé"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            }
+          }
+        },
+        {
+          "id": "a1_068",
+          "target": [
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "могу",
+              "c": "can"
+            },
+            {
+              "t": "читать",
+              "c": "to read"
+            },
+            {
+              "t": "и",
+              "c": "and"
+            },
+            {
+              "t": "писать",
+              "c": "to write"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "могу",
+              "c": "can"
+            },
+            {
+              "t": "говорить",
+              "c": "to speak"
+            },
+            {
+              "t": "быстро",
+              "c": "fast"
+            },
+            "."
+          ],
+          "source": "Je peux lire et écrire, mais je ne peux pas parler rapidement.",
+          "gloss": {
+            "and": {
+              "t": "и",
+              "s": "et"
+            },
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "can": {
+              "t": "мочь",
+              "s": "pouvoir"
+            },
+            "fast": {
+              "t": "быстрый",
+              "s": "rapide"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "to read": {
+              "t": "читать",
+              "s": "lire"
+            },
+            "to speak": {
+              "t": "говорить",
+              "s": "parler"
+            },
+            "to write": {
+              "t": "писать",
+              "s": "écrire"
+            }
+          }
+        },
+        {
+          "id": "a1_072",
+          "target": [
+            {
+              "t": "Что",
+              "c": "what"
+            },
+            {
+              "t": "ты",
+              "c": "you"
+            },
+            {
+              "t": "скажешь",
+              "c": "to say"
+            },
+            "?",
+            {
+              "t": "Я",
+              "c": "i"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "знаю",
+              "c": "to know"
+            },
+            "!",
+            {
+              "t": "Это",
+              "c": "this"
+            },
+            {
+              "t": "не",
+              "c": "not"
+            },
+            {
+              "t": "легко",
+              "c": "easy"
+            },
+            "."
+          ],
+          "source": "Tu dis quoi ? Je ne sais pas ! Ce n'est pas facile.",
+          "gloss": {
+            "easy": {
+              "t": "лёгкий",
+              "s": "facile"
+            },
+            "i": {
+              "t": "я",
+              "s": "je"
+            },
+            "it": {
+              "t": "оно",
+              "s": "il"
+            },
+            "not": {
+              "t": "не",
+              "s": "ne... pas"
+            },
+            "this": {
+              "t": "этот",
+              "s": "ce"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "to do": {
+              "t": "делать",
+              "s": "faire"
+            },
+            "to know": {
+              "t": "знать",
+              "s": "savoir"
+            },
+            "to say": {
+              "t": "сказать",
+              "s": "dire"
+            },
+            "what": {
+              "t": "что",
+              "s": "quoi"
+            },
+            "you": {
+              "t": "ты",
+              "s": "tu"
+            }
+          }
+        },
+        {
+          "id": "a1_041",
+          "target": [
+            {
+              "t": "Вчера",
+              "c": "yesterday"
+            },
+            {
+              "t": "вечер",
+              "c": "evening"
+            },
+            {
+              "t": "был",
+              "c": "to be"
+            },
+            {
+              "t": "трудным",
+              "c": "difficult"
+            },
+            ",",
+            {
+              "t": "но",
+              "c": "but"
+            },
+            {
+              "t": "завтра",
+              "c": "tomorrow"
+            },
+            {
+              "t": "новый",
+              "c": "new"
+            },
+            {
+              "t": "день",
+              "c": "day"
+            },
+            "."
+          ],
+          "source": "Hier, le soir était difficile, mais demain est un nouveau jour.",
+          "gloss": {
+            "but": {
+              "t": "но",
+              "s": "mais"
+            },
+            "day": {
+              "t": "день",
+              "s": "le jour"
+            },
+            "difficult": {
+              "t": "трудный",
+              "s": "difficile"
+            },
+            "evening": {
+              "t": "вечер",
+              "s": "le soir"
+            },
+            "new": {
+              "t": "новый",
+              "s": "nouveau"
+            },
+            "to be": {
+              "t": "быть",
+              "s": "être"
+            },
+            "tomorrow": {
+              "t": "завтра",
+              "s": "demain"
+            },
+            "yesterday": {
+              "t": "вчера",
+              "s": "hier"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

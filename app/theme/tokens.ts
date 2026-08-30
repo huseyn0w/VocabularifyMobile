@@ -1,81 +1,99 @@
 /**
- * Design tokens - single source of truth for the Vocabularify "midnight gallery" system.
+ * Design tokens - single source of truth for the Vocabularify palette.
  *
- * These raw values mirror the CSS variables defined in `global.css` and the
- * Tailwind theme in `tailwind.config.js`. Use these constants from non-className
- * code (reanimated worklets, React Navigation options, StatusBar, etc.) so the
- * whole app references one palette.
+ * These raw values mirror the CSS variables in `global.css` and the Tailwind
+ * theme in `tailwind.config.js`. Use them from non-className code (reanimated
+ * worklets, React Navigation options, StatusBar) so the whole app references
+ * one palette.
  *
- * Palette rationale:
- *  - Dark is the signature: a near-black "gallery at night" surface that reads
- *    expensive and lets the typography and one jewel accent carry the identity.
- *  - The accent is a brushed brass (deep bronze in light mode) - a single,
- *    metallic jewel tone used sparingly (primary actions, active tab, the
- *    flashcard's progress + glow). Never a fill across large areas.
- *  - Light mode is a true-neutral gallery white (deliberately NOT a warm cream),
- *    so the system stays distinctive in both schemes.
+ * The palette is Desktop's, converted from its OKLCH source to sRGB hex once
+ * here rather than being re-eyeballed. Desktop keeps the authoritative values
+ * in `index.html`; the OKLCH triple sits in a comment beside each colour so a
+ * change on either side is a mechanical re-conversion, not a guess.
+ *
+ *  - Dark is the signature: a cool near-black field with a single brass light
+ *    source behind the word.
+ *  - Light is a cool paper white, deliberately not a warm cream, so the two
+ *    schemes read as the same product.
+ *  - The accent is brass, used only for the glow, the progress fill and the
+ *    hairline under a word the learner has already met.
+ *
+ * React Native has no colour function, so the alpha-over-background values
+ * Desktop writes as `oklch(... / 0.09)` are pre-composited here.
  */
 
 export const palette = {
   light: {
-    /** Gallery white - true neutral, no warm tint. */
-    bg: "#FAFAF9",
-    /** Slightly raised surface (sheets, grouped sections). */
-    surface: "#FFFFFF",
-    /** Cards / elevated surfaces. */
-    card: "#FFFFFF",
-    /** Higher elevation (popovers, pressed cards). */
-    elevated: "#FFFFFF",
-    /** Hairline borders / dividers. */
-    border: "#E7E6E3",
-    /** Primary text - near-black. */
-    ink: "#16151A",
-    /** Secondary / muted text. */
-    inkMuted: "#5E5C66",
+    /** Field. oklch(0.975 0.003 264) */
+    bg: "#F6F7F9",
+    /** Raised surface - the card, the gloss bubble. oklch(0.99 0.002 264) */
+    surface: "#FBFCFD",
+    card: "#FBFCFD",
+    elevated: "#FBFCFD",
+    /** Hairline. Desktop: black at 7% over the field. */
+    border: "#E5E6E8",
+    /** Primary text. oklch(0.20 0.014 264) */
+    ink: "#13161D",
+    /** Secondary text. oklch(0.50 0.012 264) */
+    inkMuted: "#60636A",
     /** Tertiary text (captions, disabled). */
-    inkSubtle: "#8E8C95",
-    /** Single jewel accent - deep bronze (the brass, darkened for light surfaces). */
-    accent: "#8A6D28",
-    /** Soft accent for glows / tints (low-opacity brass). */
-    accentSoft: "#C9A24B",
-    /** Text/icon color that sits on top of the accent. */
-    accentForeground: "#FAFAF9",
+    inkSubtle: "#999BA0",
+    /** Brass. oklch(0.55 0.10 70) */
+    accent: "#966626",
+    accentSoft: "#966626",
+    accentForeground: "#F6F7F9",
+    /** Progress track. Desktop: black at 9% over the field. */
+    track: "#E0E1E3",
+    /** No light source in light mode. Desktop sets `--target-glow:
+     *  transparent` here and keeps `--glow` at 8%, which on a 460x240 window
+     *  is a faint warmth; spread over a phone-sized field the same 8% brass
+     *  over a near-white ground reads as a pink stain. The light scheme is a
+     *  flat field, which is what Desktop's actually looks like. */
+    glow: "rgba(150, 102, 38, 0)",
+    /** Halo on the word itself. Desktop: `--target-glow: transparent`. */
+    textGlow: "transparent",
+    /** Underline on a token whose word the learner has already met. */
+    tokenLine: "rgba(150, 102, 38, 0.38)",
   },
   dark: {
-    /** Midnight-gallery background - near-black. */
-    bg: "#0B0B0D",
-    /** Raised surface. */
-    surface: "#141417",
-    /** Cards / elevated surfaces (lighter than bg for elevation in the dark). */
-    card: "#17171B",
-    /** Higher elevation. */
-    elevated: "#1F1F24",
-    /** Hairline borders / dividers. */
-    border: "#2D2D34",
-    /** Primary text - warm off-white. */
-    ink: "#F2EFE8",
-    /** Secondary / muted text. */
-    inkMuted: "#9F9A91",
+    /** Field. oklch(0.18 0.012 264) */
+    bg: "#0F1217",
+    /** Raised surface. oklch(0.235 0.014 264) */
+    surface: "#1B1E25",
+    card: "#1B1E25",
+    elevated: "#1B1E25",
+    /** Hairline. Desktop: white at 9% over the field. */
+    border: "#25272C",
+    /** Primary text - warm off-white against the cool field. oklch(0.965 0.014 90) */
+    ink: "#F7F3E9",
+    /** Secondary text. oklch(0.70 0.012 264) */
+    inkMuted: "#9B9EA6",
     /** Tertiary text. */
-    inkSubtle: "#706C64",
-    /** Accent - brushed brass. */
-    accent: "#C9A24B",
-    /** Soft accent for glows / tints. */
-    accentSoft: "#C9A24B",
-    accentForeground: "#1A1505",
+    inkSubtle: "#666970",
+    /** Brass. oklch(0.80 0.085 82) */
+    accent: "#D9B97E",
+    accentSoft: "#D9B97E",
+    accentForeground: "#272117",
+    /** Progress track. Desktop: white at 10% over the field. */
+    track: "#272A2E",
+    glow: "rgba(217, 185, 126, 0.18)",
+    /** Desktop: `--target-glow: oklch(0.80 0.085 82 / 0.18)`. */
+    textGlow: "rgba(217, 185, 126, 0.18)",
+    tokenLine: "rgba(217, 185, 126, 0.32)",
   },
 } as const;
 
-export const fontFamily = {
-  /** Refined geometric grotesk for all UI text. */
-  sans: "PlusJakartaSans_400Regular",
-  sansMedium: "PlusJakartaSans_500Medium",
-  sansSemibold: "PlusJakartaSans_600SemiBold",
-  sansBold: "PlusJakartaSans_700Bold",
-  /** Old-style soft-serif display, used for the flashcard word. */
-  display: "Fraunces_500Medium",
-  displaySemibold: "Fraunces_600SemiBold",
-  displayBold: "Fraunces_700Bold",
+/**
+ * Weights, not families. Desktop sets no font of its own - it renders in the
+ * system UI face and carries its voice in weight and tracking. React Native
+ * does the same when `fontFamily` is left unset, so the app now inherits San
+ * Francisco on iOS and Roboto on Android and the two products match.
+ */
+export const fontWeight = {
+  regular: "400",
+  medium: "500",
+  semibold: "600",
+  bold: "700",
 } as const;
 
 /** Type scale (px). */
@@ -119,35 +137,35 @@ export const radii = {
 } as const;
 
 /**
- * Letter-spacing for display type (px). Fraunces wants a slight negative track
- * at large sizes to feel set, not loose.
+ * Tracking. Desktop sets -0.02em on the word and -0.01em on a sentence; at the
+ * sizes those render, that is roughly -1px and -0.3px.
  */
 export const letterSpacing = {
-  display: -0.5,
-  displayTight: -1,
+  display: -1,
+  displayTight: -1.6,
+  sentence: -0.3,
 } as const;
 
-/** Motion durations (ms). */
+/** Motion durations (ms). Desktop's entrance is 420ms on a 0.22/1/0.36/1 curve. */
 export const duration = {
   fast: 150,
   base: 220,
   slow: 320,
-  slower: 480,
+  slower: 420,
 } as const;
 
-/** Easing curves for reanimated / Animated. */
+/** Easing curves. `standard` is Desktop's `--ease-out`. */
 export const easing = {
-  /** Standard "ease-out-quint"-ish curve for entrances. */
-  standard: [0.2, 0.8, 0.2, 1] as const,
-  /** Gentle settle. */
+  standard: [0.22, 1, 0.36, 1] as const,
   soft: [0.33, 1, 0.68, 1] as const,
 } as const;
 
 /**
- * Shadow tokens. RN consumes the `native` variants; the `web` string mirrors
- * the Tailwind boxShadow utilities for parity. Shadows read in light mode; in
- * the dark "gallery" scheme depth comes mainly from the lighter card surface +
- * hairline border, with the `glow` token adding a faint brass halo on the hero.
+ * Shadows. Desktop uses none: depth comes from the radial light behind the
+ * word and a hairline on raised surfaces. These stay for the list and sheet
+ * surfaces, which need an edge on a phone that a 460x240 desktop card does
+ * not. `glow` is the brass halo on the card - pair it with the resolved
+ * `accentSoft` as `shadowColor`.
  */
 export const shadow = {
   sm: {
@@ -180,11 +198,6 @@ export const shadow = {
     },
     web: "0 16px 32px rgba(0, 0, 0, 0.16)",
   },
-  /**
-   * Brass halo for the flashcard hero. Uses the soft-accent color so it reads as
-   * a refined glow in dark and a subtle warm lift in light. Pair with the
-   * resolved `accentSoft` as shadowColor at call sites that switch by scheme.
-   */
   glow: {
     native: {
       shadowOffset: { width: 0, height: 8 },
@@ -197,7 +210,7 @@ export const shadow = {
 
 export const tokens = {
   palette,
-  fontFamily,
+  fontWeight,
   fontSize,
   letterSpacing,
   spacing,

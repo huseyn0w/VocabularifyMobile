@@ -2,23 +2,36 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import { useColorScheme as useRNColorScheme } from 'react-native';
 import { colorScheme as nwColorScheme } from 'nativewind';
 import { getTheme, setTheme as persistTheme } from '../services/storage';
+import { palette } from '../theme/tokens';
 
-export const themes = {
+// Legacy colour object, kept because the context type still exposes it.
+// Values come from app/theme/tokens.ts so nothing here can drift from the
+// palette the rest of the app renders with.
+interface LegacyTheme {
+  background: string;
+  text: string;
+  border: string;
+  sectionBackground: string;
+  headerBackground: string;
+  cardBackground: string;
+}
+
+export const themes: Record<'light' | 'dark', LegacyTheme> = {
   light: {
-    background: '#F7F5F1',
-    text: '#1A1916',
-    border: '#E6E2DA',
-    sectionBackground: '#FFFFFF',
-    headerBackground: '#FFFFFF',
-    cardBackground: '#FFFFFF',
+    background: palette.light.bg,
+    text: palette.light.ink,
+    border: palette.light.border,
+    sectionBackground: palette.light.surface,
+    headerBackground: palette.light.bg,
+    cardBackground: palette.light.card,
   },
   dark: {
-    background: '#0E0E10',
-    text: '#F4F2EE',
-    border: '#2C2C30',
-    sectionBackground: '#161618',
-    headerBackground: '#0E0E10',
-    cardBackground: '#1A1A1D',
+    background: palette.dark.bg,
+    text: palette.dark.ink,
+    border: palette.dark.border,
+    sectionBackground: palette.dark.surface,
+    headerBackground: palette.dark.bg,
+    cardBackground: palette.dark.card,
   },
 };
 

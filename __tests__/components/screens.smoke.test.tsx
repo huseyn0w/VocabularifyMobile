@@ -20,16 +20,18 @@ jest.mock('@react-navigation/native', () => ({
 describe('screen smoke tests', () => {
   it('Home renders (shows loading or a word, never crashes)', async () => {
     renderWithProviders(<HomeScreen />);
-    // The deck loads asynchronously; assert we eventually leave a stable state.
+    // The deck loads asynchronously; assert we eventually leave a stable
+    // state. The hint names the lesson swipe on a level that has a course and
+    // not on one that does not, so match either wording.
     await waitFor(() => {
-      expect(screen.queryByText('swipe to continue')).toBeTruthy();
+      expect(screen.queryByText(/^swipe /)).toBeTruthy();
     });
   });
 
-  it('Welcome renders the intro copy and the learn options', async () => {
+  it('Welcome renders the first step and its language options', async () => {
     renderWithProviders(<WelcomeScreen />);
-    expect(await screen.findByText(/vocabulary journey/i)).toBeTruthy();
-    expect(screen.getByText('I want to learn')).toBeTruthy();
+    expect(await screen.findByText(/want to learn\?/i)).toBeTruthy();
+    expect(screen.getByText('🇬🇧 English')).toBeTruthy();
   });
 
   it('Settings renders its preference rows', async () => {

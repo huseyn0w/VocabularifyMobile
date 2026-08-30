@@ -16,7 +16,7 @@ import { DEFAULT_FREQUENCY } from "../utils/constants";
 
 export const STORAGE_KEYS = {
   language: "languageSettings",
-  lastIndex: "lastWordIndex",
+  deckIndex: "deckProgress",
   mode: "learningMode",
   frequency: "WORDS_FREQUENCY",
   theme: "theme",
@@ -133,17 +133,48 @@ export async function hasLanguageSettings(): Promise<boolean> {
   return (await AsyncStorage.getItem(STORAGE_KEYS.language)) !== null;
 }
 
-// --- last index ------------------------------------------------------------
+// --- deck position ------------------------------------------------------
 
-export async function getLastIndex(): Promise<number> {
-  const value = await readJSON(STORAGE_KEYS.lastIndex);
-  return typeof value === "number" && Number.isFinite(value) && value >= 0
-    ? Math.floor(value)
-    : 0;
+/**
+ * Where the learner is, per deck. A deck is one (learning, known, level)
+ * triple, so switching pair or level no longer discards the position - the
+ * same thing Desktop's `AppState.progress` does.
+ *
+ * The stored index counts items, not words: with a course loaded a deck is
+ * words and sentences interleaved. That is why the legacy single
+ * `lastWordIndex` is not migrated - a word index means a different place in
+ * the new list, and landing the learner mid-lesson at random is worse than
+ * starting them at the top.
+ */
+export function deckKey(
+  learningLanguage: string,
+  knownLanguage: string,
+  level: string,
+): string {
+  return `${learningLanguage}:${knownLanguage}:${level}`;
 }
 
-export async function setLastIndex(index: number): Promise<void> {
-  await AsyncStorage.setItem(STORAGE_KEYS.lastIndex, JSON.stringify(index));
+function isIndexMap(value: unknown): value is Record<string, number> {
+  return (
+    isObject(value) &&
+    Object.values(value).every(
+      (v) => typeof v === "number" && Number.isFinite(v) && v >= 0,
+    )
+  );
+}
+
+export async function getDeckIndex(key: string): Promise<number> {
+  const value = await readJSON(STORAGE_KEYS.deckIndex);
+  if (!isIndexMap(value)) return 0;
+  const stored = value[key];
+  return typeof stored === "number" ? Math.floor(stored) : 0;
+}
+
+export async function setDeckIndex(key: string, index: number): Promise<void> {
+  const value = await readJSON(STORAGE_KEYS.deckIndex);
+  const map = isIndexMap(value) ? { ...value } : {};
+  map[key] = Math.max(0, Math.floor(index));
+  await AsyncStorage.setItem(STORAGE_KEYS.deckIndex, JSON.stringify(map));
 }
 
 // --- mode ------------------------------------------------------------------

@@ -82,3 +82,74 @@ describe('language parity', () => {
     expect(diskFiles).toBe(210);
   });
 });
+
+describe('course parity', () => {
+  // A lessons file is copied in from Desktop, so a stale or half-finished copy
+  // is the failure worth catching: the deck would silently drop words off the
+  // end of a lesson, or show a sentence whose words the learner has not met.
+  const lessonFiles: { pair: string; file: string; words: string }[] = [];
+  for (const toCode of fs.readdirSync(LANGUAGES_DIR)) {
+    const toDir = path.join(LANGUAGES_DIR, toCode);
+    if (toCode.startsWith('_') || !fs.statSync(toDir).isDirectory()) continue;
+    for (const fromCode of fs.readdirSync(toDir)) {
+      const fromDir = path.join(toDir, fromCode);
+      if (fromCode.startsWith('_') || !fs.statSync(fromDir).isDirectory()) continue;
+      for (const file of fs.readdirSync(fromDir)) {
+        if (!file.endsWith('.lessons.json')) continue;
+        lessonFiles.push({
+          pair: `${toCode}/${fromCode}/${file}`,
+          file: path.join(fromDir, file),
+          words: path.join(fromDir, file.replace('.lessons.json', '.json')),
+        });
+      }
+    }
+  }
+
+  // A1 has a course for every one of the 42 pairs. A2 so far has one only for
+  // German, which is the level being written; the other six targets still have
+  // no A2 course and must not silently gain one.
+  it('ships a course for all 42 pairs at A1 and for German at A2', () => {
+    const a1 = lessonFiles.filter((f) => f.pair.endsWith('a1.lessons.json'));
+    const a2 = lessonFiles.filter((f) => f.pair.endsWith('a2.lessons.json'));
+    expect(a1).toHaveLength(42);
+    expect(a2).toHaveLength(6);
+    expect(a2.every((f) => f.pair.startsWith('de/'))).toBe(true);
+    expect(lessonFiles).toHaveLength(48);
+  });
+
+  it.each(lessonFiles)('$pair fits its word file', ({ pair, file, words }) => {
+    const course = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const wordList = JSON.parse(fs.readFileSync(words, 'utf8'));
+
+    expect(Array.isArray(course.lessons)).toBe(true);
+    expect(course.lessons.length).toBeGreaterThan(0);
+
+    const covered = course.lessons.reduce(
+      (sum: number, lesson: { count: number }) => sum + lesson.count,
+      0,
+    );
+    // A course may cover fewer words than the dictionary holds - the levels
+    // still awaiting their own course use the shared 188-word one, and
+    // buildItems appends the remainder. It must never claim more.
+    expect(covered).toBeLessThanOrEqual(wordList.length);
+
+    // German A1 is the one course written per target, so it covers its whole
+    // word file. Locking that in catches a partial re-copy from Desktop.
+    if (pair.startsWith('de/')) {
+      expect(covered).toBe(wordList.length);
+    }
+
+    for (const lesson of course.lessons) {
+      for (const sentence of lesson.sentences) {
+        expect(typeof sentence.id).toBe('string');
+        expect(typeof sentence.source).toBe('string');
+        expect(sentence.source.length).toBeGreaterThan(0);
+        // Every token backed by a concept can name where it came from.
+        for (const token of sentence.target) {
+          if (typeof token === 'string') continue;
+          expect(sentence.gloss[token.c]).toBeDefined();
+        }
+      }
+    }
+  });
+});

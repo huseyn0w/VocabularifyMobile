@@ -24,12 +24,12 @@ const AboutScreen: React.FC = () => {
     <ScreenContainer scroll>
       <Animated.View entering={entering} className="mb-8 mt-6">
         <Text
-          className="font-display-semibold text-5xl leading-[52px] text-ink"
+          className="font-semibold text-5xl leading-[52px] text-ink"
           style={{ letterSpacing: letterSpacing.display }}
         >
           Vocabularify
         </Text>
-        <Text className="mt-4 font-sans text-base leading-6 text-ink-muted">
+        <Text className="mt-4 text-base leading-6 text-ink-muted">
           A quiet way to expand your vocabulary - one word at a time, at your
           own pace.
         </Text>
@@ -62,7 +62,7 @@ const AboutScreen: React.FC = () => {
         <Text className="font-medium text-sm text-ink-muted">
           Created by Elman Huseynov
         </Text>
-        <Text className="mt-1 font-sans text-xs text-ink-subtle">
+        <Text className="mt-1 text-xs text-ink-subtle">
           All rights reserved.
         </Text>
       </View>

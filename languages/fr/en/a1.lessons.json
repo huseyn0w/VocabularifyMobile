@@ -1,0 +1,5393 @@
+{
+  "lessons": [
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_001",
+          "target": [
+            {
+              "t": "Bonjour",
+              "c": "hello"
+            },
+            " !",
+            {
+              "t": "Comment",
+              "c": "how"
+            },
+            {
+              "t": "tu",
+              "c": "you"
+            },
+            {
+              "t": "vas",
+              "c": "to go"
+            },
+            " ?"
+          ],
+          "source": "Hello! How are you?",
+          "gloss": {
+            "hello": {
+              "t": "bonjour",
+              "s": "hello"
+            },
+            "how": {
+              "t": "comment",
+              "s": "how"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "aller",
+              "s": "to go"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_002",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "vais",
+              "c": "to go"
+            },
+            {
+              "t": "bien",
+              "c": "good",
+              "g": "bien"
+            },
+            ",",
+            {
+              "t": "merci",
+              "c": "thank you"
+            },
+            "."
+          ],
+          "source": "I am good, thank you.",
+          "gloss": {
+            "good": {
+              "t": "bon",
+              "s": "good"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "thank you": {
+              "t": "merci",
+              "s": "thank you"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "aller",
+              "s": "to go"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 7,
+      "sentences": [
+        {
+          "id": "a1_003",
+          "target": [
+            {
+              "t": "Oui",
+              "c": "yes"
+            },
+            ",",
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "vais",
+              "c": "to go"
+            },
+            {
+              "t": "très",
+              "c": "very"
+            },
+            {
+              "t": "bien",
+              "c": "good",
+              "g": "bien"
+            },
+            ",",
+            {
+              "t": "merci",
+              "c": "thank you"
+            },
+            " !"
+          ],
+          "source": "Yes, I am very good, thank you!",
+          "gloss": {
+            "good": {
+              "t": "bon",
+              "s": "good"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "thank you": {
+              "t": "merci",
+              "s": "thank you"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "aller",
+              "s": "to go"
+            },
+            "very": {
+              "t": "très",
+              "s": "very"
+            },
+            "yes": {
+              "t": "oui",
+              "s": "yes"
+            }
+          }
+        },
+        {
+          "id": "a1_004",
+          "target": [
+            {
+              "t": "Non",
+              "c": "no"
+            },
+            ",",
+            {
+              "t": "je",
+              "c": "i"
+            },
+            "ne",
+            {
+              "t": "vais",
+              "c": "to go"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            {
+              "t": "bien",
+              "c": "good",
+              "g": "bien"
+            },
+            "."
+          ],
+          "source": "No, I am not good.",
+          "gloss": {
+            "good": {
+              "t": "bon",
+              "s": "good"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "no": {
+              "t": "non",
+              "s": "no"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "aller",
+              "s": "to go"
+            }
+          }
+        },
+        {
+          "id": "a1_005",
+          "target": [
+            {
+              "t": "Oui",
+              "c": "yes"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            ".",
+            {
+              "t": "Merci",
+              "c": "thank you"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "au revoir",
+              "c": "goodbye"
+            },
+            " !"
+          ],
+          "source": "Yes, please. Thank you and goodbye!",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "goodbye": {
+              "t": "au revoir",
+              "s": "goodbye"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "thank you": {
+              "t": "merci",
+              "s": "thank you"
+            },
+            "yes": {
+              "t": "oui",
+              "s": "yes"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 7,
+      "sentences": [
+        {
+          "id": "a1_006",
+          "target": [
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "es",
+              "c": "to be"
+            },
+            {
+              "t": "où",
+              "c": "where"
+            },
+            " ?",
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "suis",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Where are you? I am here.",
+          "gloss": {
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "where": {
+              "t": "où",
+              "s": "where"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_007",
+          "target": [
+            {
+              "t": "Il",
+              "c": "he"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "elle",
+              "c": "she"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "là",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "He is here and she is there.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "he": {
+              "t": "il",
+              "s": "he"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "she": {
+              "t": "elle",
+              "s": "she"
+            },
+            "there": {
+              "t": "là",
+              "s": "there"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_008",
+          "target": [
+            {
+              "t": "Nous",
+              "c": "we"
+            },
+            {
+              "t": "sommes",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "ils",
+              "c": "they"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            {
+              "t": "là",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "We are here, and they are there.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "there": {
+              "t": "là",
+              "s": "there"
+            },
+            "they": {
+              "t": "ils",
+              "s": "they"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "we": {
+              "t": "nous",
+              "s": "we"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_009",
+          "target": [
+            {
+              "t": "Pardon",
+              "c": "sorry"
+            },
+            " !",
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "es",
+              "c": "to be"
+            },
+            {
+              "t": "qui",
+              "c": "who"
+            },
+            " ?"
+          ],
+          "source": "Sorry! Who are you?",
+          "gloss": {
+            "sorry": {
+              "t": "pardon",
+              "s": "sorry"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "who": {
+              "t": "qui",
+              "s": "who"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_010",
+          "target": [
+            {
+              "t": "Maintenant",
+              "c": "now"
+            },
+            {
+              "t": "j'",
+              "c": "i"
+            },
+            {
+              "t": "ai",
+              "c": "to have"
+            },
+            "le",
+            {
+              "t": "temps",
+              "c": "time"
+            },
+            ".",
+            {
+              "t": "Et",
+              "c": "and"
+            },
+            {
+              "t": "toi",
+              "c": "you"
+            },
+            " ?"
+          ],
+          "source": "Now I have time. And you?",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "now": {
+              "t": "maintenant",
+              "s": "now"
+            },
+            "time": {
+              "t": "le temps",
+              "s": "time"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_011",
+          "target": [
+            {
+              "t": "Il",
+              "c": "he"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "nous",
+              "c": "we"
+            },
+            {
+              "t": "sommes",
+              "c": "to be"
+            },
+            {
+              "t": "aussi",
+              "c": "also"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "He is here, and we are also here.",
+          "gloss": {
+            "also": {
+              "t": "aussi",
+              "s": "also"
+            },
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "he": {
+              "t": "il",
+              "s": "he"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "we": {
+              "t": "nous",
+              "s": "we"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_012",
+          "target": [
+            "Un",
+            {
+              "t": "café",
+              "c": "coffee"
+            },
+            {
+              "t": "avec",
+              "c": "with"
+            },
+            "du",
+            {
+              "t": "lait",
+              "c": "milk"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            " !"
+          ],
+          "source": "Coffee with milk, please!",
+          "gloss": {
+            "coffee": {
+              "t": "le café",
+              "s": "coffee"
+            },
+            "milk": {
+              "t": "le lait",
+              "s": "milk"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "with": {
+              "t": "avec",
+              "s": "with"
+            }
+          }
+        },
+        {
+          "id": "a1_013",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "veux",
+              "c": "to want"
+            },
+            "du",
+            {
+              "t": "thé",
+              "c": "tea"
+            },
+            {
+              "t": "sans",
+              "c": "without"
+            },
+            {
+              "t": "lait",
+              "c": "milk"
+            },
+            "."
+          ],
+          "source": "I want tea without milk.",
+          "gloss": {
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "milk": {
+              "t": "le lait",
+              "s": "milk"
+            },
+            "tea": {
+              "t": "le thé",
+              "s": "tea"
+            },
+            "to want": {
+              "t": "vouloir",
+              "s": "to want"
+            },
+            "without": {
+              "t": "sans",
+              "s": "without"
+            }
+          }
+        },
+        {
+          "id": "a1_014",
+          "target": [
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "bois",
+              "c": "to drink"
+            },
+            "du",
+            {
+              "t": "thé",
+              "c": "tea"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "bois",
+              "c": "to drink"
+            },
+            "de",
+            "l'",
+            {
+              "t": "eau",
+              "c": "water"
+            },
+            "."
+          ],
+          "source": "You drink tea, and I drink water.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "tea": {
+              "t": "le thé",
+              "s": "tea"
+            },
+            "to drink": {
+              "t": "boire",
+              "s": "to drink"
+            },
+            "water": {
+              "t": "l'eau",
+              "s": "water"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 6,
+      "sentences": [
+        {
+          "id": "a1_015",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "mange",
+              "c": "to eat"
+            },
+            "du",
+            {
+              "t": "pain",
+              "c": "bread"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "une",
+            {
+              "t": "pomme",
+              "c": "apple"
+            },
+            "."
+          ],
+          "source": "I eat bread and an apple.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "apple": {
+              "t": "la pomme",
+              "s": "apple"
+            },
+            "bread": {
+              "t": "le pain",
+              "s": "bread"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "to eat": {
+              "t": "manger",
+              "s": "to eat"
+            }
+          }
+        },
+        {
+          "id": "a1_016",
+          "target": [
+            "Le",
+            {
+              "t": "petit-déjeuner",
+              "c": "breakfast"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "bon",
+              "c": "good"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "veux",
+              "c": "to want"
+            },
+            {
+              "t": "plus",
+              "c": "more"
+            },
+            "de",
+            {
+              "t": "pain",
+              "c": "bread"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            "."
+          ],
+          "source": "Breakfast is good, but I want more bread, please.",
+          "gloss": {
+            "bread": {
+              "t": "le pain",
+              "s": "bread"
+            },
+            "breakfast": {
+              "t": "le petit-déjeuner",
+              "s": "breakfast"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "good": {
+              "t": "bon",
+              "s": "good"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "more": {
+              "t": "plus",
+              "s": "more"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to want": {
+              "t": "vouloir",
+              "s": "to want"
+            }
+          }
+        },
+        {
+          "id": "a1_017",
+          "target": [
+            {
+              "t": "Il",
+              "c": "he"
+            },
+            {
+              "t": "mange",
+              "c": "to eat"
+            },
+            "un",
+            {
+              "t": "œuf",
+              "c": "egg"
+            },
+            {
+              "t": "avec",
+              "c": "with"
+            },
+            "du",
+            {
+              "t": "sel",
+              "c": "salt"
+            },
+            "."
+          ],
+          "source": "He eats an egg with salt.",
+          "gloss": {
+            "egg": {
+              "t": "l'œuf",
+              "s": "egg"
+            },
+            "he": {
+              "t": "il",
+              "s": "he"
+            },
+            "salt": {
+              "t": "le sel",
+              "s": "salt"
+            },
+            "to eat": {
+              "t": "manger",
+              "s": "to eat"
+            },
+            "with": {
+              "t": "avec",
+              "s": "with"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_018",
+          "target": [
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "m'",
+              "c": "i"
+            },
+            {
+              "t": "aider",
+              "c": "to help"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            " ?"
+          ],
+          "source": "Can you help me, please?",
+          "gloss": {
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "to help": {
+              "t": "aider",
+              "s": "to help"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_019",
+          "target": [
+            {
+              "t": "Pardon",
+              "c": "sorry"
+            },
+            ",",
+            {
+              "t": "je",
+              "c": "i"
+            },
+            "ne",
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            {
+              "t": "te",
+              "c": "you"
+            },
+            {
+              "t": "comprendre",
+              "c": "to understand"
+            },
+            ".",
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "parler",
+              "c": "to speak"
+            },
+            {
+              "t": "lentement",
+              "c": "slow"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            " ?"
+          ],
+          "source": "Sorry, I can not understand you. Can you speak slowly, please?",
+          "gloss": {
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "more": {
+              "t": "plus",
+              "s": "more"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "slow": {
+              "t": "lent",
+              "s": "slow"
+            },
+            "sorry": {
+              "t": "pardon",
+              "s": "sorry"
+            },
+            "to speak": {
+              "t": "parler",
+              "s": "to speak"
+            },
+            "to understand": {
+              "t": "comprendre",
+              "s": "to understand"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_020",
+          "target": [
+            {
+              "t": "Pourquoi",
+              "c": "why"
+            },
+            {
+              "t": "tu",
+              "c": "you"
+            },
+            {
+              "t": "es",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            " ?",
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "suis",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            {
+              "t": "parce que",
+              "c": "because"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "veux",
+              "c": "to want"
+            },
+            {
+              "t": "apprendre",
+              "c": "to learn"
+            },
+            "."
+          ],
+          "source": "Why are you here? I am here because I want to learn.",
+          "gloss": {
+            "because": {
+              "t": "parce que",
+              "s": "because"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to learn": {
+              "t": "apprendre",
+              "s": "to learn"
+            },
+            "to want": {
+              "t": "vouloir",
+              "s": "to want"
+            },
+            "why": {
+              "t": "pourquoi",
+              "s": "why"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_021",
+          "target": [
+            {
+              "t": "Viande",
+              "c": "meat"
+            },
+            {
+              "t": "ou",
+              "c": "or"
+            },
+            {
+              "t": "poisson",
+              "c": "fish"
+            },
+            " ?"
+          ],
+          "source": "Meat or fish?",
+          "gloss": {
+            "fish": {
+              "t": "le poisson",
+              "s": "fish"
+            },
+            "meat": {
+              "t": "la viande",
+              "s": "meat"
+            },
+            "or": {
+              "t": "ou",
+              "s": "or"
+            }
+          }
+        },
+        {
+          "id": "a1_022",
+          "target": [
+            "L'",
+            {
+              "t": "eau",
+              "c": "water"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "froide",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            "le",
+            {
+              "t": "thé",
+              "c": "tea"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "très",
+              "c": "very"
+            },
+            {
+              "t": "chaud",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "The water is cold, but the tea is very hot.",
+          "gloss": {
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "cold": {
+              "t": "froid",
+              "s": "cold"
+            },
+            "hot": {
+              "t": "chaud",
+              "s": "hot"
+            },
+            "tea": {
+              "t": "le thé",
+              "s": "tea"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "very": {
+              "t": "très",
+              "s": "very"
+            },
+            "water": {
+              "t": "l'eau",
+              "s": "water"
+            }
+          }
+        },
+        {
+          "id": "a1_023",
+          "target": [
+            {
+              "t": "J'",
+              "c": "i"
+            },
+            {
+              "t": "ai",
+              "c": "to have"
+            },
+            "de",
+            "l'",
+            {
+              "t": "argent",
+              "c": "money"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "veux",
+              "c": "to want"
+            },
+            {
+              "t": "acheter",
+              "c": "to buy"
+            },
+            "du",
+            {
+              "t": "pain",
+              "c": "bread"
+            },
+            ".",
+            {
+              "t": "Où",
+              "c": "where"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            "le",
+            {
+              "t": "magasin",
+              "c": "shop"
+            },
+            " ?"
+          ],
+          "source": "I have money, and I want to buy bread. Where is the shop?",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "bread": {
+              "t": "le pain",
+              "s": "bread"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "money": {
+              "t": "l'argent",
+              "s": "money"
+            },
+            "shop": {
+              "t": "le magasin",
+              "s": "shop"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to buy": {
+              "t": "acheter",
+              "s": "to buy"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            },
+            "to want": {
+              "t": "vouloir",
+              "s": "to want"
+            },
+            "where": {
+              "t": "où",
+              "s": "where"
+            }
+          }
+        },
+        {
+          "id": "a1_069",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "veux",
+              "c": "to want"
+            },
+            {
+              "t": "acheter",
+              "c": "to buy"
+            },
+            "du",
+            {
+              "t": "poisson",
+              "c": "fish"
+            },
+            ".",
+            {
+              "t": "Combien",
+              "c": "how much"
+            },
+            "d'",
+            {
+              "t": "argent",
+              "c": "money"
+            },
+            " ?"
+          ],
+          "source": "I want to buy the fish. How much money?",
+          "gloss": {
+            "fish": {
+              "t": "le poisson",
+              "s": "fish"
+            },
+            "how much": {
+              "t": "combien",
+              "s": "how much"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "money": {
+              "t": "l'argent",
+              "s": "money"
+            },
+            "to buy": {
+              "t": "acheter",
+              "s": "to buy"
+            },
+            "to want": {
+              "t": "vouloir",
+              "s": "to want"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 10,
+      "sentences": [
+        {
+          "id": "a1_024",
+          "target": [
+            {
+              "t": "C'",
+              "c": "this"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "ma",
+              "c": "my"
+            },
+            {
+              "t": "maison",
+              "c": "house"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "elle",
+              "c": "it",
+              "g": "elle"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "très",
+              "c": "very"
+            },
+            {
+              "t": "grande",
+              "c": "big"
+            },
+            "."
+          ],
+          "source": "This is my house, and it is very big.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "big": {
+              "t": "grand",
+              "s": "big"
+            },
+            "house": {
+              "t": "la maison",
+              "s": "house"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "my": {
+              "t": "mon",
+              "s": "my"
+            },
+            "this": {
+              "t": "ce",
+              "s": "this"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "very": {
+              "t": "très",
+              "s": "very"
+            }
+          }
+        },
+        {
+          "id": "a1_025",
+          "target": [
+            "La",
+            {
+              "t": "chambre",
+              "c": "room"
+            },
+            {
+              "t": "a",
+              "c": "to have"
+            },
+            "une",
+            {
+              "t": "table",
+              "c": "table"
+            },
+            ",",
+            "une",
+            {
+              "t": "chaise",
+              "c": "chair"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "un",
+            {
+              "t": "lit",
+              "c": "bed"
+            },
+            "."
+          ],
+          "source": "The room has a table, a chair and a bed.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "bed": {
+              "t": "le lit",
+              "s": "bed"
+            },
+            "chair": {
+              "t": "la chaise",
+              "s": "chair"
+            },
+            "in": {
+              "t": "dans",
+              "s": "in"
+            },
+            "room": {
+              "t": "la chambre",
+              "s": "room"
+            },
+            "table": {
+              "t": "la table",
+              "s": "table"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            }
+          }
+        },
+        {
+          "id": "a1_026",
+          "target": [
+            {
+              "t": "Pardon",
+              "c": "sorry"
+            },
+            ",",
+            {
+              "t": "où",
+              "c": "where"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            "la",
+            {
+              "t": "porte",
+              "c": "door"
+            },
+            " ?",
+            "La",
+            {
+              "t": "fenêtre",
+              "c": "window"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "là",
+              "c": "there"
+            },
+            "."
+          ],
+          "source": "Sorry, where is the door? The window is there.",
+          "gloss": {
+            "door": {
+              "t": "la porte",
+              "s": "door"
+            },
+            "sorry": {
+              "t": "pardon",
+              "s": "sorry"
+            },
+            "there": {
+              "t": "là",
+              "s": "there"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "where": {
+              "t": "où",
+              "s": "where"
+            },
+            "window": {
+              "t": "la fenêtre",
+              "s": "window"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_027",
+          "target": [
+            {
+              "t": "Ouvre",
+              "c": "to open"
+            },
+            "la",
+            {
+              "t": "fenêtre",
+              "c": "window"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "ferme",
+              "c": "to close"
+            },
+            "la",
+            {
+              "t": "porte",
+              "c": "door"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            " !"
+          ],
+          "source": "Open the window and close the door, please!",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "door": {
+              "t": "la porte",
+              "s": "door"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "to close": {
+              "t": "fermer",
+              "s": "to close"
+            },
+            "to open": {
+              "t": "ouvrir",
+              "s": "to open"
+            },
+            "window": {
+              "t": "la fenêtre",
+              "s": "window"
+            }
+          }
+        },
+        {
+          "id": "a1_028",
+          "target": [
+            {
+              "t": "Ce",
+              "c": "this"
+            },
+            {
+              "t": "livre-ci",
+              "c": "book"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "nouveau",
+              "c": "new"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "ce",
+              "c": "that",
+              "g": "ce"
+            },
+            {
+              "t": "livre-là",
+              "c": "book"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "vieux",
+              "c": "old"
+            },
+            "."
+          ],
+          "source": "This book is new, and that book is old.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "book": {
+              "t": "le livre",
+              "s": "book"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "new": {
+              "t": "nouveau",
+              "s": "new"
+            },
+            "old": {
+              "t": "vieux",
+              "s": "old"
+            },
+            "that": {
+              "t": "ça",
+              "s": "that"
+            },
+            "this": {
+              "t": "ce",
+              "s": "this"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_029",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "voir",
+              "c": "to see"
+            },
+            "une",
+            {
+              "t": "belle",
+              "c": "beautiful"
+            },
+            {
+              "t": "petite",
+              "c": "small"
+            },
+            {
+              "t": "maison",
+              "c": "house"
+            },
+            "."
+          ],
+          "source": "I can see a small, beautiful house.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "beautiful": {
+              "t": "beau",
+              "s": "beautiful"
+            },
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "house": {
+              "t": "la maison",
+              "s": "house"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "small": {
+              "t": "petit",
+              "s": "small"
+            },
+            "to see": {
+              "t": "voir",
+              "s": "to see"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_030",
+          "target": [
+            "La",
+            {
+              "t": "famille",
+              "c": "family"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "grande",
+              "c": "big"
+            },
+            " :",
+            "une",
+            {
+              "t": "mère",
+              "c": "mother"
+            },
+            ",",
+            "un",
+            {
+              "t": "père",
+              "c": "father"
+            },
+            ",",
+            "un",
+            {
+              "t": "fils",
+              "c": "son"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "une",
+            {
+              "t": "fille",
+              "c": "daughter"
+            },
+            "."
+          ],
+          "source": "The family is big: a mother, a father, a son and a daughter.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "big": {
+              "t": "grand",
+              "s": "big"
+            },
+            "daughter": {
+              "t": "la fille",
+              "s": "daughter"
+            },
+            "family": {
+              "t": "la famille",
+              "s": "family"
+            },
+            "father": {
+              "t": "le père",
+              "s": "father"
+            },
+            "mother": {
+              "t": "la mère",
+              "s": "mother"
+            },
+            "son": {
+              "t": "le fils",
+              "s": "son"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_031",
+          "target": [
+            {
+              "t": "Tous",
+              "c": "all"
+            },
+            "les",
+            {
+              "t": "enfants",
+              "c": "child"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            {
+              "t": "avec",
+              "c": "with"
+            },
+            "les",
+            {
+              "t": "parents",
+              "c": "parents"
+            },
+            "."
+          ],
+          "source": "All the children are here with the parents.",
+          "gloss": {
+            "all": {
+              "t": "tout",
+              "s": "all"
+            },
+            "child": {
+              "t": "l'enfant",
+              "s": "child"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "parents": {
+              "t": "les parents",
+              "s": "parents"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "with": {
+              "t": "avec",
+              "s": "with"
+            }
+          }
+        },
+        {
+          "id": "a1_032",
+          "target": [
+            "La",
+            {
+              "t": "mère",
+              "c": "mother"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            "le",
+            {
+              "t": "père",
+              "c": "father"
+            },
+            "n'",
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "The mother is here, but the father is not here.",
+          "gloss": {
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "father": {
+              "t": "le père",
+              "s": "father"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "mother": {
+              "t": "la mère",
+              "s": "mother"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 9,
+      "sentences": [
+        {
+          "id": "a1_033",
+          "target": [
+            {
+              "t": "J'",
+              "c": "i"
+            },
+            {
+              "t": "ai",
+              "c": "to have"
+            },
+            "un",
+            {
+              "t": "frère",
+              "c": "brother"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "une",
+            {
+              "t": "sœur",
+              "c": "sister"
+            },
+            "."
+          ],
+          "source": "I have a brother and a sister.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "brother": {
+              "t": "le frère",
+              "s": "brother"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "sister": {
+              "t": "la sœur",
+              "s": "sister"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            }
+          }
+        },
+        {
+          "id": "a1_034",
+          "target": [
+            "L'",
+            {
+              "t": "homme",
+              "c": "man"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "la",
+            {
+              "t": "femme",
+              "c": "woman"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            {
+              "t": "amis",
+              "c": "friend"
+            },
+            "."
+          ],
+          "source": "The man and the woman are friends.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "friend": {
+              "t": "l'ami",
+              "s": "friend"
+            },
+            "man": {
+              "t": "l'homme",
+              "s": "man"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "woman": {
+              "t": "la femme",
+              "s": "woman"
+            }
+          }
+        },
+        {
+          "id": "a1_035",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "sais",
+              "c": "to know"
+            },
+            {
+              "t": "où",
+              "c": "where"
+            },
+            {
+              "t": "tu",
+              "c": "you"
+            },
+            {
+              "t": "habites",
+              "c": "to live"
+            },
+            ".",
+            {
+              "t": "Cet",
+              "c": "that",
+              "g": "ce"
+            },
+            {
+              "t": "homme",
+              "c": "man"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "mon",
+              "c": "my"
+            },
+            {
+              "t": "ami",
+              "c": "friend"
+            },
+            "."
+          ],
+          "source": "I know where you live. That man is my friend.",
+          "gloss": {
+            "friend": {
+              "t": "l'ami",
+              "s": "friend"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "man": {
+              "t": "l'homme",
+              "s": "man"
+            },
+            "my": {
+              "t": "mon",
+              "s": "my"
+            },
+            "that": {
+              "t": "ça",
+              "s": "that"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to know": {
+              "t": "savoir",
+              "s": "to know"
+            },
+            "to live": {
+              "t": "habiter",
+              "s": "to live"
+            },
+            "where": {
+              "t": "où",
+              "s": "where"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_070",
+          "target": [
+            {
+              "t": "Bonjour",
+              "c": "hello"
+            },
+            " !",
+            {
+              "t": "C'",
+              "c": "this"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "quoi",
+              "c": "what"
+            },
+            ",",
+            {
+              "t": "ton",
+              "c": "your"
+            },
+            {
+              "t": "nom",
+              "c": "name"
+            },
+            " ?"
+          ],
+          "source": "Hello! What is your name?",
+          "gloss": {
+            "hello": {
+              "t": "bonjour",
+              "s": "hello"
+            },
+            "how": {
+              "t": "comment",
+              "s": "how"
+            },
+            "name": {
+              "t": "le nom",
+              "s": "name"
+            },
+            "this": {
+              "t": "ce",
+              "s": "this"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "what": {
+              "t": "quoi",
+              "s": "what"
+            },
+            "your": {
+              "t": "ton",
+              "s": "your"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_036",
+          "target": [
+            {
+              "t": "Viens",
+              "c": "to come"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            " !",
+            {
+              "t": "Cette",
+              "c": "this"
+            },
+            {
+              "t": "rue",
+              "c": "street"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "grande",
+              "c": "big"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "l'",
+            {
+              "t": "école",
+              "c": "school"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "Come here, please! This street is big, and the school is here.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "big": {
+              "t": "grand",
+              "s": "big"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "school": {
+              "t": "l'école",
+              "s": "school"
+            },
+            "street": {
+              "t": "la rue",
+              "s": "street"
+            },
+            "this": {
+              "t": "ce",
+              "s": "this"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to come": {
+              "t": "venir",
+              "s": "to come"
+            }
+          }
+        },
+        {
+          "id": "a1_037",
+          "target": [
+            {
+              "t": "J'",
+              "c": "i"
+            },
+            {
+              "t": "habite",
+              "c": "to live"
+            },
+            {
+              "t": "dans",
+              "c": "in"
+            },
+            "la",
+            {
+              "t": "ville",
+              "c": "city"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "viens",
+              "c": "to come"
+            },
+            {
+              "t": "à",
+              "c": "to"
+            },
+            {
+              "t": "ta",
+              "c": "your"
+            },
+            {
+              "t": "maison",
+              "c": "house"
+            },
+            "."
+          ],
+          "source": "I live in the city, and I come to your house.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "city": {
+              "t": "la ville",
+              "s": "city"
+            },
+            "house": {
+              "t": "la maison",
+              "s": "house"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "in": {
+              "t": "dans",
+              "s": "in"
+            },
+            "to": {
+              "t": "à",
+              "s": "to"
+            },
+            "to come": {
+              "t": "venir",
+              "s": "to come"
+            },
+            "to live": {
+              "t": "habiter",
+              "s": "to live"
+            },
+            "your": {
+              "t": "ton",
+              "s": "your"
+            }
+          }
+        },
+        {
+          "id": "a1_038",
+          "target": [
+            {
+              "t": "Nous",
+              "c": "we"
+            },
+            {
+              "t": "avons",
+              "c": "to have"
+            },
+            "une",
+            {
+              "t": "nouvelle",
+              "c": "new"
+            },
+            {
+              "t": "voiture",
+              "c": "car"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "nous",
+              "c": "we"
+            },
+            {
+              "t": "pouvons",
+              "c": "can"
+            },
+            {
+              "t": "aller",
+              "c": "to go"
+            },
+            {
+              "t": "à",
+              "c": "to"
+            },
+            "l'",
+            {
+              "t": "école",
+              "c": "school"
+            },
+            {
+              "t": "rapidement",
+              "c": "fast"
+            },
+            "."
+          ],
+          "source": "We have a new car, and we can go to school fast.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "car": {
+              "t": "la voiture",
+              "s": "car"
+            },
+            "fast": {
+              "t": "rapide",
+              "s": "fast"
+            },
+            "new": {
+              "t": "nouveau",
+              "s": "new"
+            },
+            "school": {
+              "t": "l'école",
+              "s": "school"
+            },
+            "to": {
+              "t": "à",
+              "s": "to"
+            },
+            "to go": {
+              "t": "aller",
+              "s": "to go"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            },
+            "we": {
+              "t": "nous",
+              "s": "we"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_039",
+          "target": [
+            "Le",
+            {
+              "t": "matin",
+              "c": "morning"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "beau",
+              "c": "beautiful"
+            },
+            " !",
+            {
+              "t": "Comment",
+              "c": "how"
+            },
+            {
+              "t": "tu",
+              "c": "you"
+            },
+            {
+              "t": "vas",
+              "c": "to go"
+            },
+            {
+              "t": "aujourd'hui",
+              "c": "today"
+            },
+            " ?"
+          ],
+          "source": "The morning is beautiful! How are you today?",
+          "gloss": {
+            "beautiful": {
+              "t": "beau",
+              "s": "beautiful"
+            },
+            "how": {
+              "t": "comment",
+              "s": "how"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "morning": {
+              "t": "le matin",
+              "s": "morning"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to go": {
+              "t": "aller",
+              "s": "to go"
+            },
+            "today": {
+              "t": "aujourd'hui",
+              "s": "today"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_040",
+          "target": [
+            {
+              "t": "Aujourd'hui",
+              "c": "today"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "travaille",
+              "c": "to work"
+            },
+            {
+              "t": "toute",
+              "c": "all"
+            },
+            "la",
+            {
+              "t": "journée",
+              "c": "day",
+              "g": "journée"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "dors",
+              "c": "to sleep"
+            },
+            {
+              "t": "toute",
+              "c": "all"
+            },
+            "la",
+            {
+              "t": "nuit",
+              "c": "night"
+            },
+            "."
+          ],
+          "source": "Today I work all day, and I sleep all night.",
+          "gloss": {
+            "all": {
+              "t": "tout",
+              "s": "all"
+            },
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "day": {
+              "t": "le jour",
+              "s": "day"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "night": {
+              "t": "la nuit",
+              "s": "night"
+            },
+            "to sleep": {
+              "t": "dormir",
+              "s": "to sleep"
+            },
+            "to work": {
+              "t": "travailler",
+              "s": "to work"
+            },
+            "today": {
+              "t": "aujourd'hui",
+              "s": "today"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_042",
+          "target": [
+            {
+              "t": "Aujourd'hui",
+              "c": "today"
+            },
+            ",",
+            {
+              "t": "c'",
+              "c": "this"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "lundi",
+              "c": "monday"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "demain",
+              "c": "tomorrow"
+            },
+            ",",
+            {
+              "t": "c'",
+              "c": "this"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "mardi",
+              "c": "tuesday"
+            },
+            "."
+          ],
+          "source": "Today is Monday, and tomorrow is Tuesday.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "monday": {
+              "t": "le lundi",
+              "s": "Monday"
+            },
+            "this": {
+              "t": "ce",
+              "s": "this"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "today": {
+              "t": "aujourd'hui",
+              "s": "today"
+            },
+            "tomorrow": {
+              "t": "demain",
+              "s": "tomorrow"
+            },
+            "tuesday": {
+              "t": "le mardi",
+              "s": "Tuesday"
+            }
+          }
+        },
+        {
+          "id": "a1_043",
+          "target": [
+            {
+              "t": "Aujourd'hui",
+              "c": "today"
+            },
+            ",",
+            {
+              "t": "c'",
+              "c": "this"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "mercredi",
+              "c": "wednesday"
+            },
+            ",",
+            {
+              "t": "jeudi",
+              "c": "thursday"
+            },
+            {
+              "t": "ou",
+              "c": "or"
+            },
+            {
+              "t": "vendredi",
+              "c": "friday"
+            },
+            " ?"
+          ],
+          "source": "Is today Wednesday, Thursday or Friday?",
+          "gloss": {
+            "friday": {
+              "t": "le vendredi",
+              "s": "Friday"
+            },
+            "or": {
+              "t": "ou",
+              "s": "or"
+            },
+            "this": {
+              "t": "ce",
+              "s": "this"
+            },
+            "thursday": {
+              "t": "le jeudi",
+              "s": "Thursday"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "today": {
+              "t": "aujourd'hui",
+              "s": "today"
+            },
+            "wednesday": {
+              "t": "le mercredi",
+              "s": "Wednesday"
+            }
+          }
+        },
+        {
+          "id": "a1_044",
+          "target": [
+            {
+              "t": "Samedi",
+              "c": "saturday"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "dimanche",
+              "c": "sunday"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            {
+              "t": "bons",
+              "c": "good"
+            },
+            " :",
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "dors",
+              "c": "to sleep"
+            },
+            {
+              "t": "toute",
+              "c": "all"
+            },
+            "la",
+            {
+              "t": "journée",
+              "c": "day",
+              "g": "journée"
+            },
+            "."
+          ],
+          "source": "Saturday and Sunday are good: I sleep all day.",
+          "gloss": {
+            "all": {
+              "t": "tout",
+              "s": "all"
+            },
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "day": {
+              "t": "le jour",
+              "s": "day"
+            },
+            "good": {
+              "t": "bon",
+              "s": "good"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "saturday": {
+              "t": "le samedi",
+              "s": "Saturday"
+            },
+            "sunday": {
+              "t": "le dimanche",
+              "s": "Sunday"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to sleep": {
+              "t": "dormir",
+              "s": "to sleep"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_045",
+          "target": [
+            {
+              "t": "J'",
+              "c": "i"
+            },
+            {
+              "t": "ai",
+              "c": "to have"
+            },
+            {
+              "t": "deux",
+              "c": "two"
+            },
+            {
+              "t": "frères",
+              "c": "brother"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "une",
+              "c": "one"
+            },
+            {
+              "t": "sœur",
+              "c": "sister"
+            },
+            "."
+          ],
+          "source": "I have two brothers and one sister.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "brother": {
+              "t": "le frère",
+              "s": "brother"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "one": {
+              "t": "un",
+              "s": "one"
+            },
+            "sister": {
+              "t": "la sœur",
+              "s": "sister"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            },
+            "two": {
+              "t": "deux",
+              "s": "two"
+            }
+          }
+        },
+        {
+          "id": "a1_046",
+          "target": [
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "venir",
+              "c": "to come"
+            },
+            {
+              "t": "quand",
+              "c": "when"
+            },
+            " ?",
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "travaille",
+              "c": "to work"
+            },
+            {
+              "t": "cinq",
+              "c": "five"
+            },
+            {
+              "t": "heures",
+              "c": "hour"
+            },
+            {
+              "t": "aujourd'hui",
+              "c": "today"
+            },
+            "."
+          ],
+          "source": "When can you come? I work five hours today.",
+          "gloss": {
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "five": {
+              "t": "cinq",
+              "s": "five"
+            },
+            "hour": {
+              "t": "l'heure",
+              "s": "hour"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "to come": {
+              "t": "venir",
+              "s": "to come"
+            },
+            "to work": {
+              "t": "travailler",
+              "s": "to work"
+            },
+            "today": {
+              "t": "aujourd'hui",
+              "s": "today"
+            },
+            "when": {
+              "t": "quand",
+              "s": "when"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_047",
+          "target": [
+            "La",
+            {
+              "t": "maison",
+              "c": "house"
+            },
+            {
+              "t": "a",
+              "c": "to have"
+            },
+            {
+              "t": "quatre",
+              "c": "four"
+            },
+            {
+              "t": "chambres",
+              "c": "room"
+            },
+            ",",
+            {
+              "t": "cinq",
+              "c": "five"
+            },
+            {
+              "t": "fenêtres",
+              "c": "window"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "six",
+              "c": "six"
+            },
+            {
+              "t": "portes",
+              "c": "door"
+            },
+            "."
+          ],
+          "source": "The house has four rooms, five windows and six doors.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "door": {
+              "t": "la porte",
+              "s": "door"
+            },
+            "five": {
+              "t": "cinq",
+              "s": "five"
+            },
+            "four": {
+              "t": "quatre",
+              "s": "four"
+            },
+            "house": {
+              "t": "la maison",
+              "s": "house"
+            },
+            "in": {
+              "t": "dans",
+              "s": "in"
+            },
+            "room": {
+              "t": "la chambre",
+              "s": "room"
+            },
+            "six": {
+              "t": "six",
+              "s": "six"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            },
+            "window": {
+              "t": "la fenêtre",
+              "s": "window"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_048",
+          "target": [
+            "La",
+            {
+              "t": "semaine",
+              "c": "week"
+            },
+            {
+              "t": "a",
+              "c": "to have"
+            },
+            {
+              "t": "sept",
+              "c": "seven"
+            },
+            {
+              "t": "jours",
+              "c": "day"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "travaille",
+              "c": "to work"
+            },
+            {
+              "t": "cinq",
+              "c": "five"
+            },
+            {
+              "t": "jours",
+              "c": "day"
+            },
+            "."
+          ],
+          "source": "The week has seven days, and I work five days.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "day": {
+              "t": "le jour",
+              "s": "day"
+            },
+            "five": {
+              "t": "cinq",
+              "s": "five"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "in": {
+              "t": "dans",
+              "s": "in"
+            },
+            "seven": {
+              "t": "sept",
+              "s": "seven"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            },
+            "to work": {
+              "t": "travailler",
+              "s": "to work"
+            },
+            "week": {
+              "t": "la semaine",
+              "s": "week"
+            }
+          }
+        },
+        {
+          "id": "a1_049",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "veux",
+              "c": "to want"
+            },
+            {
+              "t": "dix",
+              "c": "ten"
+            },
+            {
+              "t": "pommes",
+              "c": "apple"
+            },
+            ",",
+            {
+              "t": "neuf",
+              "c": "nine"
+            },
+            {
+              "t": "œufs",
+              "c": "egg"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "huit",
+              "c": "eight"
+            },
+            {
+              "t": "poissons",
+              "c": "fish"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            "."
+          ],
+          "source": "I want ten apples, nine eggs and eight fish, please.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "apple": {
+              "t": "la pomme",
+              "s": "apple"
+            },
+            "egg": {
+              "t": "l'œuf",
+              "s": "egg"
+            },
+            "eight": {
+              "t": "huit",
+              "s": "eight"
+            },
+            "fish": {
+              "t": "le poisson",
+              "s": "fish"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "nine": {
+              "t": "neuf",
+              "s": "nine"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "ten": {
+              "t": "dix",
+              "s": "ten"
+            },
+            "to want": {
+              "t": "vouloir",
+              "s": "to want"
+            }
+          }
+        },
+        {
+          "id": "a1_050",
+          "target": [
+            "L'",
+            {
+              "t": "enfant",
+              "c": "child"
+            },
+            {
+              "t": "a",
+              "c": "to have"
+            },
+            {
+              "t": "dix",
+              "c": "ten"
+            },
+            {
+              "t": "ans",
+              "c": "year",
+              "g": "an"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "il",
+              "c": "he"
+            },
+            {
+              "t": "veut",
+              "c": "to want"
+            },
+            {
+              "t": "toujours",
+              "c": "always"
+            },
+            {
+              "t": "apprendre",
+              "c": "to learn"
+            },
+            "."
+          ],
+          "source": "The child is ten years old, and he always wants to learn.",
+          "gloss": {
+            "always": {
+              "t": "toujours",
+              "s": "always"
+            },
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "child": {
+              "t": "l'enfant",
+              "s": "child"
+            },
+            "he": {
+              "t": "il",
+              "s": "he"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "old": {
+              "t": "vieux",
+              "s": "old"
+            },
+            "ten": {
+              "t": "dix",
+              "s": "ten"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            },
+            "to learn": {
+              "t": "apprendre",
+              "s": "to learn"
+            },
+            "to want": {
+              "t": "vouloir",
+              "s": "to want"
+            },
+            "year": {
+              "t": "l'année",
+              "s": "year"
+            }
+          }
+        },
+        {
+          "id": "a1_073",
+          "target": [
+            {
+              "t": "Dix",
+              "c": "ten"
+            },
+            ",",
+            {
+              "t": "neuf",
+              "c": "nine"
+            },
+            ",",
+            {
+              "t": "huit",
+              "c": "eight"
+            },
+            ",",
+            {
+              "t": "sept",
+              "c": "seven"
+            },
+            ",",
+            {
+              "t": "trois",
+              "c": "three"
+            },
+            ",",
+            {
+              "t": "deux",
+              "c": "two"
+            },
+            ",",
+            {
+              "t": "un",
+              "c": "one"
+            },
+            ",",
+            {
+              "t": "zéro",
+              "c": "zero"
+            },
+            " !"
+          ],
+          "source": "Ten, nine, eight, seven, three, two, one, zero!",
+          "gloss": {
+            "eight": {
+              "t": "huit",
+              "s": "eight"
+            },
+            "nine": {
+              "t": "neuf",
+              "s": "nine"
+            },
+            "one": {
+              "t": "un",
+              "s": "one"
+            },
+            "seven": {
+              "t": "sept",
+              "s": "seven"
+            },
+            "ten": {
+              "t": "dix",
+              "s": "ten"
+            },
+            "three": {
+              "t": "trois",
+              "s": "three"
+            },
+            "two": {
+              "t": "deux",
+              "s": "two"
+            },
+            "zero": {
+              "t": "zéro",
+              "s": "zero"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_051",
+          "target": [
+            {
+              "t": "Janvier",
+              "c": "january"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "février",
+              "c": "february"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            "des",
+            {
+              "t": "mois",
+              "c": "month"
+            },
+            {
+              "t": "froids",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            {
+              "t": "juin",
+              "c": "june"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "chaud",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "January and February are cold months, but June is hot.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "cold": {
+              "t": "froid",
+              "s": "cold"
+            },
+            "february": {
+              "t": "février",
+              "s": "February"
+            },
+            "hot": {
+              "t": "chaud",
+              "s": "hot"
+            },
+            "january": {
+              "t": "janvier",
+              "s": "January"
+            },
+            "june": {
+              "t": "juin",
+              "s": "June"
+            },
+            "month": {
+              "t": "le mois",
+              "s": "month"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_052",
+          "target": [
+            {
+              "t": "Mars",
+              "c": "march"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "avril",
+              "c": "april"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            {
+              "t": "froids",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            {
+              "t": "mai",
+              "c": "may"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "beau",
+              "c": "beautiful"
+            },
+            "."
+          ],
+          "source": "March and April are cold, but May is beautiful.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "april": {
+              "t": "avril",
+              "s": "April"
+            },
+            "beautiful": {
+              "t": "beau",
+              "s": "beautiful"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "cold": {
+              "t": "froid",
+              "s": "cold"
+            },
+            "march": {
+              "t": "mars",
+              "s": "March"
+            },
+            "may": {
+              "t": "mai",
+              "s": "May"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_053",
+          "target": [
+            "L'",
+            {
+              "t": "eau",
+              "c": "water"
+            },
+            "n'",
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "jamais",
+              "c": "never"
+            },
+            {
+              "t": "froide",
+              "c": "cold"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            ",",
+            {
+              "t": "parce que",
+              "c": "because"
+            },
+            "le",
+            {
+              "t": "soleil",
+              "c": "sun"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "toujours",
+              "c": "always"
+            },
+            {
+              "t": "chaud",
+              "c": "hot"
+            },
+            "."
+          ],
+          "source": "The water is never cold here, because the sun is always hot.",
+          "gloss": {
+            "always": {
+              "t": "toujours",
+              "s": "always"
+            },
+            "because": {
+              "t": "parce que",
+              "s": "because"
+            },
+            "cold": {
+              "t": "froid",
+              "s": "cold"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "hot": {
+              "t": "chaud",
+              "s": "hot"
+            },
+            "never": {
+              "t": "jamais",
+              "s": "never"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "sun": {
+              "t": "le soleil",
+              "s": "sun"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "water": {
+              "t": "l'eau",
+              "s": "water"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 7,
+      "sentences": [
+        {
+          "id": "a1_054",
+          "target": [
+            {
+              "t": "Juillet",
+              "c": "july"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "août",
+              "c": "august"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            "des",
+            {
+              "t": "mois",
+              "c": "month"
+            },
+            {
+              "t": "chauds",
+              "c": "hot"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            {
+              "t": "suis",
+              "c": "to be"
+            },
+            {
+              "t": "très",
+              "c": "very"
+            },
+            {
+              "t": "heureux",
+              "c": "happy"
+            },
+            "."
+          ],
+          "source": "July and August are hot months, and I am very happy.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "august": {
+              "t": "août",
+              "s": "August"
+            },
+            "happy": {
+              "t": "heureux",
+              "s": "happy"
+            },
+            "hot": {
+              "t": "chaud",
+              "s": "hot"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "july": {
+              "t": "juillet",
+              "s": "July"
+            },
+            "month": {
+              "t": "le mois",
+              "s": "month"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "very": {
+              "t": "très",
+              "s": "very"
+            }
+          }
+        },
+        {
+          "id": "a1_055",
+          "target": [
+            {
+              "t": "Septembre",
+              "c": "september"
+            },
+            ",",
+            {
+              "t": "octobre",
+              "c": "october"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "novembre",
+              "c": "november"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            {
+              "t": "froids",
+              "c": "cold"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            {
+              "t": "décembre",
+              "c": "december"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "beau",
+              "c": "beautiful"
+            },
+            "."
+          ],
+          "source": "September, October and November are cold, but December is beautiful.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "beautiful": {
+              "t": "beau",
+              "s": "beautiful"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "cold": {
+              "t": "froid",
+              "s": "cold"
+            },
+            "december": {
+              "t": "décembre",
+              "s": "December"
+            },
+            "november": {
+              "t": "novembre",
+              "s": "November"
+            },
+            "october": {
+              "t": "octobre",
+              "s": "October"
+            },
+            "september": {
+              "t": "septembre",
+              "s": "September"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_056",
+          "target": [
+            {
+              "t": "Décembre",
+              "c": "december"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            "un",
+            {
+              "t": "mois",
+              "c": "month"
+            },
+            {
+              "t": "heureux",
+              "c": "happy"
+            },
+            " :",
+            {
+              "t": "toute",
+              "c": "all"
+            },
+            "la",
+            {
+              "t": "famille",
+              "c": "family"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "ici",
+              "c": "here"
+            },
+            "."
+          ],
+          "source": "December is a happy month: all the family is here.",
+          "gloss": {
+            "all": {
+              "t": "tout",
+              "s": "all"
+            },
+            "december": {
+              "t": "décembre",
+              "s": "December"
+            },
+            "family": {
+              "t": "la famille",
+              "s": "family"
+            },
+            "happy": {
+              "t": "heureux",
+              "s": "happy"
+            },
+            "here": {
+              "t": "ici",
+              "s": "here"
+            },
+            "month": {
+              "t": "le mois",
+              "s": "month"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_057",
+          "target": [
+            "La",
+            {
+              "t": "voiture",
+              "c": "car"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "rouge",
+              "c": "red"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "la",
+            {
+              "t": "maison",
+              "c": "house"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "blanche",
+              "c": "white"
+            },
+            "."
+          ],
+          "source": "The car is red, and the house is white.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "car": {
+              "t": "la voiture",
+              "s": "car"
+            },
+            "house": {
+              "t": "la maison",
+              "s": "house"
+            },
+            "red": {
+              "t": "rouge",
+              "s": "red"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "white": {
+              "t": "blanc",
+              "s": "white"
+            }
+          }
+        },
+        {
+          "id": "a1_058",
+          "target": [
+            {
+              "t": "Donne-moi",
+              "c": "to give"
+            },
+            "le",
+            {
+              "t": "téléphone",
+              "c": "phone"
+            },
+            {
+              "t": "noir",
+              "c": "black"
+            },
+            ",",
+            {
+              "t": "s'il te plaît",
+              "c": "please"
+            },
+            " !"
+          ],
+          "source": "Give me the black phone, please!",
+          "gloss": {
+            "black": {
+              "t": "noir",
+              "s": "black"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "phone": {
+              "t": "le téléphone",
+              "s": "phone"
+            },
+            "please": {
+              "t": "s'il vous plaît",
+              "s": "please"
+            },
+            "to give": {
+              "t": "donner",
+              "s": "to give"
+            }
+          }
+        },
+        {
+          "id": "a1_059",
+          "target": [
+            "La",
+            {
+              "t": "porte",
+              "c": "door"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "verte",
+              "c": "green"
+            },
+            ",",
+            "la",
+            {
+              "t": "fenêtre",
+              "c": "window"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "bleue",
+              "c": "blue"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "la",
+            {
+              "t": "chaise",
+              "c": "chair"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "jaune",
+              "c": "yellow"
+            },
+            "."
+          ],
+          "source": "The door is green, the window is blue, and the chair is yellow.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "blue": {
+              "t": "bleu",
+              "s": "blue"
+            },
+            "chair": {
+              "t": "la chaise",
+              "s": "chair"
+            },
+            "door": {
+              "t": "la porte",
+              "s": "door"
+            },
+            "green": {
+              "t": "vert",
+              "s": "green"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "window": {
+              "t": "la fenêtre",
+              "s": "window"
+            },
+            "yellow": {
+              "t": "jaune",
+              "s": "yellow"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_060",
+          "target": [
+            {
+              "t": "J'",
+              "c": "i"
+            },
+            {
+              "t": "aime",
+              "c": "to love"
+            },
+            "le",
+            {
+              "t": "chien",
+              "c": "dog"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "l'",
+            {
+              "t": "enfant",
+              "c": "child"
+            },
+            {
+              "t": "aime",
+              "c": "to love"
+            },
+            "le",
+            {
+              "t": "chat",
+              "c": "cat"
+            },
+            "."
+          ],
+          "source": "I love the dog, and the child loves the cat.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "cat": {
+              "t": "le chat",
+              "s": "cat"
+            },
+            "child": {
+              "t": "l'enfant",
+              "s": "child"
+            },
+            "dog": {
+              "t": "le chien",
+              "s": "dog"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "to love": {
+              "t": "aimer",
+              "s": "to love"
+            }
+          }
+        },
+        {
+          "id": "a1_061",
+          "target": [
+            "Le",
+            {
+              "t": "chien",
+              "c": "dog"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "marron",
+              "c": "brown"
+            },
+            ",",
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "le",
+            {
+              "t": "chat",
+              "c": "cat"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "gris",
+              "c": "grey"
+            },
+            "."
+          ],
+          "source": "The dog is brown, and the cat is grey.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "brown": {
+              "t": "marron",
+              "s": "brown"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "cat": {
+              "t": "le chat",
+              "s": "cat"
+            },
+            "dog": {
+              "t": "le chien",
+              "s": "dog"
+            },
+            "grey": {
+              "t": "gris",
+              "s": "grey"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_062",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            "ne",
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            {
+              "t": "trouver",
+              "c": "to find"
+            },
+            "le",
+            {
+              "t": "livre",
+              "c": "book"
+            },
+            {
+              "t": "orange",
+              "c": "orange"
+            },
+            {
+              "t": "ou",
+              "c": "or"
+            },
+            "le",
+            {
+              "t": "téléphone",
+              "c": "phone"
+            },
+            {
+              "t": "rose",
+              "c": "pink"
+            },
+            "."
+          ],
+          "source": "I can not find the orange book or the pink phone.",
+          "gloss": {
+            "book": {
+              "t": "le livre",
+              "s": "book"
+            },
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "or": {
+              "t": "ou",
+              "s": "or"
+            },
+            "orange": {
+              "t": "orange",
+              "s": "orange"
+            },
+            "phone": {
+              "t": "le téléphone",
+              "s": "phone"
+            },
+            "pink": {
+              "t": "rose",
+              "s": "pink"
+            },
+            "to find": {
+              "t": "trouver",
+              "s": "to find"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_063",
+          "target": [
+            "La",
+            {
+              "t": "rue",
+              "c": "street"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "longue",
+              "c": "long"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            "le",
+            {
+              "t": "jour",
+              "c": "day"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "court",
+              "c": "short"
+            },
+            "."
+          ],
+          "source": "The street is long, but the day is short.",
+          "gloss": {
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "day": {
+              "t": "le jour",
+              "s": "day"
+            },
+            "long": {
+              "t": "long",
+              "s": "long"
+            },
+            "short": {
+              "t": "court",
+              "s": "short"
+            },
+            "street": {
+              "t": "la rue",
+              "s": "street"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_064",
+          "target": [
+            "L'",
+            {
+              "t": "enfant",
+              "c": "child"
+            },
+            {
+              "t": "a",
+              "c": "to have"
+            },
+            "de",
+            {
+              "t": "grands",
+              "c": "big"
+            },
+            {
+              "t": "yeux",
+              "c": "eye"
+            },
+            ",",
+            "de",
+            {
+              "t": "petites",
+              "c": "small"
+            },
+            {
+              "t": "mains",
+              "c": "hand"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            "de",
+            {
+              "t": "petits",
+              "c": "small"
+            },
+            {
+              "t": "pieds",
+              "c": "foot"
+            },
+            "."
+          ],
+          "source": "The child has big eyes, small hands and small feet.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "big": {
+              "t": "grand",
+              "s": "big"
+            },
+            "child": {
+              "t": "l'enfant",
+              "s": "child"
+            },
+            "eye": {
+              "t": "l'œil",
+              "s": "eye"
+            },
+            "foot": {
+              "t": "le pied",
+              "s": "foot"
+            },
+            "hand": {
+              "t": "la main",
+              "s": "hand"
+            },
+            "small": {
+              "t": "petit",
+              "s": "small"
+            },
+            "to have": {
+              "t": "avoir",
+              "s": "to have"
+            }
+          }
+        },
+        {
+          "id": "a1_065",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            "ne",
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            {
+              "t": "prendre",
+              "c": "to take"
+            },
+            {
+              "t": "tous",
+              "c": "all"
+            },
+            "les",
+            {
+              "t": "livres",
+              "c": "book"
+            },
+            ".",
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "faire",
+              "c": "to do"
+            },
+            {
+              "t": "quoi",
+              "c": "what"
+            },
+            " ?",
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "m'",
+              "c": "i"
+            },
+            {
+              "t": "aider",
+              "c": "to help"
+            },
+            " ?"
+          ],
+          "source": "I can not take all the books. What can I do? Can you help me?",
+          "gloss": {
+            "all": {
+              "t": "tout",
+              "s": "all"
+            },
+            "book": {
+              "t": "le livre",
+              "s": "book"
+            },
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "to do": {
+              "t": "faire",
+              "s": "to do"
+            },
+            "to help": {
+              "t": "aider",
+              "s": "to help"
+            },
+            "to take": {
+              "t": "prendre",
+              "s": "to take"
+            },
+            "what": {
+              "t": "quoi",
+              "s": "what"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_071",
+          "target": [
+            {
+              "t": "Ma",
+              "c": "my"
+            },
+            {
+              "t": "tête",
+              "c": "head"
+            },
+            ",",
+            {
+              "t": "mes",
+              "c": "my"
+            },
+            {
+              "t": "mains",
+              "c": "hand"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "mes",
+              "c": "my"
+            },
+            {
+              "t": "pieds",
+              "c": "foot"
+            },
+            {
+              "t": "sont",
+              "c": "to be"
+            },
+            {
+              "t": "froids",
+              "c": "cold"
+            },
+            "."
+          ],
+          "source": "My head, my hands and my feet are cold.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "cold": {
+              "t": "froid",
+              "s": "cold"
+            },
+            "foot": {
+              "t": "le pied",
+              "s": "foot"
+            },
+            "hand": {
+              "t": "la main",
+              "s": "hand"
+            },
+            "head": {
+              "t": "la tête",
+              "s": "head"
+            },
+            "my": {
+              "t": "mon",
+              "s": "my"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "count": 8,
+      "sentences": [
+        {
+          "id": "a1_066",
+          "target": [
+            "Le",
+            {
+              "t": "travail",
+              "c": "work"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "difficile",
+              "c": "difficult"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            "l'",
+            {
+              "t": "argent",
+              "c": "money"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "bon",
+              "c": "good"
+            },
+            "."
+          ],
+          "source": "The work is difficult, but the money is good.",
+          "gloss": {
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "difficult": {
+              "t": "difficile",
+              "s": "difficult"
+            },
+            "good": {
+              "t": "bon",
+              "s": "good"
+            },
+            "money": {
+              "t": "l'argent",
+              "s": "money"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "work": {
+              "t": "le travail",
+              "s": "work"
+            }
+          }
+        },
+        {
+          "id": "a1_067",
+          "target": [
+            "Le",
+            {
+              "t": "café",
+              "c": "coffee"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "mauvais",
+              "c": "bad"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "cher",
+              "c": "expensive"
+            },
+            ".",
+            "Le",
+            {
+              "t": "thé",
+              "c": "tea"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "bon",
+              "c": "good"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "bon marché",
+              "c": "cheap"
+            },
+            "."
+          ],
+          "source": "The coffee is bad and expensive. The tea is good and cheap.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "bad": {
+              "t": "mauvais",
+              "s": "bad"
+            },
+            "cheap": {
+              "t": "bon marché",
+              "s": "cheap"
+            },
+            "coffee": {
+              "t": "le café",
+              "s": "coffee"
+            },
+            "expensive": {
+              "t": "cher",
+              "s": "expensive"
+            },
+            "good": {
+              "t": "bon",
+              "s": "good"
+            },
+            "tea": {
+              "t": "le thé",
+              "s": "tea"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            }
+          }
+        },
+        {
+          "id": "a1_068",
+          "target": [
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "lire",
+              "c": "to read"
+            },
+            {
+              "t": "et",
+              "c": "and"
+            },
+            {
+              "t": "écrire",
+              "c": "to write"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            {
+              "t": "je",
+              "c": "i"
+            },
+            "ne",
+            {
+              "t": "peux",
+              "c": "can"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            {
+              "t": "parler",
+              "c": "to speak"
+            },
+            {
+              "t": "rapidement",
+              "c": "fast"
+            },
+            "."
+          ],
+          "source": "I can read and write, but I can not speak fast.",
+          "gloss": {
+            "and": {
+              "t": "et",
+              "s": "and"
+            },
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "can": {
+              "t": "pouvoir",
+              "s": "can"
+            },
+            "fast": {
+              "t": "rapide",
+              "s": "fast"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "to read": {
+              "t": "lire",
+              "s": "to read"
+            },
+            "to speak": {
+              "t": "parler",
+              "s": "to speak"
+            },
+            "to write": {
+              "t": "écrire",
+              "s": "to write"
+            }
+          }
+        },
+        {
+          "id": "a1_072",
+          "target": [
+            {
+              "t": "Tu",
+              "c": "you"
+            },
+            {
+              "t": "dis",
+              "c": "to say"
+            },
+            {
+              "t": "quoi",
+              "c": "what"
+            },
+            " ?",
+            {
+              "t": "Je",
+              "c": "i"
+            },
+            "ne",
+            {
+              "t": "sais",
+              "c": "to know"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            " !",
+            {
+              "t": "Ce",
+              "c": "this"
+            },
+            "n'",
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            {
+              "t": "pas",
+              "c": "not"
+            },
+            {
+              "t": "facile",
+              "c": "easy"
+            },
+            "."
+          ],
+          "source": "What do you say? I do not know! It is not easy.",
+          "gloss": {
+            "easy": {
+              "t": "facile",
+              "s": "easy"
+            },
+            "i": {
+              "t": "je",
+              "s": "I"
+            },
+            "it": {
+              "t": "il",
+              "s": "it"
+            },
+            "not": {
+              "t": "ne... pas",
+              "s": "not"
+            },
+            "this": {
+              "t": "ce",
+              "s": "this"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "to do": {
+              "t": "faire",
+              "s": "to do"
+            },
+            "to know": {
+              "t": "savoir",
+              "s": "to know"
+            },
+            "to say": {
+              "t": "dire",
+              "s": "to say"
+            },
+            "what": {
+              "t": "quoi",
+              "s": "what"
+            },
+            "you": {
+              "t": "tu",
+              "s": "you"
+            }
+          }
+        },
+        {
+          "id": "a1_041",
+          "target": [
+            {
+              "t": "Hier",
+              "c": "yesterday"
+            },
+            ",",
+            "le",
+            {
+              "t": "soir",
+              "c": "evening"
+            },
+            {
+              "t": "était",
+              "c": "to be"
+            },
+            {
+              "t": "difficile",
+              "c": "difficult"
+            },
+            ",",
+            {
+              "t": "mais",
+              "c": "but"
+            },
+            {
+              "t": "demain",
+              "c": "tomorrow"
+            },
+            {
+              "t": "est",
+              "c": "to be"
+            },
+            "un",
+            {
+              "t": "nouveau",
+              "c": "new"
+            },
+            {
+              "t": "jour",
+              "c": "day"
+            },
+            "."
+          ],
+          "source": "Yesterday evening was difficult, but tomorrow is a new day.",
+          "gloss": {
+            "but": {
+              "t": "mais",
+              "s": "but"
+            },
+            "day": {
+              "t": "le jour",
+              "s": "day"
+            },
+            "difficult": {
+              "t": "difficile",
+              "s": "difficult"
+            },
+            "evening": {
+              "t": "le soir",
+              "s": "evening"
+            },
+            "new": {
+              "t": "nouveau",
+              "s": "new"
+            },
+            "to be": {
+              "t": "être",
+              "s": "to be"
+            },
+            "tomorrow": {
+              "t": "demain",
+              "s": "tomorrow"
+            },
+            "yesterday": {
+              "t": "hier",
+              "s": "yesterday"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

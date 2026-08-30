@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, Dimensions, ActivityIndicator } from "react-native";
 import {
   PanGestureHandler,
@@ -19,25 +19,74 @@ import Animated, {
 } from "react-native-reanimated";
 import { useLanguageContext } from "../context/LanguageContext";
 import { useThemeColors } from "../hooks/useThemeColors";
-import { useWordList } from "../hooks/useWordList";
+import { useItems } from "../hooks/useItems";
 import { useFlashcardDeck } from "../hooks/useFlashcardDeck";
 import ProgressBar from "../components/ProgressBar";
-import { duration, letterSpacing, shadow } from "../theme/tokens";
+import AmbientBackground, { WordGlow } from "../components/AmbientBackground";
+import SentenceText, { SelectedWord } from "../components/SentenceText";
+import { joinTokens } from "../utils/items";
+import { deckKey } from "../services/storage";
+import { duration, letterSpacing } from "../theme/tokens";
 
 const { width } = Dimensions.get("window");
 const SWIPE_THRESHOLD = 0.25 * width;
-const CARD_WIDTH = width * 0.84;
+// A lesson jump is deliberately harder to trigger than a card change, so a
+// sloppy horizontal swipe never skips 9 words.
+const LESSON_SWIPE_THRESHOLD = 90;
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+/**
+ * Type size for a sentence, by how long it is.
+ *
+ * Desktop scales its sentence off the viewport, which works because its card
+ * is 460px wide and a sentence never runs past three lines. The phone card is
+ * about 275px inside its padding, and German A1 runs from 20 to 120 characters
+ * - at one fixed size the long ones would overflow the card. The steps are set
+ * so the 120-character worst case (`Heute ist der 1. Marz ...`) still leaves
+ * room for the translation and the gloss line under it.
+ */
+const sentenceType = (length: number) => {
+  if (length <= 60) return { fontSize: 26, lineHeight: 34, source: 16 };
+  if (length <= 90) return { fontSize: 22, lineHeight: 30, source: 15 };
+  return { fontSize: 19, lineHeight: 26, source: 14 };
+};
 
 const HomeScreen: React.FC = () => {
   const colors = useThemeColors();
   const { settings, mode, frequency } = useLanguageContext();
   const reducedMotion = useReducedMotion();
 
-  const { words, loading } = useWordList(settings);
-  const { currentIndex, current, total, next, prev, showTranslation } =
-    useFlashcardDeck({ words, frequency, mode });
+  const { items, placements, loading } = useItems(settings);
+  const {
+    currentIndex,
+    current,
+    total,
+    next,
+    prev,
+    nextLesson,
+    prevLesson,
+    lesson,
+    lessonCount,
+    showTranslation,
+  } = useFlashcardDeck({
+    items,
+    placements,
+    frequency,
+    mode,
+    deckKey: deckKey(
+      settings.learningLanguage,
+      settings.knownLanguage,
+      settings.level,
+    ),
+  });
+
+  // Which word's dictionary form is open. Cleared on every card change, so a
+  // gloss never outlives the sentence it belongs to.
+  const [selected, setSelected] = useState<SelectedWord | null>(null);
+  useEffect(() => {
+    setSelected(null);
+  }, [currentIndex]);
 
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
@@ -50,7 +99,7 @@ const HomeScreen: React.FC = () => {
       ? 1
       : withTiming(1, {
           duration: duration.slower,
-          easing: Easing.bezier(0.23, 1, 0.32, 1),
+          easing: Easing.bezier(0.22, 1, 0.36, 1),
         });
   }, [reducedMotion, mounted]);
 
@@ -63,7 +112,7 @@ const HomeScreen: React.FC = () => {
     }
     revealProgress.value = withTiming(showTranslation ? 1 : 0, {
       duration: duration.slow,
-      easing: Easing.bezier(0.23, 1, 0.32, 1),
+      easing: Easing.bezier(0.22, 1, 0.36, 1),
     });
   }, [showTranslation, reducedMotion, revealProgress]);
 
@@ -76,11 +125,23 @@ const HomeScreen: React.FC = () => {
 
   const handleGestureStateChange = (event: PanGestureHandlerGestureEvent) => {
     if (event.nativeEvent.state === State.END) {
-      if (event.nativeEvent.translationX > SWIPE_THRESHOLD) {
+      const dx = event.nativeEvent.translationX;
+      const dy = event.nativeEvent.translationY;
+
+      // Sideways moves one card, up and down moves a whole lesson - the
+      // gesture equivalent of Desktop's arrows and Shift+arrows.
+      if (Math.abs(dy) > Math.abs(dx)) {
+        if (dy < -LESSON_SWIPE_THRESHOLD) {
+          runOnJS(nextLesson)();
+        } else if (dy > LESSON_SWIPE_THRESHOLD) {
+          runOnJS(prevLesson)();
+        }
+      } else if (dx > SWIPE_THRESHOLD) {
         runOnJS(next)();
-      } else if (event.nativeEvent.translationX < -SWIPE_THRESHOLD) {
+      } else if (dx < -SWIPE_THRESHOLD) {
         runOnJS(prev)();
       }
+
       // Momentum-aware, interruptible spring return with a subtle settle.
       const springConfig = {
         damping: 18,
@@ -149,10 +210,10 @@ const HomeScreen: React.FC = () => {
   if (total === 0) {
     return (
       <View className="flex-1 items-center justify-center bg-bg px-8">
-        <Text className="text-center font-display text-2xl text-ink">
+        <Text className="text-center font-medium text-2xl text-ink">
           No words available
         </Text>
-        <Text className="mt-2 text-center font-sans text-base text-ink-muted">
+        <Text className="mt-2 text-center text-base text-ink-muted">
           Choose a language pair in Settings to begin.
         </Text>
       </View>
@@ -160,64 +221,125 @@ const HomeScreen: React.FC = () => {
   }
 
   const progress = (currentIndex + 1) / total;
+  const type = sentenceType(
+    current?.kind === "sentence" ? joinTokens(current.target).length : 0,
+  );
 
   return (
-    <GestureHandlerRootView className="flex-1 bg-bg">
-      <View className="flex-1 items-center justify-center bg-bg">
+    <GestureHandlerRootView className="flex-1">
+      <AmbientBackground />
+
+      {/* The card area takes the space left over after the footer, so the two
+          can never overlap. The old layout pinned the footer 56pt from the
+          bottom and let a fixed-aspect card grow into it - on a short phone
+          the counter sat on top of the word. */}
+      <View className="flex-1 items-center justify-center px-7">
+        <WordGlow />
         <PanGestureHandler
           onGestureEvent={handleGestureEvent}
           onHandlerStateChange={handleGestureStateChange}
         >
+          {/* No surface, no border, no shadow: the word sits directly on the
+              field, lit by the one brass glow behind it, exactly as on
+              Desktop. A filled card fought both the vignette and the glow. */}
           <Animated.View
-            className="items-center justify-center rounded-2xl border border-border bg-card"
-            style={[
-              {
-                width: CARD_WIDTH,
-                aspectRatio: 0.72,
-                paddingHorizontal: 28,
-                shadowColor: colors.accentSoft,
-                ...shadow.glow.native,
-              },
-              animatedCardStyle,
-            ]}
+            className="w-full items-center justify-center"
+            style={[{ minHeight: 220 }, animatedCardStyle]}
           >
-            {current && (
+            {current?.kind === "word" && (
               <>
                 <Text
-                  className="text-center font-display-semibold text-5xl text-ink"
-                  style={{ letterSpacing: letterSpacing.display }}
+                  className="text-center font-semibold text-ink"
+                  style={{
+                    fontSize: 46,
+                    lineHeight: 52,
+                    letterSpacing: letterSpacing.display,
+                  }}
                   numberOfLines={3}
                   adjustsFontSizeToFit
                 >
-                  {current.word_1}
+                  {current.target}
                 </Text>
-                <Animated.View style={revealStyle} className="mt-5">
-                  <Text className="text-center font-display text-2xl text-ink-muted">
-                    {current.word_2}
+                <Animated.View style={revealStyle} className="mt-4">
+                  <Text className="text-center font-medium text-xl text-ink-muted">
+                    {current.source}
                   </Text>
                 </Animated.View>
               </>
             )}
+
+            {current?.kind === "sentence" && (
+              <>
+                <SentenceText
+                  tokens={current.target}
+                  gloss={current.gloss}
+                  selectedToken={selected?.token ?? null}
+                  onSelectWord={setSelected}
+                  style={{
+                    textAlign: "center",
+                    fontSize: type.fontSize,
+                    lineHeight: type.lineHeight,
+                    fontWeight: "600",
+                    letterSpacing: letterSpacing.sentence,
+                    color: colors.ink,
+                  }}
+                />
+                <Animated.View style={revealStyle} className="mt-4">
+                  <Text
+                    className="text-center text-ink-muted"
+                    style={{
+                      fontSize: type.source,
+                      lineHeight: type.source * 1.4,
+                    }}
+                  >
+                    {current.source}
+                  </Text>
+                </Animated.View>
+                {/* Desktop shows the dictionary form on hover; a phone has no
+                    hover, so the tapped word's form lands here. The slot is
+                    always reserved, or the sentence would jump on every tap. */}
+                <View className="mt-6 h-5 justify-center">
+                  {selected ? (
+                    <Text className="text-center text-sm text-ink">
+                      {selected.citation}
+                      <Text className="text-ink-subtle">
+                        {"  \u00b7  "}
+                        {selected.translation}
+                      </Text>
+                    </Text>
+                  ) : (
+                    <Text className="text-center text-sm text-ink-subtle">
+                      tap an underlined word
+                    </Text>
+                  )}
+                </View>
+              </>
+            )}
           </Animated.View>
         </PanGestureHandler>
+      </View>
 
-        <View className="absolute inset-x-0 bottom-14 items-center px-8">
-          <View
-            className="mb-3 flex-row items-baseline self-stretch justify-between"
-            style={{ width: CARD_WIDTH, alignSelf: "center" }}
-          >
-            <Text className="font-semibold text-base text-ink">
-              {pad(currentIndex + 1)}
-            </Text>
+      {/* In the layout flow, not pinned over it. */}
+      <View className="items-center px-7 pb-10">
+        <View className="mb-3 w-full flex-row items-baseline justify-between">
+          <Text className="font-semibold text-base text-ink">
+            {pad(currentIndex + 1)}
+          </Text>
+          {lessonCount > 0 && (
             <Text className="font-medium text-sm text-ink-subtle">
-              {pad(total)}
+              {lesson > 0 ? `lesson ${lesson} / ${lessonCount}` : "extra"}
             </Text>
-          </View>
-          <ProgressBar progress={progress} style={{ width: CARD_WIDTH }} />
-          <Text className="mt-6 font-sans text-sm tracking-[0.3px] text-ink-subtle">
-            swipe to continue
+          )}
+          <Text className="font-medium text-sm text-ink-subtle">
+            {pad(total)}
           </Text>
         </View>
+        <ProgressBar progress={progress} className="w-full" />
+        <Text className="mt-5 text-sm tracking-[0.3px] text-ink-subtle">
+          {lessonCount > 0
+            ? "swipe sideways for a card, up for a lesson"
+            : "swipe to continue"}
+        </Text>
       </View>
     </GestureHandlerRootView>
   );

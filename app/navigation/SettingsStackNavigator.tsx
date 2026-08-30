@@ -7,7 +7,7 @@ import LanguageSettingsScreen from '../screens/LanguageSettingsScreen';
 import AboutScreen from '../screens/AboutScreen';
 import BackgroundScreen from '../screens/BackgroundScreen';
 import { useThemeColors } from '../hooks/useThemeColors';
-import { fontFamily, fontSize } from '../theme/tokens';
+import { fontWeight, fontSize } from '../theme/tokens';
 
 const Stack = createStackNavigator<SettingsStackParamList>();
 
@@ -24,7 +24,7 @@ const SettingsStackNavigator = () => {
         },
         headerTitleStyle: {
           color: colors.ink,
-          fontFamily: fontFamily.displaySemibold,
+          fontWeight: fontWeight.semibold,
           fontSize: fontSize.xl,
         },
         headerTitleAlign: 'center',

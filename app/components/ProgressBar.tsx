@@ -44,7 +44,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ progress, className, style })
 
   return (
     <View
-      className={`h-1 overflow-hidden rounded-full bg-border ${className ?? ''}`}
+      className={`h-1 overflow-hidden rounded-full bg-track ${className ?? ''}`}
       style={style}
     >
       <Animated.View className="h-full rounded-full bg-accent" style={fillStyle} />
