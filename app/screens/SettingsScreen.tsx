@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { SettingsStackParamList } from '../utils/types';
-import { PAYPAY_DONATION_URL } from '../utils/constants';
+import { BUY_ME_A_COFFEE_LABEL, BUY_ME_A_COFFEE_URL } from '../utils/constants';
 import ScreenContainer from '../components/ScreenContainer';
 import Section from '../components/Section';
 import ListRow from '../components/ListRow';
@@ -44,7 +44,7 @@ const SettingsScreen: React.FC<Props> = ({ navigation }) => (
     </Section>
 
     <Text className="mb-3 ml-1 font-semibold text-sm text-ink-muted">Support</Text>
-    <LinkRow url={PAYPAY_DONATION_URL} label="Donate via PayPal" icon="heart-outline" />
+    <LinkRow url={BUY_ME_A_COFFEE_URL} label={BUY_ME_A_COFFEE_LABEL} icon="cafe-outline" />
   </ScreenContainer>
 );
 

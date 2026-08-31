@@ -13,6 +13,7 @@ import Animated, {
   withTiming,
   runOnJS,
   interpolate,
+  interpolateColor,
   Extrapolation,
   Easing,
   useReducedMotion,
@@ -35,6 +36,19 @@ const SWIPE_THRESHOLD = 0.25 * width;
 const LESSON_SWIPE_THRESHOLD = 90;
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+/**
+ * `#RRGGBB` to `rgba(r, g, b, a)`.
+ *
+ * The drag frame has to start fully transparent and end on a token colour.
+ * Interpolating from a hardcoded transparent black would tint the frame grey
+ * on its way up, which reads as dirt on the light theme; starting from the
+ * border token at zero alpha keeps the ramp inside the palette.
+ */
+const withAlpha = (hex: string, alpha: number) => {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+};
 
 /**
  * Type size for a sentence, by how long it is.
@@ -183,6 +197,27 @@ const HomeScreen: React.FC = () => {
     };
   });
 
+  // Frame that appears while dragging and warms to brass at the point where
+  // letting go commits the move. Without it a drag gives no clue how far is
+  // far enough, so a half-swipe that springs back looks like a dropped touch.
+  const restFrame = withAlpha(colors.border, 0);
+  const frameStyle = useAnimatedStyle(() => {
+    const horizontal = Math.abs(translateX.value) / SWIPE_THRESHOLD;
+    // translateY is damped to a quarter on the way in, so undo that here to
+    // measure against the same raw distance the release handler thresholds on.
+    const vertical =
+      Math.abs(translateY.value * 4) / LESSON_SWIPE_THRESHOLD;
+    const progress = Math.min(1, Math.max(horizontal, vertical));
+
+    return {
+      borderColor: interpolateColor(
+        progress,
+        [0, 0.45, 1],
+        [restFrame, colors.border, colors.accent],
+      ),
+    };
+  });
+
   const revealStyle = useAnimatedStyle(() => ({
     opacity: revealProgress.value,
     transform: [
@@ -233,18 +268,27 @@ const HomeScreen: React.FC = () => {
           can never overlap. The old layout pinned the footer 56pt from the
           bottom and let a fixed-aspect card grow into it - on a short phone
           the counter sat on top of the word. */}
-      <View className="flex-1 items-center justify-center px-7">
-        <WordGlow />
-        <PanGestureHandler
-          onGestureEvent={handleGestureEvent}
-          onHandlerStateChange={handleGestureStateChange}
-        >
-          {/* No surface, no border, no shadow: the word sits directly on the
-              field, lit by the one brass glow behind it, exactly as on
-              Desktop. A filled card fought both the vignette and the glow. */}
+      {/* The handler wraps the whole area rather than the card. The card is
+          only as tall as its own text, so a drag used to register on the word
+          and nowhere else, and every swipe that started in the empty space
+          around it did nothing. The transform stays on the card inside, which
+          also keeps the touch region still under the finger while it moves. */}
+      <PanGestureHandler
+        onGestureEvent={handleGestureEvent}
+        onHandlerStateChange={handleGestureStateChange}
+      >
+        <Animated.View className="flex-1 items-center justify-center px-7">
+          <WordGlow />
+          {/* Still no surface and no shadow: the word sits on the field, lit
+              by the one brass glow behind it, exactly as on Desktop. The
+              border is the single exception, and it is invisible at rest. */}
           <Animated.View
-            className="w-full items-center justify-center"
-            style={[{ minHeight: 220 }, animatedCardStyle]}
+            className="w-full items-center justify-center px-6 py-8"
+            style={[
+              { minHeight: 220, borderWidth: 1, borderRadius: 28 },
+              animatedCardStyle,
+              frameStyle,
+            ]}
           >
             {current?.kind === "word" && (
               <>
@@ -316,8 +360,8 @@ const HomeScreen: React.FC = () => {
               </>
             )}
           </Animated.View>
-        </PanGestureHandler>
-      </View>
+        </Animated.View>
+      </PanGestureHandler>
 
       {/* In the layout flow, not pinned over it. */}
       <View className="items-center px-7 pb-10">

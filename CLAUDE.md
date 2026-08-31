@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Vocabularify is a fully-offline Expo / React Native vocabulary-learning app (Expo SDK 52, RN 0.76, React 18.3, TypeScript strict). It shows flashcards (a word in the language being learned plus its translation), auto-advances on a timer, and lets the user swipe between cards. Settings, theme, and progress are persisted locally via `AsyncStorage`. There is **no backend and no network access** - the only outbound action is `Linking.openURL` for donation/author links.
+Vocabularify is a fully-offline Expo / React Native vocabulary-learning app (Expo SDK 57, RN 0.86, React 19, TypeScript strict). It shows flashcards (a word in the language being learned plus its translation), auto-advances on a timer, and lets the user swipe between cards. Settings, theme, and progress are persisted locally via `AsyncStorage`. There is **no backend and no network access** - the only outbound action is `Linking.openURL` for donation/author links.
 
 ## Commands
 
@@ -26,7 +26,7 @@ Run a single test: `npx jest path/to/file.test.tsx` (or `-t "test name"`).
 
 ## Architecture
 
-**Entry point is `app/index.js`**, registered via `registerRootComponent`. **Routing is manual React Navigation v6** - there is no file-based routing (expo-router was removed). Do not add route files expecting them to be picked up.
+**Entry point is `app/index.js`**, registered via `registerRootComponent`. **Routing is manual React Navigation v7** - there is no file-based routing (expo-router was removed). Do not add route files expecting them to be picked up.
 
 Navigation tree:
 
@@ -49,7 +49,7 @@ Navigation tree:
 
 `app/utils/items.ts` turns a word list plus a course into the item list the deck cycles through - a lesson's words, then its sentences, then the next lesson - and owns the token-spacing rule. It mirrors Desktop's `src/shared/items.ts`; keep the two in step. A level with no course file yields the flat word list, so nothing regresses for the levels still awaiting one. As of the German A1 course, all 42 pairs ship an A1 course; only the six `de/*` ones cover the whole word file.
 
-`useItems` loads word file + course and assembles both; `useFlashcardDeck` owns the position, the auto-advance timer (a sentence holds the screen `SENTENCE_DWELL_MULTIPLIER` times as long as a word), wrap-around, lesson jumps, and the reveal-after-delay for "word then translation" mode. `HomeScreen` is a thin presentational layer over those hooks plus the swipe gesture (reanimated + gesture-handler): sideways moves one card, up and down moves a whole lesson.
+`useItems` loads word file + course and assembles both; `useFlashcardDeck` owns the position, the auto-advance timer (a sentence holds the screen `SENTENCE_DWELL_MULTIPLIER` times as long as a word), wrap-around, lesson jumps, and the reveal-after-delay for "word then translation" mode. `HomeScreen` is a thin presentational layer over those hooks plus the swipe gesture (reanimated + gesture-handler): sideways moves one card, up and down moves a whole lesson. The pan handler wraps the whole card area rather than the card, which is only as tall as its own text - on the card, a drag registered on the word and nowhere else. The card's border is transparent at rest and warms from the border token to brass as the drag reaches the distance that commits the move.
 
 **Naming note:** in `settings`, `learningLanguage` is the language being _learned_ and `knownLanguage` is the user's known language. On disk that is inverted: `word_1` holds the known language and `word_2` the one being learned, and the card shows `word_2` large with `word_1` underneath. Older builds persisted the settings as `fromLanguage`/`toLanguage`; the storage service migrates that automatically. Word files are bundled statically - they cannot be loaded by dynamic path.
 
@@ -63,7 +63,7 @@ Navigation tree:
 - **`app/theme/tokens.ts` is the single source of truth** for colors/spacing/radii/fonts/motion, and must stay in sync with `global.css`. Anything that can't take a class (reanimated worklets, navigation options, StatusBar) must read from tokens - do not hardcode hex.
 - **No bundled fonts.** Desktop renders in the system UI face and carries its voice in weight and tracking; the app does the same by leaving `fontFamily` unset, which gives San Francisco on iOS and Roboto on Android. `font-medium` / `font-semibold` / `font-bold` are Tailwind weight utilities again - do not re-add a `fontFamily` map to `tailwind.config.js`.
 - Motion via reanimated, kept restrained: ease-out for enters, springs for the swipe gesture, press-scale ~0.97, and `useReducedMotion()` honored everywhere.
-- A patch (`patches/react-native-css-interop+0.2.5.patch`, applied via `postinstall`) is required because that package references a reanimated-4-only worklets plugin; keep it when bumping deps.
+- Reanimated 4 does the animating, with `react-native-worklets` as its runtime. The project used to carry two `patch-package` patches; both are gone. One quoted a path in a React Native build script, which RN 0.86 does itself, and the other stripped the worklets babel plugin out of `react-native-css-interop` for a Reanimated 3 tree, which no longer applies. There is no `postinstall` step any more.
 
 ## Adding a language pair or level
 
@@ -76,7 +76,7 @@ The static require map and language metadata are **generated**, not hand-edited:
 
 ## Testing
 
-`jest-expo` preset; setup in `jest.setup.ts` mocks AsyncStorage, reanimated, gesture-handler, and `expo-font`. Tests in `__tests__/` cover logic (storage migration, loader, `useFlashcardDeck` with fake timers) and smoke-render each screen via `renderWithProviders`. Keep logic modules well covered.
+`jest-expo` preset; setup in `jest.setup.ts` mocks AsyncStorage, reanimated, gesture-handler, and `expo-font`. `jest.resolver.js` strips the `.native` extensions for `react-native-worklets` only, then defers to React Native's resolver - without it Reanimated 4 pulls a native module that does not exist under jest. Testing Library 14 made `render` and `renderHook` async, so every call site awaits. Tests in `__tests__/` cover logic (storage migration, loader, `useFlashcardDeck` with fake timers) and smoke-render each screen via `renderWithProviders`. Keep logic modules well covered.
 
 ## Conventions
 

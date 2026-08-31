@@ -67,4 +67,21 @@ describe('screen smoke tests', () => {
     expect(await screen.findByText('Vocabularify')).toBeTruthy();
     expect(screen.getByText('GitHub project')).toBeTruthy();
   });
+
+  // ehuseynov.net stopped resolving and the screen still linked to it. These
+  // names are the check that the row set matches the links the project
+  // actually publishes, so a dead one has to be replaced rather than dropped.
+  it('About links the project, both repos, the coffee page and the legal pages', async () => {
+    await renderWithProviders(<AboutScreen />);
+    for (const label of [
+      'Project page',
+      'GitHub project',
+      'Desktop version',
+      'Buy me a coffee',
+      'Datenschutz',
+      'Impressum',
+    ]) {
+      expect(await screen.findByText(label)).toBeTruthy();
+    }
+  });
 });

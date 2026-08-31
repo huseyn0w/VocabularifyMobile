@@ -6,7 +6,15 @@ import Animated, {
   Easing,
   useReducedMotion,
 } from "react-native-reanimated";
-import { PAYPAY_DONATION_URL } from "../utils/constants";
+import {
+  BUY_ME_A_COFFEE_LABEL,
+  BUY_ME_A_COFFEE_URL,
+  IMPRINT_URL,
+  PRIVACY_URL,
+  PROJECT_URL,
+  REPO_DESKTOP_URL,
+  REPO_MOBILE_URL,
+} from "../utils/constants";
 import { duration, letterSpacing } from "../theme/tokens";
 import ScreenContainer from "../components/ScreenContainer";
 import LinkRow from "../components/LinkRow";
@@ -36,25 +44,37 @@ const AboutScreen: React.FC = () => {
       </Animated.View>
 
       <View className="mb-8">
+        <LinkRow url={PROJECT_URL} label="Project page" icon="globe-outline" />
         <LinkRow
-          url="https://github.com/huseyn0w/VocabularifyMobile"
+          url={REPO_MOBILE_URL}
           label="GitHub project"
           icon="logo-github"
         />
         <LinkRow
-          url="https://github.com/huseyn0w/Vocabularify"
+          url={REPO_DESKTOP_URL}
           label="Desktop version"
           icon="desktop-outline"
         />
         <LinkRow
-          url="https://ehuseynov.net"
-          label="About the author"
-          icon="person-outline"
+          url={BUY_ME_A_COFFEE_URL}
+          label={BUY_ME_A_COFFEE_LABEL}
+          icon="cafe-outline"
+        />
+      </View>
+
+      {/* Datenschutz and Impressum keep their German names in every language,
+          the same way BerlinArea lists them: they name specific documents
+          under German law, and a translated label would point at neither. */}
+      <View className="mb-8">
+        <LinkRow
+          url={PRIVACY_URL}
+          label="Datenschutz"
+          icon="shield-checkmark-outline"
         />
         <LinkRow
-          url={PAYPAY_DONATION_URL}
-          label="Like the app? Donate"
-          icon="heart-outline"
+          url={IMPRINT_URL}
+          label="Impressum"
+          icon="document-text-outline"
         />
       </View>
 
