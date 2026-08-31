@@ -49,7 +49,7 @@ beforeEach(async () => {
 
 describe("HomeScreen", () => {
   it("renders the current word and a zero-padded progress counter from the stubbed list", async () => {
-    renderWithProviders(<HomeScreen />);
+    await renderWithProviders(<HomeScreen />);
 
     // First word_1 renders.
     expect(await screen.findByText("apfel")).toBeTruthy();
@@ -65,7 +65,7 @@ describe("HomeScreen", () => {
       STORAGE_KEYS.deckIndex,
       JSON.stringify({ "english:german:a1": 2 }),
     );
-    renderWithProviders(<HomeScreen />);
+    await renderWithProviders(<HomeScreen />);
 
     await waitFor(() => {
       expect(screen.getByText("kirsche")).toBeTruthy();
@@ -83,7 +83,7 @@ describe("HomeScreen with a course", () => {
       // Two words, then the sentence: item 2 is the sentence.
       JSON.stringify({ "english:german:a1": 2 }),
     );
-    renderWithProviders(<HomeScreen />);
+    await renderWithProviders(<HomeScreen />);
 
     // The sentence renders token by token, with its translation under it.
     expect(await screen.findByText("Apfel")).toBeTruthy();

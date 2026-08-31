@@ -7,8 +7,6 @@
  * expo-font.
  */
 
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 // --- AsyncStorage ----------------------------------------------------------
 // Official jest mock shipped by the library.
 jest.mock(
@@ -33,7 +31,6 @@ jest.mock('react-native-reanimated', () => {
 
 // Reanimated's mock leaves `call` referencing the (now stubbed) native module;
 // silence the warning it logs on setup.
-// eslint-disable-next-line no-undef
 (global as any).__reanimatedWorkletInit = () => {};
 
 // --- expo-font -------------------------------------------------------------

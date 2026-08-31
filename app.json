@@ -10,15 +10,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "vocabularify",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#F6F7F9",
-      "dark": {
-        "image": "./assets/images/splash.png",
-        "backgroundColor": "#0F1217"
-      }
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.huseyn0w.vocabularify",
@@ -42,7 +33,19 @@
     },
     "plugins": [
       "expo-font",
-      "expo-asset"
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#F6F7F9",
+          "dark": {
+            "image": "./assets/images/splash.png",
+            "backgroundColor": "#0F1217"
+          }
+        }
+      ]
     ],
     "extra": {
       "eas": {

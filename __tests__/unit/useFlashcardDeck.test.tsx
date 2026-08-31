@@ -23,7 +23,7 @@ beforeEach(async () => {
 
 describe("useFlashcardDeck - navigation", () => {
   it("loads the persisted index, then next advances and wraps around at the end", async () => {
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -36,17 +36,17 @@ describe("useFlashcardDeck - navigation", () => {
     expect(result.current.total).toBe(3);
     expect(result.current.current).toEqual(ITEMS[0]);
 
-    act(() => result.current.next());
+    await act(() => result.current.next());
     expect(result.current.currentIndex).toBe(1);
-    act(() => result.current.next());
+    await act(() => result.current.next());
     expect(result.current.currentIndex).toBe(2);
     // Wrap-around back to 0.
-    act(() => result.current.next());
+    await act(() => result.current.next());
     expect(result.current.currentIndex).toBe(0);
   });
 
   it("prev wraps to the end from index 0", async () => {
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -56,12 +56,12 @@ describe("useFlashcardDeck - navigation", () => {
     );
     await waitFor(() => expect(result.current.currentIndex).toBe(0));
 
-    act(() => result.current.prev());
+    await act(() => result.current.prev());
     expect(result.current.currentIndex).toBe(ITEMS.length - 1);
   });
 
   it("persists the last index via the storage service when it changes", async () => {
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -71,7 +71,7 @@ describe("useFlashcardDeck - navigation", () => {
     );
     await waitFor(() => expect(result.current.currentIndex).toBe(0));
 
-    act(() => result.current.next());
+    await act(() => result.current.next());
     await waitFor(async () => {
       const stored = await AsyncStorage.getItem(STORAGE_KEYS.deckIndex);
       expect(JSON.parse(stored as string)[DECK]).toBe(1);
@@ -80,7 +80,7 @@ describe("useFlashcardDeck - navigation", () => {
 
   it("starts from the persisted index when one is stored", async () => {
     await AsyncStorage.setItem(STORAGE_KEYS.deckIndex, JSON.stringify({ [DECK]: 2 }));
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -102,7 +102,7 @@ describe("useFlashcardDeck - auto-advance", () => {
   });
 
   it("advances the index after `frequency` ms", async () => {
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -117,14 +117,14 @@ describe("useFlashcardDeck - auto-advance", () => {
     });
     expect(result.current.currentIndex).toBe(0);
 
-    act(() => {
+    await act(() => {
       jest.advanceTimersByTime(FREQUENCY);
     });
     expect(result.current.currentIndex).toBe(1);
   });
 
   it("clears the interval on unmount (no advance after unmount)", async () => {
-    const { result, unmount } = renderHook(() =>
+    const { result, unmount } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -137,9 +137,9 @@ describe("useFlashcardDeck - auto-advance", () => {
     });
     expect(result.current.currentIndex).toBe(0);
 
-    unmount();
+    await unmount();
     const indexAtUnmount = result.current.currentIndex;
-    act(() => {
+    await act(() => {
       jest.advanceTimersByTime(FREQUENCY * 3);
     });
     // No state changes after unmount.
@@ -156,7 +156,7 @@ describe("useFlashcardDeck - translation reveal", () => {
   });
 
   it("showWordThenTranslation: starts false, becomes true after the reveal delay", async () => {
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -170,14 +170,14 @@ describe("useFlashcardDeck - translation reveal", () => {
 
     expect(result.current.showTranslation).toBe(false);
 
-    act(() => {
+    await act(() => {
       jest.advanceTimersByTime(SHOW_TRANSLATION_DELAY);
     });
     expect(result.current.showTranslation).toBe(true);
   });
 
   it("showBoth: keeps the translation shown", async () => {
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
@@ -194,7 +194,7 @@ describe("useFlashcardDeck - translation reveal", () => {
 
 describe("useFlashcardDeck - empty deck", () => {
   it("stays null with no words and next/prev are no-ops", async () => {
-    const { result } = renderHook(() =>
+    const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: [],
         deckKey: DECK,
@@ -206,7 +206,7 @@ describe("useFlashcardDeck - empty deck", () => {
     expect(result.current.current).toBeNull();
     expect(result.current.total).toBe(0);
 
-    act(() => result.current.next());
+    await act(() => result.current.next());
     expect(result.current.currentIndex).toBeNull();
   });
 });

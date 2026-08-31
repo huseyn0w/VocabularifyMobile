@@ -19,7 +19,7 @@ jest.mock('@react-navigation/native', () => ({
 
 describe('screen smoke tests', () => {
   it('Home renders (shows loading or a word, never crashes)', async () => {
-    renderWithProviders(<HomeScreen />);
+    await renderWithProviders(<HomeScreen />);
     // The deck loads asynchronously; assert we eventually leave a stable
     // state. The hint names the lesson swipe on a level that has a course and
     // not on one that does not, so match either wording.
@@ -29,13 +29,13 @@ describe('screen smoke tests', () => {
   });
 
   it('Welcome renders the first step and its language options', async () => {
-    renderWithProviders(<WelcomeScreen />);
+    await renderWithProviders(<WelcomeScreen />);
     expect(await screen.findByText(/want to learn\?/i)).toBeTruthy();
     expect(screen.getByText('🇬🇧 English')).toBeTruthy();
   });
 
   it('Settings renders its preference rows', async () => {
-    renderWithProviders(<SettingsScreen navigation={mockNavigation} />);
+    await renderWithProviders(<SettingsScreen navigation={mockNavigation} />);
     expect(await screen.findByText('Learning Mode')).toBeTruthy();
     expect(screen.getByText('Language settings')).toBeTruthy();
     expect(screen.getByText('Background')).toBeTruthy();
@@ -43,19 +43,19 @@ describe('screen smoke tests', () => {
   });
 
   it('LearningMode renders both options', async () => {
-    renderWithProviders(<LearningModeScreen />);
+    await renderWithProviders(<LearningModeScreen />);
     expect(await screen.findByText('Word and translation')).toBeTruthy();
     expect(screen.getByText('Word first, then translation')).toBeTruthy();
   });
 
   it('LanguageSettings renders the selector + frequency section', async () => {
-    renderWithProviders(<LanguageSettingsScreen />);
+    await renderWithProviders(<LanguageSettingsScreen />);
     expect(await screen.findByText('I want to learn')).toBeTruthy();
     expect(screen.getByText('Word frequency')).toBeTruthy();
   });
 
   it('Background renders the appearance options', async () => {
-    renderWithProviders(<BackgroundScreen navigation={mockNavigation} />);
+    await renderWithProviders(<BackgroundScreen navigation={mockNavigation} />);
     expect(await screen.findByText('Appearance')).toBeTruthy();
     expect(screen.getByText('Light')).toBeTruthy();
     expect(screen.getByText('Dark')).toBeTruthy();
@@ -63,7 +63,7 @@ describe('screen smoke tests', () => {
   });
 
   it('About renders its copy', async () => {
-    renderWithProviders(<AboutScreen />);
+    await renderWithProviders(<AboutScreen />);
     expect(await screen.findByText('Vocabularify')).toBeTruthy();
     expect(screen.getByText('GitHub project')).toBeTruthy();
   });

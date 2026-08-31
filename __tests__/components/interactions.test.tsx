@@ -22,7 +22,7 @@ beforeEach(async () => {
 
 describe('LearningModeScreen', () => {
   it('pressing an option persists the selected mode', async () => {
-    renderWithProviders(<LearningModeScreen />);
+    await renderWithProviders(<LearningModeScreen />);
     const option = await screen.findByText('Word first, then translation');
 
     fireEvent.press(option);
@@ -36,7 +36,7 @@ describe('LearningModeScreen', () => {
 
 describe('LanguageSettingsScreen', () => {
   it('selecting a learning language reveals the matching known-language options', async () => {
-    renderWithProviders(<LanguageSettingsScreen />);
+    await renderWithProviders(<LanguageSettingsScreen />);
     // Default settings start with english/german/a1 already populated, so the
     // "From" section shows English's known options (every other language, since
     // the full matrix makes any language learnable from any other). Rows render
@@ -62,7 +62,7 @@ describe('LanguageSettingsScreen', () => {
   });
 
   it('selecting a frequency persists it', async () => {
-    renderWithProviders(<LanguageSettingsScreen />);
+    await renderWithProviders(<LanguageSettingsScreen />);
     const option = await screen.findByText('7 seconds');
 
     fireEvent.press(option);
@@ -76,7 +76,7 @@ describe('LanguageSettingsScreen', () => {
 
 describe('WelcomeScreen - three-step setup', () => {
   it('walks target -> source -> level, one question at a time, and saves', async () => {
-    renderWithProviders(<WelcomeScreen />);
+    await renderWithProviders(<WelcomeScreen />);
     await screen.findByText(/want to learn\?/i);
 
     // Step 1 shows only the target languages - no source list, no levels
@@ -109,7 +109,7 @@ describe('WelcomeScreen - three-step setup', () => {
   });
 
   it('Back returns to the previous question', async () => {
-    renderWithProviders(<WelcomeScreen />);
+    await renderWithProviders(<WelcomeScreen />);
     await screen.findByText(/want to learn\?/i);
 
     fireEvent.press(screen.getByText('🇬🇧 English'));
@@ -124,7 +124,7 @@ describe('WelcomeScreen - three-step setup', () => {
 
 describe('BackgroundScreen', () => {
   it('selecting a theme option triggers the theme setter (persisted)', async () => {
-    renderWithProviders(<BackgroundScreen navigation={mockNavigation} />);
+    await renderWithProviders(<BackgroundScreen navigation={mockNavigation} />);
     const dark = await screen.findByText('Dark');
 
     fireEvent.press(dark);
