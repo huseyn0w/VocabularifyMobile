@@ -38,19 +38,6 @@ const LESSON_SWIPE_THRESHOLD = 90;
 const pad = (n: number) => String(n).padStart(2, "0");
 
 /**
- * `#RRGGBB` to `rgba(r, g, b, a)`.
- *
- * The drag frame has to start fully transparent and end on a token colour.
- * Interpolating from a hardcoded transparent black would tint the frame grey
- * on its way up, which reads as dirt on the light theme; starting from the
- * border token at zero alpha keeps the ramp inside the palette.
- */
-const withAlpha = (hex: string, alpha: number) => {
-  const n = parseInt(hex.slice(1), 16);
-  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
-};
-
-/**
  * Type size for a sentence, by how long it is.
  *
  * Desktop scales its sentence off the viewport, which works because its card
@@ -197,23 +184,30 @@ const HomeScreen: React.FC = () => {
     };
   });
 
-  // Frame that appears while dragging and warms to brass at the point where
-  // letting go commits the move. Without it a drag gives no clue how far is
-  // far enough, so a half-swipe that springs back looks like a dropped touch.
-  const restFrame = withAlpha(colors.border, 0);
+  // The card sits inside a hairline border at rest, and that border takes on
+  // the direction of the drag: green going forward, yellow going back. It
+  // reaches full colour at the distance where letting go commits the move, so
+  // the colour answers both questions at once - which way, and far enough yet.
   const frameStyle = useAnimatedStyle(() => {
-    const horizontal = Math.abs(translateX.value) / SWIPE_THRESHOLD;
+    const dx = translateX.value;
     // translateY is damped to a quarter on the way in, so undo that here to
     // measure against the same raw distance the release handler thresholds on.
-    const vertical =
-      Math.abs(translateY.value * 4) / LESSON_SWIPE_THRESHOLD;
-    const progress = Math.min(1, Math.max(horizontal, vertical));
+    const dy = translateY.value * 4;
+
+    // Same axis the release handler picks, or the colour would promise a move
+    // that letting go does not make. Forward is right for a card and up for a
+    // lesson, which is why the vertical term is negated.
+    const travel =
+      Math.abs(dy) > Math.abs(dx)
+        ? -dy / LESSON_SWIPE_THRESHOLD
+        : dx / SWIPE_THRESHOLD;
+    const direction = Math.max(-1, Math.min(1, travel));
 
     return {
       borderColor: interpolateColor(
-        progress,
-        [0, 0.45, 1],
-        [restFrame, colors.border, colors.accent],
+        direction,
+        [-1, 0, 1],
+        [colors.swipeBack, colors.border, colors.swipeForward],
       ),
     };
   });
@@ -281,7 +275,7 @@ const HomeScreen: React.FC = () => {
           <WordGlow />
           {/* Still no surface and no shadow: the word sits on the field, lit
               by the one brass glow behind it, exactly as on Desktop. The
-              border is the single exception, and it is invisible at rest. */}
+              hairline border is the single exception. */}
           <Animated.View
             className="w-full items-center justify-center px-6 py-8"
             style={[

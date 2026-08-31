@@ -17,6 +17,16 @@
  *    schemes read as the same product.
  *  - The accent is brass, used only for the glow, the progress fill and the
  *    hairline under a word the learner has already met.
+ *  - `swipeForward` and `swipeBack` are the only two hues outside Desktop's
+ *    palette. Desktop has no drag, so it has nothing to borrow from. They are
+ *    built the same way as everything else here: the accent's lightness with
+ *    the hue rotated to green and to yellow, so they sit in the same family
+ *    rather than reading as system green and system yellow. Light mode's
+ *    yellow is darker than its dark-mode twin because a bright yellow on a
+ *    near-white field is not a border, it is a smudge.
+ *
+ * Like `glow` and `tokenLine`, both are read from a reanimated worklet and
+ * never from a `className`, which is why they have no entry in `global.css`.
  *
  * React Native has no colour function, so the alpha-over-background values
  * Desktop writes as `oklch(... / 0.09)` are pre-composited here.
@@ -54,6 +64,10 @@ export const palette = {
     textGlow: "transparent",
     /** Underline on a token whose word the learner has already met. */
     tokenLine: "rgba(150, 102, 38, 0.38)",
+    /** Card border while dragging forward. oklch(0.55 0.13 150) */
+    swipeForward: "#298646",
+    /** Card border while dragging back. oklch(0.62 0.11 88) */
+    swipeBack: "#A2822A",
   },
   dark: {
     /** Field. oklch(0.18 0.012 264) */
@@ -80,6 +94,10 @@ export const palette = {
     /** Desktop: `--target-glow: oklch(0.80 0.085 82 / 0.18)`. */
     textGlow: "rgba(217, 185, 126, 0.18)",
     tokenLine: "rgba(217, 185, 126, 0.32)",
+    /** Card border while dragging forward. oklch(0.80 0.13 150) */
+    swipeForward: "#7CD591",
+    /** Card border while dragging back. oklch(0.86 0.15 100) */
+    swipeBack: "#E8D34F",
   },
 } as const;
 
