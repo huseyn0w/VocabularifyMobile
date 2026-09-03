@@ -31,6 +31,7 @@
     {"word_1": "tarih", "word_2": "history"},
     {"word_1": "din", "word_2": "religion"},
     {"word_1": "yasa", "word_2": "law"},
+    {"word_1": "hak", "word_2": "right (entitlement)"},
     {"word_1": "özgürlük", "word_2": "freedom"},
     {"word_1": "barış", "word_2": "peace"},
     {"word_1": "savaş", "word_2": "war"},
@@ -46,6 +47,7 @@
     {"word_1": "hava", "word_2": "air"},
     {"word_1": "yeryüzü", "word_2": "earth"},
     {"word_1": "kariyer", "word_2": "career"},
+    {"word_1": "iş yeri", "word_2": "position (job)"},
     {"word_1": "meslek", "word_2": "profession"},
     {"word_1": "çalışan", "word_2": "employee"},
     {"word_1": "işveren", "word_2": "employer"},
@@ -171,7 +173,6 @@
     {"word_1": "açık net", "word_2": "clear"},
     {"word_1": "karmaşık", "word_2": "complicated"},
     {"word_1": "tam", "word_2": "complete"},
-    {"word_1": "ana", "word_2": "main"},
     {"word_1": "gerçek", "word_2": "real"},
     {"word_1": "yanlış", "word_2": "false"},
     {"word_1": "ancak", "word_2": "however"},
@@ -193,5 +194,10 @@
     {"word_1": "göre", "word_2": "according to"},
     {"word_1": "rağmen olarak", "word_2": "despite"},
     {"word_1": "olur olmaz", "word_2": "as soon as"},
-    {"word_1": "için", "word_2": "in order to"}
+    {"word_1": "için", "word_2": "in order to"},
+    {"word_1": "yüzünden", "word_2": "because of"},
+    {"word_1": "-dikten sonra", "word_2": "after (conjunction)"},
+    {"word_1": "öyle ki", "word_2": "so that (result)"},
+    {"word_1": "ne ... ne", "word_2": "neither ... nor"},
+    {"word_1": "hem ... hem de", "word_2": "both ... and"}
 ]

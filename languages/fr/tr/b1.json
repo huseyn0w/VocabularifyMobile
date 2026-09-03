@@ -30,6 +30,7 @@
     {"word_1": "kültür", "word_2": "la culture"},
     {"word_1": "din", "word_2": "la religion"},
     {"word_1": "yasa", "word_2": "la loi"},
+    {"word_1": "hak", "word_2": "le droit"},
     {"word_1": "özgürlük", "word_2": "la liberté"},
     {"word_1": "barış", "word_2": "la paix"},
     {"word_1": "savaş", "word_2": "la guerre"},
@@ -45,6 +46,7 @@
     {"word_1": "hava", "word_2": "l'air"},
     {"word_1": "yeryüzü", "word_2": "la terre"},
     {"word_1": "kariyer", "word_2": "la carrière"},
+    {"word_1": "iş yeri", "word_2": "l'emploi"},
     {"word_1": "meslek", "word_2": "la profession"},
     {"word_1": "çalışan", "word_2": "l'employé"},
     {"word_1": "işveren", "word_2": "l'employeur"},
@@ -168,7 +170,6 @@
     {"word_1": "ünlü", "word_2": "célèbre"},
     {"word_1": "karmaşık", "word_2": "compliqué"},
     {"word_1": "tam", "word_2": "complet"},
-    {"word_1": "ana", "word_2": "principal"},
     {"word_1": "gerçek", "word_2": "réel"},
     {"word_1": "ancak", "word_2": "cependant"},
     {"word_1": "yine de", "word_2": "néanmoins"},
@@ -187,5 +188,10 @@
     {"word_1": "göre", "word_2": "selon"},
     {"word_1": "rağmen olarak", "word_2": "malgré"},
     {"word_1": "olur olmaz", "word_2": "dès que"},
-    {"word_1": "için", "word_2": "afin de"}
+    {"word_1": "için", "word_2": "afin de"},
+    {"word_1": "yüzünden", "word_2": "à cause de"},
+    {"word_1": "-dikten sonra", "word_2": "après que"},
+    {"word_1": "öyle ki", "word_2": "de sorte que"},
+    {"word_1": "ne ... ne", "word_2": "ni ... ni"},
+    {"word_1": "hem ... hem de", "word_2": "aussi bien ... que"}
 ]

@@ -1,0 +1,6050 @@
+[
+  {
+    "en": "to abolish",
+    "de": "abschaffen",
+    "fr": "abolir",
+    "es": "abolir",
+    "it": "abolire",
+    "tr": "kaldırmak",
+    "ru": "отменять"
+  },
+  {
+    "en": "to dispel",
+    "de": "zerstreuen",
+    "fr": "dissiper",
+    "es": "disipar",
+    "it": "dissipare",
+    "tr": "dağıtmak",
+    "ru": "рассеивать"
+  },
+  {
+    "en": "to reclaim",
+    "de": "zurückfordern",
+    "fr": "récupérer",
+    "es": "reclamar",
+    "it": "rivendicare",
+    "tr": "geri talep etmek",
+    "ru": "возвращать"
+  },
+  {
+    "en": "to undermine",
+    "de": "untergraben",
+    "fr": "saper",
+    "es": "socavar",
+    "it": "minare",
+    "tr": "baltalamak",
+    "ru": "подрывать"
+  },
+  {
+    "en": "to advocate",
+    "de": "befürworten",
+    "fr": "préconiser",
+    "es": "abogar",
+    "it": "patrocinare",
+    "tr": "savunmak",
+    "ru": "отстаивать"
+  },
+  {
+    "en": "to alleviate",
+    "de": "lindern",
+    "fr": "soulager",
+    "es": "aliviar",
+    "it": "alleviare",
+    "tr": "hafifletmek",
+    "ru": "облегчать"
+  },
+  {
+    "en": "to exacerbate",
+    "de": "verschärfen",
+    "fr": "exacerber",
+    "es": "exacerbar",
+    "it": "esacerbare",
+    "tr": "şiddetlendirmek",
+    "ru": "усугублять"
+  },
+  {
+    "en": "to mitigate",
+    "de": "abmildern",
+    "fr": "atténuer",
+    "es": "mitigar",
+    "it": "mitigare",
+    "tr": "yumuşatmak",
+    "ru": "смягчать"
+  },
+  {
+    "en": "to scrutinize",
+    "de": "prüfen",
+    "fr": "scruter",
+    "es": "escudriñar",
+    "it": "scrutinare",
+    "tr": "incelemek",
+    "ru": "тщательно изучать"
+  },
+  {
+    "en": "to discern",
+    "de": "erkennen",
+    "fr": "discerner",
+    "es": "discernir",
+    "it": "discernere",
+    "tr": "ayırt etmek",
+    "ru": "различать"
+  },
+  {
+    "en": "to elicit",
+    "de": "hervorrufen",
+    "fr": "susciter",
+    "es": "suscitar",
+    "it": "suscitare",
+    "tr": "ortaya çıkarmak",
+    "ru": "вызывать"
+  },
+  {
+    "en": "to convey",
+    "de": "vermitteln",
+    "fr": "transmettre",
+    "es": "transmitir",
+    "it": "trasmettere",
+    "tr": "iletmek",
+    "ru": "передавать"
+  },
+  {
+    "en": "to entail",
+    "de": "mit sich bringen",
+    "fr": "impliquer",
+    "es": "conllevar",
+    "it": "comportare",
+    "tr": "gerektirmek",
+    "ru": "влечь за собой"
+  },
+  {
+    "en": "to encompass",
+    "de": "umfassen",
+    "fr": "englober",
+    "es": "abarcar",
+    "it": "abbracciare",
+    "tr": "kapsamak",
+    "ru": "охватывать"
+  },
+  {
+    "en": "to perpetuate",
+    "de": "verewigen",
+    "fr": "perpétuer",
+    "es": "perpetuar",
+    "it": "perpetuare",
+    "tr": "sürdürmek",
+    "ru": "увековечивать"
+  },
+  {
+    "en": "to refute",
+    "de": "widerlegen",
+    "fr": "réfuter",
+    "es": "refutar",
+    "it": "confutare",
+    "tr": "çürütmek",
+    "ru": "опровергать"
+  },
+  {
+    "en": "to reconcile",
+    "de": "versöhnen",
+    "fr": "réconcilier",
+    "es": "reconciliar",
+    "it": "riconciliare",
+    "tr": "uzlaştırmak",
+    "ru": "примирять"
+  },
+  {
+    "en": "to substantiate",
+    "de": "untermauern",
+    "fr": "étayer",
+    "es": "fundamentar",
+    "it": "comprovare",
+    "tr": "kanıtlamak",
+    "ru": "обосновывать"
+  },
+  {
+    "en": "to relinquish",
+    "de": "aufgeben",
+    "fr": "renoncer",
+    "es": "renunciar",
+    "it": "rinunciare",
+    "tr": "vazgeçmek",
+    "ru": "отказываться"
+  },
+  {
+    "en": "to instigate",
+    "de": "anstiften",
+    "fr": "instiguer",
+    "es": "instigar",
+    "it": "istigare",
+    "tr": "kışkırtmak",
+    "ru": "подстрекать"
+  },
+  {
+    "en": "to curtail",
+    "de": "einschränken",
+    "fr": "restreindre",
+    "es": "restringir",
+    "it": "limitare",
+    "tr": "kısıtlamak",
+    "ru": "урезать"
+  },
+  {
+    "en": "to compel",
+    "de": "zwingen",
+    "fr": "contraindre",
+    "es": "obligar",
+    "it": "costringere",
+    "tr": "zorlamak",
+    "ru": "принуждать"
+  },
+  {
+    "en": "to endorse",
+    "de": "unterstützen",
+    "fr": "approuver",
+    "es": "respaldar",
+    "it": "avallare",
+    "tr": "onaylamak",
+    "ru": "одобрять"
+  },
+  {
+    "en": "to undertake",
+    "de": "unternehmen",
+    "fr": "entreprendre",
+    "es": "emprender",
+    "it": "intraprendere",
+    "tr": "üstlenmek",
+    "ru": "предпринимать"
+  },
+  {
+    "en": "to foster",
+    "de": "fördern",
+    "fr": "favoriser",
+    "es": "fomentar",
+    "it": "favorire",
+    "tr": "teşvik etmek",
+    "ru": "способствовать"
+  },
+  {
+    "en": "to hinder",
+    "de": "behindern",
+    "fr": "entraver",
+    "es": "obstaculizar",
+    "it": "ostacolare",
+    "tr": "engellemek",
+    "ru": "препятствовать"
+  },
+  {
+    "en": "to impede",
+    "de": "hemmen",
+    "fr": "empêcher",
+    "es": "impedir",
+    "it": "impedire",
+    "tr": "ket vurmak",
+    "ru": "затруднять"
+  },
+  {
+    "en": "to envisage",
+    "de": "vorsehen",
+    "fr": "envisager",
+    "es": "prever",
+    "it": "prevedere",
+    "tr": "öngörmek",
+    "ru": "предусматривать"
+  },
+  {
+    "en": "to allude",
+    "de": "anspielen",
+    "fr": "faire allusion",
+    "es": "aludir",
+    "it": "alludere",
+    "tr": "ima etmek",
+    "ru": "намекать"
+  },
+  {
+    "en": "to grapple",
+    "de": "ringen",
+    "fr": "se débattre",
+    "es": "lidiar",
+    "it": "confrontarsi",
+    "tr": "boğuşmak",
+    "ru": "бороться"
+  },
+  {
+    "en": "to oversee",
+    "de": "beaufsichtigen",
+    "fr": "superviser",
+    "es": "supervisar",
+    "it": "sovrintendere",
+    "tr": "denetlemek",
+    "ru": "контролировать"
+  },
+  {
+    "en": "to streamline",
+    "de": "rationalisieren",
+    "fr": "rationaliser",
+    "es": "agilizar",
+    "it": "snellire",
+    "tr": "kolaylaştırmak",
+    "ru": "оптимизировать"
+  },
+  {
+    "en": "to delegate",
+    "de": "delegieren",
+    "fr": "déléguer",
+    "es": "delegar",
+    "it": "delegare",
+    "tr": "yetki devretmek",
+    "ru": "делегировать"
+  },
+  {
+    "en": "to deteriorate",
+    "de": "sich verschlechtern",
+    "fr": "se détériorer",
+    "es": "deteriorarse",
+    "it": "deteriorarsi",
+    "tr": "kötüleşmek",
+    "ru": "ухудшаться"
+  },
+  {
+    "en": "to culminate",
+    "de": "gipfeln",
+    "fr": "culminer",
+    "es": "culminar",
+    "it": "culminare",
+    "tr": "doruğa ulaşmak",
+    "ru": "достигать кульминации"
+  },
+  {
+    "en": "to coincide",
+    "de": "zusammenfallen",
+    "fr": "coïncider",
+    "es": "coincidir",
+    "it": "coincidere",
+    "tr": "çakışmak",
+    "ru": "совпадать"
+  },
+  {
+    "en": "to comprise",
+    "de": "bestehen aus",
+    "fr": "comprendre",
+    "es": "comprender",
+    "it": "comprendere",
+    "tr": "oluşmak",
+    "ru": "состоять из"
+  },
+  {
+    "en": "to deduce",
+    "de": "ableiten",
+    "fr": "déduire",
+    "es": "deducir",
+    "it": "dedurre",
+    "tr": "çıkarsamak",
+    "ru": "выводить"
+  },
+  {
+    "en": "to attribute",
+    "de": "zuschreiben",
+    "fr": "attribuer",
+    "es": "atribuir",
+    "it": "attribuire",
+    "tr": "atfetmek",
+    "ru": "приписывать"
+  },
+  {
+    "en": "to differentiate",
+    "de": "unterscheiden",
+    "fr": "différencier",
+    "es": "diferenciar",
+    "it": "differenziare",
+    "tr": "ayırmak",
+    "ru": "различать"
+  },
+  {
+    "en": "to contemplate",
+    "de": "nachdenken",
+    "fr": "contempler",
+    "es": "contemplar",
+    "it": "contemplare",
+    "tr": "derin düşünmek",
+    "ru": "обдумывать"
+  },
+  {
+    "en": "to acknowledge",
+    "de": "anerkennen",
+    "fr": "reconnaître",
+    "es": "reconocer",
+    "it": "riconoscere",
+    "tr": "kabul etmek",
+    "ru": "признавать"
+  },
+  {
+    "en": "to ascertain",
+    "de": "feststellen",
+    "fr": "vérifier",
+    "es": "averiguar",
+    "it": "accertare",
+    "tr": "saptamak",
+    "ru": "устанавливать"
+  },
+  {
+    "en": "to comply",
+    "de": "befolgen",
+    "fr": "se conformer",
+    "es": "cumplir",
+    "it": "conformarsi",
+    "tr": "uymak",
+    "ru": "соблюдать"
+  },
+  {
+    "en": "to deploy",
+    "de": "einsetzen",
+    "fr": "déployer",
+    "es": "desplegar",
+    "it": "schierare",
+    "tr": "konuşlandırmak",
+    "ru": "развёртывать"
+  },
+  {
+    "en": "to allocate",
+    "de": "zuteilen",
+    "fr": "allouer",
+    "es": "asignar",
+    "it": "allocare",
+    "tr": "tahsis etmek",
+    "ru": "распределять"
+  },
+  {
+    "en": "to integrate",
+    "de": "integrieren",
+    "fr": "intégrer",
+    "es": "integrar",
+    "it": "integrare",
+    "tr": "bütünleştirmek",
+    "ru": "интегрировать"
+  },
+  {
+    "en": "to compromise",
+    "de": "Kompromiss schließen",
+    "fr": "compromettre",
+    "es": "transigir",
+    "it": "compromettere",
+    "tr": "uzlaşmak",
+    "ru": "идти на компромисс"
+  },
+  {
+    "en": "to designate",
+    "de": "bestimmen",
+    "fr": "désigner",
+    "es": "designar",
+    "it": "designare",
+    "tr": "belirlemek",
+    "ru": "назначать"
+  },
+  {
+    "en": "to renounce",
+    "de": "verzichten",
+    "fr": "renoncer",
+    "es": "renunciar a",
+    "it": "rinnegare",
+    "tr": "feragat etmek",
+    "ru": "отрекаться"
+  },
+  {
+    "en": "to safeguard",
+    "de": "schützen",
+    "fr": "sauvegarder",
+    "es": "salvaguardar",
+    "it": "salvaguardare",
+    "tr": "korumak",
+    "ru": "ограждать"
+  },
+  {
+    "en": "to jeopardize",
+    "de": "gefährden",
+    "fr": "compromettre",
+    "es": "poner en peligro",
+    "it": "mettere a rischio",
+    "tr": "tehlikeye atmak",
+    "ru": "ставить под угрозу"
+  },
+  {
+    "en": "to incur",
+    "de": "auf sich ziehen",
+    "fr": "encourir",
+    "es": "incurrir",
+    "it": "incorrere",
+    "tr": "maruz kalmak",
+    "ru": "навлекать"
+  },
+  {
+    "en": "to yield",
+    "de": "nachgeben",
+    "fr": "céder",
+    "es": "ceder",
+    "it": "cedere",
+    "tr": "boyun eğmek",
+    "ru": "уступать"
+  },
+  {
+    "en": "to thrive",
+    "de": "gedeihen",
+    "fr": "prospérer",
+    "es": "prosperar",
+    "it": "prosperare",
+    "tr": "gelişmek",
+    "ru": "процветать"
+  },
+  {
+    "en": "to prevail",
+    "de": "vorherrschen",
+    "fr": "prévaloir",
+    "es": "prevalecer",
+    "it": "prevalere",
+    "tr": "hüküm sürmek",
+    "ru": "преобладать"
+  },
+  {
+    "en": "to emulate",
+    "de": "nacheifern",
+    "fr": "imiter",
+    "es": "emular",
+    "it": "emulare",
+    "tr": "örnek almak",
+    "ru": "подражать"
+  },
+  {
+    "en": "to outweigh",
+    "de": "überwiegen",
+    "fr": "l'emporter",
+    "es": "superar",
+    "it": "prevalere su",
+    "tr": "ağır basmak",
+    "ru": "перевешивать"
+  },
+  {
+    "en": "to reinforce",
+    "de": "verstärken",
+    "fr": "renforcer",
+    "es": "reforzar",
+    "it": "rafforzare",
+    "tr": "pekiştirmek",
+    "ru": "укреплять"
+  },
+  {
+    "en": "to undergo",
+    "de": "durchmachen",
+    "fr": "subir",
+    "es": "someterse",
+    "it": "subire",
+    "tr": "geçirmek",
+    "ru": "претерпевать"
+  },
+  {
+    "en": "to discard",
+    "de": "verwerfen",
+    "fr": "écarter",
+    "es": "descartar",
+    "it": "scartare",
+    "tr": "atmak",
+    "ru": "отбрасывать"
+  },
+  {
+    "en": "to overhaul",
+    "de": "überholen",
+    "fr": "réviser",
+    "es": "revisar a fondo",
+    "it": "revisionare",
+    "tr": "elden geçirmek",
+    "ru": "капитально пересматривать"
+  },
+  {
+    "en": "to embed",
+    "de": "einbetten",
+    "fr": "intégrer",
+    "es": "incrustar",
+    "it": "incorporare",
+    "tr": "gömmek",
+    "ru": "встраивать"
+  },
+  {
+    "en": "to compile",
+    "de": "zusammenstellen",
+    "fr": "compiler",
+    "es": "compilar",
+    "it": "compilare",
+    "tr": "derlemek",
+    "ru": "составлять"
+  },
+  {
+    "en": "to denote",
+    "de": "bezeichnen",
+    "fr": "dénoter",
+    "es": "denotar",
+    "it": "denotare",
+    "tr": "belirtmek",
+    "ru": "обозначать"
+  },
+  {
+    "en": "discrepancy",
+    "de": "die Diskrepanz",
+    "fr": "l'écart",
+    "es": "la discrepancia",
+    "it": "la discrepanza",
+    "tr": "tutarsızlık",
+    "ru": "расхождение"
+  },
+  {
+    "en": "premise",
+    "de": "die Prämisse",
+    "fr": "la prémisse",
+    "es": "la premisa",
+    "it": "la premessa",
+    "tr": "öncül",
+    "ru": "предпосылка"
+  },
+  {
+    "en": "connotation",
+    "de": "die Konnotation",
+    "fr": "la connotation",
+    "es": "la connotación",
+    "it": "la connotazione",
+    "tr": "çağrışım",
+    "ru": "коннотация"
+  },
+  {
+    "en": "implication",
+    "de": "die Implikation",
+    "fr": "l'implication",
+    "es": "la implicación",
+    "it": "l'implicazione",
+    "tr": "ima",
+    "ru": "следствие"
+  },
+  {
+    "en": "consensus",
+    "de": "der Konsens",
+    "fr": "le consensus",
+    "es": "el consenso",
+    "it": "il consenso",
+    "tr": "uzlaşı",
+    "ru": "консенсус"
+  },
+  {
+    "en": "paradigm",
+    "de": "das Paradigma",
+    "fr": "le paradigme",
+    "es": "el paradigma",
+    "it": "il paradigma",
+    "tr": "paradigma",
+    "ru": "парадигма"
+  },
+  {
+    "en": "hypothesis",
+    "de": "die Hypothese",
+    "fr": "l'hypothèse",
+    "es": "la hipótesis",
+    "it": "l'ipotesi",
+    "tr": "hipotez",
+    "ru": "гипотеза"
+  },
+  {
+    "en": "rationale",
+    "de": "die Begründung",
+    "fr": "la justification",
+    "es": "el fundamento",
+    "it": "la motivazione",
+    "tr": "gerekçe",
+    "ru": "обоснование"
+  },
+  {
+    "en": "scrutiny",
+    "de": "die genaue Prüfung",
+    "fr": "l'examen minutieux",
+    "es": "el escrutinio",
+    "it": "l'esame attento",
+    "tr": "mercek altına alma",
+    "ru": "пристальное изучение"
+  },
+  {
+    "en": "nuance",
+    "de": "die Nuance",
+    "fr": "la nuance",
+    "es": "el matiz",
+    "it": "la sfumatura",
+    "tr": "nüans",
+    "ru": "нюанс"
+  },
+  {
+    "en": "ambiguity",
+    "de": "die Mehrdeutigkeit",
+    "fr": "l'ambiguïté",
+    "es": "la ambigüedad",
+    "it": "l'ambiguità",
+    "tr": "belirsizlik",
+    "ru": "неоднозначность"
+  },
+  {
+    "en": "paradox",
+    "de": "das Paradoxon",
+    "fr": "le paradoxe",
+    "es": "la paradoja",
+    "it": "il paradosso",
+    "tr": "paradoks",
+    "ru": "парадокс"
+  },
+  {
+    "en": "dilemma",
+    "de": "das Dilemma",
+    "fr": "le dilemme",
+    "es": "el dilema",
+    "it": "il dilemma",
+    "tr": "ikilem",
+    "ru": "дилемма"
+  },
+  {
+    "en": "discourse",
+    "de": "der Diskurs",
+    "fr": "le discours",
+    "es": "el discurso",
+    "it": "il discorso",
+    "tr": "söylem",
+    "ru": "дискурс"
+  },
+  {
+    "en": "endeavour",
+    "de": "das Bestreben",
+    "fr": "l'effort",
+    "es": "el empeño",
+    "it": "lo sforzo",
+    "tr": "çaba",
+    "ru": "начинание"
+  },
+  {
+    "en": "threshold",
+    "de": "die Schwelle",
+    "fr": "le seuil",
+    "es": "el umbral",
+    "it": "la soglia",
+    "tr": "eşik",
+    "ru": "порог"
+  },
+  {
+    "en": "incentive",
+    "de": "der Anreiz",
+    "fr": "l'incitation",
+    "es": "el incentivo",
+    "it": "l'incentivo",
+    "tr": "teşvik",
+    "ru": "стимул"
+  },
+  {
+    "en": "constraint",
+    "de": "die Einschränkung",
+    "fr": "la contrainte",
+    "es": "la restricción",
+    "it": "il vincolo",
+    "tr": "kısıtlama",
+    "ru": "ограничение"
+  },
+  {
+    "en": "framework",
+    "de": "der Rahmen",
+    "fr": "le cadre",
+    "es": "el marco",
+    "it": "il quadro",
+    "tr": "çerçeve",
+    "ru": "структура"
+  },
+  {
+    "en": "premonition",
+    "de": "die Vorahnung",
+    "fr": "le pressentiment",
+    "es": "el presentimiento",
+    "it": "il presentimento",
+    "tr": "önsezi",
+    "ru": "предчувствие"
+  },
+  {
+    "en": "consequence",
+    "de": "die Konsequenz",
+    "fr": "la conséquence",
+    "es": "la consecuencia",
+    "it": "la conseguenza",
+    "tr": "sonuç",
+    "ru": "последствие"
+  },
+  {
+    "en": "magnitude",
+    "de": "das Ausmaß",
+    "fr": "l'ampleur",
+    "es": "la magnitud",
+    "it": "la portata",
+    "tr": "büyüklük",
+    "ru": "масштаб"
+  },
+  {
+    "en": "abundance",
+    "de": "die Fülle",
+    "fr": "l'abondance",
+    "es": "la abundancia",
+    "it": "l'abbondanza",
+    "tr": "bolluk",
+    "ru": "изобилие"
+  },
+  {
+    "en": "scarcity",
+    "de": "die Knappheit",
+    "fr": "la pénurie",
+    "es": "la escasez",
+    "it": "la scarsità",
+    "tr": "kıtlık",
+    "ru": "дефицит"
+  },
+  {
+    "en": "proximity",
+    "de": "die Nähe",
+    "fr": "la proximité",
+    "es": "la proximidad",
+    "it": "la prossimità",
+    "tr": "yakınlık",
+    "ru": "близость"
+  },
+  {
+    "en": "deviation",
+    "de": "die Abweichung",
+    "fr": "la déviation",
+    "es": "la desviación",
+    "it": "la deviazione",
+    "tr": "sapma",
+    "ru": "отклонение"
+  },
+  {
+    "en": "resilience",
+    "de": "die Widerstandsfähigkeit",
+    "fr": "la résilience",
+    "es": "la resiliencia",
+    "it": "la resilienza",
+    "tr": "dayanıklılık",
+    "ru": "устойчивость"
+  },
+  {
+    "en": "turmoil",
+    "de": "der Aufruhr",
+    "fr": "la tourmente",
+    "es": "la agitación",
+    "it": "il tumulto",
+    "tr": "kargaşa",
+    "ru": "смятение"
+  },
+  {
+    "en": "plight",
+    "de": "die Notlage",
+    "fr": "la détresse",
+    "es": "el aprieto",
+    "it": "la difficile situazione",
+    "tr": "kötü durum",
+    "ru": "бедственное положение"
+  },
+  {
+    "en": "demise",
+    "de": "der Niedergang",
+    "fr": "la disparition",
+    "es": "la desaparición",
+    "it": "la scomparsa",
+    "tr": "çöküş",
+    "ru": "крах"
+  },
+  {
+    "en": "surge",
+    "de": "der Anstieg",
+    "fr": "la montée",
+    "es": "el aumento repentino",
+    "it": "l'impennata",
+    "tr": "ani artış",
+    "ru": "всплеск"
+  },
+  {
+    "en": "backlash",
+    "de": "die Gegenreaktion",
+    "fr": "le contrecoup",
+    "es": "la reacción violenta",
+    "it": "il contraccolpo",
+    "tr": "tepki",
+    "ru": "негативная реакция"
+  },
+  {
+    "en": "stigma",
+    "de": "das Stigma",
+    "fr": "la stigmatisation",
+    "es": "el estigma",
+    "it": "lo stigma",
+    "tr": "damga",
+    "ru": "клеймо"
+  },
+  {
+    "en": "prejudice",
+    "de": "das Vorurteil",
+    "fr": "le préjugé",
+    "es": "el prejuicio",
+    "it": "il pregiudizio",
+    "tr": "önyargı",
+    "ru": "предубеждение"
+  },
+  {
+    "en": "bias",
+    "de": "die Voreingenommenheit",
+    "fr": "le parti pris",
+    "es": "el sesgo",
+    "it": "il pregiudizio",
+    "tr": "yanlılık",
+    "ru": "предвзятость"
+  },
+  {
+    "en": "integrity",
+    "de": "die Integrität",
+    "fr": "l'intégrité",
+    "es": "la integridad",
+    "it": "l'integrità",
+    "tr": "dürüstlük",
+    "ru": "честность"
+  },
+  {
+    "en": "accountability",
+    "de": "die Rechenschaftspflicht",
+    "fr": "la responsabilité",
+    "es": "la rendición de cuentas",
+    "it": "la responsabilità",
+    "tr": "hesap verebilirlik",
+    "ru": "подотчётность"
+  },
+  {
+    "en": "credibility",
+    "de": "die Glaubwürdigkeit",
+    "fr": "la crédibilité",
+    "es": "la credibilidad",
+    "it": "la credibilità",
+    "tr": "güvenilirlik",
+    "ru": "достоверность"
+  },
+  {
+    "en": "perception",
+    "de": "die Wahrnehmung",
+    "fr": "la perception",
+    "es": "la percepción",
+    "it": "la percezione",
+    "tr": "algı",
+    "ru": "восприятие"
+  },
+  {
+    "en": "perseverance",
+    "de": "die Ausdauer",
+    "fr": "la persévérance",
+    "es": "la perseverancia",
+    "it": "la perseveranza",
+    "tr": "azim",
+    "ru": "настойчивость"
+  },
+  {
+    "en": "aspiration",
+    "de": "das Bestreben",
+    "fr": "l'aspiration",
+    "es": "la aspiración",
+    "it": "l'aspirazione",
+    "tr": "özlem",
+    "ru": "стремление"
+  },
+  {
+    "en": "notion",
+    "de": "die Vorstellung",
+    "fr": "la notion",
+    "es": "la noción",
+    "it": "la nozione",
+    "tr": "kavram",
+    "ru": "представление"
+  },
+  {
+    "en": "outset",
+    "de": "der Anfang",
+    "fr": "le début",
+    "es": "el inicio",
+    "it": "l'inizio",
+    "tr": "başlangıç",
+    "ru": "начало"
+  },
+  {
+    "en": "outcome",
+    "de": "das Ergebnis",
+    "fr": "le résultat",
+    "es": "el resultado",
+    "it": "l'esito",
+    "tr": "netice",
+    "ru": "исход"
+  },
+  {
+    "en": "endorsement",
+    "de": "die Befürwortung",
+    "fr": "l'approbation",
+    "es": "el respaldo",
+    "it": "l'approvazione",
+    "tr": "destek",
+    "ru": "одобрение"
+  },
+  {
+    "en": "compliance",
+    "de": "die Einhaltung",
+    "fr": "la conformité",
+    "es": "el cumplimiento",
+    "it": "la conformità",
+    "tr": "uyum",
+    "ru": "соответствие"
+  },
+  {
+    "en": "deterrent",
+    "de": "das Abschreckungsmittel",
+    "fr": "le moyen de dissuasion",
+    "es": "el elemento disuasorio",
+    "it": "il deterrente",
+    "tr": "caydırıcı",
+    "ru": "сдерживающий фактор"
+  },
+  {
+    "en": "fluctuation",
+    "de": "die Schwankung",
+    "fr": "la fluctuation",
+    "es": "la fluctuación",
+    "it": "la fluttuazione",
+    "tr": "dalgalanma",
+    "ru": "колебание"
+  },
+  {
+    "en": "transient",
+    "de": "vergänglich",
+    "fr": "transitoire",
+    "es": "transitorio",
+    "it": "transitorio",
+    "tr": "geçici",
+    "ru": "преходящий"
+  },
+  {
+    "en": "exuberant",
+    "de": "überschwänglich",
+    "fr": "exubérant",
+    "es": "exuberante",
+    "it": "esuberante",
+    "tr": "coşkun",
+    "ru": "буйный"
+  },
+  {
+    "en": "ambivalent",
+    "de": "ambivalent",
+    "fr": "ambivalent",
+    "es": "ambivalente",
+    "it": "ambivalente",
+    "tr": "kararsız",
+    "ru": "двойственный"
+  },
+  {
+    "en": "coherent",
+    "de": "kohärent",
+    "fr": "cohérent",
+    "es": "coherente",
+    "it": "coerente",
+    "tr": "tutarlı",
+    "ru": "связный"
+  },
+  {
+    "en": "meticulous",
+    "de": "akribisch",
+    "fr": "méticuleux",
+    "es": "meticuloso",
+    "it": "meticoloso",
+    "tr": "titiz",
+    "ru": "дотошный"
+  },
+  {
+    "en": "inevitable",
+    "de": "unvermeidlich",
+    "fr": "inévitable",
+    "es": "inevitable",
+    "it": "inevitabile",
+    "tr": "kaçınılmaz",
+    "ru": "неизбежный"
+  },
+  {
+    "en": "subtle",
+    "de": "subtil",
+    "fr": "subtil",
+    "es": "sutil",
+    "it": "sottile",
+    "tr": "ince",
+    "ru": "тонкий"
+  },
+  {
+    "en": "profound",
+    "de": "tiefgreifend",
+    "fr": "profond",
+    "es": "profundo",
+    "it": "profondo",
+    "tr": "derin",
+    "ru": "глубокий"
+  },
+  {
+    "en": "plausible",
+    "de": "plausibel",
+    "fr": "plausible",
+    "es": "plausible",
+    "it": "plausibile",
+    "tr": "makul",
+    "ru": "правдоподобный"
+  },
+  {
+    "en": "feasible",
+    "de": "machbar",
+    "fr": "faisable",
+    "es": "factible",
+    "it": "fattibile",
+    "tr": "uygulanabilir",
+    "ru": "осуществимый"
+  },
+  {
+    "en": "redundant",
+    "de": "überflüssig",
+    "fr": "redondant",
+    "es": "redundante",
+    "it": "ridondante",
+    "tr": "gereksiz",
+    "ru": "избыточный"
+  },
+  {
+    "en": "indispensable",
+    "de": "unverzichtbar",
+    "fr": "indispensable",
+    "es": "indispensable",
+    "it": "indispensabile",
+    "tr": "vazgeçilmez",
+    "ru": "незаменимый"
+  },
+  {
+    "en": "intricate",
+    "de": "verwickelt",
+    "fr": "complexe",
+    "es": "intrincado",
+    "it": "intricato",
+    "tr": "karmaşık",
+    "ru": "запутанный"
+  },
+  {
+    "en": "compelling",
+    "de": "überzeugend",
+    "fr": "convaincant",
+    "es": "convincente",
+    "it": "avvincente",
+    "tr": "ikna edici",
+    "ru": "убедительный"
+  },
+  {
+    "en": "prevalent",
+    "de": "vorherrschend",
+    "fr": "répandu",
+    "es": "predominante",
+    "it": "prevalente",
+    "tr": "yaygın",
+    "ru": "распространённый"
+  },
+  {
+    "en": "scarce",
+    "de": "knapp",
+    "fr": "rare",
+    "es": "escaso",
+    "it": "scarso",
+    "tr": "kıt",
+    "ru": "скудный"
+  },
+  {
+    "en": "versatile",
+    "de": "vielseitig",
+    "fr": "polyvalent",
+    "es": "versátil",
+    "it": "versatile",
+    "tr": "çok yönlü",
+    "ru": "разносторонний"
+  },
+  {
+    "en": "robust",
+    "de": "robust",
+    "fr": "robuste",
+    "es": "robusto",
+    "it": "robusto",
+    "tr": "sağlam",
+    "ru": "крепкий"
+  },
+  {
+    "en": "viable",
+    "de": "rentabel",
+    "fr": "viable",
+    "es": "viable",
+    "it": "vitale",
+    "tr": "yapılabilir",
+    "ru": "жизнеспособный"
+  },
+  {
+    "en": "arbitrary",
+    "de": "willkürlich",
+    "fr": "arbitraire",
+    "es": "arbitrario",
+    "it": "arbitrario",
+    "tr": "keyfi",
+    "ru": "произвольный"
+  },
+  {
+    "en": "detrimental",
+    "de": "schädlich",
+    "fr": "préjudiciable",
+    "es": "perjudicial",
+    "it": "dannoso",
+    "tr": "zararlı",
+    "ru": "пагубный"
+  },
+  {
+    "en": "futile",
+    "de": "vergeblich",
+    "fr": "futile",
+    "es": "fútil",
+    "it": "futile",
+    "tr": "boşuna",
+    "ru": "тщетный"
+  },
+  {
+    "en": "lucrative",
+    "de": "lukrativ",
+    "fr": "lucratif",
+    "es": "lucrativo",
+    "it": "lucrativo",
+    "tr": "kazançlı",
+    "ru": "прибыльный"
+  },
+  {
+    "en": "imminent",
+    "de": "bevorstehend",
+    "fr": "imminent",
+    "es": "inminente",
+    "it": "imminente",
+    "tr": "yakın",
+    "ru": "неминуемый"
+  },
+  {
+    "en": "obsolete",
+    "de": "veraltet",
+    "fr": "obsolète",
+    "es": "obsoleto",
+    "it": "obsoleto",
+    "tr": "modası geçmiş",
+    "ru": "устаревший"
+  },
+  {
+    "en": "candid",
+    "de": "offen",
+    "fr": "franc",
+    "es": "franco",
+    "it": "franco",
+    "tr": "açık sözlü",
+    "ru": "откровенный"
+  },
+  {
+    "en": "diligent",
+    "de": "fleißig",
+    "fr": "assidu",
+    "es": "diligente",
+    "it": "diligente",
+    "tr": "gayretli",
+    "ru": "усердный"
+  },
+  {
+    "en": "tedious",
+    "de": "langwierig",
+    "fr": "fastidieux",
+    "es": "tedioso",
+    "it": "tedioso",
+    "tr": "sıkıcı",
+    "ru": "утомительный"
+  },
+  {
+    "en": "elaborate",
+    "de": "ausführlich",
+    "fr": "élaboré",
+    "es": "elaborado",
+    "it": "elaborato",
+    "tr": "ayrıntılı",
+    "ru": "тщательно разработанный"
+  },
+  {
+    "en": "pervasive",
+    "de": "durchdringend",
+    "fr": "envahissant",
+    "es": "omnipresente",
+    "it": "pervasivo",
+    "tr": "yaygın etkili",
+    "ru": "всепроникающий"
+  },
+  {
+    "en": "blatant",
+    "de": "eklatant",
+    "fr": "flagrant",
+    "es": "flagrante",
+    "it": "palese",
+    "tr": "bariz",
+    "ru": "вопиющий"
+  },
+  {
+    "en": "vague",
+    "de": "vage",
+    "fr": "vague",
+    "es": "vago",
+    "it": "vago",
+    "tr": "muğlak",
+    "ru": "расплывчатый"
+  },
+  {
+    "en": "notwithstanding",
+    "de": "ungeachtet",
+    "fr": "nonobstant",
+    "es": "no obstante",
+    "it": "nonostante",
+    "tr": "buna rağmen",
+    "ru": "несмотря на"
+  },
+  {
+    "en": "ostensibly",
+    "de": "angeblich",
+    "fr": "ostensiblement",
+    "es": "aparentemente",
+    "it": "apparentemente",
+    "tr": "görünüşte",
+    "ru": "якобы"
+  },
+  {
+    "en": "arguably",
+    "de": "wohl",
+    "fr": "sans doute",
+    "es": "posiblemente",
+    "it": "probabilmente",
+    "tr": "muhtemelen",
+    "ru": "пожалуй"
+  },
+  {
+    "en": "albeit",
+    "de": "wenngleich",
+    "fr": "quoique",
+    "es": "aunque",
+    "it": "sebbene",
+    "tr": "her ne kadar",
+    "ru": "хотя и"
+  },
+  {
+    "en": "hitherto",
+    "de": "bisher",
+    "fr": "jusqu'ici",
+    "es": "hasta ahora",
+    "it": "finora",
+    "tr": "şimdiye kadar",
+    "ru": "до сих пор"
+  },
+  {
+    "en": "henceforth",
+    "de": "fortan",
+    "fr": "désormais",
+    "es": "en adelante",
+    "it": "d'ora in poi",
+    "tr": "bundan böyle",
+    "ru": "впредь"
+  },
+  {
+    "en": "nevertheless",
+    "de": "dennoch",
+    "fr": "néanmoins",
+    "es": "sin embargo",
+    "it": "tuttavia",
+    "tr": "yine de",
+    "ru": "тем не менее"
+  },
+  {
+    "en": "thereby",
+    "de": "dadurch",
+    "fr": "ainsi",
+    "es": "de ese modo",
+    "it": "in tal modo",
+    "tr": "böylece",
+    "ru": "тем самым"
+  },
+  {
+    "en": "moreover",
+    "de": "außerdem",
+    "fr": "de plus",
+    "es": "además",
+    "it": "inoltre",
+    "tr": "üstelik",
+    "ru": "более того"
+  },
+  {
+    "en": "furthermore",
+    "de": "des Weiteren",
+    "fr": "en outre",
+    "es": "asimismo",
+    "it": "per di più",
+    "tr": "ayrıca",
+    "ru": "кроме того"
+  },
+  {
+    "en": "conversely",
+    "de": "umgekehrt",
+    "fr": "inversement",
+    "es": "a la inversa",
+    "it": "viceversa",
+    "tr": "tersine",
+    "ru": "наоборот"
+  },
+  {
+    "en": "consequently",
+    "de": "folglich",
+    "fr": "par conséquent",
+    "es": "por consiguiente",
+    "it": "di conseguenza",
+    "tr": "dolayısıyla",
+    "ru": "следовательно"
+  },
+  {
+    "en": "presumably",
+    "de": "vermutlich",
+    "fr": "vraisemblablement",
+    "es": "presumiblemente",
+    "it": "presumibilmente",
+    "tr": "muhtemelen",
+    "ru": "предположительно"
+  },
+  {
+    "en": "inadvertently",
+    "de": "versehentlich",
+    "fr": "par inadvertance",
+    "es": "inadvertidamente",
+    "it": "inavvertitamente",
+    "tr": "istemeden",
+    "ru": "непреднамеренно"
+  },
+  {
+    "en": "predominantly",
+    "de": "überwiegend",
+    "fr": "principalement",
+    "es": "predominantemente",
+    "it": "prevalentemente",
+    "tr": "ağırlıklı olarak",
+    "ru": "преимущественно"
+  },
+  {
+    "en": "inherently",
+    "de": "von Natur aus",
+    "fr": "intrinsèquement",
+    "es": "intrínsecamente",
+    "it": "intrinsecamente",
+    "tr": "doğası gereği",
+    "ru": "по сути"
+  },
+  {
+    "en": "explicitly",
+    "de": "ausdrücklich",
+    "fr": "explicitement",
+    "es": "explícitamente",
+    "it": "esplicitamente",
+    "tr": "açıkça",
+    "ru": "явно"
+  },
+  {
+    "en": "implicitly",
+    "de": "implizit",
+    "fr": "implicitement",
+    "es": "implícitamente",
+    "it": "implicitamente",
+    "tr": "örtük olarak",
+    "ru": "неявно"
+  },
+  {
+    "en": "scarcely",
+    "de": "kaum",
+    "fr": "à peine",
+    "es": "apenas",
+    "it": "appena",
+    "tr": "neredeyse hiç",
+    "ru": "едва"
+  },
+  {
+    "en": "intermittently",
+    "de": "zeitweise",
+    "fr": "par intermittence",
+    "es": "intermitentemente",
+    "it": "a intermittenza",
+    "tr": "aralıklı olarak",
+    "ru": "с перерывами"
+  },
+  {
+    "en": "whereas",
+    "de": "wohingegen",
+    "fr": "tandis que",
+    "es": "mientras que",
+    "it": "mentre",
+    "tr": "oysa",
+    "ru": "тогда как"
+  },
+  {
+    "en": "regardless",
+    "de": "ungeachtet dessen",
+    "fr": "quoi qu'il en soit",
+    "es": "independientemente",
+    "it": "indipendentemente",
+    "tr": "ne olursa olsun",
+    "ru": "независимо"
+  },
+  {
+    "en": "to retrieve",
+    "de": "abrufen",
+    "fr": "récupérer",
+    "es": "recuperar",
+    "it": "recuperare",
+    "tr": "geri almak",
+    "ru": "извлекать"
+  },
+  {
+    "en": "to anticipate",
+    "de": "vorwegnehmen",
+    "fr": "anticiper",
+    "es": "anticipar",
+    "it": "anticipare",
+    "tr": "beklemek",
+    "ru": "предвидеть"
+  },
+  {
+    "en": "to advocate for",
+    "de": "sich einsetzen",
+    "fr": "plaider",
+    "es": "abogar por",
+    "it": "perorare",
+    "tr": "lehinde olmak",
+    "ru": "ратовать"
+  },
+  {
+    "en": "to disregard",
+    "de": "missachten",
+    "fr": "ignorer",
+    "es": "desestimar",
+    "it": "ignorare",
+    "tr": "göz ardı etmek",
+    "ru": "пренебрегать"
+  },
+  {
+    "en": "to uphold",
+    "de": "aufrechterhalten",
+    "fr": "maintenir",
+    "es": "mantener",
+    "it": "sostenere",
+    "tr": "sürdürmek",
+    "ru": "поддерживать"
+  },
+  {
+    "en": "abstraction",
+    "de": "die Abstraktion",
+    "fr": "l'abstraction",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "абстракция"
+  },
+  {
+    "en": "administration",
+    "de": "die Verwaltung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "администрация"
+  },
+  {
+    "en": "topicality",
+    "de": "die Aktualität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "актуальность"
+  },
+  {
+    "en": "anecdote",
+    "de": "die Anekdote",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "анекдот"
+  },
+  {
+    "en": "anonymous",
+    "de": "anonym",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "анонимный"
+  },
+  {
+    "en": "anthropology",
+    "de": "die Anthropologie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "антропология"
+  },
+  {
+    "en": "apathy",
+    "de": "die Apathie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "апатия"
+  },
+  {
+    "en": "vocation",
+    "de": "die Berufung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "апелляция"
+  },
+  {
+    "en": "to applaud",
+    "de": "applaudieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "аплодировать"
+  },
+  {
+    "en": "archive",
+    "de": "das Archiv",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "архив"
+  },
+  {
+    "en": "assimilation",
+    "de": "die Assimilation",
+    "fr": "l'assimilation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ассимиляция"
+  },
+  {
+    "en": "atmosphere",
+    "de": "die Atmosphäre",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "атмосфера"
+  },
+  {
+    "en": "to balance",
+    "de": "balancieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "балансировать"
+  },
+  {
+    "en": "gratitude",
+    "de": "die Dankbarkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "благодарность"
+  },
+  {
+    "en": "wellbeing",
+    "de": "das Wohlergehen",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "благосостояние"
+  },
+  {
+    "en": "charitable",
+    "de": "wohltätig",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "благотворительный"
+  },
+  {
+    "en": "agonizing",
+    "de": "schmerzhaft",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "болезненный"
+  },
+  {
+    "en": "load",
+    "de": "die Last",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "бремя"
+  },
+  {
+    "en": "interaction",
+    "de": "die Interaktion",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "взаимодействие"
+  },
+  {
+    "en": "mutual understanding",
+    "de": "das Einvernehmen",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "взаимопонимание"
+  },
+  {
+    "en": "mutual respect",
+    "de": "der gegenseitige Respekt",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "взаимоуважение"
+  },
+  {
+    "en": "implementation",
+    "de": "die Implementierung",
+    "fr": "la mise en œuvre",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "внедрение"
+  },
+  {
+    "en": "outrage",
+    "de": "die Empörung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "возмущение"
+  },
+  {
+    "en": "fortune-telling",
+    "de": "die Wahrsagerei",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ворожба"
+  },
+  {
+    "en": "temporary",
+    "de": "vorübergehend",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "временный"
+  },
+  {
+    "en": "forced",
+    "de": "gezwungen",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "вынужденный"
+  },
+  {
+    "en": "expressive",
+    "de": "ausdrucksvoll",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "выразительный"
+  },
+  {
+    "en": "global",
+    "de": "global",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "глобальный"
+  },
+  {
+    "en": "state-run",
+    "de": "staatlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "государственный"
+  },
+  {
+    "en": "gravity",
+    "de": "die Schwerkraft",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "гравитация"
+  },
+  {
+    "en": "literacy",
+    "de": "die Alphabetisierung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "грамотность"
+  },
+  {
+    "en": "double meaning",
+    "de": "die Zweideutigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "двусмысленность"
+  },
+  {
+    "en": "delicate",
+    "de": "delikat",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "деликатный"
+  },
+  {
+    "en": "destructive",
+    "de": "destruktiv",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "деструктивный"
+  },
+  {
+    "en": "decentralized",
+    "de": "dezentralisiert",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "децентрализованный"
+  },
+  {
+    "en": "discipline",
+    "de": "die Disziplin",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "дисциплина"
+  },
+  {
+    "en": "dominate",
+    "de": "dominieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "доминировать"
+  },
+  {
+    "en": "dignity",
+    "de": "die Würde",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "достоинство"
+  },
+  {
+    "en": "available",
+    "de": "verfügbar",
+    "fr": "disponible",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "доступный"
+  },
+  {
+    "en": "antiquity",
+    "de": "die Antike",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "древность"
+  },
+  {
+    "en": "spiritual",
+    "de": "spirituell",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "духовный"
+  },
+  {
+    "en": "unity",
+    "de": "die Einigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "единодушие"
+  },
+  {
+    "en": "entity",
+    "de": "die Einheit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "единство"
+  },
+  {
+    "en": "concluding",
+    "de": "abschließend",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "заключительный"
+  },
+  {
+    "en": "legislation",
+    "de": "die Gesetzgebung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "законодательство"
+  },
+  {
+    "en": "difficulty",
+    "de": "die Schwierigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "затруднение"
+  },
+  {
+    "en": "to ignore",
+    "de": "ignorieren",
+    "fr": "faire fi de",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "игнорировать"
+  },
+  {
+    "en": "identity",
+    "de": "die Identität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "идентичность"
+  },
+  {
+    "en": "hierarchy",
+    "de": "die Hierarchie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "иерархия"
+  },
+  {
+    "en": "voter",
+    "de": "der Wähler",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "избиратель"
+  },
+  {
+    "en": "invention",
+    "de": "die Erfindung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "изобретение"
+  },
+  {
+    "en": "pictorial",
+    "de": "bildlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "изобразительный"
+  },
+  {
+    "en": "illusion",
+    "de": "die Illusion",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "иллюзия"
+  },
+  {
+    "en": "immunity",
+    "de": "die Immunität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "иммунитет"
+  },
+  {
+    "en": "impulse",
+    "de": "der Impuls",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "импульс"
+  },
+  {
+    "en": "exceptional",
+    "de": "außergewöhnlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "исключительный"
+  },
+  {
+    "en": "researcher",
+    "de": "der Forscher",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "исследователь"
+  },
+  {
+    "en": "ostensible",
+    "de": "scheinbar",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "кажущийся"
+  },
+  {
+    "en": "qualified",
+    "de": "qualifiziert",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "квалифицированный"
+  },
+  {
+    "en": "classical",
+    "de": "klassisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "классический"
+  },
+  {
+    "en": "collapse",
+    "de": "der Zusammenbruch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "коллапс"
+  },
+  {
+    "en": "collective",
+    "de": "kollektiv",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "коллективный"
+  },
+  {
+    "en": "for-profit",
+    "de": "kommerziell",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "коммерческий"
+  },
+  {
+    "en": "to compensate",
+    "de": "kompensieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "компенсировать"
+  },
+  {
+    "en": "competence",
+    "de": "die Kompetenz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "компетенция"
+  },
+  {
+    "en": "element",
+    "de": "die Komponente",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "компонент"
+  },
+  {
+    "en": "Compromise",
+    "de": "der Kompromiss",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "компромисс"
+  },
+  {
+    "en": "to convert",
+    "de": "konvertieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "конвертировать"
+  },
+  {
+    "en": "concentration",
+    "de": "die Konzentration",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "концентрация"
+  },
+  {
+    "en": "conceptual",
+    "de": "konzeptionell",
+    "fr": "conceptuel",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "концептуальный"
+  },
+  {
+    "en": "corruption",
+    "de": "die Korruption",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "коррупция"
+  },
+  {
+    "en": "utmost",
+    "de": "äußerst",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "крайне"
+  },
+  {
+    "en": "cumulative",
+    "de": "kumulativ",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "кумулятивный"
+  },
+  {
+    "en": "legitimate",
+    "de": "legitim",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "легитимный"
+  },
+  {
+    "en": "to liquidate",
+    "de": "liquidieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ликвидировать"
+  },
+  {
+    "en": "logical",
+    "de": "logisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "логический"
+  },
+  {
+    "en": "loyalty",
+    "de": "die Loyalität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "лояльность"
+  },
+  {
+    "en": "to manifest",
+    "de": "manifestieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "манифестировать"
+  },
+  {
+    "en": "scale",
+    "de": "der Maßstab",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "масштаб"
+  },
+  {
+    "en": "mathematical",
+    "de": "mathematisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "математический"
+  },
+  {
+    "en": "mechanism",
+    "de": "der Mechanismus",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "механизм"
+  },
+  {
+    "en": "melody",
+    "de": "die Melodie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "мелодия"
+  },
+  {
+    "en": "metaphor",
+    "de": "die Metapher",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "метафора"
+  },
+  {
+    "en": "methodology",
+    "de": "die Methodik",
+    "fr": "la méthodologie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "методика"
+  },
+  {
+    "en": "to motivate",
+    "de": "motivieren",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "мотивировать"
+  },
+  {
+    "en": "motive",
+    "de": "das Motiv",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "мотив"
+  },
+  {
+    "en": "multiculturalism",
+    "de": "der Multikulturalismus",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "мультикультурализм"
+  },
+  {
+    "en": "observer",
+    "de": "der Beobachter",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "наблюдатель"
+  },
+  {
+    "en": "illustrative",
+    "de": "anschaulich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "наглядный"
+  },
+  {
+    "en": "didactic",
+    "de": "belehrend",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "назидательный"
+  },
+  {
+    "en": "initial",
+    "de": "anfänglich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "начальный"
+  },
+  {
+    "en": "national identity",
+    "de": "die Nationalität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "национальность"
+  },
+  {
+    "en": "scientific",
+    "de": "wissenschaftlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "научно"
+  },
+  {
+    "en": "inappropriate",
+    "de": "unangemessen",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "неадекватный"
+  },
+  {
+    "en": "ignorance",
+    "de": "die Ignoranz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "невежество"
+  },
+  {
+    "en": "independence",
+    "de": "die Unabhängigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "независимость"
+  },
+  {
+    "en": "unconstitutional",
+    "de": "verfassungswidrig",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "неконституционный"
+  },
+  {
+    "en": "hatred",
+    "de": "der Hass",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ненависть"
+  },
+  {
+    "en": "irrevocable",
+    "de": "unwiderruflich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "необратимый"
+  },
+  {
+    "en": "unbridled",
+    "de": "ungezügelt",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "необузданный"
+  },
+  {
+    "en": "indefinite",
+    "de": "unbestimmt",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "неопределённый"
+  },
+  {
+    "en": "unconscious",
+    "de": "unbewusst",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "неосознанный"
+  },
+  {
+    "en": "imprudent",
+    "de": "unvorsichtig",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "неосторожный"
+  },
+  {
+    "en": "necessity",
+    "de": "die Notwendigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "необходимость"
+  },
+  {
+    "en": "motionless",
+    "de": "bewegungslos",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "неподвижный"
+  },
+  {
+    "en": "inconsistency",
+    "de": "die Inkonsistenz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "непоследовательность"
+  },
+  {
+    "en": "steady",
+    "de": "kontinuierlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "непрерывный"
+  },
+  {
+    "en": "imperfection",
+    "de": "die Unvollkommenheit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "несовершенство"
+  },
+  {
+    "en": "invulnerability",
+    "de": "die Unverwundbarkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "неуязвимость"
+  },
+  {
+    "en": "to accuse",
+    "de": "beschuldigen",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "обвинять"
+  },
+  {
+    "en": "to devalue",
+    "de": "entwerten",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "обесценивать"
+  },
+  {
+    "en": "restriction",
+    "de": "die Beschränkung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ограничение"
+  },
+  {
+    "en": "approval",
+    "de": "die Zustimmung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "одобрение"
+  },
+  {
+    "en": "knowing",
+    "de": "wissend",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "осведомлённый"
+  },
+  {
+    "en": "to dispute",
+    "de": "bestreiten",
+    "fr": "contester",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "оспаривать"
+  },
+  {
+    "en": "tangible",
+    "de": "fühlbar",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "осязаемый"
+  },
+  {
+    "en": "discovery",
+    "de": "die Entdeckung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "открытие"
+  },
+  {
+    "en": "to mirror",
+    "de": "widerspiegeln",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "отражать"
+  },
+  {
+    "en": "fall",
+    "de": "der Sturz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "падение"
+  },
+  {
+    "en": "parameter",
+    "de": "der Parameter",
+    "fr": "le paramètre",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "параметр"
+  },
+  {
+    "en": "promising",
+    "de": "aussichtsreich",
+    "fr": "prometteur",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "перспективный"
+  },
+  {
+    "en": "pessimistic",
+    "de": "pessimistisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "пессимистичный"
+  },
+  {
+    "en": "to impress",
+    "de": "beeindrucken",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "поражать"
+  },
+  {
+    "en": "promise",
+    "de": "das Potenzial",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "потенциал"
+  },
+  {
+    "en": "want",
+    "de": "das Bedürfnis",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "потребность"
+  },
+  {
+    "en": "instructive",
+    "de": "lehrreich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "поучительный"
+  },
+  {
+    "en": "to warn",
+    "de": "warnen",
+    "fr": "avertir",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "предупреждать"
+  },
+  {
+    "en": "closing",
+    "de": "die Beendigung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "прекращение"
+  },
+  {
+    "en": "overcoming",
+    "de": "die Überwindung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "преодоление"
+  },
+  {
+    "en": "obstacle",
+    "de": "das Hindernis",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "препятствие"
+  },
+  {
+    "en": "privilege",
+    "de": "das Privileg",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "привилегия"
+  },
+  {
+    "en": "affiliation",
+    "de": "die Zugehörigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "принадлежность"
+  },
+  {
+    "en": "reconciliation",
+    "de": "die Versöhnung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "примирение"
+  },
+  {
+    "en": "to tame",
+    "de": "zähmen",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "приручать"
+  },
+  {
+    "en": "presence",
+    "de": "die Anwesenheit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "присутствие"
+  },
+  {
+    "en": "breakdown",
+    "de": "das Scheitern",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "провал"
+  },
+  {
+    "en": "derived",
+    "de": "abgeleitet",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "производный"
+  },
+  {
+    "en": "procrastination",
+    "de": "die Prokrastination",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "прокрастинация"
+  },
+  {
+    "en": "professionalism",
+    "de": "der Professionalismus",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "профессионализм"
+  },
+  {
+    "en": "prophylaxis",
+    "de": "die Prävention",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "профилактика"
+  },
+  {
+    "en": "psychological",
+    "de": "psychologisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "психологический"
+  },
+  {
+    "en": "publication",
+    "de": "die Veröffentlichung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "публикация"
+  },
+  {
+    "en": "desert",
+    "de": "die Wüste",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "пустыня"
+  },
+  {
+    "en": "mess",
+    "de": "das Durcheinander",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "путаница"
+  },
+  {
+    "en": "equilibrium",
+    "de": "das Gleichgewicht",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "равновесие"
+  },
+  {
+    "en": "propagate",
+    "de": "verbreiten",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "распространять"
+  },
+  {
+    "en": "rational",
+    "de": "rational",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "рациональный"
+  },
+  {
+    "en": "revolutionary",
+    "de": "revolutionär",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "революционный"
+  },
+  {
+    "en": "resonance",
+    "de": "die Resonanz",
+    "fr": "la résonance",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "резонанс"
+  },
+  {
+    "en": "reputation",
+    "de": "der Ruf",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "репутация"
+  },
+  {
+    "en": "ritual",
+    "de": "das Ritual",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ритуал"
+  },
+  {
+    "en": "skeptical",
+    "de": "skeptisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "скептический"
+  },
+  {
+    "en": "coherence",
+    "de": "die Kohärenz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "согласованность"
+  },
+  {
+    "en": "content-related",
+    "de": "inhaltlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "содержательный"
+  },
+  {
+    "en": "justice",
+    "de": "die Gerechtigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "справедливость"
+  },
+  {
+    "en": "stability",
+    "de": "die Stabilität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "стабильность"
+  },
+  {
+    "en": "aging",
+    "de": "das Altern",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "старение"
+  },
+  {
+    "en": "suffering",
+    "de": "das Leiden",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "страдание"
+  },
+  {
+    "en": "sovereignty",
+    "de": "die Souveränität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "суверенитет"
+  },
+  {
+    "en": "existence",
+    "de": "die Existenz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "существование"
+  },
+  {
+    "en": "scenario",
+    "de": "das Szenario",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "сценарий"
+  },
+  {
+    "en": "mysterious",
+    "de": "mysteriös",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "таинственный"
+  },
+  {
+    "en": "tactics",
+    "de": "die Taktik",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "тактика"
+  },
+  {
+    "en": "creativity",
+    "de": "die Kreativität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "творчество"
+  },
+  {
+    "en": "tolerance",
+    "de": "die Toleranz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "терпимость"
+  },
+  {
+    "en": "accuracy",
+    "de": "die Genauigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "точность"
+  },
+  {
+    "en": "tragedy",
+    "de": "die Tragödie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "трагедия"
+  },
+  {
+    "en": "transit",
+    "de": "der Transit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "транзит"
+  },
+  {
+    "en": "confidence",
+    "de": "die Zuversicht",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "уверенность"
+  },
+  {
+    "en": "menace",
+    "de": "die Bedrohung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "угроза"
+  },
+  {
+    "en": "astonishing",
+    "de": "erstaunlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "удивительный"
+  },
+  {
+    "en": "satisfaction",
+    "de": "die Zufriedenheit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "удовлетворение"
+  },
+  {
+    "en": "uniqueness",
+    "de": "die Einzigartigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "уникальность"
+  },
+  {
+    "en": "allegation",
+    "de": "die Behauptung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "утверждение"
+  },
+  {
+    "en": "philosophy",
+    "de": "die Philosophie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "философия"
+  },
+  {
+    "en": "philosophical",
+    "de": "philosophisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "философский"
+  },
+  {
+    "en": "folklore",
+    "de": "die Folklore",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "фольклор"
+  },
+  {
+    "en": "attribute",
+    "de": "die Eigenschaft",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "характеристика"
+  },
+  {
+    "en": "cycle",
+    "de": "der Zyklus",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "цикл"
+  },
+  {
+    "en": "humanity",
+    "de": "die Menschheit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "человечество"
+  },
+  {
+    "en": "honesty",
+    "de": "die Ehrlichkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "честность"
+  },
+  {
+    "en": "epidemic",
+    "de": "die Epidemie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эпидемия"
+  },
+  {
+    "en": "erudition",
+    "de": "die Gelehrsamkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эрудиция"
+  },
+  {
+    "en": "aesthetics",
+    "de": "die Ästhetik",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эстетика"
+  },
+  {
+    "en": "ethnic",
+    "de": "ethnisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "этнический"
+  },
+  {
+    "en": "efficiency",
+    "de": "die Effizienz",
+    "fr": "l'efficacité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эффективность"
+  },
+  {
+    "en": "juridical",
+    "de": "juristisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "юридический"
+  },
+  {
+    "en": "enthusiasm",
+    "de": "der Enthusiasmus",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "энтузиазм"
+  },
+  {
+    "en": "era",
+    "de": "die Epoche",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эпоха"
+  },
+  {
+    "en": "escalation",
+    "de": "die Eskalation",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эскалация"
+  },
+  {
+    "en": "aesthetic",
+    "de": "ästhetisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эстетический"
+  },
+  {
+    "en": "effect",
+    "de": "die Wirkung",
+    "fr": "l'effet",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эффект"
+  },
+  {
+    "en": "clarity",
+    "de": "die Klarheit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ясность"
+  },
+  {
+    "en": "ecological",
+    "de": "ökologisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "экологический"
+  },
+  {
+    "en": "economic",
+    "de": "wirtschaftlich",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "экономический"
+  },
+  {
+    "en": "evolution",
+    "de": "die Evolution",
+    "fr": "l'évolution",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эволюция"
+  },
+  {
+    "en": "erosion",
+    "de": "die Erosion",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эрозия"
+  },
+  {
+    "en": "ethics",
+    "de": "die Ethik",
+    "fr": "l'éthique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "этика"
+  },
+  {
+    "en": "jurisdiction",
+    "de": "die Zuständigkeit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "юрисдикция"
+  },
+  {
+    "en": "experiment",
+    "de": "das Experiment",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эксперимент"
+  },
+  {
+    "en": "energetic",
+    "de": "energisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "энергичный"
+  },
+  {
+    "en": "provocative",
+    "de": "provokant",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эпатажный"
+  },
+  {
+    "en": "ether",
+    "de": "das Äther",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эфир"
+  },
+  {
+    "en": "volatile",
+    "de": "flüchtig",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эфемерный"
+  },
+  {
+    "en": "effective",
+    "de": "effektiv",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эффективный"
+  },
+  {
+    "en": "spruce",
+    "de": "schmuck",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ювелирный"
+  },
+  {
+    "en": "elegant",
+    "de": "elegant",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "элегантный"
+  },
+  {
+    "en": "elixir",
+    "de": "der Elixier",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эликсир"
+  },
+  {
+    "en": "empathy",
+    "de": "die Empathie",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эмпатия"
+  },
+  {
+    "en": "empirical",
+    "de": "empirisch",
+    "fr": "empirique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эмпирический"
+  },
+  {
+    "en": "endemic",
+    "de": "endemisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эндемический"
+  },
+  {
+    "en": "energy-saving",
+    "de": "energiesparend",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "энергосберегающий"
+  },
+  {
+    "en": "jeweler",
+    "de": "der Juwelier",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ювелир"
+  },
+  {
+    "en": "falcon",
+    "de": "der Falke",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "ястреб"
+  },
+  {
+    "en": "existential",
+    "de": "existentiell",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "экзистенциальный"
+  },
+  {
+    "en": "eclecticism",
+    "de": "die Eklektik",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эклектика"
+  },
+  {
+    "en": "electron",
+    "de": "das Elektron",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "электрон"
+  },
+  {
+    "en": "emblem",
+    "de": "das Emblem",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эмблема"
+  },
+  {
+    "en": "endemic species",
+    "de": "der Endemit",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эндемик"
+  },
+  {
+    "en": "jurisprudence",
+    "de": "die Jurisprudenz",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "юриспруденция"
+  },
+  {
+    "en": "ecstasy",
+    "de": "der Ekstase",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "экстаз"
+  },
+  {
+    "en": "elasticity",
+    "de": "die Elastizität",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эластичность"
+  },
+  {
+    "en": "emulsion",
+    "de": "die Emulsion",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эмульсия"
+  },
+  {
+    "en": "epigraph",
+    "de": "das Epigraph",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эпиграф"
+  },
+  {
+    "en": "sarcastic",
+    "de": "sarkastisch",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "язвительный"
+  },
+  {
+    "en": "execution",
+    "de": "die Exekution",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "экзекуция"
+  },
+  {
+    "en": "crew",
+    "de": "die Besatzung",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "экипаж"
+  },
+  {
+    "en": "electorate",
+    "de": "der Wählerschaft",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "электорат"
+  },
+  {
+    "en": "ellipsis",
+    "de": "die Ellipse",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эллипсис"
+  },
+  {
+    "en": "squadron",
+    "de": "das Geschwader",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "эскадрилья"
+  },
+  {
+    "en": "label",
+    "de": "das Etikett",
+    "fr": "",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": "этикетка"
+  },
+  {
+    "en": "to intervene",
+    "de": "",
+    "fr": "intervenir",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to foreshadow",
+    "de": "",
+    "fr": "préfigurer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "preeminence",
+    "de": "",
+    "fr": "la prééminence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "conjecture",
+    "de": "",
+    "fr": "la conjecture",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "counterpart",
+    "de": "",
+    "fr": "la contrepartie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "unavoidable",
+    "de": "",
+    "fr": "inéluctable",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "undeniable",
+    "de": "",
+    "fr": "indéniable",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "precarious",
+    "de": "",
+    "fr": "précaire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "peremptory",
+    "de": "",
+    "fr": "péremptoire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "undeniably",
+    "de": "",
+    "fr": "indéniablement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "in cahoots with",
+    "de": "",
+    "fr": "avoir partie liée avec",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "all things considered",
+    "de": "",
+    "fr": "tout compte fait",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "analogy",
+    "de": "",
+    "fr": "l'analogie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "authenticity",
+    "de": "",
+    "fr": "l'authenticité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "compilation",
+    "de": "",
+    "fr": "la compilation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "counterargument",
+    "de": "",
+    "fr": "le contre-argument",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "elaboration",
+    "de": "",
+    "fr": "l'élaboration",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "facet",
+    "de": "",
+    "fr": "la facette",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "lexical",
+    "de": "",
+    "fr": "lexical",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "predominant",
+    "de": "",
+    "fr": "prédominant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "retrospective",
+    "de": "",
+    "fr": "la rétrospective",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "sustainability",
+    "de": "",
+    "fr": "la durabilité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "verification",
+    "de": "",
+    "fr": "la vérification",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "pragmatic",
+    "de": "",
+    "fr": "pragmatique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "sociolinguistic",
+    "de": "",
+    "fr": "sociolinguistique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to juxtapose",
+    "de": "",
+    "fr": "juxtaposer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to divert",
+    "de": "",
+    "fr": "détourner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "idiosyncrasy",
+    "de": "",
+    "fr": "l'idiosyncrasie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "anomaly",
+    "de": "",
+    "fr": "l'anomalie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "precedent",
+    "de": "",
+    "fr": "le précédent",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "heterogeneous",
+    "de": "",
+    "fr": "hétérogène",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "exhaustive",
+    "de": "",
+    "fr": "exhaustif",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "superfluous",
+    "de": "",
+    "fr": "superflu",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "sustained",
+    "de": "",
+    "fr": "soutenu",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "successively",
+    "de": "",
+    "fr": "successivement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "humility",
+    "de": "",
+    "fr": "l'humilité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "by and large",
+    "de": "",
+    "fr": "dans les grandes lignes",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "annotation",
+    "de": "",
+    "fr": "l'annotation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "bilingualism",
+    "de": "",
+    "fr": "le bilinguisme",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "deduction",
+    "de": "",
+    "fr": "la déduction",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "equivalence",
+    "de": "",
+    "fr": "l'équivalence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "integral",
+    "de": "",
+    "fr": "intégral",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "methodological",
+    "de": "",
+    "fr": "méthodologique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "proficiency",
+    "de": "",
+    "fr": "la maîtrise",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "semantic",
+    "de": "",
+    "fr": "sémantique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "synthesis",
+    "de": "",
+    "fr": "la synthèse",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "vulnerability",
+    "de": "",
+    "fr": "la vulnérabilité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "dissemination",
+    "de": "",
+    "fr": "la diffusion",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "interdisciplinary",
+    "de": "",
+    "fr": "interdisciplinaire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "propensity",
+    "de": "",
+    "fr": "la propension",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to circumscribe",
+    "de": "",
+    "fr": "circonscrire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to temper",
+    "de": "",
+    "fr": "tempérer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to discredit",
+    "de": "",
+    "fr": "discréditer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "juxtaposition",
+    "de": "",
+    "fr": "la juxtaposition",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "disparity",
+    "de": "",
+    "fr": "la disparité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "prerogative",
+    "de": "",
+    "fr": "la prérogative",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "homogeneous",
+    "de": "",
+    "fr": "homogène",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "concise",
+    "de": "",
+    "fr": "concis",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "spurious",
+    "de": "",
+    "fr": "fallacieux",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "disparate",
+    "de": "",
+    "fr": "disparate",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "concurrently",
+    "de": "",
+    "fr": "parallèlement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to dwell on",
+    "de": "",
+    "fr": "s'attarder sur",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "tact",
+    "de": "",
+    "fr": "le tact",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "come what may",
+    "de": "",
+    "fr": "advienne que pourra",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "antithesis",
+    "de": "",
+    "fr": "l'antithèse",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "cadence",
+    "de": "",
+    "fr": "la cadence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "constellation",
+    "de": "",
+    "fr": "la constellation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "definitive",
+    "de": "",
+    "fr": "définitif",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "ethnicity",
+    "de": "",
+    "fr": "l'ethnicité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "feasibility",
+    "de": "",
+    "fr": "la faisabilité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "multifaceted",
+    "de": "",
+    "fr": "multifacette",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "progression",
+    "de": "",
+    "fr": "la progression",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "simulation",
+    "de": "",
+    "fr": "la simulation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "terminology",
+    "de": "",
+    "fr": "la terminologie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "contextual",
+    "de": "",
+    "fr": "contextuel",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to recontextualize",
+    "de": "",
+    "fr": "recontextualiser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to consolidate",
+    "de": "",
+    "fr": "consolider",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to relegate",
+    "de": "",
+    "fr": "reléguer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to amplify",
+    "de": "",
+    "fr": "amplifier",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "ubiquity",
+    "de": "",
+    "fr": "l'ubiquité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "subtlety",
+    "de": "",
+    "fr": "la subtilité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "complicity",
+    "de": "",
+    "fr": "la connivence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "intrinsic",
+    "de": "",
+    "fr": "intrinsèque",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "eloquent",
+    "de": "",
+    "fr": "éloquent",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "preliminary",
+    "de": "",
+    "fr": "préliminaire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "invariably",
+    "de": "",
+    "fr": "invariablement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "provided",
+    "de": "",
+    "fr": "à condition que",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "far-fetched",
+    "de": "",
+    "fr": "tiré par les cheveux",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "stubbornness",
+    "de": "",
+    "fr": "l'obstination",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "in the long run",
+    "de": "",
+    "fr": "à la longue",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "articulation",
+    "de": "",
+    "fr": "l'articulation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "capitulation",
+    "de": "",
+    "fr": "la capitulation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "differentiation",
+    "de": "",
+    "fr": "la différenciation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "exemplification",
+    "de": "",
+    "fr": "l'exemplification",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "hierarchical",
+    "de": "",
+    "fr": "hiérarchique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "intervention",
+    "de": "",
+    "fr": "l'intervention",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "plausibility",
+    "de": "",
+    "fr": "la vraisemblance",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "transcription",
+    "de": "",
+    "fr": "la transcription",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "attainment",
+    "de": "",
+    "fr": "l'accomplissement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "contingency",
+    "de": "",
+    "fr": "la contingence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "refinement",
+    "de": "",
+    "fr": "le raffinement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to transcend",
+    "de": "",
+    "fr": "transcender",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to elucidate",
+    "de": "",
+    "fr": "élucider",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to subordinate",
+    "de": "",
+    "fr": "subordonner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to engender",
+    "de": "",
+    "fr": "engendrer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "derision",
+    "de": "",
+    "fr": "la dérision",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "ambivalence",
+    "de": "",
+    "fr": "l'ambivalence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "austerity",
+    "de": "",
+    "fr": "l'austérité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "ubiquitous",
+    "de": "",
+    "fr": "omniprésent",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "overt",
+    "de": "",
+    "fr": "manifeste",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "paradoxically",
+    "de": "",
+    "fr": "paradoxalement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "given",
+    "de": "",
+    "fr": "compte tenu de",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to weigh the pros and cons",
+    "de": "",
+    "fr": "peser le pour et le contre",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "unwittingly",
+    "de": "",
+    "fr": "à son insu",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "sooner or later",
+    "de": "",
+    "fr": "tôt ou tard",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "circumference",
+    "de": "",
+    "fr": "la circonférence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "hypothetical",
+    "de": "",
+    "fr": "hypothétique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "postulate",
+    "de": "",
+    "fr": "le postulat",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "specification",
+    "de": "",
+    "fr": "la spécification",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "transformation",
+    "de": "",
+    "fr": "la transformation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "utilitarian",
+    "de": "",
+    "fr": "utilitariste",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to facilitate",
+    "de": "",
+    "fr": "faciliter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "discernment",
+    "de": "",
+    "fr": "le discernement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "cohesion",
+    "de": "",
+    "fr": "la cohésion",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "culmination",
+    "de": "",
+    "fr": "l'aboutissement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "latent",
+    "de": "",
+    "fr": "latent",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "tenuous",
+    "de": "",
+    "fr": "ténu",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "arduous",
+    "de": "",
+    "fr": "ardu",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "subsequently",
+    "de": "",
+    "fr": "subséquemment",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to take the bull by the horns",
+    "de": "",
+    "fr": "prendre le taureau par les cornes",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "wholeheartedly",
+    "de": "",
+    "fr": "de bon cœur",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "against all odds",
+    "de": "",
+    "fr": "contre toute attente",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "acquisition",
+    "de": "",
+    "fr": "l'acquisition",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "comparative",
+    "de": "",
+    "fr": "comparatif",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "convergence",
+    "de": "",
+    "fr": "la convergence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "distinction",
+    "de": "",
+    "fr": "la distinction",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "extrapolation",
+    "de": "",
+    "fr": "l'extrapolation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "ideology",
+    "de": "",
+    "fr": "l'idéologie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "legitimacy",
+    "de": "",
+    "fr": "la légitimité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "reiteration",
+    "de": "",
+    "fr": "la réitération",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "dichotomy",
+    "de": "",
+    "fr": "la dichotomie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to flourish",
+    "de": "",
+    "fr": "s'épanouir",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "restraint",
+    "de": "",
+    "fr": "la retenue",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to backfire",
+    "de": "",
+    "fr": "se retourner contre",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to raise (an issue)",
+    "de": "",
+    "fr": "soulever une question",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to demolish (an argument)",
+    "de": "",
+    "fr": "battre en brèche",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to be prominent",
+    "de": "",
+    "fr": "tenir le haut du pavé",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to thwart",
+    "de": "",
+    "fr": "déjouer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to dodge",
+    "de": "",
+    "fr": "esquiver",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to include",
+    "de": "",
+    "fr": "comporter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to instil",
+    "de": "",
+    "fr": "insuffler",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to weigh up",
+    "de": "",
+    "fr": "soupeser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to stray",
+    "de": "",
+    "fr": "s'égarer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to waver",
+    "de": "",
+    "fr": "tergiverser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to bicker",
+    "de": "",
+    "fr": "se chamailler",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to extol",
+    "de": "",
+    "fr": "vanter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to crawl",
+    "de": "",
+    "fr": "ramper",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to galvanize",
+    "de": "",
+    "fr": "galvaniser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to revel",
+    "de": "",
+    "fr": "se délecter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to beware",
+    "de": "",
+    "fr": "se méfier",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to flare up",
+    "de": "",
+    "fr": "s'emporter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to fade",
+    "de": "",
+    "fr": "s'estomper",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to spread",
+    "de": "",
+    "fr": "se propager",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to crumble",
+    "de": "",
+    "fr": "s'effondrer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "pettiness",
+    "de": "",
+    "fr": "la mesquinerie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "frankness",
+    "de": "",
+    "fr": "la franchise",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "discretion",
+    "de": "",
+    "fr": "la discrétion",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "recklessness",
+    "de": "",
+    "fr": "l'imprudence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "tenacity",
+    "de": "",
+    "fr": "la ténacité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "detachment",
+    "de": "",
+    "fr": "le détachement",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "consternation",
+    "de": "",
+    "fr": "la consternation",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "respite",
+    "de": "",
+    "fr": "le répit",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "pitfall",
+    "de": "",
+    "fr": "l'écueil",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "heyday",
+    "de": "",
+    "fr": "l'apogée",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "pretext",
+    "de": "",
+    "fr": "le prétexte",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "whim",
+    "de": "",
+    "fr": "le caprice",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "latitude",
+    "de": "",
+    "fr": "la latitude",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "cunning",
+    "de": "",
+    "fr": "la ruse",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "crafty",
+    "de": "",
+    "fr": "retors",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "fickle",
+    "de": "",
+    "fr": "versatile",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "biting",
+    "de": "",
+    "fr": "mordant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "hurtful",
+    "de": "",
+    "fr": "blessant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "off-putting",
+    "de": "",
+    "fr": "rébarbatif",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "unspeakable",
+    "de": "",
+    "fr": "indicible",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "unwavering",
+    "de": "",
+    "fr": "indéfectible",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "convoluted",
+    "de": "",
+    "fr": "alambiqué",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "palpable",
+    "de": "",
+    "fr": "palpable",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "nascent",
+    "de": "",
+    "fr": "naissant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "paramount",
+    "de": "",
+    "fr": "primordial",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "binding",
+    "de": "",
+    "fr": "contraignant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "adroit",
+    "de": "",
+    "fr": "adroit",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "ill-advised",
+    "de": "",
+    "fr": "malavisé",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "grandiloquent",
+    "de": "",
+    "fr": "grandiloquent",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "verbose",
+    "de": "",
+    "fr": "prolixe",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "reluctantly",
+    "de": "",
+    "fr": "à contrecœur",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "point-blank",
+    "de": "",
+    "fr": "de but en blanc",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "blunt",
+    "de": "",
+    "fr": "sans détour",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to belittle",
+    "de": "",
+    "fr": "rabaisser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to mislead",
+    "de": "",
+    "fr": "jeter de la poudre aux yeux",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to gainsay",
+    "de": "",
+    "fr": "démentir",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to circumvent",
+    "de": "",
+    "fr": "contourner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to permeate",
+    "de": "",
+    "fr": "imprégner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to ruminate",
+    "de": "",
+    "fr": "ressasser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to recant",
+    "de": "",
+    "fr": "se rétracter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to dawdle",
+    "de": "",
+    "fr": "lambiner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to slander",
+    "de": "",
+    "fr": "calomnier",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to flatter",
+    "de": "",
+    "fr": "flatter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to domineer",
+    "de": "",
+    "fr": "régenter",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to spurn",
+    "de": "",
+    "fr": "dédaigner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to sneer",
+    "de": "",
+    "fr": "ricaner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to wallow",
+    "de": "",
+    "fr": "se complaire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to take umbrage",
+    "de": "",
+    "fr": "s'offusquer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to subside",
+    "de": "",
+    "fr": "s'apaiser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to dwindle",
+    "de": "",
+    "fr": "s'amenuiser",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to take root",
+    "de": "",
+    "fr": "s'enraciner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to unravel",
+    "de": "",
+    "fr": "se défaire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "grudge",
+    "de": "",
+    "fr": "la rancune",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "arrogance",
+    "de": "",
+    "fr": "l'arrogance",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "curtness",
+    "de": "",
+    "fr": "la brusquerie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "composure",
+    "de": "",
+    "fr": "le sang-froid",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "acumen",
+    "de": "",
+    "fr": "la perspicacité",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "zeal",
+    "de": "",
+    "fr": "la ferveur",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "wariness",
+    "de": "",
+    "fr": "la circonspection",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "disarray",
+    "de": "",
+    "fr": "le désarroi",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "windfall",
+    "de": "",
+    "fr": "l'aubaine",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "breadth",
+    "de": "",
+    "fr": "l'envergure",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "decline",
+    "de": "",
+    "fr": "le déclin",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "subterfuge",
+    "de": "",
+    "fr": "le subterfuge",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "qualm",
+    "de": "",
+    "fr": "le scrupule",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "hindsight",
+    "de": "",
+    "fr": "le recul",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "scope for improvement",
+    "de": "",
+    "fr": "la marge de progression",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "devious",
+    "de": "",
+    "fr": "sournois",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "scathing",
+    "de": "",
+    "fr": "cinglant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "caustic",
+    "de": "",
+    "fr": "caustique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "overwhelming",
+    "de": "",
+    "fr": "accablant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "thorny",
+    "de": "",
+    "fr": "épineux",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "unmentionable",
+    "de": "",
+    "fr": "inavouable",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "inexhaustible",
+    "de": "",
+    "fr": "intarissable",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "flourishing",
+    "de": "",
+    "fr": "florissant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "fleeting",
+    "de": "",
+    "fr": "éphémère",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "clumsy",
+    "de": "",
+    "fr": "maladroit",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "judicious",
+    "de": "",
+    "fr": "avisé",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "measured",
+    "de": "",
+    "fr": "mesuré",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "terse",
+    "de": "",
+    "fr": "laconique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "evasive",
+    "de": "",
+    "fr": "évasif",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "at random",
+    "de": "",
+    "fr": "au hasard",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "in vain",
+    "de": "",
+    "fr": "en vain",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "inference",
+    "de": "",
+    "fr": "l'inférence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "epistemology",
+    "de": "",
+    "fr": "l'épistémologie",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "prevalence",
+    "de": "",
+    "fr": "la prévalence",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "rhetoric",
+    "de": "",
+    "fr": "la rhétorique",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "corroboration",
+    "de": "",
+    "fr": "la corroboration",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "stubborn",
+    "de": "",
+    "fr": "têtu",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to institute",
+    "de": "",
+    "fr": "instaurer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to ratify",
+    "de": "",
+    "fr": "entériner",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "as a result",
+    "de": "",
+    "fr": "de ce fait",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to alert",
+    "de": "",
+    "fr": "prévenir",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "innovative",
+    "de": "",
+    "fr": "innovant",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "substantive",
+    "de": "",
+    "fr": "le substantif",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "astute",
+    "de": "",
+    "fr": "perspicace",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "incidental",
+    "de": "",
+    "fr": "fortuit",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "sly",
+    "de": "",
+    "fr": "rusé",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to deride",
+    "de": "",
+    "fr": "railler",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "forward-thinking",
+    "de": "",
+    "fr": "novateur",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "resourceful",
+    "de": "",
+    "fr": "astucieux",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to defer",
+    "de": "",
+    "fr": "différer",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "to apprehend",
+    "de": "",
+    "fr": "appréhender",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "shrewd",
+    "de": "",
+    "fr": "futé",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  },
+  {
+    "en": "secondary",
+    "de": "",
+    "fr": "accessoire",
+    "es": "",
+    "it": "",
+    "tr": "",
+    "ru": ""
+  }
+]
