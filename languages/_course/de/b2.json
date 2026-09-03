@@ -1,0 +1,1598 @@
+{
+  "level": "b2",
+  "target": "de",
+  "grammarSchedule": [
+    {
+      "id": "de.b2.concessive-clauses",
+      "fromLesson": 1,
+      "why": "obwohl is A2 and trotzdem is B1, so both halves of the topic are already in hand; what B2 adds is dennoch, which lesson 1 teaches as `even so`. The whole point of the topic is that the two constructions take different word orders, and a lesson that hands over a third connector is the place to show all three side by side"
+    },
+    {
+      "id": "de.b2.free-relative-clauses",
+      "fromLesson": 3,
+      "why": "wer, was and wo are A1 question words and the construction costs no new vocabulary at all. It waits for lesson 3 because a free relative needs something worth generalising about - `wer etwas behauptet, muss es belegen` - and lesson 3 is where the verbs of asserting arrive"
+    },
+    {
+      "id": "de.b2.modal-particles",
+      "fromLesson": 5,
+      "why": "doch, ja, eben, denn and schon are all A1 or A2 words carrying an unrelated dictionary meaning, so nothing has to be taught first. Lesson 5 is early enough that the particles can then colour sentences for the remaining 75 lessons, which is the only way a learner ever gets a feel for them"
+    },
+    {
+      "id": "de.b2.konjunktiv-i-reported-speech",
+      "fromLesson": 8,
+      "why": "reported speech needs someone to be reported. Lessons 3 and 4 supply behaupten, argumentieren, betonen and andeuten, and lesson 8 adds the verbs that carry a report forward. The forms themselves - sei, habe, könne, werde - belong to A1 verbs"
+    },
+    {
+      "id": "de.b2.nominalization",
+      "fromLesson": 10,
+      "why": "the construction is only visible when the noun and the verb it was built from are both known. Lesson 10 opens the abstract-noun run: die Annahme beside annehmen, die Folge beside folgen, die Voraussetzung beside voraussetzen"
+    },
+    {
+      "id": "de.b2.konjunktiv-i-substitute-form",
+      "fromLesson": 12,
+      "why": "this is a repair rule for the previous topic, not a separate construction, so it has to follow it far enough that Konjunktiv I is familiar. Four lessons is that distance; the plural forms it exists to rescue turn up as soon as a report has more than one speaker"
+    },
+    {
+      "id": "de.b2.irreal-comparison-als-ob",
+      "fromLesson": 14,
+      "why": "als ob is a B1 word and Konjunktiv II is a B1 topic, so the machinery is complete before B2 starts. It waits until lesson 14 because an unreal comparison needs an appearance worth doubting, and lessons 12 and 13 are where a claim, a statement and an interpretation become nameable"
+    },
+    {
+      "id": "de.b2.passive-alternatives",
+      "fromLesson": 16,
+      "why": "all three forms say that something can be done, so the topic needs problems that can. Lessons 15 and 16 give risk, challenge and requirement, and the -bar half rests on vergleichbar from B1 until machbar arrives in lesson 20"
+    },
+    {
+      "id": "de.b2.participle-i-as-adjective",
+      "fromLesson": 18,
+      "why": "a Partizip I is a verb stem plus -d plus an adjective ending, so it costs no new word; it costs a noun worth modifying. Lesson 18 is where the adjective run starts, which is where a learner is already reading endings"
+    },
+    {
+      "id": "de.b2.fixed-prepositions-adjectives-nouns",
+      "fromLesson": 22,
+      "why": "stolz auf is A2, die Angst vor and der Grund für are B1, so the pattern can be shown from stock. Lesson 22 places it beside the softening adverbs, and B2 keeps feeding it later: anfällig für in lesson 35, angewiesen sein auf in the working-hours run"
+    },
+    {
+      "id": "de.b2.temporal-connectors-extended",
+      "fromLesson": 24,
+      "why": "sobald, solange and indem are all B1 words that B1 never scheduled a topic for. Lesson 24 has the reporting vocabulary that makes a means-clause worth writing - er belegte es, indem er die Umfrage zitierte"
+    },
+    {
+      "id": "de.b2.support-verb-constructions",
+      "fromLesson": 28,
+      "why": "a Funktionsverbgefüge is a fixed noun-plus-light-verb pair, so it needs the noun. in Frage stellen rests on A2 die Frage and zum Abschluss kommen on A2 der Abschluss, but the register only makes sense once lessons 25 to 28 have established that this is how reports are written"
+    },
+    {
+      "id": "de.b2.extended-participial-attribute",
+      "fromLesson": 34,
+      "why": "the hardest construction at this level: a participle carrying its own objects and adverbs, all before the noun. It waits for lesson 34 so that Partizip I has had sixteen lessons to settle and so that the modifiers being packed in - a date, an agent, a place - are words the learner reads without effort"
+    }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "theme": "how one idea follows another",
+      "new": [
+        "even so",
+        "consequently",
+        "whereas",
+        "thus",
+        "hence",
+        "or else",
+        "regardless"
+      ],
+      "sentences": [
+        "b2_L001_1",
+        "b2_L001_2",
+        "b2_L001_3",
+        "b2_L001_4",
+        "b2_L001_7",
+        "b2_L001_5",
+        "b2_L001_6"
+      ]
+    },
+    {
+      "id": 2,
+      "theme": "more ways to link a thought",
+      "new": [
+        "indeed",
+        "namely",
+        "that being said",
+        "even though",
+        "after all",
+        "as for the rest",
+        "not least"
+      ],
+      "sentences": [
+        "b2_L002_2",
+        "b2_L002_3",
+        "b2_L002_4",
+        "b2_L002_5",
+        "b2_L002_6",
+        "b2_L002_7"
+      ]
+    },
+    {
+      "id": 3,
+      "theme": "saying what you think",
+      "new": [
+        "to argue",
+        "to claim",
+        "to emphasize",
+        "to acknowledge",
+        "to imply",
+        "to assess",
+        "to indicate"
+      ],
+      "sentences": [
+        "b2_L003_1",
+        "b2_L003_2",
+        "b2_L003_3",
+        "b2_L003_4",
+        "b2_L003_5"
+      ]
+    },
+    {
+      "id": 4,
+      "theme": "building a case",
+      "new": [
+        "to demonstrate",
+        "to interpret",
+        "to evaluate",
+        "to justify",
+        "to highlight",
+        "to summarize",
+        "to conclude"
+      ],
+      "sentences": [
+        "b2_L004_1",
+        "b2_L004_2",
+        "b2_L004_3",
+        "b2_L004_4",
+        "b2_L004_5"
+      ]
+    },
+    {
+      "id": 5,
+      "theme": "disagreeing and clearing up",
+      "new": [
+        "to contradict",
+        "to clarify",
+        "to illustrate",
+        "to reveal",
+        "to determine",
+        "to distinguish",
+        "to estimate"
+      ],
+      "sentences": [
+        "b2_L005_1",
+        "b2_L005_2",
+        "b2_L005_3",
+        "b2_L005_4",
+        "b2_L005_5"
+      ]
+    },
+    {
+      "id": 6,
+      "theme": "dealing with what comes",
+      "new": [
+        "to anticipate",
+        "to overcome",
+        "to maintain",
+        "to ensure",
+        "to involve",
+        "to require",
+        "to establish"
+      ],
+      "sentences": [
+        "b2_L006_1",
+        "b2_L006_2",
+        "b2_L006_3",
+        "b2_L006_4"
+      ]
+    },
+    {
+      "id": 7,
+      "theme": "making things bigger or smaller",
+      "new": [
+        "to lessen",
+        "to step up",
+        "to broaden",
+        "to deepen",
+        "to weaken",
+        "to worsen",
+        "to offset"
+      ],
+      "sentences": [
+        "b2_L007_1",
+        "b2_L007_2",
+        "b2_L007_3",
+        "b2_L007_4"
+      ]
+    },
+    {
+      "id": 8,
+      "theme": "getting work moving",
+      "new": [
+        "to identify",
+        "to investigate",
+        "to contribute",
+        "to negotiate",
+        "to implement",
+        "to adapt",
+        "to reflect"
+      ],
+      "sentences": [
+        "b2_L008_1",
+        "b2_L008_2",
+        "b2_L008_3",
+        "b2_L008_4"
+      ]
+    },
+    {
+      "id": 9,
+      "theme": "formal decisions",
+      "new": [
+        "to propose",
+        "to approve",
+        "to deny",
+        "to grant",
+        "to impose",
+        "to schedule",
+        "to encompass"
+      ],
+      "sentences": [
+        "b2_L009_7",
+        "b2_L009_1",
+        "b2_L009_2",
+        "b2_L009_3",
+        "b2_L009_4"
+      ]
+    },
+    {
+      "id": 10,
+      "theme": "the parts of an argument",
+      "new": [
+        "assumption",
+        "consequence",
+        "prerequisite",
+        "approach",
+        "concept",
+        "evidence",
+        "factor"
+      ],
+      "sentences": [
+        "b2_L010_1",
+        "b2_L010_2",
+        "b2_L010_3",
+        "b2_L010_4"
+      ]
+    },
+    {
+      "id": 11,
+      "theme": "the shape of a theory",
+      "new": [
+        "framework",
+        "hypothesis",
+        "criterion",
+        "tendency",
+        "implication",
+        "perspective",
+        "context"
+      ],
+      "sentences": [
+        "b2_L011_1",
+        "b2_L011_2",
+        "b2_L011_3",
+        "b2_L011_4"
+      ]
+    },
+    {
+      "id": 12,
+      "theme": "what surrounds a case",
+      "new": [
+        "phenomenon",
+        "circumstance",
+        "principle",
+        "aspect",
+        "issue",
+        "argument",
+        "statement"
+      ],
+      "sentences": [
+        "b2_L012_1",
+        "b2_L012_2",
+        "b2_L012_3",
+        "b2_L012_4"
+      ]
+    },
+    {
+      "id": 13,
+      "theme": "writing it up",
+      "new": [
+        "conclusion",
+        "assessment",
+        "analysis",
+        "comparison",
+        "contrast",
+        "definition",
+        "interpretation"
+      ],
+      "sentences": [
+        "b2_L013_7",
+        "b2_L013_1",
+        "b2_L013_2",
+        "b2_L013_3"
+      ]
+    },
+    {
+      "id": 14,
+      "theme": "how much and how many",
+      "new": [
+        "majority",
+        "minority",
+        "proportion",
+        "scope",
+        "extent",
+        "amount",
+        "distribution"
+      ],
+      "sentences": [
+        "b2_L014_1",
+        "b2_L014_2",
+        "b2_L014_3",
+        "b2_L014_4"
+      ]
+    },
+    {
+      "id": 15,
+      "theme": "weighing it up",
+      "new": [
+        "impact",
+        "influence",
+        "benefit",
+        "risk",
+        "challenge",
+        "alternative",
+        "priority"
+      ],
+      "sentences": [
+        "b2_L015_1",
+        "b2_L015_2",
+        "b2_L015_3",
+        "b2_L015_4"
+      ]
+    },
+    {
+      "id": 16,
+      "theme": "how things are run",
+      "new": [
+        "requirement",
+        "process",
+        "procedure",
+        "structure",
+        "function",
+        "source",
+        "awareness"
+      ],
+      "sentences": [
+        "b2_L016_1",
+        "b2_L016_2",
+        "b2_L016_3"
+      ]
+    },
+    {
+      "id": 17,
+      "theme": "how important",
+      "new": [
+        "significant",
+        "crucial",
+        "essential",
+        "substantial",
+        "considerable",
+        "relevant",
+        "appropriate"
+      ],
+      "sentences": [
+        "b2_L017_1",
+        "b2_L017_2",
+        "b2_L017_3"
+      ]
+    },
+    {
+      "id": 18,
+      "theme": "how clearly it is said",
+      "new": [
+        "explicit",
+        "evident",
+        "vague",
+        "ambiguous",
+        "tentative",
+        "plausible",
+        "comprehensive"
+      ],
+      "sentences": [
+        "b2_L018_7",
+        "b2_L018_1",
+        "b2_L018_2",
+        "b2_L018_3"
+      ]
+    },
+    {
+      "id": 19,
+      "theme": "how far you can trust it",
+      "new": [
+        "consistent",
+        "reliable",
+        "accurate",
+        "objective",
+        "subjective",
+        "biased",
+        "unbiased",
+        "potential"
+      ],
+      "sentences": [
+        "b2_L019_1",
+        "b2_L019_2",
+        "b2_L019_3",
+        "b2_L019_4"
+      ]
+    },
+    {
+      "id": 20,
+      "theme": "whether it can be done",
+      "new": [
+        "feasible",
+        "inevitable",
+        "controversial",
+        "adequate",
+        "efficient",
+        "flexible",
+        "sustainable"
+      ],
+      "sentences": [
+        "b2_L020_7",
+        "b2_L020_1",
+        "b2_L020_2",
+        "b2_L020_3",
+        "b2_L020_4"
+      ]
+    },
+    {
+      "id": 21,
+      "theme": "what kind of thing it is",
+      "new": [
+        "remarkable",
+        "diverse",
+        "mutual",
+        "deliberate",
+        "thorough",
+        "subsequent",
+        "widespread"
+      ],
+      "sentences": [
+        "b2_L021_7",
+        "b2_L021_1",
+        "b2_L021_2",
+        "b2_L021_3",
+        "b2_L021_4"
+      ]
+    },
+    {
+      "id": 22,
+      "theme": "softening a claim",
+      "new": [
+        "essentially",
+        "presumably",
+        "arguably",
+        "increasingly",
+        "ultimately",
+        "primarily",
+        "notably"
+      ],
+      "sentences": [
+        "b2_L022_7",
+        "b2_L022_1",
+        "b2_L022_2",
+        "b2_L022_3"
+      ]
+    },
+    {
+      "id": 23,
+      "theme": "public life",
+      "new": [
+        "policy",
+        "authority",
+        "citizen",
+        "media",
+        "advertisement",
+        "audience",
+        "headline"
+      ],
+      "sentences": [
+        "b2_L023_7",
+        "b2_L023_1",
+        "b2_L023_2",
+        "b2_L023_3"
+      ]
+    },
+    {
+      "id": 24,
+      "theme": "news and figures",
+      "new": [
+        "broadcast",
+        "journalist",
+        "survey",
+        "budget",
+        "investment",
+        "profit",
+        "agreement"
+      ],
+      "sentences": [
+        "b2_L024_1",
+        "b2_L024_2",
+        "b2_L024_3"
+      ]
+    },
+    {
+      "id": 25,
+      "theme": "noticing and causing",
+      "new": [
+        "to perceive",
+        "to trigger",
+        "to enrich",
+        "to invest",
+        "to threaten",
+        "to exploit",
+        "to persuade"
+      ],
+      "sentences": [
+        "b2_L025_1",
+        "b2_L025_2",
+        "b2_L025_3",
+        "b2_L025_4"
+      ]
+    },
+    {
+      "id": 26,
+      "theme": "holding back",
+      "new": [
+        "to refrain",
+        "to forgo",
+        "to commit oneself",
+        "to take a stand",
+        "to qualify",
+        "to keep in mind",
+        "to take into account"
+      ],
+      "sentences": [
+        "b2_L026_1",
+        "b2_L026_2",
+        "b2_L026_3",
+        "b2_L026_4"
+      ]
+    },
+    {
+      "id": 27,
+      "theme": "where something comes from",
+      "new": [
+        "to stem from",
+        "to constitute",
+        "to bring together",
+        "to shed light on",
+        "to be a matter of",
+        "to capitalize on",
+        "to sketch"
+      ],
+      "sentences": [
+        "b2_L027_1",
+        "b2_L027_2",
+        "b2_L027_3",
+        "b2_L027_4"
+      ]
+    },
+    {
+      "id": 28,
+      "theme": "naming and sorting",
+      "new": [
+        "to define",
+        "to classify",
+        "to promote",
+        "to validate",
+        "to minimize",
+        "to quantify",
+        "to replicate"
+      ],
+      "sentences": [
+        "b2_L028_1",
+        "b2_L028_2",
+        "b2_L028_3",
+        "b2_L028_4"
+      ]
+    },
+    {
+      "id": 29,
+      "theme": "how sure the ground is",
+      "new": [
+        "uncertainty",
+        "probability",
+        "validity",
+        "consistency",
+        "precision",
+        "relevance",
+        "significance"
+      ],
+      "sentences": [
+        "b2_L029_7",
+        "b2_L029_1",
+        "b2_L029_2",
+        "b2_L029_3"
+      ]
+    },
+    {
+      "id": 30,
+      "theme": "what is in the way",
+      "new": [
+        "limitation",
+        "controversy",
+        "mistrust",
+        "reluctance",
+        "setback",
+        "upheaval",
+        "loophole"
+      ],
+      "sentences": [
+        "b2_L030_7",
+        "b2_L030_1",
+        "b2_L030_2",
+        "b2_L030_3",
+        "b2_L030_4"
+      ]
+    },
+    {
+      "id": 31,
+      "theme": "what you bring to it",
+      "new": [
+        "asset",
+        "goodwill",
+        "leeway",
+        "resource",
+        "infrastructure",
+        "stake",
+        "mindset"
+      ],
+      "sentences": [
+        "b2_L031_7",
+        "b2_L031_1",
+        "b2_L031_2",
+        "b2_L031_3",
+        "b2_L031_4"
+      ]
+    },
+    {
+      "id": 32,
+      "theme": "reading a situation",
+      "new": [
+        "reasoning",
+        "viewpoint",
+        "dimension",
+        "trade-off",
+        "problem area",
+        "generalization",
+        "causation"
+      ],
+      "sentences": [
+        "b2_L032_7",
+        "b2_L032_1",
+        "b2_L032_2",
+        "b2_L032_3",
+        "b2_L032_4"
+      ]
+    },
+    {
+      "id": 33,
+      "theme": "change over time",
+      "new": [
+        "decrease",
+        "breakthrough",
+        "reform",
+        "globalization",
+        "transparency",
+        "inequality",
+        "variable"
+      ],
+      "sentences": [
+        "b2_L033_1",
+        "b2_L033_2",
+        "b2_L033_3",
+        "b2_L033_4"
+      ]
+    },
+    {
+      "id": 34,
+      "theme": "what a person is like",
+      "new": [
+        "reluctant",
+        "obstinate",
+        "considerate",
+        "reckless",
+        "indulgent",
+        "forward-looking",
+        "lucid"
+      ],
+      "sentences": [
+        "b2_L034_1",
+        "b2_L034_2",
+        "b2_L034_3",
+        "b2_L034_4"
+      ]
+    },
+    {
+      "id": 35,
+      "theme": "judging a claim",
+      "new": [
+        "debatable",
+        "misleading",
+        "skewed",
+        "worrying",
+        "vulnerable",
+        "favourable",
+        "liable to"
+      ],
+      "sentences": [
+        "b2_L035_1",
+        "b2_L035_2",
+        "b2_L035_3",
+        "b2_L035_4"
+      ]
+    },
+    {
+      "id": 36,
+      "theme": "shades of the truth",
+      "new": [
+        "implicit",
+        "abundant",
+        "demanding",
+        "radical",
+        "neutral",
+        "random",
+        "gradually"
+      ],
+      "sentences": [
+        "b2_L036_7",
+        "b2_L036_1",
+        "b2_L036_2",
+        "b2_L036_3",
+        "b2_L036_4"
+      ]
+    },
+    {
+      "id": 37,
+      "theme": "qualifying an adverb",
+      "new": [
+        "significantly",
+        "wrongly",
+        "rightly",
+        "unintentionally",
+        "formerly",
+        "beyond",
+        "concerning"
+      ],
+      "sentences": [
+        "b2_L037_1",
+        "b2_L037_2",
+        "b2_L037_3",
+        "b2_L037_4"
+      ]
+    },
+    {
+      "id": 38,
+      "theme": "saying it more exactly",
+      "new": [
+        "more precisely",
+        "roughly speaking",
+        "in other words",
+        "all the more so as",
+        "whatever",
+        "thereby",
+        "accordingly"
+      ],
+      "sentences": [
+        "b2_L038_1",
+        "b2_L038_2",
+        "b2_L038_3",
+        "b2_L038_4"
+      ]
+    },
+    {
+      "id": 39,
+      "theme": "counting and measuring",
+      "new": [
+        "sample",
+        "statistic",
+        "median",
+        "mode",
+        "standard deviation",
+        "bias (statistical)",
+        "criteria"
+      ],
+      "sentences": [
+        "b2_L039_1",
+        "b2_L039_2",
+        "b2_L039_3"
+      ]
+    },
+    {
+      "id": 40,
+      "theme": "research vocabulary",
+      "new": [
+        "qualitative",
+        "quantitative",
+        "descriptive",
+        "inferential",
+        "regression",
+        "classification",
+        "to hypothesize"
+      ],
+      "sentences": [
+        "b2_L040_7",
+        "b2_L040_1",
+        "b2_L040_2",
+        "b2_L040_3"
+      ]
+    },
+    {
+      "id": 41,
+      "theme": "industries",
+      "new": [
+        "car manufacturer",
+        "sector",
+        "family business",
+        "aid organization",
+        "international company",
+        "food industry",
+        "painting company"
+      ],
+      "sentences": [
+        "b2_L041_1",
+        "b2_L041_2",
+        "b2_L041_3"
+      ]
+    },
+    {
+      "id": 42,
+      "theme": "school and training certificates",
+      "new": [
+        "social sector",
+        "intellectual",
+        "secondary education",
+        "secondary school leaving certificate",
+        "intermediate school certificate",
+        "vocational qualification",
+        "master's degree"
+      ],
+      "sentences": [
+        "b2_L042_1",
+        "b2_L042_2",
+        "b2_L042_3"
+      ]
+    },
+    {
+      "id": 43,
+      "theme": "comparing and describing a role",
+      "new": [
+        "more than",
+        "less than",
+        "almost all",
+        "to work in administration",
+        "to become self-employed",
+        "to be responsible",
+        "weakness"
+      ],
+      "sentences": [
+        "b2_L043_1",
+        "b2_L043_2",
+        "b2_L043_3"
+      ]
+    },
+    {
+      "id": 44,
+      "theme": "what an employer looks for",
+      "new": [
+        "strong point",
+        "resilient",
+        "proactive",
+        "willing to learn",
+        "disorganized",
+        "team player",
+        "conscientious"
+      ],
+      "sentences": [
+        "b2_L044_7",
+        "b2_L044_1",
+        "b2_L044_2",
+        "b2_L044_3"
+      ]
+    },
+    {
+      "id": 45,
+      "theme": "changing direction",
+      "new": [
+        "intermediary",
+        "entry requirement",
+        "to take the master craftsman exam",
+        "to stop by in person",
+        "to change career direction",
+        "certified copy",
+        "certified translation"
+      ],
+      "sentences": [
+        "b2_L045_1",
+        "b2_L045_2",
+        "b2_L045_3",
+        "b2_L045_4"
+      ]
+    },
+    {
+      "id": 46,
+      "theme": "setting up on your own",
+      "new": [
+        "to apply for professional recognition",
+        "sole proprietor",
+        "business partner",
+        "to start off well or badly",
+        "freelance work",
+        "to found a company",
+        "business fluent"
+      ],
+      "sentences": [
+        "b2_L046_1",
+        "b2_L046_2",
+        "b2_L046_3",
+        "b2_L046_4"
+      ]
+    },
+    {
+      "id": 47,
+      "theme": "applying for a job",
+      "new": [
+        "advertised position",
+        "to write a cover letter",
+        "to be available for questions",
+        "to match the interests and qualifications",
+        "to make a good impression",
+        "to master a difficult situation",
+        "to inquire about the state of affairs"
+      ],
+      "sentences": [
+        "b2_L047_1",
+        "b2_L047_2",
+        "b2_L047_3",
+        "b2_L047_4"
+      ]
+    },
+    {
+      "id": 48,
+      "theme": "the hiring decision",
+      "new": [
+        "to decide on a candidate",
+        "to start a job",
+        "employment relationship",
+        "trade secret",
+        "notice period",
+        "continued pay",
+        "wholesale"
+      ],
+      "sentences": [
+        "b2_L048_1",
+        "b2_L048_2",
+        "b2_L048_3",
+        "b2_L048_4"
+      ]
+    },
+    {
+      "id": 49,
+      "theme": "more industries",
+      "new": [
+        "retail",
+        "real estate industry",
+        "it industry",
+        "metal industry",
+        "civil service",
+        "pharmaceutical industry",
+        "transport and logistics"
+      ],
+      "sentences": [
+        "b2_L049_7",
+        "b2_L049_1",
+        "b2_L049_2",
+        "b2_L049_3"
+      ]
+    },
+    {
+      "id": 50,
+      "theme": "addressing people at work",
+      "new": [
+        "conservative",
+        "disrespectful",
+        "to offer to use 'du'",
+        "to take the first step",
+        "to be on formal or informal terms",
+        "to be taboo",
+        "apprenticeship occupation"
+      ],
+      "sentences": [
+        "b2_L050_7",
+        "b2_L050_1",
+        "b2_L050_2",
+        "b2_L050_3",
+        "b2_L050_4"
+      ]
+    },
+    {
+      "id": 51,
+      "theme": "training and language",
+      "new": [
+        "pre-vocational year",
+        "further training academy",
+        "trade language",
+        "language skills",
+        "permanent job",
+        "around the clock",
+        "plant mechanic"
+      ],
+      "sentences": [
+        "b2_L051_1",
+        "b2_L051_2",
+        "b2_L051_3",
+        "b2_L051_4"
+      ]
+    },
+    {
+      "id": 52,
+      "theme": "trades and services",
+      "new": [
+        "gardener",
+        "registered nurse",
+        "tailor",
+        "service staff",
+        "room service",
+        "promotion opportunities",
+        "off-site appointment"
+      ],
+      "sentences": [
+        "b2_L052_1",
+        "b2_L052_2",
+        "b2_L052_3",
+        "b2_L052_4"
+      ]
+    },
+    {
+      "id": 53,
+      "theme": "pay and prospects",
+      "new": [
+        "social benefits",
+        "to do someone a favor",
+        "to negotiate salary",
+        "to build a career",
+        "to take priority",
+        "core hours",
+        "rotating shift"
+      ],
+      "sentences": [
+        "b2_L053_1",
+        "b2_L053_2",
+        "b2_L053_3",
+        "b2_L053_4"
+      ]
+    },
+    {
+      "id": 54,
+      "theme": "working hours",
+      "new": [
+        "flexible working hours",
+        "fixed working hours",
+        "to work overtime",
+        "to agree contractually",
+        "childcare services",
+        "childminder",
+        "single parent"
+      ],
+      "sentences": [
+        "b2_L054_1",
+        "b2_L054_2",
+        "b2_L054_3",
+        "b2_L054_4"
+      ]
+    },
+    {
+      "id": 55,
+      "theme": "family and travel",
+      "new": [
+        "family-friendly",
+        "to be dependent on",
+        "to balance work and family",
+        "arrival and departure",
+        "booking confirmation",
+        "carpool",
+        "flight connection"
+      ],
+      "sentences": [
+        "b2_L055_7",
+        "b2_L055_1",
+        "b2_L055_2",
+        "b2_L055_3",
+        "b2_L055_4"
+      ]
+    },
+    {
+      "id": 56,
+      "theme": "office routines",
+      "new": [
+        "to shut down the laptop",
+        "to do a trial run",
+        "to make a backup",
+        "to document an activity in writing",
+        "to compile documents",
+        "to make preparations",
+        "to ask for something"
+      ],
+      "sentences": [
+        "b2_L056_1",
+        "b2_L056_2",
+        "b2_L056_3",
+        "b2_L056_4"
+      ]
+    },
+    {
+      "id": 57,
+      "theme": "speaking up at a trade fair",
+      "new": [
+        "to make a counterproposal",
+        "to express one's opinion",
+        "sticker",
+        "exhibitor",
+        "data sheet",
+        "to spend money",
+        "an amount of"
+      ],
+      "sentences": [
+        "b2_L057_1",
+        "b2_L057_2",
+        "b2_L057_3"
+      ]
+    },
+    {
+      "id": 58,
+      "theme": "paying for things",
+      "new": [
+        "to debit an account",
+        "to pay in cash",
+        "by direct debit",
+        "by bank transfer",
+        "to settle an invoice",
+        "payment received",
+        "payment reminder"
+      ],
+      "sentences": [
+        "b2_L058_1",
+        "b2_L058_2",
+        "b2_L058_3",
+        "b2_L058_4"
+      ]
+    },
+    {
+      "id": 59,
+      "theme": "settling an invoice",
+      "new": [
+        "to consider irrelevant",
+        "comma",
+        "eighth",
+        "divided by",
+        "to manage finances well or poorly",
+        "to be left over",
+        "evaluation"
+      ],
+      "sentences": [
+        "b2_L059_1",
+        "b2_L059_2",
+        "b2_L059_3",
+        "b2_L059_4",
+        "b2_L059_5"
+      ]
+    },
+    {
+      "id": 60,
+      "theme": "arithmetic and housekeeping",
+      "new": [
+        "consequences",
+        "dispute",
+        "incident",
+        "faulty",
+        "unjust",
+        "to work to the limit",
+        "to generalize"
+      ],
+      "sentences": [
+        "b2_L060_7",
+        "b2_L060_1",
+        "b2_L060_2",
+        "b2_L060_3",
+        "b2_L060_4"
+      ]
+    },
+    {
+      "id": 61,
+      "theme": "when something goes wrong",
+      "new": [
+        "to be forced to",
+        "to not recommend someone",
+        "to not match the specifications",
+        "to be proven right",
+        "to feel disturbed",
+        "to respond to complaints",
+        "constructive argument"
+      ],
+      "sentences": [
+        "b2_L061_1",
+        "b2_L061_2",
+        "b2_L061_3",
+        "b2_L061_4"
+      ]
+    },
+    {
+      "id": 62,
+      "theme": "putting it right",
+      "new": [
+        "to resolve a one-off incident",
+        "to regret",
+        "to make amends",
+        "it won't happen again",
+        "to offer a voucher",
+        "to find a solution",
+        "to fix an error"
+      ],
+      "sentences": [
+        "b2_L062_1",
+        "b2_L062_2",
+        "b2_L062_3",
+        "b2_L062_4"
+      ]
+    },
+    {
+      "id": 63,
+      "theme": "understanding the other side",
+      "new": [
+        "to admit a mistake",
+        "to put oneself in someone else's shoes",
+        "to ask for understanding",
+        "to show understanding",
+        "norm",
+        "quality management system",
+        "to review working methods"
+      ],
+      "sentences": [
+        "b2_L063_1",
+        "b2_L063_2",
+        "b2_L063_3",
+        "b2_L063_4"
+      ]
+    },
+    {
+      "id": 64,
+      "theme": "quality management",
+      "new": [
+        "to boost motivation",
+        "to continuously improve products",
+        "to plan individual production steps",
+        "to define processes",
+        "to document processes in writing",
+        "to ensure quality",
+        "to focus on customer needs"
+      ],
+      "sentences": [
+        "b2_L064_1",
+        "b2_L064_2",
+        "b2_L064_3",
+        "b2_L064_4"
+      ]
+    },
+    {
+      "id": 65,
+      "theme": "running a process",
+      "new": [
+        "to improve the economic situation",
+        "planner",
+        "meeting minutes",
+        "outcome minutes",
+        "staff meeting",
+        "project presentation",
+        "session"
+      ],
+      "sentences": [
+        "b2_L065_7",
+        "b2_L065_1",
+        "b2_L065_2",
+        "b2_L065_3",
+        "b2_L065_4"
+      ]
+    },
+    {
+      "id": 66,
+      "theme": "kinds of meeting",
+      "new": [
+        "agenda item",
+        "team meeting",
+        "process minutes",
+        "pre-meeting",
+        "to grasp",
+        "to take minutes",
+        "to be of the opinion that"
+      ],
+      "sentences": [
+        "b2_L066_1",
+        "b2_L066_2",
+        "b2_L066_3",
+        "b2_L066_4"
+      ]
+    },
+    {
+      "id": 67,
+      "theme": "taking the minutes",
+      "new": [
+        "to hold a meeting",
+        "to bring forward an appointment",
+        "video projector",
+        "meeting documents",
+        "flip chart",
+        "projector screen",
+        "facilitation cards"
+      ],
+      "sentences": [
+        "b2_L067_1",
+        "b2_L067_2",
+        "b2_L067_3"
+      ]
+    },
+    {
+      "id": 68,
+      "theme": "the meeting room",
+      "new": [
+        "facilitation kit",
+        "network connection",
+        "pinboard",
+        "conference room",
+        "whiteboard",
+        "outlook",
+        "controlling"
+      ],
+      "sentences": [
+        "b2_L068_1",
+        "b2_L068_2",
+        "b2_L068_3"
+      ]
+    },
+    {
+      "id": 69,
+      "theme": "reporting the numbers",
+      "new": [
+        "annual balance sheet",
+        "forecast",
+        "quarterly report",
+        "quota",
+        "protective cover",
+        "connection contact",
+        "display"
+      ],
+      "sentences": [
+        "b2_L069_1",
+        "b2_L069_2",
+        "b2_L069_3"
+      ]
+    },
+    {
+      "id": 70,
+      "theme": "parts of a device",
+      "new": [
+        "arrow",
+        "qr code",
+        "site",
+        "touchscreen",
+        "usb port",
+        "to update",
+        "to snap into place"
+      ],
+      "sentences": [
+        "b2_L070_1",
+        "b2_L070_2",
+        "b2_L070_3"
+      ]
+    },
+    {
+      "id": 71,
+      "theme": "using a screen",
+      "new": [
+        "navigate",
+        "to zoom",
+        "incapacity to work",
+        "regulations",
+        "release from work duties",
+        "time off in lieu",
+        "calendar year"
+      ],
+      "sentences": [
+        "b2_L071_1",
+        "b2_L071_2",
+        "b2_L071_3"
+      ]
+    },
+    {
+      "id": 72,
+      "theme": "time off",
+      "new": [
+        "operational necessity",
+        "safety shoes",
+        "occupational group",
+        "bleeding",
+        "first aider",
+        "evacuation",
+        "escape route"
+      ],
+      "sentences": [
+        "b2_L072_1",
+        "b2_L072_2",
+        "b2_L072_3",
+        "b2_L072_4"
+      ]
+    },
+    {
+      "id": 73,
+      "theme": "safety gear",
+      "new": [
+        "hearing protection",
+        "laceration",
+        "slipping hazard",
+        "paramedic",
+        "protective equipment",
+        "safety goggles",
+        "hard hat"
+      ],
+      "sentences": [
+        "b2_L073_1",
+        "b2_L073_2",
+        "b2_L073_3"
+      ]
+    },
+    {
+      "id": 74,
+      "theme": "accidents and first aid",
+      "new": [
+        "trip hazard",
+        "to lose one's balance",
+        "to give first aid",
+        "to endanger",
+        "to follow safety regulations",
+        "written warning",
+        "special permit"
+      ],
+      "sentences": [
+        "b2_L074_1",
+        "b2_L074_2",
+        "b2_L074_3",
+        "b2_L074_4"
+      ]
+    },
+    {
+      "id": 75,
+      "theme": "warnings and promotion",
+      "new": [
+        "advancement",
+        "leadership skills",
+        "fee-based work",
+        "mini-job",
+        "side job",
+        "blocking period",
+        "contract for work"
+      ],
+      "sentences": [
+        "b2_L075_1",
+        "b2_L075_2",
+        "b2_L075_3"
+      ]
+    },
+    {
+      "id": 76,
+      "theme": "forms of employment",
+      "new": [
+        "temporary work",
+        "fixed-term",
+        "mutually",
+        "expiry of the notice period",
+        "crediting of remaining leave",
+        "medical certificate",
+        "for operational reasons",
+        "employee (legal)"
+      ],
+      "sentences": [
+        "b2_L076_1",
+        "b2_L076_2",
+        "b2_L076_3",
+        "b2_L076_4"
+      ]
+    },
+    {
+      "id": 77,
+      "theme": "ending a contract",
+      "new": [
+        "termination for operational reasons",
+        "to require written form",
+        "continued payment of salary",
+        "to work from home",
+        "internal matter",
+        "regular weekly working hours",
+        "to register as a job seeker"
+      ],
+      "sentences": [
+        "b2_L077_1",
+        "b2_L077_2",
+        "b2_L077_3",
+        "b2_L077_4"
+      ]
+    },
+    {
+      "id": 78,
+      "theme": "contract clauses",
+      "new": [
+        "to extend the contract",
+        "unemployment insurance",
+        "gross pay",
+        "church tax",
+        "denomination",
+        "wage tax",
+        "net pay",
+        "deadline"
+      ],
+      "sentences": [
+        "b2_L078_1",
+        "b2_L078_2",
+        "b2_L078_3",
+        "b2_L078_4"
+      ]
+    },
+    {
+      "id": 79,
+      "theme": "payroll deductions",
+      "new": [
+        "long-term care insurance",
+        "pension insurance",
+        "solidarity surcharge",
+        "tax class",
+        "to withhold",
+        "staff",
+        "equal rights"
+      ],
+      "sentences": [
+        "b2_L079_1",
+        "b2_L079_2",
+        "b2_L079_3"
+      ]
+    },
+    {
+      "id": 80,
+      "theme": "insurance and staff",
+      "new": [
+        "successor",
+        "severely disabled person",
+        "fixed-price repair",
+        "exquisite",
+        "reservation required",
+        "text structure"
+      ],
+      "sentences": [
+        "b2_L080_1",
+        "b2_L080_2",
+        "b2_L080_3"
+      ]
+    }
+  ]
+}

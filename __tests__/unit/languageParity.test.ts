@@ -105,19 +105,18 @@ describe('course parity', () => {
     }
   }
 
-  // A1 has a course for every one of the 42 pairs. A2 and B1 have one only for
-  // German, which is the target being written; the other six targets still
-  // have no course above A1 and must not silently gain one.
-  it('ships a course for all 42 pairs at A1 and for German at A2 and B1', () => {
-    const a1 = lessonFiles.filter((f) => f.pair.endsWith('a1.lessons.json'));
-    const a2 = lessonFiles.filter((f) => f.pair.endsWith('a2.lessons.json'));
-    const b1 = lessonFiles.filter((f) => f.pair.endsWith('b1.lessons.json'));
-    expect(a1).toHaveLength(42);
-    expect(a2).toHaveLength(6);
-    expect(b1).toHaveLength(6);
-    expect(a2.every((f) => f.pair.startsWith('de/'))).toBe(true);
-    expect(b1.every((f) => f.pair.startsWith('de/'))).toBe(true);
-    expect(lessonFiles).toHaveLength(54);
+  // A1 has a course for every one of the 42 pairs. A2, B1 and B2 have one
+  // only for German, which is the target being written; the other six
+  // targets still have no course above A1 and must not silently gain one.
+  it('ships a course for all 42 pairs at A1 and for German at A2, B1 and B2', () => {
+    const at = (level: string) =>
+      lessonFiles.filter((f) => f.pair.endsWith(`${level}.lessons.json`));
+    expect(at('a1')).toHaveLength(42);
+    for (const level of ['a2', 'b1', 'b2']) {
+      expect(at(level)).toHaveLength(6);
+      expect(at(level).every((f) => f.pair.startsWith('de/'))).toBe(true);
+    }
+    expect(lessonFiles).toHaveLength(60);
   });
 
   it.each(lessonFiles)('$pair fits its word file', ({ pair, file, words }) => {
