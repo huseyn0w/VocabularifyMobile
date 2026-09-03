@@ -5759,6 +5759,10 @@
             "door": {
               "t": "die Tür",
               "s": "door"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -5867,6 +5871,22 @@
             "to love": {
               "t": "lieben",
               "s": "to love"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "to be": {
+              "t": "sein",
+              "s": "to be"
+            },
+            "good": {
+              "t": "gut",
+              "s": "good"
+            },
+            "my": {
+              "t": "mein",
+              "s": "my"
             }
           }
         }
@@ -5967,6 +5987,18 @@
             "her": {
               "t": "ihr",
               "s": "her"
+            },
+            "he": {
+              "t": "er",
+              "s": "he"
+            },
+            "she": {
+              "t": "sie",
+              "s": "she"
+            },
+            "her/him/him": {
+              "t": "ihr/ihm/ihn",
+              "s": "her/him/him"
             }
           }
         },
@@ -6915,6 +6947,10 @@
             "happy": {
               "t": "glücklich",
               "s": "happy"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -7050,6 +7086,10 @@
             "city": {
               "t": "die Stadt",
               "s": "city"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -7161,6 +7201,10 @@
             "phone": {
               "t": "das Telefon",
               "s": "phone"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -7305,6 +7349,10 @@
             "to have": {
               "t": "haben",
               "s": "to have"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -7523,6 +7571,10 @@
             "year": {
               "t": "das Jahr",
               "s": "year"
+            },
+            "to have": {
+              "t": "haben",
+              "s": "to have"
             }
           }
         },
@@ -7675,6 +7727,10 @@
             "thirty": {
               "t": "dreißig",
               "s": "thirty"
+            },
+            "year": {
+              "t": "das Jahr",
+              "s": "year"
             }
           }
         },
@@ -7800,6 +7856,14 @@
             "ninety": {
               "t": "neunzig",
               "s": "ninety"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "year": {
+              "t": "das Jahr",
+              "s": "year"
             }
           }
         }
@@ -7855,6 +7919,10 @@
             "book": {
               "t": "das Buch",
               "s": "book"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -7913,6 +7981,10 @@
             "two hundred": {
               "t": "zweihundert",
               "s": "two hundred"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -8075,6 +8147,10 @@
             "clock": {
               "t": "die Uhr",
               "s": "clock"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -8250,6 +8326,10 @@
             "half": {
               "t": "halb",
               "s": "half"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -8301,6 +8381,10 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -8361,6 +8445,14 @@
             "seven fifteen": {
               "t": "sieben Uhr fünfzehn",
               "s": "seven fifteen"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -8508,6 +8600,14 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "to": {
+              "t": "zu",
+              "s": "to"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -8689,6 +8789,10 @@
             "day": {
               "t": "der Tag",
               "s": "day"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -8984,6 +9088,10 @@
             "this": {
               "t": "dieser",
               "s": "this"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -9114,6 +9222,10 @@
             "date": {
               "t": "das Datum",
               "s": "date"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -9360,6 +9472,10 @@
             "2nd": {
               "t": "zweite",
               "s": "2nd"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -9431,6 +9547,10 @@
             "next": {
               "t": "nächster/nächste/nächstes",
               "s": "next"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -9563,6 +9683,10 @@
             "later": {
               "t": "später",
               "s": "later"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "not"
             }
           }
         },
@@ -10014,6 +10138,10 @@
             "much": {
               "t": "viel",
               "s": "much"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "not"
             }
           }
         },
@@ -10538,6 +10666,14 @@
             "money": {
               "t": "das Geld",
               "s": "money"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "to": {
+              "t": "zu",
+              "s": "to"
             }
           }
         },
@@ -10783,6 +10919,10 @@
             "no": {
               "t": "nein",
               "s": "no"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -10850,6 +10990,10 @@
             "t-shirt": {
               "t": "das Shirt",
               "s": "T-shirt"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -11432,6 +11576,10 @@
             "hallway": {
               "t": "der Flur",
               "s": "hallway"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -11466,6 +11614,10 @@
             "toilet": {
               "t": "die Toilette",
               "s": "toilet"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -11620,6 +11772,14 @@
             "to be": {
               "t": "sein",
               "s": "to be"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -11679,6 +11839,10 @@
             "to buy": {
               "t": "kaufen",
               "s": "to buy"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -11780,6 +11944,14 @@
             "cozy": {
               "t": "gemütlich",
               "s": "cozy"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -11875,6 +12047,10 @@
             "and": {
               "t": "und",
               "s": "and"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -11934,6 +12110,10 @@
             "dishwasher": {
               "t": "die Spülmaschine",
               "s": "dishwasher"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -12017,6 +12197,10 @@
             "to love": {
               "t": "lieben",
               "s": "to love"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -12088,6 +12272,10 @@
             "bath": {
               "t": "das Bad",
               "s": "bath"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -12156,6 +12344,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -12220,6 +12412,10 @@
             "repair": {
               "t": "die Reparatur",
               "s": "repair"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -12295,6 +12491,14 @@
             "to be": {
               "t": "sein",
               "s": "to be"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -12347,6 +12551,10 @@
             "to": {
               "t": "zu",
               "s": "to"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -12435,6 +12643,10 @@
             "to": {
               "t": "zu",
               "s": "to"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -12511,6 +12723,10 @@
             "single-family house": {
               "t": "das Einfamilienhaus",
               "s": "single-family house"
+            },
+            "us": {
+              "t": "uns",
+              "s": "us"
             }
           }
         },
@@ -12567,6 +12783,10 @@
             "to be": {
               "t": "sein",
               "s": "to be"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -12668,6 +12888,10 @@
             "garage": {
               "t": "die Garage",
               "s": "garage"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "not"
             }
           }
         }
@@ -12708,6 +12932,10 @@
             "apartment": {
               "t": "die Wohnung",
               "s": "apartment"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -12759,6 +12987,10 @@
             "expensive": {
               "t": "teuer",
               "s": "expensive"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -12821,6 +13053,14 @@
             "apartment search": {
               "t": "die Wohnungssuche",
               "s": "apartment search"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "to": {
+              "t": "zu",
+              "s": "to"
             }
           }
         }
@@ -12897,6 +13137,10 @@
             "dream apartment": {
               "t": "die Traumwohnung",
               "s": "dream apartment"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -12973,6 +13217,10 @@
             "flat": {
               "t": "das Apartment",
               "s": "flat"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -13069,6 +13317,10 @@
             "expensive": {
               "t": "teuer",
               "s": "expensive"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -13115,6 +13367,14 @@
             "big": {
               "t": "groß",
               "s": "big"
+            },
+            "to have": {
+              "t": "haben",
+              "s": "to have"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -13160,6 +13420,10 @@
             "which": {
               "t": "welcher/welche/welches",
               "s": "which"
+            },
+            "to have": {
+              "t": "haben",
+              "s": "to have"
             }
           }
         },
@@ -13240,6 +13504,10 @@
             "house number": {
               "t": "die Hausnummer",
               "s": "house number"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -13324,6 +13592,14 @@
             "for (preposition)": {
               "t": "für",
               "s": "for (preposition)"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -13401,6 +13677,14 @@
             "till receipt": {
               "t": "der Kassenbon",
               "s": "till receipt"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -13459,6 +13743,10 @@
             "baby food": {
               "t": "die Babynahrung",
               "s": "baby food"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -13652,6 +13940,10 @@
             "meat": {
               "t": "das Fleisch",
               "s": "meat"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -13711,6 +14003,10 @@
             "to buy": {
               "t": "kaufen",
               "s": "to buy"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -13762,6 +14058,10 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -14170,6 +14470,10 @@
             "cent": {
               "t": "der Cent",
               "s": "cent"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -14268,6 +14572,10 @@
             "at": {
               "t": "um",
               "s": "at"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -14334,6 +14642,10 @@
             "to switch": {
               "t": "wechseln",
               "s": "to switch"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -14413,6 +14725,10 @@
             "account": {
               "t": "das Konto",
               "s": "account"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -14461,6 +14777,14 @@
             "bakery": {
               "t": "die Bäckerei",
               "s": "bakery"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -14529,6 +14853,10 @@
             "weekend market": {
               "t": "der Wochenmarkt",
               "s": "weekend market"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -14619,6 +14947,14 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -14682,6 +15018,10 @@
             "butter": {
               "t": "die Butter",
               "s": "butter"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -14732,6 +15072,10 @@
             "tasty": {
               "t": "lecker",
               "s": "tasty"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -14860,6 +15204,14 @@
             "pear": {
               "t": "die Birne",
               "s": "pear"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "with": {
+              "t": "mit",
+              "s": "with"
             }
           }
         },
@@ -14950,6 +15302,10 @@
             "to me": {
               "t": "mir",
               "s": "to me"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -15007,6 +15363,10 @@
             "sweet": {
               "t": "süß",
               "s": "sweet"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -15131,6 +15491,10 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -15202,6 +15566,10 @@
             "he": {
               "t": "er",
               "s": "he"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -15277,6 +15645,10 @@
             "salad": {
               "t": "der Salat",
               "s": "salad"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -15347,6 +15719,10 @@
             "refrigerator": {
               "t": "der Kühlschrank",
               "s": "refrigerator"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -15652,6 +16028,10 @@
             "to eat": {
               "t": "essen",
               "s": "to eat"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -15830,6 +16210,10 @@
             "to try out": {
               "t": "probieren",
               "s": "to try out"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -15880,6 +16264,10 @@
             "to bake": {
               "t": "backen",
               "s": "to bake"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -16062,6 +16450,10 @@
             "my": {
               "t": "mein",
               "s": "my"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -16140,6 +16532,10 @@
             "expensive": {
               "t": "teuer",
               "s": "expensive"
+            },
+            "to have": {
+              "t": "haben",
+              "s": "to have"
             }
           }
         },
@@ -16291,6 +16687,14 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "to": {
+              "t": "zu",
+              "s": "to"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -16367,6 +16771,10 @@
             "pizza": {
               "t": "die Pizza",
               "s": "pizza"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -16442,6 +16850,14 @@
             "to it": {
               "t": "dazu",
               "s": "to it"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -16658,6 +17074,10 @@
             "to shine": {
               "t": "scheinen",
               "s": "to shine"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -16721,6 +17141,10 @@
             "degree": {
               "t": "das Grad",
               "s": "degree"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -16805,6 +17229,10 @@
             "to hail": {
               "t": "hageln",
               "s": "to hail"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -16948,6 +17376,10 @@
             "to": {
               "t": "zu",
               "s": "to"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -17008,6 +17440,14 @@
             "beach": {
               "t": "der Strand",
               "s": "beach"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -17058,6 +17498,10 @@
             "leaf": {
               "t": "das Blatt",
               "s": "leaf"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -17105,6 +17549,10 @@
             "ball": {
               "t": "der Ball",
               "s": "ball"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -17378,6 +17826,10 @@
             "table": {
               "t": "der Tisch",
               "s": "table"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -17504,6 +17956,10 @@
             "door": {
               "t": "die Tür",
               "s": "door"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -17708,6 +18164,10 @@
             "family": {
               "t": "die Familie",
               "s": "family"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -17775,6 +18235,10 @@
             "beside": {
               "t": "daneben",
               "s": "beside"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -17868,6 +18332,10 @@
             "she": {
               "t": "sie",
               "s": "she"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -17949,6 +18417,10 @@
             "to ring": {
               "t": "klingeln",
               "s": "to ring"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -18030,6 +18502,14 @@
             "step": {
               "t": "der Schritt",
               "s": "step"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -18085,6 +18565,18 @@
             "church": {
               "t": "die Kirche",
               "s": "church"
+            },
+            "to have": {
+              "t": "haben",
+              "s": "to have"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -18178,6 +18670,14 @@
             "to hold": {
               "t": "halten",
               "s": "to hold"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -18237,6 +18737,10 @@
             "park": {
               "t": "der Park",
               "s": "park"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -18314,6 +18818,10 @@
             "warm": {
               "t": "warm",
               "s": "warm"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -18478,6 +18986,10 @@
             "bad": {
               "t": "schlecht",
               "s": "bad"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -18594,6 +19106,10 @@
             "track": {
               "t": "das Gleis",
               "s": "track"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -18652,6 +19168,10 @@
             "five": {
               "t": "fünf",
               "s": "five"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -18800,6 +19320,10 @@
             "event ticket": {
               "t": "das Ticket",
               "s": "event ticket"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -18858,6 +19382,10 @@
             "passenger": {
               "t": "der Fahrgast",
               "s": "passenger"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -18905,6 +19433,10 @@
             "to depart": {
               "t": "abfahren",
               "s": "to depart"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -18985,6 +19517,10 @@
             "at": {
               "t": "um",
               "s": "at"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -19044,6 +19580,10 @@
             "arrival time": {
               "t": "die Ankunftszeit",
               "s": "arrival time"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -19100,6 +19640,10 @@
             "to do": {
               "t": "machen",
               "s": "to do"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -19142,6 +19686,10 @@
             "notification": {
               "t": "der Bescheid",
               "s": "notification"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -19228,6 +19776,10 @@
             "unscheduled": {
               "t": "außerplanmäßig",
               "s": "unscheduled"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -19275,6 +19827,10 @@
             "driver's license": {
               "t": "der Führerschein",
               "s": "driver's license"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -19317,6 +19873,10 @@
             "motor vehicle": {
               "t": "das Kraftfahrzeug (KFZ)",
               "s": "motor vehicle"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -19408,6 +19968,10 @@
             "expensive": {
               "t": "teuer",
               "s": "expensive"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -19583,6 +20147,10 @@
             "on foot": {
               "t": "zu Fuß",
               "s": "on foot"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -19695,6 +20263,10 @@
             "to fly off": {
               "t": "abfliegen",
               "s": "to fly off"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -19738,6 +20310,10 @@
             "customs": {
               "t": "der Zoll",
               "s": "customs"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -19847,6 +20423,14 @@
             "here": {
               "t": "hier",
               "s": "here"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -19916,6 +20500,14 @@
             "guided tour": {
               "t": "die Führung",
               "s": "guided tour"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -19968,6 +20560,10 @@
             "sightseeing": {
               "t": "die Sehenswürdigkeit",
               "s": "sightseeing"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -20032,6 +20628,10 @@
             "today": {
               "t": "heute",
               "s": "today"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -20126,6 +20726,10 @@
             "expensive": {
               "t": "teuer",
               "s": "expensive"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -20349,6 +20953,10 @@
             "here": {
               "t": "hier",
               "s": "here"
+            },
+            "in": {
+              "t": "in",
+              "s": "in"
             }
           }
         },
@@ -20400,6 +21008,10 @@
             "map of germany": {
               "t": "die Deutschlandkarte",
               "s": "map of Germany"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -20547,6 +21159,14 @@
             "disco": {
               "t": "die Disco",
               "s": "disco"
+            },
+            "to": {
+              "t": "zu",
+              "s": "to"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -20624,6 +21244,10 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -20721,6 +21345,14 @@
             "library": {
               "t": "die Bibliothek",
               "s": "library"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -20790,6 +21422,10 @@
             "registry office": {
               "t": "das Standesamt",
               "s": "registry office"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -20874,6 +21510,10 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -20970,6 +21610,10 @@
             "to register": {
               "t": "anmelden",
               "s": "to register"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -21045,6 +21689,10 @@
             "here": {
               "t": "hier",
               "s": "here"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -21108,6 +21756,10 @@
             "form": {
               "t": "das Formular",
               "s": "form"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -21200,6 +21852,10 @@
             "valid": {
               "t": "gültig",
               "s": "valid"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -21358,6 +22014,10 @@
             "short": {
               "t": "kurz",
               "s": "short"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -21514,6 +22174,10 @@
             "here": {
               "t": "hier",
               "s": "here"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -21648,6 +22312,10 @@
             "civil servant": {
               "t": "der Beamte",
               "s": "civil servant"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -21714,6 +22382,10 @@
             "much": {
               "t": "viel",
               "s": "much"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -21861,6 +22533,10 @@
             "also": {
               "t": "auch",
               "s": "also"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -21937,6 +22613,10 @@
             "stressful": {
               "t": "stressig",
               "s": "stressful"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22096,6 +22776,10 @@
             "contact": {
               "t": "der Kontakt",
               "s": "contact"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -22147,6 +22831,10 @@
             "german course": {
               "t": "der Deutschkurs",
               "s": "German course"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22215,6 +22903,10 @@
             "classroom": {
               "t": "der Kursraum",
               "s": "classroom"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22279,6 +22971,10 @@
             "adult education center": {
               "t": "die Volkshochschule (VHS)",
               "s": "adult education center"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -22353,6 +23049,10 @@
             "long": {
               "t": "lang",
               "s": "long"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22411,6 +23111,10 @@
             "new": {
               "t": "neu",
               "s": "new"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22507,6 +23211,10 @@
             "difficult": {
               "t": "schwierig",
               "s": "difficult"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -22589,6 +23297,10 @@
             "pencil": {
               "t": "der Bleistift",
               "s": "pencil"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22640,6 +23352,10 @@
             "sharpener": {
               "t": "der Spitzer",
               "s": "sharpener"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -22717,6 +23433,10 @@
             "there": {
               "t": "dort",
               "s": "there"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -22786,6 +23506,10 @@
             "new": {
               "t": "neu",
               "s": "new"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22874,6 +23598,10 @@
             "dictionary": {
               "t": "das Wörterbuch",
               "s": "dictionary"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -22956,6 +23684,14 @@
             "later": {
               "t": "später",
               "s": "later"
+            },
+            "to": {
+              "t": "zu",
+              "s": "to"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -23056,6 +23792,10 @@
             "easy": {
               "t": "einfach",
               "s": "easy"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -23127,6 +23867,10 @@
             "letter (alphabet)": {
               "t": "der Buchstabe",
               "s": "letter (alphabet)"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -23266,6 +24010,10 @@
             "list": {
               "t": "die Liste",
               "s": "list"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -23335,6 +24083,14 @@
             "tricky": {
               "t": "knifflig",
               "s": "tricky"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -23472,6 +24228,10 @@
             "correct": {
               "t": "richtig",
               "s": "correct"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -23539,6 +24299,10 @@
             "test": {
               "t": "der Test",
               "s": "test"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -23736,6 +24500,22 @@
             "chair": {
               "t": "der Stuhl",
               "s": "chair"
+            },
+            "and": {
+              "t": "und",
+              "s": "and"
+            },
+            "his": {
+              "t": "sein/seine",
+              "s": "his"
+            },
+            "to be": {
+              "t": "sein",
+              "s": "to be"
+            },
+            "good": {
+              "t": "gut",
+              "s": "good"
             }
           }
         },
@@ -23916,6 +24696,10 @@
             "easy": {
               "t": "einfach",
               "s": "easy"
+            },
+            "help": {
+              "t": "die Hilfe",
+              "s": "help"
             }
           }
         }
@@ -24014,6 +24798,10 @@
             "to lack": {
               "t": "fehlen",
               "s": "to lack"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24098,6 +24886,10 @@
             "answering machine": {
               "t": "der Anrufbeantworter",
               "s": "answering machine"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24177,6 +24969,10 @@
             "on": {
               "t": "an",
               "s": "on"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -24243,6 +25039,10 @@
             "new": {
               "t": "neu",
               "s": "new"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24327,6 +25127,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24378,6 +25182,10 @@
             "printer": {
               "t": "der Drucker",
               "s": "printer"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -24449,6 +25257,10 @@
             "computer program": {
               "t": "das Computerprogramm",
               "s": "computer program"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24533,6 +25345,10 @@
             "automatic": {
               "t": "automatisch",
               "s": "automatic"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24680,6 +25496,10 @@
             "to turn off": {
               "t": "ausmachen",
               "s": "to turn off"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24744,6 +25564,10 @@
             "to be off": {
               "t": "aus sein",
               "s": "to be off"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24808,6 +25632,10 @@
             "to be closed": {
               "t": "zu sein",
               "s": "to be closed"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -24894,6 +25722,10 @@
             "occupied": {
               "t": "besetzt",
               "s": "occupied"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -24976,6 +25808,10 @@
             "short": {
               "t": "kurz",
               "s": "short"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -25113,6 +25949,10 @@
             "form": {
               "t": "das Formular",
               "s": "form"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -25169,6 +26009,10 @@
             "apology letter": {
               "t": "das Entschuldigungsschreiben",
               "s": "apology letter"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -25328,6 +26172,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -25422,6 +26270,14 @@
             "for (preposition)": {
               "t": "für",
               "s": "for (preposition)"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -25492,6 +26348,10 @@
             "to come along": {
               "t": "mitkommen",
               "s": "to come along"
+            },
+            "to me": {
+              "t": "mir",
+              "s": "to me"
             }
           }
         },
@@ -25559,6 +26419,10 @@
             "to join in": {
               "t": "mitmachen",
               "s": "to join in"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -25694,6 +26558,14 @@
             "big": {
               "t": "groß",
               "s": "big"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -25843,6 +26715,10 @@
             "married": {
               "t": "verheiratet",
               "s": "married"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -25914,6 +26790,10 @@
             "long": {
               "t": "lang",
               "s": "long"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -26175,6 +27055,10 @@
             "with": {
               "t": "mit",
               "s": "with"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -26321,6 +27205,10 @@
             "easter egg": {
               "t": "das Osterei",
               "s": "Easter egg"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -26382,6 +27270,10 @@
             "international women's day": {
               "t": "der Weltfrauentag",
               "s": "International Women's Day"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -26479,6 +27371,10 @@
             "unlucky day": {
               "t": "der Unglückstag",
               "s": "unlucky day"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -26678,6 +27574,10 @@
             "big": {
               "t": "groß",
               "s": "big"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -26736,6 +27636,10 @@
             "pity": {
               "t": "schade",
               "s": "pity"
+            },
+            "what": {
+              "t": "was",
+              "s": "what"
             }
           }
         }
@@ -26800,6 +27704,10 @@
             "teeth": {
               "t": "die Zähne",
               "s": "teeth"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -26875,6 +27783,10 @@
             "nose": {
               "t": "die Nase",
               "s": "nose"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -27060,6 +27972,14 @@
             "broken": {
               "t": "kaputt",
               "s": "broken"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "not"
+            },
+            "good": {
+              "t": "gut",
+              "s": "good"
             }
           }
         },
@@ -27253,6 +28173,10 @@
             "cold": {
               "t": "kalt",
               "s": "cold"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -27319,6 +28243,10 @@
             "body part": {
               "t": "der Körperteil",
               "s": "body part"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -27399,6 +28327,10 @@
             "easy": {
               "t": "einfach",
               "s": "easy"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -27521,6 +28453,10 @@
             "runny nose": {
               "t": "der Schnupfen",
               "s": "runny nose"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -27680,6 +28616,10 @@
             "also": {
               "t": "auch",
               "s": "also"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -27744,6 +28684,14 @@
             "city": {
               "t": "die Stadt",
               "s": "city"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -27808,6 +28756,10 @@
             "consulting room": {
               "t": "das Sprechzimmer",
               "s": "consulting room"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -27894,6 +28846,18 @@
             "waiting room": {
               "t": "das Wartezimmer",
               "s": "waiting room"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "to": {
+              "t": "zu",
+              "s": "to"
             }
           }
         }
@@ -27981,6 +28945,10 @@
             "drops": {
               "t": "die Tropfen",
               "s": "Drops"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -28049,6 +29017,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -28118,6 +29090,10 @@
             "bandage": {
               "t": "der Verband",
               "s": "bandage"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -28182,6 +29158,10 @@
             "sick note": {
               "t": "die Krankmeldung",
               "s": "sick note"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -28250,6 +29230,14 @@
             "emergency appointment": {
               "t": "die Notfallsprechstunde",
               "s": "emergency appointment"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -28330,6 +29318,10 @@
             "expensive": {
               "t": "teuer",
               "s": "expensive"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -28406,6 +29398,14 @@
             "slow": {
               "t": "langsam",
               "s": "slow"
+            },
+            "to me": {
+              "t": "mir",
+              "s": "to me"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -28600,6 +29600,10 @@
             "dead": {
               "t": "tot",
               "s": "dead"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -28666,6 +29670,10 @@
             "here": {
               "t": "hier",
               "s": "here"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -28731,6 +29739,14 @@
             "girl": {
               "t": "das Mädchen",
               "s": "girl"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         },
@@ -28791,6 +29807,10 @@
             "happy": {
               "t": "glücklich",
               "s": "happy"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -28873,6 +29893,10 @@
             "age": {
               "t": "das Alter",
               "s": "age"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -29251,6 +30275,10 @@
             "female": {
               "t": "weiblich",
               "s": "female"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -29597,6 +30625,10 @@
             "sister-in-law": {
               "t": "die Schwägerin",
               "s": "sister-in-law"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -29639,6 +30671,10 @@
             "relative": {
               "t": "der Verwandte",
               "s": "relative"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
             }
           }
         }
@@ -29708,6 +30744,10 @@
             "course": {
               "t": "der Kurs",
               "s": "course"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -30190,6 +31230,10 @@
             "coffee": {
               "t": "der Kaffee",
               "s": "coffee"
+            },
+            "as": {
+              "t": "als",
+              "s": "as"
             }
           }
         },
@@ -30324,6 +31368,10 @@
             "whole": {
               "t": "ganz",
               "s": "whole"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -30436,6 +31484,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -30560,6 +31612,18 @@
             "no": {
               "t": "nein",
               "s": "no"
+            },
+            "to have": {
+              "t": "haben",
+              "s": "to have"
+            },
+            "a/an": {
+              "t": "ein/eine",
+              "s": "a/an"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "not"
             }
           }
         },
@@ -30647,6 +31711,10 @@
             "uncomfortable": {
               "t": "ungemütlich",
               "s": "uncomfortable"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -30730,6 +31798,10 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -30953,6 +32025,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -31021,6 +32097,10 @@
             "normal": {
               "t": "normal",
               "s": "normal"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -31190,6 +32270,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -31261,6 +32345,10 @@
             "wide": {
               "t": "breit",
               "s": "wide"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -31324,6 +32412,10 @@
             "big": {
               "t": "groß",
               "s": "big"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -31404,6 +32496,10 @@
             "narrow": {
               "t": "schmal",
               "s": "narrow"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -31470,6 +32566,10 @@
             "hobby": {
               "t": "das Hobby",
               "s": "hobby"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -31528,6 +32628,10 @@
             "good": {
               "t": "gut",
               "s": "good"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -31652,6 +32756,10 @@
             "in": {
               "t": "in",
               "s": "in"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -31727,6 +32835,10 @@
             "beautiful": {
               "t": "schön",
               "s": "beautiful"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -31786,6 +32898,10 @@
             "at": {
               "t": "um",
               "s": "at"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         }
@@ -31842,6 +32958,10 @@
             "cultural": {
               "t": "kulturell",
               "s": "cultural"
+            },
+            "the": {
+              "t": "der, die, das",
+              "s": "the"
             }
           }
         },
@@ -32247,6 +33367,10 @@
             "matter": {
               "t": "die Sache",
               "s": "matter"
+            },
+            "in": {
+              "t": "in",
+              "s": "in"
             }
           }
         },

@@ -2875,6 +2875,10 @@
             "restaurant": {
               "t": "das Restaurant",
               "s": "restoran"
+            },
+            "to want": {
+              "t": "wollen",
+              "s": "istemek"
             }
           }
         },
@@ -4413,6 +4417,10 @@
             "nothing at all": {
               "t": "gar nichts",
               "s": "hiçbir şey"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "değil"
             }
           }
         },
@@ -4550,6 +4558,10 @@
             "not": {
               "t": "nicht",
               "s": "değil"
+            },
+            "to be on": {
+              "t": "an sein",
+              "s": "açık olmak"
             }
           }
         },
@@ -6195,6 +6207,10 @@
             "far": {
               "t": "weit",
               "s": "uzak"
+            },
+            "long": {
+              "t": "lang",
+              "s": "uzun"
             }
           }
         }
@@ -9024,6 +9040,10 @@
             "sweets": {
               "t": "die Süßigkeiten",
               "s": "şekerlemeler"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "değil"
             }
           }
         },
@@ -11004,6 +11024,10 @@
             "to be": {
               "t": "sein",
               "s": "olmak"
+            },
+            "because": {
+              "t": "weil",
+              "s": "çünkü"
             }
           }
         }
@@ -11212,6 +11236,10 @@
             "to work": {
               "t": "arbeiten",
               "s": "çalışmak"
+            },
+            "to function": {
+              "t": "funktionieren",
+              "s": "çalışmak (işlemek)"
             }
           }
         },
@@ -11565,6 +11593,10 @@
             "you (formal)": {
               "t": "Ihnen",
               "s": "size"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "değil"
             }
           }
         },
@@ -13433,6 +13465,10 @@
             "everything": {
               "t": "alles",
               "s": "her şey"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "değil"
             }
           }
         }
@@ -22180,6 +22216,10 @@
             "much": {
               "t": "viel",
               "s": "çok"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "değil"
             }
           }
         },
@@ -28033,6 +28073,10 @@
             "over there": {
               "t": "drüben",
               "s": "karşıda"
+            },
+            "to enter": {
+              "t": "eintreten",
+              "s": "girmek"
             }
           }
         }
@@ -34659,6 +34703,10 @@
             "burn": {
               "t": "brennen",
               "s": "yanmak"
+            },
+            "to be on": {
+              "t": "an sein",
+              "s": "açık olmak"
             }
           }
         }
@@ -35493,6 +35541,10 @@
             "ton": {
               "t": "die Tonne",
               "s": "ton"
+            },
+            "to be": {
+              "t": "sein",
+              "s": "olmak"
             }
           }
         }
@@ -35992,6 +36044,10 @@
             "nothing": {
               "t": "nichts",
               "s": "hiçbir şey"
+            },
+            "not": {
+              "t": "nicht",
+              "s": "değil"
             }
           }
         }
