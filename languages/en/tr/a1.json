@@ -1212,5 +1212,12 @@
     {"word_1": "şaka yapmak", "word_2": "to joke"},
     {"word_1": "bağırmak", "word_2": "to scream"},
     {"word_1": "şınav", "word_2": "push-up"},
-    {"word_1": "barfiks", "word_2": "pull-up"}
+    {"word_1": "barfiks", "word_2": "pull-up"},
+    {"word_1": "gelecek zaman", "word_2": "will"},
+    {"word_1": "herhangi bir", "word_2": "any"},
+    {"word_1": "birçok", "word_2": "many"},
+    {"word_1": "herkes", "word_2": "everyone"},
+    {"word_1": "herhangi biri", "word_2": "anyone"},
+    {"word_1": "herhangi bir şey", "word_2": "anything"},
+    {"word_1": "yapmak", "word_2": "to make"}
 ]

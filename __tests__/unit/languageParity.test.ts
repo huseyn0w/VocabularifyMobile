@@ -105,18 +105,23 @@ describe('course parity', () => {
     }
   }
 
-  // A1 has a course for every one of the 42 pairs. Every level above it has
-  // one only for German, which is the target that was written; the other
-  // six targets still have no course above A1 and must not silently gain one.
-  it('ships a course for all 42 pairs at A1 and for German at every level above', () => {
+  // A1 has a course for every one of the 42 pairs. Above A1 there are two
+  // written targets: German from all six sources, and English from German
+  // only - the English course was authored German-first, so en/ru and the
+  // other four fall back to the shared A1 course and must not silently gain
+  // a level of their own.
+  const ABOVE_A1 = ['de/en', 'de/fr', 'de/es', 'de/it', 'de/tr', 'de/ru', 'en/de'];
+
+  it('ships a course for all 42 pairs at A1, and for the written targets above it', () => {
     const at = (level: string) =>
       lessonFiles.filter((f) => f.pair.endsWith(`${level}.lessons.json`));
     expect(at('a1')).toHaveLength(42);
     for (const level of ['a2', 'b1', 'b2', 'c1']) {
-      expect(at(level)).toHaveLength(6);
-      expect(at(level).every((f) => f.pair.startsWith('de/'))).toBe(true);
+      expect(at(level).map((f) => f.pair.replace(`/${level}.lessons.json`, '')).sort()).toEqual(
+        [...ABOVE_A1].sort(),
+      );
     }
-    expect(lessonFiles).toHaveLength(66);
+    expect(lessonFiles).toHaveLength(70);
   });
 
   it.each(lessonFiles)('$pair fits its word file', ({ pair, file, words }) => {
@@ -135,9 +140,11 @@ describe('course parity', () => {
     // buildItems appends the remainder. It must never claim more.
     expect(covered).toBeLessThanOrEqual(wordList.length);
 
-    // German A1 is the one course written per target, so it covers its whole
-    // word file. Locking that in catches a partial re-copy from Desktop.
-    if (pair.startsWith('de/')) {
+    // A target that authored its own course owns its syllabus: the generator
+    // leaves untaught bank rows out of the word list entirely, so the course
+    // covers the file exactly. Locking that in catches a partial re-copy from
+    // Desktop. Pairs on the shared A1 course cover less, by design.
+    if (ABOVE_A1.some((p) => pair.startsWith(`${p}/`))) {
       expect(covered).toBe(wordList.length);
     }
 

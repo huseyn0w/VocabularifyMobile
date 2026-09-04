@@ -1504,5 +1504,12 @@
     {"word_1": "l'intérieur", "word_2": "interior"},
     {"word_1": "le tort", "word_2": "harm"},
     {"word_1": "libérer", "word_2": "to free"},
-    {"word_1": "tellement", "word_2": "so much"}
+    {"word_1": "tellement", "word_2": "so much"},
+    {"word_1": "futur (je ferai)", "word_2": "will"},
+    {"word_1": "n'importe quel", "word_2": "any"},
+    {"word_1": "beaucoup de", "word_2": "many"},
+    {"word_1": "tout le monde", "word_2": "everyone"},
+    {"word_1": "n'importe qui", "word_2": "anyone"},
+    {"word_1": "n'importe quoi", "word_2": "anything"},
+    {"word_1": "fabriquer", "word_2": "to make"}
 ]

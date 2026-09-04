@@ -560,5 +560,9 @@
     {"word_1": "çarpık", "word_2": "skewed"},
     {"word_1": "olsa bile", "word_2": "even though"},
     {"word_1": "ilişkin", "word_2": "concerning"},
-    {"word_1": "tarih belirlemek", "word_2": "to schedule"}
+    {"word_1": "tarih belirlemek", "word_2": "to schedule"},
+    {"word_1": "ya", "word_2": "either"},
+    {"word_1": "ne (ne de)", "word_2": "neither"},
+    {"word_1": "ne de", "word_2": "nor"},
+    {"word_1": "cesaret etmek", "word_2": "dare"}
 ]

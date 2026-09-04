@@ -1404,5 +1404,12 @@
     {"word_1": "il collaboratore", "word_2": "co-worker"},
     {"word_1": "il giustificativo", "word_2": "permit"},
     {"word_1": "la manifestazione", "word_2": "happening"},
-    {"word_1": "il volantino pubblicitario", "word_2": "leaflet"}
+    {"word_1": "il volantino pubblicitario", "word_2": "leaflet"},
+    {"word_1": "condizionale (farei)", "word_2": "would"},
+    {"word_1": "potrebbe", "word_2": "might"},
+    {"word_1": "facciamo? (proposta)", "word_2": "shall"},
+    {"word_1": "dovunque", "word_2": "anywhere"},
+    {"word_1": "un altro", "word_2": "another"},
+    {"word_1": "poteva", "word_2": "could"},
+    {"word_1": "di (paragone)", "word_2": "than"}
 ]

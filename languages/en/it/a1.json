@@ -1212,5 +1212,12 @@
     {"word_1": "scherzare", "word_2": "to joke"},
     {"word_1": "urlare", "word_2": "to scream"},
     {"word_1": "la flessione", "word_2": "push-up"},
-    {"word_1": "la trazione", "word_2": "pull-up"}
+    {"word_1": "la trazione", "word_2": "pull-up"},
+    {"word_1": "futuro (farò)", "word_2": "will"},
+    {"word_1": "qualsiasi", "word_2": "any"},
+    {"word_1": "molti", "word_2": "many"},
+    {"word_1": "tutti", "word_2": "everyone"},
+    {"word_1": "chiunque", "word_2": "anyone"},
+    {"word_1": "qualsiasi cosa", "word_2": "anything"},
+    {"word_1": "fare (fabbricare)", "word_2": "to make"}
 ]

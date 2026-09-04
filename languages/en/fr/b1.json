@@ -1804,5 +1804,7 @@
     {"word_1": "après que", "word_2": "after (conjunction)"},
     {"word_1": "de sorte que", "word_2": "so that (result)"},
     {"word_1": "ni ... ni", "word_2": "neither ... nor"},
-    {"word_1": "aussi bien ... que", "word_2": "both ... and"}
+    {"word_1": "aussi bien ... que", "word_2": "both ... and"},
+    {"word_1": "l'un l'autre", "word_2": "each other"},
+    {"word_1": "autrefois", "word_2": "used to (habit)"}
 ]

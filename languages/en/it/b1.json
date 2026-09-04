@@ -1708,5 +1708,7 @@
     {"word_1": "dopo che", "word_2": "after (conjunction)"},
     {"word_1": "così che", "word_2": "so that (result)"},
     {"word_1": "né ... né", "word_2": "neither ... nor"},
-    {"word_1": "sia ... sia", "word_2": "both ... and"}
+    {"word_1": "sia ... sia", "word_2": "both ... and"},
+    {"word_1": "l'un l'altro", "word_2": "each other"},
+    {"word_1": "una volta", "word_2": "used to (habit)"}
 ]

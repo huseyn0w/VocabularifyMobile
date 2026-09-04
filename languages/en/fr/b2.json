@@ -569,5 +569,9 @@
     {"word_1": "même si", "word_2": "even though"},
     {"word_1": "biais", "word_2": "slant"},
     {"word_1": "concernant", "word_2": "concerning"},
-    {"word_1": "planifier", "word_2": "to schedule"}
+    {"word_1": "planifier", "word_2": "to schedule"},
+    {"word_1": "soit", "word_2": "either"},
+    {"word_1": "ni (l'un ni l'autre)", "word_2": "neither"},
+    {"word_1": "ni non plus", "word_2": "nor"},
+    {"word_1": "oser", "word_2": "dare"}
 ]

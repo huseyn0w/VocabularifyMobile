@@ -560,5 +560,9 @@
     {"word_1": "distorsionado", "word_2": "skewed"},
     {"word_1": "aunque", "word_2": "even though"},
     {"word_1": "respecto a", "word_2": "concerning"},
-    {"word_1": "fijar la fecha", "word_2": "to schedule"}
+    {"word_1": "fijar la fecha", "word_2": "to schedule"},
+    {"word_1": "o bien", "word_2": "either"},
+    {"word_1": "ni (ninguno)", "word_2": "neither"},
+    {"word_1": "ni tampoco", "word_2": "nor"},
+    {"word_1": "atreverse", "word_2": "dare"}
 ]

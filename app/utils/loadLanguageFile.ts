@@ -228,6 +228,10 @@ const LANGUAGE_FILES: Record<string, Word[]> = {
 const LESSON_FILES: Record<string, LessonsFile> = {
   "english-french-a1": require("../../languages/en/fr/a1.lessons.json"),
   "english-german-a1": require("../../languages/en/de/a1.lessons.json"),
+  "english-german-a2": require("../../languages/en/de/a2.lessons.json"),
+  "english-german-b1": require("../../languages/en/de/b1.lessons.json"),
+  "english-german-b2": require("../../languages/en/de/b2.lessons.json"),
+  "english-german-c1": require("../../languages/en/de/c1.lessons.json"),
   "english-italian-a1": require("../../languages/en/it/a1.lessons.json"),
   "english-russian-a1": require("../../languages/en/ru/a1.lessons.json"),
   "english-spanish-a1": require("../../languages/en/es/a1.lessons.json"),

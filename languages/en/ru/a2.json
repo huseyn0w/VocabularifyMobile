@@ -1404,5 +1404,12 @@
     {"word_1": "сотрудник", "word_2": "co-worker"},
     {"word_1": "разрешение", "word_2": "permit"},
     {"word_1": "мероприятие", "word_2": "happening"},
-    {"word_1": "рекламный флаер", "word_2": "leaflet"}
+    {"word_1": "рекламный флаер", "word_2": "leaflet"},
+    {"word_1": "бы", "word_2": "would"},
+    {"word_1": "мог бы", "word_2": "might"},
+    {"word_1": "давай", "word_2": "shall"},
+    {"word_1": "где-нибудь", "word_2": "anywhere"},
+    {"word_1": "ещё один", "word_2": "another"},
+    {"word_1": "мог", "word_2": "could"},
+    {"word_1": "чем", "word_2": "than"}
 ]

@@ -1708,5 +1708,7 @@
     {"word_1": "después de que", "word_2": "after (conjunction)"},
     {"word_1": "de modo que", "word_2": "so that (result)"},
     {"word_1": "ni ... ni", "word_2": "neither ... nor"},
-    {"word_1": "tanto ... como", "word_2": "both ... and"}
+    {"word_1": "tanto ... como", "word_2": "both ... and"},
+    {"word_1": "el uno al otro", "word_2": "each other"},
+    {"word_1": "antes (solía)", "word_2": "used to (habit)"}
 ]

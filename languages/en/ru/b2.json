@@ -560,5 +560,9 @@
     {"word_1": "искажённый", "word_2": "skewed"},
     {"word_1": "даже если", "word_2": "even though"},
     {"word_1": "относительно", "word_2": "concerning"},
-    {"word_1": "назначать срок", "word_2": "to schedule"}
+    {"word_1": "назначать срок", "word_2": "to schedule"},
+    {"word_1": "или", "word_2": "either"},
+    {"word_1": "ни (ни один)", "word_2": "neither"},
+    {"word_1": "ни", "word_2": "nor"},
+    {"word_1": "сметь", "word_2": "dare"}
 ]
