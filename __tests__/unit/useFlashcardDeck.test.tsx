@@ -101,12 +101,33 @@ describe("useFlashcardDeck - auto-advance", () => {
     jest.useRealTimers();
   });
 
-  it("advances the index after `frequency` ms", async () => {
+  it("stays put by default: no timer unless auto-advance is on", async () => {
     const { result } = await renderHook(() =>
       useFlashcardDeck({
         items: ITEMS,
         deckKey: DECK,
         frequency: FREQUENCY,
+        mode: LearningMode.ShowBoth,
+      }),
+    );
+    await act(async () => {
+      await Promise.resolve();
+    });
+    expect(result.current.currentIndex).toBe(0);
+
+    await act(() => {
+      jest.advanceTimersByTime(FREQUENCY * 5);
+    });
+    expect(result.current.currentIndex).toBe(0);
+  });
+
+  it("advances the index after `frequency` ms when auto-advance is on", async () => {
+    const { result } = await renderHook(() =>
+      useFlashcardDeck({
+        items: ITEMS,
+        deckKey: DECK,
+        frequency: FREQUENCY,
+        autoAdvance: true,
         mode: LearningMode.ShowBoth,
       }),
     );
@@ -129,6 +150,7 @@ describe("useFlashcardDeck - auto-advance", () => {
         items: ITEMS,
         deckKey: DECK,
         frequency: FREQUENCY,
+        autoAdvance: true,
         mode: LearningMode.ShowBoth,
       }),
     );

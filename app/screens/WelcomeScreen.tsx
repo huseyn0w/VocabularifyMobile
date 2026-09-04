@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, ScrollView } from "react-native";
 import { useNavigation, NavigationProp } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -22,24 +22,23 @@ import {
 } from "../utils/types";
 import { setLanguageSettings } from "../services/storage";
 import { letterSpacing } from "../theme/tokens";
+import { translate, uiLanguageOf } from "../i18n";
+import { CopyKey } from "../i18n/copy";
 import SelectableRow from "../components/SelectableRow";
+import HowItWorks from "../components/HowItWorks";
+import LevelRow from "../components/LevelRow";
 
 type WelcomeScreenNavigationProp = NavigationProp<RootStackParamList, "Welcome">;
 
-const STEPS = [
-  {
-    title: "What do you\nwant to learn?",
-    subtitle: "Pick the language you are working on.",
-  },
-  {
-    title: "What do you\nalready speak?",
-    subtitle: "Translations will be shown in this language.",
-  },
-  {
-    title: "Where are you\nstarting?",
-    subtitle: "A1 is the beginning. You can change this later.",
-  },
-] as const;
+const QUESTIONS: { title: CopyKey; subtitle: CopyKey }[] = [
+  { title: "welcome.q1Title", subtitle: "welcome.q1Sub" },
+  { title: "welcome.q2Title", subtitle: "welcome.q2Sub" },
+  { title: "welcome.q3Title", subtitle: "welcome.q3Sub" },
+];
+
+// The explanation sits in front of the questions, so there are four steps in
+// the progress bar and the questions are steps 1 to 3.
+const STEP_COUNT = QUESTIONS.length + 1;
 
 const FADE_OUT = 130;
 const FADE_IN = 240;
@@ -49,19 +48,24 @@ const languageLabel = (language: Language): string =>
   `${LANGUAGE_META[language].flag} ${language}`;
 
 /**
- * First-run setup, as three steps on one screen rather than three lists
- * stacking down a scroll view.
+ * First run: what the app does, then three questions.
  *
- * The old screen revealed each section under the last, so by the third choice
- * the first was off-screen and the page had grown to roughly twice the
- * viewport. One question at a time fits without scrolling, and the answer to
- * each is what advances it.
+ * The questions were the whole screen before. A learner who opened the app
+ * cold picked a pair and a level without ever being told that words arrive in
+ * lessons or that sentences follow them, so the first sentence card looked
+ * like the app had skipped ahead. The explanation now comes first, once.
  *
- * The transition is a cross-fade in two halves rather than a slide: the
- * current step fades out, the painted step swaps at the bottom of the fade,
- * and the next one fades in with a small offset in the direction of travel.
- * Doing it in two halves keeps a single element in the layout, so nothing
- * jumps the way two overlapping absolutely-positioned steps would.
+ * One question at a time fits without scrolling, and the answer to each is
+ * what advances it. The transition is a cross-fade in two halves rather than a
+ * slide: the current step fades out, the painted step swaps at the bottom of
+ * the fade, and the next one fades in with a small offset in the direction of
+ * travel. Doing it in two halves keeps a single element in the layout, so
+ * nothing jumps the way two overlapping absolutely-positioned steps would.
+ *
+ * The copy is in the language the learner already speaks, which is only known
+ * from step 2 onwards. Before that it is English, because there is nothing
+ * else to go on; from the moment they name their language the rest of the
+ * screen switches to it.
  */
 const WelcomeScreen: React.FC = () => {
   const { setSettings } = useLanguageContext();
@@ -74,8 +78,16 @@ const WelcomeScreen: React.FC = () => {
   const [shownStep, setShownStep] = useState(0);
   const direction = useRef(1);
 
-  const [learningLanguage, setLearningLanguage] = useState<Language | null>(null);
+  const [learningLanguage, setLearningLanguage] = useState<Language | null>(
+    null,
+  );
   const [knownLanguage, setKnownLanguage] = useState<Language | null>(null);
+
+  const uiLanguage = uiLanguageOf(knownLanguage ?? "");
+  const t = useCallback(
+    (key: CopyKey) => translate(uiLanguage, key),
+    [uiLanguage],
+  );
 
   const fade = useSharedValue(1);
   const shift = useSharedValue(0);
@@ -145,11 +157,11 @@ const WelcomeScreen: React.FC = () => {
     (language) => availableCombinations[language].length > 0,
   );
   const knownOptions: Language[] = learningLanguage
-    ? availableCombinations[learningLanguage] ?? []
+    ? (availableCombinations[learningLanguage] ?? [])
     : [];
 
   const options: { key: string; label: string; onPress: () => void }[] =
-    shownStep === 0
+    shownStep === 1
       ? learnable.map((language) => ({
           key: language,
           label: languageLabel(language),
@@ -158,25 +170,21 @@ const WelcomeScreen: React.FC = () => {
             // A different target invalidates the source, since not every
             // pair exists.
             setKnownLanguage(null);
-            goTo(1);
+            goTo(2);
           },
         }))
-      : shownStep === 1
+      : shownStep === 2
         ? knownOptions.map((language) => ({
             key: language,
             label: languageLabel(language),
             onPress: () => {
               setKnownLanguage(language);
-              goTo(2);
+              goTo(3);
             },
           }))
-        : levels.map((level) => ({
-            key: level,
-            label: level,
-            onPress: () => finish(level),
-          }));
+        : [];
 
-  const { title, subtitle } = STEPS[shownStep];
+  const question = shownStep > 0 ? QUESTIONS[shownStep - 1] : null;
 
   return (
     <SafeAreaView className="flex-1 bg-bg">
@@ -187,28 +195,27 @@ const WelcomeScreen: React.FC = () => {
               onPress={() => goTo(step - 1)}
               hitSlop={12}
               accessibilityRole="button"
-              accessibilityLabel="Back"
+              accessibilityLabel={t("welcome.back")}
               className="flex-row items-center"
             >
               <Ionicons name="chevron-back" size={20} color={colors.inkMuted} />
               <Text className="ml-1 font-medium text-base text-ink-muted">
-                Back
+                {t("welcome.back")}
               </Text>
             </Pressable>
           ) : (
             <View />
           )}
 
-          {/* Three bars rather than "1 / 3": the filled width is the progress,
-              so it needs no reading. */}
+          {/* Bars rather than "1 / 4": the filled width is the progress, so it
+              needs no reading. */}
           <View className="flex-row items-center">
-            {STEPS.map((_, index) => (
+            {Array.from({ length: STEP_COUNT }, (_, index) => (
               <View
                 key={index}
                 className="ml-1.5 h-1 w-6 rounded-full"
                 style={{
-                  backgroundColor:
-                    index <= step ? colors.accent : colors.border,
+                  backgroundColor: index <= step ? colors.accent : colors.border,
                 }}
               />
             ))}
@@ -216,29 +223,80 @@ const WelcomeScreen: React.FC = () => {
         </View>
 
         <Animated.View style={stepStyle} className="flex-1">
-          <View className="mb-7 mt-6">
-            <Text
-              className="font-semibold text-4xl leading-[42px] text-ink"
-              style={{ letterSpacing: letterSpacing.display }}
+          {shownStep === 0 ? (
+            <ScrollView
+              showsVerticalScrollIndicator={false}
+              contentContainerStyle={{ paddingBottom: 32 }}
             >
-              {title}
-            </Text>
-            <Text className="mt-3 text-base leading-6 text-ink-muted">
-              {subtitle}
-            </Text>
-          </View>
+              <View className="mb-7 mt-6">
+                <Text
+                  className="font-semibold text-4xl leading-[42px] text-ink"
+                  style={{ letterSpacing: letterSpacing.display }}
+                >
+                  Vocabularify
+                </Text>
+              </View>
+              <HowItWorks />
+              <Pressable
+                onPress={() => goTo(1)}
+                accessibilityRole="button"
+                className="mt-2 items-center rounded-xl border border-border bg-surface px-5 py-4"
+              >
+                <Text className="font-semibold text-base text-ink">
+                  {t("how.continue")}
+                </Text>
+              </Pressable>
+            </ScrollView>
+          ) : (
+            <ScrollView
+              showsVerticalScrollIndicator={false}
+              contentContainerStyle={{ paddingBottom: 32 }}
+            >
+              <View className="mb-7 mt-6">
+                <Text
+                  className="font-semibold text-4xl leading-[42px] text-ink"
+                  style={{ letterSpacing: letterSpacing.display }}
+                >
+                  {question ? t(question.title) : ""}
+                </Text>
+                <Text className="mt-3 text-base leading-6 text-ink-muted">
+                  {question ? t(question.subtitle) : ""}
+                </Text>
+              </View>
 
-          <View className="overflow-hidden rounded-xl border border-border bg-surface">
-            {options.map((option, index) => (
-              <SelectableRow
-                key={option.key}
-                label={option.label}
-                selected={false}
-                onPress={option.onPress}
-                isLast={index === options.length - 1}
-              />
-            ))}
-          </View>
+              {shownStep === 3 ? (
+                <>
+                  <View className="overflow-hidden rounded-xl border border-border bg-surface">
+                    {levels.map((level, index) => (
+                      <LevelRow
+                        key={level}
+                        level={level}
+                        language={uiLanguage}
+                        selected={false}
+                        onPress={() => finish(level)}
+                        isLast={index === levels.length - 1}
+                      />
+                    ))}
+                  </View>
+                  <Text className="mt-4 px-1 text-sm leading-5 text-ink-subtle">
+                    {t("level.scale")}
+                  </Text>
+                </>
+              ) : (
+                <View className="overflow-hidden rounded-xl border border-border bg-surface">
+                  {options.map((option, index) => (
+                    <SelectableRow
+                      key={option.key}
+                      label={option.label}
+                      selected={false}
+                      onPress={option.onPress}
+                      isLast={index === options.length - 1}
+                    />
+                  ))}
+                </View>
+              )}
+            </ScrollView>
+          )}
         </Animated.View>
       </View>
     </SafeAreaView>

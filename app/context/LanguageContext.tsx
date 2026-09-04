@@ -6,6 +6,8 @@ import {
   setMode as persistMode,
   getFrequency,
   setFrequency as persistFrequency,
+  getAutoAdvance,
+  setAutoAdvance as persistAutoAdvance,
   DEFAULT_LANGUAGE_SETTINGS,
 } from '../services/storage';
 import { LanguageSettings, LearningMode } from '../utils/types';
@@ -18,6 +20,9 @@ interface LanguageContextProps {
   setMode: (mode: LearningMode) => void;
   frequency: number;
   setFrequency: (frequency: number) => void;
+  /** Whether a card turns on its own. Off unless the learner asked for it. */
+  autoAdvance: boolean;
+  setAutoAdvance: (enabled: boolean) => void;
 }
 
 interface LanguageProviderProps {
@@ -30,6 +35,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   const [settings, setSettings] = useState<LanguageSettings>(DEFAULT_LANGUAGE_SETTINGS);
   const [mode, setMode] = useState<LearningMode>(LearningMode.ShowBoth);
   const [frequency, setFrequency] = useState<number>(DEFAULT_FREQUENCY);
+  const [autoAdvance, setAutoAdvance] = useState<boolean>(false);
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
@@ -42,6 +48,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         }
         setMode(await getMode());
         setFrequency(await getFrequency());
+        setAutoAdvance(await getAutoAdvance());
       } catch (error) {
         console.error('Failed to load settings', error);
       } finally {
@@ -72,8 +79,25 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     }
   }, [frequency, hydrated]);
 
+  useEffect(() => {
+    if (hydrated) {
+      persistAutoAdvance(autoAdvance);
+    }
+  }, [autoAdvance, hydrated]);
+
   return (
-    <LanguageContext.Provider value={{ settings, setSettings, mode, setMode, frequency, setFrequency }}>
+    <LanguageContext.Provider
+      value={{
+        settings,
+        setSettings,
+        mode,
+        setMode,
+        frequency,
+        setFrequency,
+        autoAdvance,
+        setAutoAdvance,
+      }}
+    >
       {children}
     </LanguageContext.Provider>
   );

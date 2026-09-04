@@ -19,6 +19,8 @@ export const STORAGE_KEYS = {
   deckIndex: "deckProgress",
   mode: "learningMode",
   frequency: "WORDS_FREQUENCY",
+  autoAdvance: "autoAdvance",
+  deckPin: "deckPin",
   theme: "theme",
 } as const;
 
@@ -177,6 +179,38 @@ export async function setDeckIndex(key: string, index: number): Promise<void> {
   await AsyncStorage.setItem(STORAGE_KEYS.deckIndex, JSON.stringify(map));
 }
 
+// --- saved spot ------------------------------------------------------------
+
+/**
+ * One bookmark per deck, set by hand from the Progress screen.
+ *
+ * This is deliberately not the same thing as the position above. The position
+ * moves with every card, including the ones swiped past while looking for
+ * something; the bookmark only moves when the learner says so, which is what
+ * makes it worth coming back to.
+ */
+export async function getDeckPin(key: string): Promise<number | null> {
+  const value = await readJSON(STORAGE_KEYS.deckPin);
+  if (!isIndexMap(value)) return null;
+  const stored = value[key];
+  return typeof stored === "number" ? Math.floor(stored) : null;
+}
+
+export async function setDeckPin(key: string, index: number): Promise<void> {
+  const value = await readJSON(STORAGE_KEYS.deckPin);
+  const map = isIndexMap(value) ? { ...value } : {};
+  map[key] = Math.max(0, Math.floor(index));
+  await AsyncStorage.setItem(STORAGE_KEYS.deckPin, JSON.stringify(map));
+}
+
+export async function clearDeckPin(key: string): Promise<void> {
+  const value = await readJSON(STORAGE_KEYS.deckPin);
+  if (!isIndexMap(value)) return;
+  const map = { ...value };
+  delete map[key];
+  await AsyncStorage.setItem(STORAGE_KEYS.deckPin, JSON.stringify(map));
+}
+
 // --- mode ------------------------------------------------------------------
 
 export async function getMode(): Promise<LearningMode> {
@@ -209,6 +243,26 @@ export async function getFrequency(): Promise<number> {
 
 export async function setFrequency(frequency: number): Promise<void> {
   await AsyncStorage.setItem(STORAGE_KEYS.frequency, JSON.stringify(frequency));
+}
+
+// --- auto-advance ----------------------------------------------------------
+
+/**
+ * Whether a card turns on its own.
+ *
+ * Off unless the learner asked for it. The app used to advance every five
+ * seconds from the first launch, which reads a sentence away before it has
+ * been read and gives no way to sit on a word. An unset key is a learner who
+ * never chose, so it means off - including for anyone upgrading, who can turn
+ * it back on in one tap.
+ */
+export async function getAutoAdvance(): Promise<boolean> {
+  const value = await readJSON(STORAGE_KEYS.autoAdvance);
+  return value === true;
+}
+
+export async function setAutoAdvance(enabled: boolean): Promise<void> {
+  await AsyncStorage.setItem(STORAGE_KEYS.autoAdvance, JSON.stringify(enabled));
 }
 
 // --- theme -----------------------------------------------------------------

@@ -19,6 +19,7 @@ import Animated, {
   useReducedMotion,
 } from "react-native-reanimated";
 import { useLanguageContext } from "../context/LanguageContext";
+import { useTranslate } from "../i18n";
 import { useThemeColors } from "../hooks/useThemeColors";
 import { useItems } from "../hooks/useItems";
 import { useFlashcardDeck } from "../hooks/useFlashcardDeck";
@@ -27,6 +28,7 @@ import AmbientBackground, { WordGlow } from "../components/AmbientBackground";
 import SentenceText, { SelectedWord } from "../components/SentenceText";
 import { joinTokens } from "../utils/items";
 import { deckKey } from "../services/storage";
+import { useDeckRevision } from "../services/deckSignal";
 import { duration, letterSpacing } from "../theme/tokens";
 
 const { width } = Dimensions.get("window");
@@ -55,8 +57,12 @@ const sentenceType = (length: number) => {
 
 const HomeScreen: React.FC = () => {
   const colors = useThemeColors();
-  const { settings, mode, frequency } = useLanguageContext();
+  const { settings, mode, frequency, autoAdvance } = useLanguageContext();
+  const { t } = useTranslate();
   const reducedMotion = useReducedMotion();
+  // The Progress screen writes this deck's position from the Settings tab
+  // while this screen stays mounted behind it; the signal is how it says so.
+  const deckRevision = useDeckRevision();
 
   const { items, placements, loading } = useItems(settings);
   const {
@@ -74,7 +80,9 @@ const HomeScreen: React.FC = () => {
     items,
     placements,
     frequency,
+    autoAdvance,
     mode,
+    refreshToken: deckRevision,
     deckKey: deckKey(
       settings.learningLanguage,
       settings.knownLanguage,
@@ -240,10 +248,10 @@ const HomeScreen: React.FC = () => {
     return (
       <View className="flex-1 items-center justify-center bg-bg px-8">
         <Text className="text-center font-medium text-2xl text-ink">
-          No words available
+          {t("home.noWords")}
         </Text>
         <Text className="mt-2 text-center text-base text-ink-muted">
-          Choose a language pair in Settings to begin.
+          {t("home.noWordsHint")}
         </Text>
       </View>
     );
@@ -347,7 +355,7 @@ const HomeScreen: React.FC = () => {
                     </Text>
                   ) : (
                     <Text className="text-center text-sm text-ink-subtle">
-                      tap an underlined word
+                      {t("home.tapHint")}
                     </Text>
                   )}
                 </View>
@@ -365,7 +373,9 @@ const HomeScreen: React.FC = () => {
           </Text>
           {lessonCount > 0 && (
             <Text className="font-medium text-sm text-ink-subtle">
-              {lesson > 0 ? `lesson ${lesson} / ${lessonCount}` : "extra"}
+              {lesson > 0
+                ? t("home.lesson", { n: lesson, total: lessonCount })
+                : t("home.extra")}
             </Text>
           )}
           <Text className="font-medium text-sm text-ink-subtle">
@@ -374,9 +384,7 @@ const HomeScreen: React.FC = () => {
         </View>
         <ProgressBar progress={progress} className="w-full" />
         <Text className="mt-5 text-sm tracking-[0.3px] text-ink-subtle">
-          {lessonCount > 0
-            ? "swipe sideways for a card, up for a lesson"
-            : "swipe to continue"}
+          {lessonCount > 0 ? t("home.swipeBoth") : t("home.swipeOnly")}
         </Text>
       </View>
     </GestureHandlerRootView>

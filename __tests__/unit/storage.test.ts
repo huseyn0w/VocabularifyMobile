@@ -14,6 +14,11 @@ import {
   setFrequency,
   getTheme,
   setTheme,
+  getAutoAdvance,
+  setAutoAdvance,
+  getDeckPin,
+  setDeckPin,
+  clearDeckPin,
   migrateSettings,
 } from '../../app/services/storage';
 import { LearningMode } from '../../app/utils/types';
@@ -176,6 +181,39 @@ describe('round-trips per key', () => {
 
     await AsyncStorage.setItem(STORAGE_KEYS.frequency, JSON.stringify(0));
     expect(await getFrequency()).toBe(DEFAULT_FREQUENCY);
+  });
+
+  it('auto-advance is off until it is turned on', async () => {
+    expect(await getAutoAdvance()).toBe(false);
+
+    await setAutoAdvance(true);
+    expect(await getAutoAdvance()).toBe(true);
+
+    await setAutoAdvance(false);
+    expect(await getAutoAdvance()).toBe(false);
+
+    // Anything that is not a stored `true` means off, including the legacy
+    // absence of the key for someone upgrading.
+    await AsyncStorage.setItem(STORAGE_KEYS.autoAdvance, 'banana');
+    expect(await getAutoAdvance()).toBe(false);
+  });
+
+  it('the saved spot is per deck, and separate from the position', async () => {
+    const a = deckKey('german', 'english', 'a1');
+    const b = deckKey('german', 'english', 'b1');
+
+    expect(await getDeckPin(a)).toBeNull();
+
+    await setDeckPin(a, 42);
+    await setDeckIndex(a, 7);
+    expect(await getDeckPin(a)).toBe(42);
+    // Moving the deck does not move the bookmark; that is the whole point.
+    expect(await getDeckIndex(a)).toBe(7);
+    expect(await getDeckPin(b)).toBeNull();
+
+    await clearDeckPin(a);
+    expect(await getDeckPin(a)).toBeNull();
+    expect(await getDeckIndex(a)).toBe(7);
   });
 
   it('theme round-trips and defaults to system', async () => {

@@ -16,11 +16,13 @@ import {
   REPO_MOBILE_URL,
 } from "../utils/constants";
 import { duration, letterSpacing } from "../theme/tokens";
+import { useTranslate } from "../i18n";
 import ScreenContainer from "../components/ScreenContainer";
 import LinkRow from "../components/LinkRow";
 
 const AboutScreen: React.FC = () => {
   const reducedMotion = useReducedMotion();
+  const { t } = useTranslate();
 
   const entering = reducedMotion
     ? FadeIn.duration(duration.base)
@@ -38,21 +40,24 @@ const AboutScreen: React.FC = () => {
           Vocabularify
         </Text>
         <Text className="mt-4 text-base leading-6 text-ink-muted">
-          A quiet way to expand your vocabulary - one word at a time, at your
-          own pace.
+          {t("about.tagline")}
         </Text>
       </Animated.View>
 
       <View className="mb-8">
-        <LinkRow url={PROJECT_URL} label="Project page" icon="globe-outline" />
+        <LinkRow
+          url={PROJECT_URL}
+          label={t("about.projectPage")}
+          icon="globe-outline"
+        />
         <LinkRow
           url={REPO_MOBILE_URL}
-          label="GitHub project"
+          label={t("about.repoMobile")}
           icon="logo-github"
         />
         <LinkRow
           url={REPO_DESKTOP_URL}
-          label="Desktop version"
+          label={t("about.repoDesktop")}
           icon="desktop-outline"
         />
         <LinkRow

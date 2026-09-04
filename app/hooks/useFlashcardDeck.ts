@@ -12,10 +12,17 @@ interface UseFlashcardDeckParams {
   /** Lesson placement per item. Empty for a deck with no course. */
   placements?: ItemPlacement[];
   frequency: number;
+  /** Whether the timer runs at all. Off means a card waits for a swipe. */
+  autoAdvance?: boolean;
   mode: LearningMode;
   /** Identifies the deck for position persistence. Null until settings load;
    *  while it is null nothing is read or written. */
   deckKey?: string | null;
+  /** Changing this re-reads the stored position. The Progress screen writes
+   *  the position from another tab, and this screen stays mounted behind it,
+   *  so without a re-read a restart would not take effect until the app was
+   *  relaunched. Re-reading what this hook itself wrote is a no-op. */
+  refreshToken?: unknown;
 }
 
 interface UseFlashcardDeckResult {
@@ -36,6 +43,9 @@ interface UseFlashcardDeckResult {
   lessonCount: number;
   /** Whether the translation line should currently be shown. */
   showTranslation: boolean;
+  /** Jumps straight to an item. Used by the Progress screen to restart a
+   *  level or return to a saved spot. Out-of-range values are clamped. */
+  goTo: (index: number) => void;
 }
 
 /**
@@ -50,8 +60,10 @@ export function useFlashcardDeck({
   items,
   placements,
   frequency,
+  autoAdvance = false,
   mode,
   deckKey = null,
+  refreshToken,
 }: UseFlashcardDeckParams): UseFlashcardDeckResult {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [showTranslation, setShowTranslation] = useState<boolean>(true);
@@ -81,7 +93,7 @@ export function useFlashcardDeck({
     return () => {
       cancelled = true;
     };
-  }, [total, deckKey]);
+  }, [total, deckKey, refreshToken]);
 
   // Persist the position whenever it changes.
   useEffect(() => {
@@ -116,22 +128,29 @@ export function useFlashcardDeck({
   const nextLesson = useCallback(() => jump(1), [jump]);
   const prevLesson = useCallback(() => jump(-1), [jump]);
 
+  const goTo = useCallback((index: number) => {
+    const len = totalRef.current;
+    if (len === 0) return;
+    setCurrentIndex(Math.max(0, Math.min(len - 1, Math.floor(index))));
+  }, []);
+
   const current =
     currentIndex !== null && currentIndex < total ? items[currentIndex] : null;
   const isSentence = current?.kind === "sentence";
 
-  // Auto-advance. Restarts when the index changes (so a manual swipe resets
-  // the countdown), when frequency or deck size changes, and is always cleared
-  // on unmount.
+  // Auto-advance, when the learner asked for it. Restarts when the index
+  // changes (so a manual swipe resets the countdown), when frequency or deck
+  // size changes, and is always cleared on unmount. With it off no timer is
+  // scheduled at all, so a card waits indefinitely.
   useEffect(() => {
-    if (total === 0 || currentIndex === null) return undefined;
+    if (!autoAdvance || total === 0 || currentIndex === null) return undefined;
 
     const dwell = isSentence
       ? frequency * SENTENCE_DWELL_MULTIPLIER
       : frequency;
     const timer = setTimeout(() => next(), dwell);
     return () => clearTimeout(timer);
-  }, [frequency, total, next, currentIndex, isSentence]);
+  }, [autoAdvance, frequency, total, next, currentIndex, isSentence]);
 
   // Reveal-after-delay for "show word then translation".
   useEffect(() => {
@@ -161,6 +180,7 @@ export function useFlashcardDeck({
     lesson: placement?.lesson ?? 0,
     lessonCount: placement?.lessonCount ?? 0,
     showTranslation,
+    goTo,
   };
 }
 

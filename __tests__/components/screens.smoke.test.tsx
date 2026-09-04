@@ -8,6 +8,8 @@ import LearningModeScreen from '../../app/screens/LearningModeScreen';
 import LanguageSettingsScreen from '../../app/screens/LanguageSettingsScreen';
 import BackgroundScreen from '../../app/screens/BackgroundScreen';
 import AboutScreen from '../../app/screens/AboutScreen';
+import ProgressScreen from '../../app/screens/ProgressScreen';
+import HowItWorksScreen from '../../app/screens/HowItWorksScreen';
 
 // Stub navigation for screens that consume @react-navigation.
 const mockNavigation: any = { navigate: jest.fn(), goBack: jest.fn() };
@@ -28,17 +30,19 @@ describe('screen smoke tests', () => {
     });
   });
 
-  it('Welcome renders the first step and its language options', async () => {
+  it('Welcome opens on the explanation, not on a question', async () => {
     await renderWithProviders(<WelcomeScreen />);
-    expect(await screen.findByText(/want to learn\?/i)).toBeTruthy();
-    expect(screen.getByText('🇬🇧 English')).toBeTruthy();
+    expect(await screen.findByText(/Words come in lessons/)).toBeTruthy();
+    expect(screen.queryByText('🇬🇧 English')).toBeNull();
   });
 
   it('Settings renders its preference rows', async () => {
     await renderWithProviders(<SettingsScreen navigation={mockNavigation} />);
-    expect(await screen.findByText('Learning Mode')).toBeTruthy();
+    expect(await screen.findByText('Progress')).toBeTruthy();
+    expect(screen.getByText('Learning mode')).toBeTruthy();
     expect(screen.getByText('Language settings')).toBeTruthy();
-    expect(screen.getByText('Background')).toBeTruthy();
+    expect(screen.getByText('Appearance')).toBeTruthy();
+    expect(screen.getByText('How it works')).toBeTruthy();
     expect(screen.getByText('About')).toBeTruthy();
   });
 
@@ -48,10 +52,24 @@ describe('screen smoke tests', () => {
     expect(screen.getByText('Word first, then translation')).toBeTruthy();
   });
 
-  it('LanguageSettings renders the selector + frequency section', async () => {
+  it('LanguageSettings renders the selector, the levels and the pace section', async () => {
     await renderWithProviders(<LanguageSettingsScreen />);
     expect(await screen.findByText('I want to learn')).toBeTruthy();
-    expect(screen.getByText('Word frequency')).toBeTruthy();
+    // The level rows say what the code means, so "A1" never stands alone.
+    expect(screen.getByText(/Beginner/)).toBeTruthy();
+    expect(screen.getByText('Pace')).toBeTruthy();
+  });
+
+  it('Progress renders the position and both level actions', async () => {
+    await renderWithProviders(<ProgressScreen />);
+    expect(await screen.findByText('Save this spot')).toBeTruthy();
+    expect(screen.getByText('Start this level over')).toBeTruthy();
+  });
+
+  it('HowItWorks renders the explanation', async () => {
+    await renderWithProviders(<HowItWorksScreen />);
+    expect(await screen.findByText(/Words come in lessons/)).toBeTruthy();
+    expect(screen.getByText('No streaks, no scores')).toBeTruthy();
   });
 
   it('Background renders the appearance options', async () => {

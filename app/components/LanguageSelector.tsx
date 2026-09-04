@@ -1,7 +1,10 @@
 import React from 'react';
+import { Text } from 'react-native';
 import { Language, LANGUAGE_META, availableCombinations, languages, levels } from '../utils/types';
+import { useTranslate } from '../i18n';
 import Section from './Section';
 import SelectableRow from './SelectableRow';
+import LevelRow from './LevelRow';
 
 interface LanguageSelectorProps {
   /** Currently selected learning language (the language being learned), lowercase or null. */
@@ -40,6 +43,8 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   onSelectKnown,
   onSelectLevel,
 }) => {
+  const { t, language: uiLanguage } = useTranslate();
+
   const learnableLanguages = languages.filter(
     (language) => availableCombinations[language].length > 0,
   );
@@ -51,7 +56,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
   return (
     <>
-      <Section title="I want to learn" index={0}>
+      <Section title={t('select.learn')} index={0}>
         {learnableLanguages.map((language, i) => (
           <SelectableRow
             key={language}
@@ -64,7 +69,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       </Section>
 
       {learningLanguage ? (
-        <Section title="From" index={1}>
+        <Section title={t('select.from')} index={1}>
           {knownOptions.map((language, i) => (
             <SelectableRow
               key={language}
@@ -78,19 +83,25 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       ) : null}
 
       {knownLanguage ? (
-        <Section title="Level" index={2}>
-          {levels.map((levelOption, i) => (
-            <SelectableRow
-              key={levelOption}
-              label={levelOption}
-              selected={
-                level != null && level.toLowerCase() === levelOption.toLowerCase()
-              }
-              onPress={() => onSelectLevel(levelOption)}
-              isLast={i === levels.length - 1}
-            />
-          ))}
-        </Section>
+        <>
+          <Section title={t('select.level')} index={2}>
+            {levels.map((levelOption, i) => (
+              <LevelRow
+                key={levelOption}
+                level={levelOption}
+                language={uiLanguage}
+                selected={
+                  level != null && level.toLowerCase() === levelOption.toLowerCase()
+                }
+                onPress={() => onSelectLevel(levelOption)}
+                isLast={i === levels.length - 1}
+              />
+            ))}
+          </Section>
+          <Text className="-mt-3 mb-6 px-1 text-sm leading-5 text-ink-subtle">
+            {t('level.scale')}
+          </Text>
+        </>
       ) : null}
     </>
   );

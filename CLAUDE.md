@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Vocabularify is a fully-offline Expo / React Native vocabulary-learning app (Expo SDK 57, RN 0.86, React 19, TypeScript strict). It shows flashcards (a word in the language being learned plus its translation), auto-advances on a timer, and lets the user swipe between cards. Settings, theme, and progress are persisted locally via `AsyncStorage`. There is **no backend and no network access** - the only outbound action is `Linking.openURL` for donation/author links.
+Vocabularify is a fully-offline Expo / React Native vocabulary-learning app (Expo SDK 57, RN 0.86, React 19, TypeScript strict). It shows flashcards (a word in the language being learned plus its translation) and lets the user swipe between cards; a card can also turn on a timer, off unless asked for. Settings, theme, and progress are persisted locally via `AsyncStorage`. There is **no backend and no network access** - the only outbound action is `Linking.openURL` for donation/author links.
 
 ## Commands
 
@@ -32,14 +32,14 @@ Navigation tree:
 
 - Root `StackNavigator` (`app/index.js`): shows `WelcomeScreen` on first launch (no saved settings), then `Main`.
 - `Main` → `BottomTabNavigator` (`app/navigation/`): `Home` + `Settings` tabs.
-- `Settings` → `SettingsStackNavigator`: Settings, LearningMode, LanguageSettings, About, Background.
+- `Settings` → `SettingsStackNavigator`: Settings, Progress, LearningMode, LanguageSettings, Background, HowItWorks, About.
 
 **Layout** (all under `app/`): `context/`, `navigation/`, `screens/`, `components/` (shared UI primitives), `hooks/`, `services/`, `theme/`, `utils/`.
 
 **State** lives in two contexts (`app/context/`), both wrapping the app in `index.js`:
 
 - `ThemeContext` - `light`/`dark`/`system`; drives NativeWind's `colorScheme` so the `.dark` class flips the palette app-wide. Persisted under the `theme` key.
-- `LanguageContext` - `settings` (`{ learningLanguage, knownLanguage, level }`), `mode`, `frequency`. Reads/writes go through the storage service.
+- `LanguageContext` - `settings` (`{ learningLanguage, knownLanguage, level }`), `mode`, `frequency`, `autoAdvance`. Reads/writes go through the storage service.
 
 **Persistence is centralized** in `app/services/storage.ts` - a typed `AsyncStorage` wrapper that safely parses, validates, and migrates stored data (never trust raw JSON). It also migrates the legacy `{ fromLanguage, toLanguage }` settings shape (see naming note) to the current one on read.
 
@@ -47,13 +47,30 @@ Navigation tree:
 
 **Lessons and sentences:** a level may also ship `languages/<learning>/<known>/<level>.lessons.json`, a course laid out as lessons: `{ lessons: [{ count, sentences: [{ id, target, source, gloss }] }] }`. `count` is how many words of the word file belong to that lesson; `target` is the sentence in the language being learned, split into tokens (`{ t, c }` for a word backed by a taught concept, a bare string for glue - punctuation and obligatory articles); `gloss` maps concept id to `{ t: citation form, s: its translation }`.
 
-`app/utils/items.ts` turns a word list plus a course into the item list the deck cycles through - a lesson's words, then its sentences, then the next lesson - and owns the token-spacing rule. It mirrors Desktop's `src/shared/items.ts`; keep the two in step. A level with no course file yields the flat word list, so nothing regresses for the levels still awaiting one. As of the German A1 course, all 42 pairs ship an A1 course; only the six `de/*` ones cover the whole word file.
+`app/utils/items.ts` turns a word list plus a course into the item list the deck cycles through - a lesson's words, then its sentences, then the next lesson - and owns the token-spacing rule. It mirrors Desktop's `src/shared/items.ts`; keep the two in step. A level with no course file yields the flat word list, so nothing regresses for the levels still awaiting one. All 42 pairs ship an A1 course. Two targets have a course at every level: German from all six sources, and English from German - 70 lesson files in all. A pair whose target authored its own course covers that word file exactly; the rest sit on the shared A1 course and cover less.
 
 `useItems` loads word file + course and assembles both; `useFlashcardDeck` owns the position, the auto-advance timer (a sentence holds the screen `SENTENCE_DWELL_MULTIPLIER` times as long as a word), wrap-around, lesson jumps, and the reveal-after-delay for "word then translation" mode. `HomeScreen` is a thin presentational layer over those hooks plus the swipe gesture (reanimated + gesture-handler): sideways moves one card, up and down moves a whole lesson. The pan handler wraps the whole card area rather than the card, which is only as tall as its own text - on the card, a drag registered on the word and nowhere else. The card sits inside a hairline border that takes on the direction of the drag - `swipeForward` green going forward, `swipeBack` yellow going back - reaching full colour at the distance that commits the move, so one hairline answers both which way and far enough yet.
 
 **Naming note:** in `settings`, `learningLanguage` is the language being _learned_ and `knownLanguage` is the user's known language. On disk that is inverted: `word_1` holds the known language and `word_2` the one being learned, and the card shows `word_2` large with `word_1` underneath. Older builds persisted the settings as `fromLanguage`/`toLanguage`; the storage service migrates that automatically. Word files are bundled statically - they cannot be loaded by dynamic path.
 
 **Position** is stored per deck (`<learning>:<known>:<level>`) under the `deckProgress` key, so switching pair or level no longer discards where the learner was. The index counts items, not words.
+
+**The saved spot** is a second, separate index per deck under `deckPin`, set by hand from `ProgressScreen`. The position moves with every card, including the ones swiped past while looking for something; the bookmark moves only when the learner says so, which is what makes it worth returning to. `ProgressScreen` also restarts a level by writing position 0.
+
+`ProgressScreen` lives in the Settings tab and the deck lives in Home, and both tabs stay mounted, so a write from one is invisible to the other. `app/services/deckSignal.ts` closes that: `markDeckMoved()` bumps a module-level counter, `useDeckRevision()` subscribes via `useSyncExternalStore`, and `HomeScreen` passes it to `useFlashcardDeck` as `refreshToken`, which re-reads the stored position. A module counter rather than `useIsFocused`, which would tie `HomeScreen` to a navigation container it does not otherwise need - and that its tests would then have to build.
+
+**Auto-advance is off by default** (`autoAdvance` key, absent means off, including for anyone upgrading). With it off `useFlashcardDeck` schedules no timer at all, so a card waits indefinitely. The interval list in `LanguageSettingsScreen` only appears once the timer is wanted.
+
+## Interface language
+
+**The interface follows `settings.knownLanguage`, not the phone locale.** A German speaker learning English picked German as the language they already have, so that is the language they can read an instruction in; the phone locale would be right more often than English was, and still wrong for anyone studying abroad.
+
+- `app/i18n/copy.ts` is the whole string table. Keys hold all seven translations side by side (`{ en, de, fr, es, it, tr, ru }`) rather than one object per language, so a gap is visible while writing and adding a key means adding one block. `{name}` placeholders are filled by `t()`.
+- `app/i18n/index.ts` exports `useTranslate()` (`{ t, language }`) for components inside `LanguageProvider`, and `translate(language, key, vars)` for anywhere that has to name the language itself. `WelcomeScreen` uses the second: the known language is not known until step 2, so the wizard opens in English and switches the moment the learner names their language.
+- `__tests__/unit/i18n.test.ts` fails on a missing translation, on a language the picker offers with no column, and on a translation whose placeholders drift from the English one. Add strings to the table, never inline in a screen.
+- Screen and tab **titles** are translated; **route names** stay English - `getTabBarIconName` keys off them and they are the navigation contract.
+- Level codes get a name and a sentence (`level.a1.name` / `level.a1.desc`), rendered by `app/components/LevelRow.tsx`. "A1" is a CEFR label and says nothing to anyone who has not met it.
+- `app/components/HowItWorks.tsx` is the explanation of the method, shown as the first step of `WelcomeScreen` and reachable afterwards from Settings.
 
 ## Styling (NativeWind v4)
 
@@ -72,11 +89,12 @@ The static require map and language metadata are **generated**, not hand-edited:
 1. Add the JSON file at `languages/<learning>/<known>/<level>.json` (array of `{ "word_1": "...", "word_2": "..." }`), using the 2-letter code dirs (`en`, `de`, …).
 2. Optionally add the course at `languages/<learning>/<known>/<level>.lessons.json` - copy it from Desktop rather than writing it here; Desktop's `utils/generate_pairs.js` produces both files together, and its lint is what guarantees a sentence uses only words already taught.
 3. Run `npm run generate:languages`. This scans `languages/` and regenerates `app/utils/loadLanguageFile.ts` (the static `require` maps Metro bundles, for both word files and course files) and `app/utils/languageData.ts` (`languages` / `levels` / `availableCombinations` / `LANGUAGE_META`). Both files carry a `DO NOT EDIT` header - never hand-edit them; `app/utils/types.ts` re-exports the data from `languageData.ts`.
-4. The generator's `META` map (`scripts/generate-language-map.js`) is the single source of truth for code↔name↔flag and mirrors Desktop's `LANGUAGE_META`; add a new language there first. Commit the regenerated output. The parity guard tests (`__tests__/unit/languageParity.test.ts`) verify every pair resolves to a real on-disk file, and that each course fits its word file - which is what catches a stale or half-finished copy from Desktop.
+4. The generator's `META` map (`scripts/generate-language-map.js`) is the single source of truth for code↔name↔flag and mirrors Desktop's `LANGUAGE_META`; add a new language there first. Commit the regenerated output. The parity guard tests (`__tests__/unit/languageParity.test.ts`) verify every pair resolves to a real on-disk file, and that each course fits its word file - which is what catches a stale or half-finished copy from Desktop. Its `ABOVE_A1` list names the pairs with a course above A1; a new one has to be added there, and the lesson-file count with it.
+5. A language added to the picker needs a column in `app/i18n/copy.ts`, or the interface silently falls back to English for anyone who speaks it. The i18n test fails on that.
 
 ## Testing
 
-`jest-expo` preset; setup in `jest.setup.ts` mocks AsyncStorage, reanimated, gesture-handler, and `expo-font`. `jest.resolver.js` strips the `.native` extensions for `react-native-worklets` only, then defers to React Native's resolver - without it Reanimated 4 pulls a native module that does not exist under jest. Testing Library 14 made `render` and `renderHook` async, so every call site awaits. Tests in `__tests__/` cover logic (storage migration, loader, `useFlashcardDeck` with fake timers) and smoke-render each screen via `renderWithProviders`. Keep logic modules well covered.
+`jest-expo` preset; setup in `jest.setup.ts` mocks AsyncStorage, reanimated, gesture-handler, and `expo-font`. `renderWithProviders` seeds `{ german, english, a1 }` before rendering, so screens come up in English and the assertions can be read; pass `{ settings }` to render in another language. The app's own default is German-from-English, which would otherwise put every screen assertion into German. `jest.resolver.js` strips the `.native` extensions for `react-native-worklets` only, then defers to React Native's resolver - without it Reanimated 4 pulls a native module that does not exist under jest. Testing Library 14 made `render` and `renderHook` async, so every call site awaits. Tests in `__tests__/` cover logic (storage migration, loader, `useFlashcardDeck` with fake timers) and smoke-render each screen via `renderWithProviders`. Keep logic modules well covered.
 
 ## Conventions
 

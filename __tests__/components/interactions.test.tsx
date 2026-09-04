@@ -37,14 +37,14 @@ describe('LearningModeScreen', () => {
 describe('LanguageSettingsScreen', () => {
   it('selecting a learning language reveals the matching known-language options', async () => {
     await renderWithProviders(<LanguageSettingsScreen />);
-    // Default settings start with english/german/a1 already populated, so the
-    // "From" section shows English's known options (every other language, since
-    // the full matrix makes any language learnable from any other). Rows render
-    // as "<flag> <name>".
+    // The seeded settings are german/english/a1, so the "From" section shows
+    // German's known options (every other language, since the full matrix
+    // makes any language learnable from any other). Rows render as
+    // "<flag> <name>".
     await screen.findByText('I want to learn');
     expect(screen.getByText('From')).toBeTruthy();
     // Russian appears twice: once in the learn list and once as a known option
-    // for English.
+    // for German.
     expect(screen.getAllByText('🇷🇺 Russian')).toHaveLength(2);
 
     // Switch the learning language to Russian (press its learn-list row, the
@@ -61,8 +61,26 @@ describe('LanguageSettingsScreen', () => {
     });
   });
 
+  it('offers no intervals until the cards are set to turn by themselves', async () => {
+    await renderWithProviders(<LanguageSettingsScreen />);
+    await screen.findByText('I want to learn');
+
+    // Auto-advance is off unless asked for, so there is nothing to configure.
+    expect(screen.queryByText('7 seconds')).toBeNull();
+
+    fireEvent.press(screen.getByText('Cards turn by themselves'));
+
+    expect(await screen.findByText('7 seconds')).toBeTruthy();
+    await waitFor(async () => {
+      const stored = await AsyncStorage.getItem(STORAGE_KEYS.autoAdvance);
+      expect(JSON.parse(stored as string)).toBe(true);
+    });
+  });
+
   it('selecting a frequency persists it', async () => {
     await renderWithProviders(<LanguageSettingsScreen />);
+    await screen.findByText('I want to learn');
+    fireEvent.press(screen.getByText('Cards turn by themselves'));
     const option = await screen.findByText('7 seconds');
 
     fireEvent.press(option);
@@ -74,9 +92,13 @@ describe('LanguageSettingsScreen', () => {
   });
 });
 
-describe('WelcomeScreen - three-step setup', () => {
+describe('WelcomeScreen - explanation, then three-step setup', () => {
   it('walks target -> source -> level, one question at a time, and saves', async () => {
     await renderWithProviders(<WelcomeScreen />);
+
+    // The explanation comes first, once, before anything is asked.
+    expect(await screen.findByText(/Words come in lessons/)).toBeTruthy();
+    fireEvent.press(screen.getByText("Let's go"));
     await screen.findByText(/want to learn\?/i);
 
     // Step 1 shows only the target languages - no source list, no levels
@@ -92,11 +114,13 @@ describe('WelcomeScreen - three-step setup', () => {
     // English.
     expect(screen.queryByText('🇬🇧 English')).toBeNull();
 
+    // Naming German as the known language switches the rest of the wizard
+    // into German, which is the whole point of following the known language.
     fireEvent.press(screen.getByText('🇩🇪 German'));
-    expect(await screen.findByText(/starting\?/i)).toBeTruthy();
-    expect(screen.getByText('A1')).toBeTruthy();
+    expect(await screen.findByText(/Wo fängst du/)).toBeTruthy();
+    expect(screen.getByText(/Mittelstufe/)).toBeTruthy();
 
-    fireEvent.press(screen.getByText('B1'));
+    fireEvent.press(screen.getByText(/Mittelstufe/));
     await waitFor(async () => {
       const stored = await AsyncStorage.getItem(STORAGE_KEYS.language);
       expect(JSON.parse(stored as string)).toEqual({
@@ -110,6 +134,7 @@ describe('WelcomeScreen - three-step setup', () => {
 
   it('Back returns to the previous question', async () => {
     await renderWithProviders(<WelcomeScreen />);
+    fireEvent.press(await screen.findByText("Let's go"));
     await screen.findByText(/want to learn\?/i);
 
     fireEvent.press(screen.getByText('🇬🇧 English'));
@@ -117,7 +142,11 @@ describe('WelcomeScreen - three-step setup', () => {
 
     fireEvent.press(screen.getByText('Back'));
     expect(await screen.findByText(/want to learn\?/i)).toBeTruthy();
-    // Back on the first step has nothing to return to, so it is not offered.
+
+    // Back again lands on the explanation, which is the first step and has
+    // nothing to return to, so Back is not offered there.
+    fireEvent.press(screen.getByText('Back'));
+    expect(await screen.findByText(/Words come in lessons/)).toBeTruthy();
     expect(screen.queryByText('Back')).toBeNull();
   });
 });

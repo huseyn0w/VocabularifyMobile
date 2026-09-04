@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen';
 import SettingsStackNavigator from './SettingsStackNavigator';
 import { useThemeColors } from '../hooks/useThemeColors';
+import { useTranslate } from '../i18n';
 import { getTabBarIconName } from '../utils/utils';
 import { fontWeight, fontSize } from '../theme/tokens';
 
@@ -11,6 +12,7 @@ const Tab = createBottomTabNavigator();
 
 const BottomTabNavigator = () => {
   const colors = useThemeColors();
+  const { t } = useTranslate();
 
   return (
     <Tab.Navigator
@@ -50,11 +52,17 @@ const BottomTabNavigator = () => {
         },
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
+      {/* The route names stay English - getTabBarIconName keys off them, and
+          they are the navigation contract. Only the visible title changes. */}
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ title: t('nav.home') }}
+      />
       <Tab.Screen
         name="Settings"
         component={SettingsStackNavigator}
-        options={{ headerShown: false }}
+        options={{ headerShown: false, title: t('nav.settings') }}
       />
     </Tab.Navigator>
   );

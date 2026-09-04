@@ -2,7 +2,7 @@
   "expo": {
     "name": "Vocabularify",
     "slug": "vocabularify",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "runtimeVersion": {
       "policy": "appVersion"
     },
@@ -13,7 +13,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.huseyn0w.vocabularify",
-      "buildNumber": "12",
+      "buildNumber": "13",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
