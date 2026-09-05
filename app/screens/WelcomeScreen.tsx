@@ -23,29 +23,41 @@ import {
 import { setLanguageSettings } from "../services/storage";
 import { letterSpacing } from "../theme/tokens";
 import { translate, uiLanguageOf } from "../i18n";
-import { CopyKey } from "../i18n/copy";
+import { CopyKey, NATIVE_LANGUAGE_NAME, UiLanguage } from "../i18n/copy";
 import SelectableRow from "../components/SelectableRow";
 import HowItWorks from "../components/HowItWorks";
 import LevelRow from "../components/LevelRow";
 
 type WelcomeScreenNavigationProp = NavigationProp<RootStackParamList, "Welcome">;
 
-const QUESTIONS: { title: CopyKey; subtitle: CopyKey }[] = [
-  { title: "welcome.q1Title", subtitle: "welcome.q1Sub" },
-  { title: "welcome.q2Title", subtitle: "welcome.q2Sub" },
-  { title: "welcome.q3Title", subtitle: "welcome.q3Sub" },
-];
+// Step 0 asks which language the learner already speaks, because the answer is
+// what every later screen is written in. Step 1 is the explanation, now in
+// that language; steps 2 and 3 are the two remaining questions.
+const KNOWN_STEP = 0;
+const HOW_STEP = 1;
+const LEARNING_STEP = 2;
+const LEVEL_STEP = 3;
+const STEP_COUNT = 4;
 
-// The explanation sits in front of the questions, so there are four steps in
-// the progress bar and the questions are steps 1 to 3.
-const STEP_COUNT = QUESTIONS.length + 1;
+const QUESTION: Partial<Record<number, { title: CopyKey; subtitle: CopyKey }>> =
+  {
+    [KNOWN_STEP]: { title: "welcome.q2Title", subtitle: "welcome.q2Sub" },
+    [LEARNING_STEP]: { title: "welcome.q1Title", subtitle: "welcome.q1Sub" },
+    [LEVEL_STEP]: { title: "welcome.q3Title", subtitle: "welcome.q3Sub" },
+  };
 
 const FADE_OUT = 130;
 const FADE_IN = 240;
 const CURVE = Easing.bezier(0.22, 1, 0.36, 1);
 
-const languageLabel = (language: Language): string =>
-  `${LANGUAGE_META[language].flag} ${language}`;
+// Each option carries its own name - "Deutsch", not "German". The first screen
+// has no interface language yet, so a learner who reads only one of the seven
+// has to be able to find their own line on it.
+const languageLabel = (language: Language): string => {
+  const code = LANGUAGE_META[language].code as UiLanguage;
+  const native = NATIVE_LANGUAGE_NAME[code];
+  return `${LANGUAGE_META[language].flag} ${native ?? language}`;
+};
 
 /**
  * First run: what the app does, then three questions.
@@ -62,10 +74,13 @@ const languageLabel = (language: Language): string =>
  * travel. Doing it in two halves keeps a single element in the layout, so
  * nothing jumps the way two overlapping absolutely-positioned steps would.
  *
- * The copy is in the language the learner already speaks, which is only known
- * from step 2 onwards. Before that it is English, because there is nothing
- * else to go on; from the moment they name their language the rest of the
- * screen switches to it.
+ * The whole interface is in the language the learner already speaks, so that
+ * is the first thing asked. It used to be the second question, behind the
+ * explanation, which meant the four screens of `HowItWorks` were rendered in
+ * whatever the stored default happened to be - German - to someone who had
+ * told the app nothing yet. Only the picker itself is in English now, and its
+ * options are written in their own languages, so there is nothing on it to
+ * read.
  */
 const WelcomeScreen: React.FC = () => {
   const { setSettings } = useLanguageContext();
@@ -152,39 +167,45 @@ const WelcomeScreen: React.FC = () => {
     navigation.navigate("Main");
   };
 
-  // Only languages that can actually be learned from something.
-  const learnable = languages.filter(
-    (language) => availableCombinations[language].length > 0,
+  // Every language the app can teach from something, which is the set worth
+  // offering as a known language.
+  const knownOptions = languages.filter((language) =>
+    languages.some((target) =>
+      (availableCombinations[target] ?? []).includes(language),
+    ),
   );
-  const knownOptions: Language[] = learningLanguage
-    ? (availableCombinations[learningLanguage] ?? [])
+  // And, given one, every target it can be a source for.
+  const learnOptions: Language[] = knownLanguage
+    ? languages.filter((target) =>
+        (availableCombinations[target] ?? []).includes(knownLanguage),
+      )
     : [];
 
   const options: { key: string; label: string; onPress: () => void }[] =
-    shownStep === 1
-      ? learnable.map((language) => ({
+    shownStep === KNOWN_STEP
+      ? knownOptions.map((language) => ({
           key: language,
           label: languageLabel(language),
           onPress: () => {
-            setLearningLanguage(language);
-            // A different target invalidates the source, since not every
-            // pair exists.
-            setKnownLanguage(null);
-            goTo(2);
+            setKnownLanguage(language);
+            // A different source invalidates the target, since not every pair
+            // exists.
+            setLearningLanguage(null);
+            goTo(HOW_STEP);
           },
         }))
-      : shownStep === 2
-        ? knownOptions.map((language) => ({
+      : shownStep === LEARNING_STEP
+        ? learnOptions.map((language) => ({
             key: language,
             label: languageLabel(language),
             onPress: () => {
-              setKnownLanguage(language);
-              goTo(3);
+              setLearningLanguage(language);
+              goTo(LEVEL_STEP);
             },
           }))
         : [];
 
-  const question = shownStep > 0 ? QUESTIONS[shownStep - 1] : null;
+  const question = QUESTION[shownStep] ?? null;
 
   return (
     <SafeAreaView className="flex-1 bg-bg">
@@ -223,7 +244,7 @@ const WelcomeScreen: React.FC = () => {
         </View>
 
         <Animated.View style={stepStyle} className="flex-1">
-          {shownStep === 0 ? (
+          {shownStep === HOW_STEP ? (
             <ScrollView
               showsVerticalScrollIndicator={false}
               contentContainerStyle={{ paddingBottom: 32 }}
@@ -236,9 +257,9 @@ const WelcomeScreen: React.FC = () => {
                   Vocabularify
                 </Text>
               </View>
-              <HowItWorks />
+              <HowItWorks language={uiLanguage} />
               <Pressable
-                onPress={() => goTo(1)}
+                onPress={() => goTo(LEARNING_STEP)}
                 accessibilityRole="button"
                 className="mt-2 items-center rounded-xl border border-border bg-surface px-5 py-4"
               >
@@ -264,7 +285,7 @@ const WelcomeScreen: React.FC = () => {
                 </Text>
               </View>
 
-              {shownStep === 3 ? (
+              {shownStep === LEVEL_STEP ? (
                 <>
                   <View className="overflow-hidden rounded-xl border border-border bg-surface">
                     {levels.map((level, index) => (

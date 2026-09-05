@@ -22,6 +22,7 @@ export const STORAGE_KEYS = {
   autoAdvance: "autoAdvance",
   deckPin: "deckPin",
   theme: "theme",
+  homeTour: "homeTourSeen",
 } as const;
 
 export const DEFAULT_LANGUAGE_SETTINGS: LanguageSettings = {
@@ -263,6 +264,24 @@ export async function getAutoAdvance(): Promise<boolean> {
 
 export async function setAutoAdvance(enabled: boolean): Promise<void> {
   await AsyncStorage.setItem(STORAGE_KEYS.autoAdvance, JSON.stringify(enabled));
+}
+
+// --- the first-run tour ----------------------------------------------------
+
+/**
+ * Whether the walkthrough over the deck has been shown.
+ *
+ * An unset key means it has not, so it runs once on the first deck a learner
+ * opens - including for anyone upgrading, who has never seen it either. The
+ * Settings screen writes `false` back to run it again.
+ */
+export async function getHomeTourSeen(): Promise<boolean> {
+  const value = await readJSON(STORAGE_KEYS.homeTour);
+  return value === true;
+}
+
+export async function setHomeTourSeen(seen: boolean): Promise<void> {
+  await AsyncStorage.setItem(STORAGE_KEYS.homeTour, JSON.stringify(seen));
 }
 
 // --- theme -----------------------------------------------------------------

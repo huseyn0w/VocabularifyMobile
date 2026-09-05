@@ -2,6 +2,7 @@ import React from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { renderWithProviders, screen, waitFor, fireEvent } from "./test-utils";
 import { markDeckMoved, resetDeckSignal } from "../../app/services/deckSignal";
+import { resetTourSignal } from "../../app/services/tourSignal";
 import { STORAGE_KEYS } from "../../app/services/storage";
 
 // Deterministic word list so HomeScreen renders a known first word + total.
@@ -45,8 +46,12 @@ import HomeScreen from "../../app/screens/HomeScreen";
 
 beforeEach(async () => {
   await AsyncStorage.clear();
+  // The walkthrough opens over the deck on a first run and would sit on top of
+  // every assertion below. The tests that want it set the flag back.
+  await AsyncStorage.setItem(STORAGE_KEYS.homeTour, JSON.stringify(true));
   mockLoadLessons.mockResolvedValue(null);
   resetDeckSignal();
+  resetTourSignal();
 });
 
 describe("HomeScreen", () => {
@@ -129,5 +134,63 @@ describe("HomeScreen with a course", () => {
       expect(screen.getByText(/der Apfel .+ яблоко/)).toBeTruthy();
       expect(screen.queryByText("tap an underlined word")).toBeNull();
     });
+  });
+});
+
+describe("HomeScreen - the first-run walkthrough", () => {
+  it("opens over the deck once, and does not come back", async () => {
+    await AsyncStorage.removeItem(STORAGE_KEYS.homeTour);
+    const { unmount } = await renderWithProviders(<HomeScreen />);
+
+    // It waits for the deck, so the hole is measured around a card and not
+    // around the spinner that was there a moment earlier.
+    expect(await screen.findByText("The card")).toBeTruthy();
+    expect(screen.getByText(/word you are learning is on top/)).toBeTruthy();
+
+    fireEvent.press(screen.getByText("Next"));
+    expect(await screen.findByText("Swipe sideways")).toBeTruthy();
+
+    // A flat deck has no lessons, so the two lesson steps are not offered and
+    // the next one is the last.
+    fireEvent.press(screen.getByText("Next"));
+    expect(await screen.findByText("Where you are")).toBeTruthy();
+
+    fireEvent.press(screen.getByText("Start"));
+    await waitFor(async () => {
+      expect(await AsyncStorage.getItem(STORAGE_KEYS.homeTour)).toBe("true");
+    });
+    expect(screen.queryByText("Where you are")).toBeNull();
+
+    unmount();
+    await renderWithProviders(<HomeScreen />);
+    await screen.findByText("apfel");
+    expect(screen.queryByText("The card")).toBeNull();
+  });
+
+  it("explains lessons and sentences only on a deck that has them", async () => {
+    await AsyncStorage.removeItem(STORAGE_KEYS.homeTour);
+    mockLoadLessons.mockResolvedValue(STUB_LESSONS as unknown);
+    await renderWithProviders(<HomeScreen />);
+
+    await screen.findByText("The card");
+    fireEvent.press(screen.getByText("Next"));
+    await screen.findByText("Swipe sideways");
+    fireEvent.press(screen.getByText("Next"));
+    expect(await screen.findByText("Swipe up or down")).toBeTruthy();
+    fireEvent.press(screen.getByText("Next"));
+    expect(await screen.findByText("Then sentences")).toBeTruthy();
+  });
+
+  it("Skip closes it and still counts as seen", async () => {
+    await AsyncStorage.removeItem(STORAGE_KEYS.homeTour);
+    await renderWithProviders(<HomeScreen />);
+
+    await screen.findByText("The card");
+    fireEvent.press(screen.getByText("Skip"));
+
+    await waitFor(async () => {
+      expect(await AsyncStorage.getItem(STORAGE_KEYS.homeTour)).toBe("true");
+    });
+    expect(screen.queryByText("The card")).toBeNull();
   });
 });

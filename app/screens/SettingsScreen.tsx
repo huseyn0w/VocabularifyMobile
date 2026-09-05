@@ -4,6 +4,8 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { SettingsStackParamList } from '../utils/types';
 import { BUY_ME_A_COFFEE_LABEL, BUY_ME_A_COFFEE_URL } from '../utils/constants';
 import { useTranslate } from '../i18n';
+import { setHomeTourSeen } from '../services/storage';
+import { requestHomeTour } from '../services/tourSignal';
 import ScreenContainer from '../components/ScreenContainer';
 import Section from '../components/Section';
 import ListRow from '../components/ListRow';
@@ -48,6 +50,17 @@ const SettingsScreen: React.FC<Props> = ({ navigation }) => {
           label={t('nav.howItWorks')}
           chevron
           onPress={() => navigation.navigate('HowItWorksScreen')}
+        />
+        {/* The walkthrough runs on the deck itself, so this arms it and sends
+            the learner back to the Home tab rather than opening a screen. */}
+        <ListRow
+          label={t('nav.replayTour')}
+          chevron
+          onPress={async () => {
+            await setHomeTourSeen(false);
+            requestHomeTour();
+            navigation.getParent()?.navigate('Home');
+          }}
         />
         <ListRow
           label={t('nav.about')}

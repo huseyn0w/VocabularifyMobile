@@ -18,6 +18,24 @@
 export const UI_LANGUAGES = ["en", "de", "fr", "es", "it", "tr", "ru"] as const;
 export type UiLanguage = (typeof UI_LANGUAGES)[number];
 
+/**
+ * Each language written in itself.
+ *
+ * The first question of the first run asks which language the learner
+ * already speaks, and the answer is what the interface switches to. It is
+ * the one screen with no language to be in yet, so the options carry their
+ * own names: someone who reads only Turkish can still find "Türkçe".
+ */
+export const NATIVE_LANGUAGE_NAME: Record<UiLanguage, string> = {
+  en: "English",
+  de: "Deutsch",
+  fr: "Français",
+  es: "Español",
+  it: "Italiano",
+  tr: "Türkçe",
+  ru: "Русский",
+};
+
 type Entry = Record<UiLanguage, string>;
 
 export const COPY = {
@@ -790,6 +808,134 @@ export const COPY = {
     it: "Versione desktop",
     tr: "Masaüstü sürümü",
     ru: "Версия для компьютера",
+  },
+
+  // --- the first-run tour over the card ------------------------------------
+  "tour.cardTitle": {
+    en: "The card",
+    de: "Die Karte",
+    fr: "La carte",
+    es: "La tarjeta",
+    it: "La carta",
+    tr: "Kart",
+    ru: "Карточка",
+  },
+  "tour.cardBody": {
+    en: "The word you are learning is on top. Its translation sits under it.",
+    de: "Oben steht das Wort, das du lernst. Darunter die Übersetzung.",
+    fr: "Le mot que vous apprenez est en haut. Sa traduction est en dessous.",
+    es: "Arriba va la palabra que estás aprendiendo. Debajo, su traducción.",
+    it: "In alto la parola che stai imparando. Sotto, la traduzione.",
+    tr: "Üstte öğrendiğin kelime var. Altında çevirisi.",
+    ru: "Сверху слово, которое вы учите. Под ним перевод.",
+  },
+  "tour.swipeTitle": {
+    en: "Swipe sideways",
+    de: "Zur Seite wischen",
+    fr: "Balayez sur le côté",
+    es: "Desliza a los lados",
+    it: "Scorri di lato",
+    tr: "Yana kaydır",
+    ru: "Свайп вбок",
+  },
+  "tour.swipeBody": {
+    en: "Right for the next card, left for the one before.",
+    de: "Nach rechts zur nächsten Karte, nach links zur vorigen.",
+    fr: "À droite pour la carte suivante, à gauche pour la précédente.",
+    es: "A la derecha la siguiente tarjeta, a la izquierda la anterior.",
+    it: "A destra la carta successiva, a sinistra quella precedente.",
+    tr: "Sağa sonraki kart, sola önceki kart.",
+    ru: "Вправо — следующая карточка, влево — предыдущая.",
+  },
+  "tour.lessonTitle": {
+    en: "Swipe up or down",
+    de: "Nach oben oder unten wischen",
+    fr: "Balayez vers le haut ou le bas",
+    es: "Desliza arriba o abajo",
+    it: "Scorri su o giù",
+    tr: "Yukarı veya aşağı kaydır",
+    ru: "Свайп вверх или вниз",
+  },
+  "tour.lessonBody": {
+    en: "Words come in lessons of five to ten. Up moves to the next lesson, down to the previous one.",
+    de: "Wörter kommen in Lektionen von fünf bis zehn. Nach oben zur nächsten Lektion, nach unten zur vorigen.",
+    fr: "Les mots arrivent par leçons de cinq à dix. Vers le haut la leçon suivante, vers le bas la précédente.",
+    es: "Las palabras llegan en lecciones de cinco a diez. Arriba la siguiente lección, abajo la anterior.",
+    it: "Le parole arrivano in lezioni da cinque a dieci. Su la lezione successiva, giù quella precedente.",
+    tr: "Kelimeler beşerli onarlı derslerle gelir. Yukarı sonraki ders, aşağı önceki ders.",
+    ru: "Слова идут уроками по пять–десять. Вверх — следующий урок, вниз — предыдущий.",
+  },
+  "tour.sentenceTitle": {
+    en: "Then sentences",
+    de: "Dann Sätze",
+    fr: "Puis des phrases",
+    es: "Luego, frases",
+    it: "Poi le frasi",
+    tr: "Sonra cümleler",
+    ru: "Потом предложения",
+  },
+  "tour.sentenceBody": {
+    en: "After a lesson's words come sentences built only from words you have already seen. Tap an underlined word for its dictionary form.",
+    de: "Nach den Wörtern einer Lektion kommen Sätze, die nur aus schon gesehenen Wörtern bestehen. Tippe ein unterstrichenes Wort für seine Grundform an.",
+    fr: "Après les mots d'une leçon viennent des phrases faites uniquement de mots déjà vus. Touchez un mot souligné pour sa forme du dictionnaire.",
+    es: "Tras las palabras de una lección llegan frases hechas solo con palabras ya vistas. Toca una palabra subrayada para ver su forma de diccionario.",
+    it: "Dopo le parole di una lezione arrivano frasi fatte solo di parole già viste. Tocca una parola sottolineata per la sua forma base.",
+    tr: "Bir dersin kelimelerinden sonra sadece gördüğün kelimelerden kurulu cümleler gelir. Altı çizili bir kelimeye dokun, sözlük biçimini gör.",
+    ru: "После слов урока идут предложения, собранные только из уже пройденных слов. Нажмите на подчёркнутое слово, чтобы увидеть словарную форму.",
+  },
+  "tour.progressTitle": {
+    en: "Where you are",
+    de: "Wo du bist",
+    fr: "Où vous en êtes",
+    es: "Dónde estás",
+    it: "Dove sei",
+    tr: "Neredesin",
+    ru: "Где вы находитесь",
+  },
+  "tour.progressBody": {
+    en: "The card number, the lesson, and how far through the level you are.",
+    de: "Die Kartennummer, die Lektion und wie weit du im Niveau bist.",
+    fr: "Le numéro de carte, la leçon et votre avancée dans le niveau.",
+    es: "El número de tarjeta, la lección y cuánto llevas del nivel.",
+    it: "Il numero della carta, la lezione e quanto hai fatto del livello.",
+    tr: "Kart numarası, ders ve seviyede ne kadar ilerlediğin.",
+    ru: "Номер карточки, урок и сколько пройдено на уровне.",
+  },
+  "tour.next": {
+    en: "Next",
+    de: "Weiter",
+    fr: "Suivant",
+    es: "Siguiente",
+    it: "Avanti",
+    tr: "İleri",
+    ru: "Дальше",
+  },
+  "tour.done": {
+    en: "Start",
+    de: "Los",
+    fr: "Commencer",
+    es: "Empezar",
+    it: "Inizia",
+    tr: "Başla",
+    ru: "Начать",
+  },
+  "tour.skip": {
+    en: "Skip",
+    de: "Überspringen",
+    fr: "Passer",
+    es: "Omitir",
+    it: "Salta",
+    tr: "Atla",
+    ru: "Пропустить",
+  },
+  "nav.replayTour": {
+    en: "Show the tour again",
+    de: "Rundgang erneut zeigen",
+    fr: "Revoir la visite",
+    es: "Ver la guía otra vez",
+    it: "Rivedi la guida",
+    tr: "Tanıtımı tekrar göster",
+    ru: "Показать подсказки снова",
   },
 } satisfies Record<string, Entry>;
 

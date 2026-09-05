@@ -92,31 +92,28 @@ describe('LanguageSettingsScreen', () => {
   });
 });
 
-describe('WelcomeScreen - explanation, then three-step setup', () => {
-  it('walks target -> source -> level, one question at a time, and saves', async () => {
+describe('WelcomeScreen - known language first, then the explanation', () => {
+  it('walks source -> explanation -> target -> level, and saves', async () => {
     await renderWithProviders(<WelcomeScreen />);
 
-    // The explanation comes first, once, before anything is asked.
-    expect(await screen.findByText(/Words come in lessons/)).toBeTruthy();
-    fireEvent.press(screen.getByText("Let's go"));
-    await screen.findByText(/want to learn\?/i);
-
-    // Step 1 shows only the target languages - no source list, no levels
-    // stacked under it the way the old scrolling screen did.
-    expect(screen.queryByText(/already speak\?/i)).toBeNull();
+    // The known language is asked first, because it is what everything after
+    // it is written in. Nothing else is on the screen yet.
+    expect(await screen.findByText(/already speak\?/i)).toBeTruthy();
+    expect(screen.queryByText(/Words come in lessons/)).toBeNull();
     expect(screen.queryByText('A1')).toBeNull();
-    // Each language appears exactly once, so no disambiguation is needed.
-    expect(screen.getAllByText('🇩🇪 German')).toHaveLength(1);
+    expect(screen.getAllByText('🇩🇪 Deutsch')).toHaveLength(1);
+
+    // Naming German switches the whole rest of the wizard into German,
+    // starting with the explanation.
+    fireEvent.press(screen.getByText('🇩🇪 Deutsch'));
+    expect(await screen.findByText(/Wörter kommen in Lektionen/)).toBeTruthy();
+
+    fireEvent.press(screen.getByText("Los geht's"));
+    expect(await screen.findByText(/Was möchtest du/)).toBeTruthy();
+    // German is gone from the list: you cannot learn German from German.
+    expect(screen.queryByText('🇩🇪 Deutsch')).toBeNull();
 
     fireEvent.press(screen.getByText('🇬🇧 English'));
-    expect(await screen.findByText(/already speak\?/i)).toBeTruthy();
-    // The chosen target is gone from the list: you cannot learn English from
-    // English.
-    expect(screen.queryByText('🇬🇧 English')).toBeNull();
-
-    // Naming German as the known language switches the rest of the wizard
-    // into German, which is the whole point of following the known language.
-    fireEvent.press(screen.getByText('🇩🇪 German'));
     expect(await screen.findByText(/Wo fängst du/)).toBeTruthy();
     expect(screen.getByText(/Mittelstufe/)).toBeTruthy();
 
@@ -132,22 +129,23 @@ describe('WelcomeScreen - explanation, then three-step setup', () => {
     expect(mockNavigation.navigate).toHaveBeenCalledWith('Main');
   });
 
-  it('Back returns to the previous question', async () => {
+  it('Back returns to the previous step', async () => {
     await renderWithProviders(<WelcomeScreen />);
-    fireEvent.press(await screen.findByText("Let's go"));
-    await screen.findByText(/want to learn\?/i);
+    fireEvent.press(await screen.findByText('🇩🇪 Deutsch'));
+    await screen.findByText(/Wörter kommen in Lektionen/);
 
-    fireEvent.press(screen.getByText('🇬🇧 English'));
-    await screen.findByText(/already speak\?/i);
+    fireEvent.press(screen.getByText("Los geht's"));
+    await screen.findByText(/Was möchtest du/);
 
-    fireEvent.press(screen.getByText('Back'));
-    expect(await screen.findByText(/want to learn\?/i)).toBeTruthy();
+    fireEvent.press(screen.getByText('Zurück'));
+    expect(await screen.findByText(/Wörter kommen in Lektionen/)).toBeTruthy();
 
-    // Back again lands on the explanation, which is the first step and has
-    // nothing to return to, so Back is not offered there.
-    fireEvent.press(screen.getByText('Back'));
-    expect(await screen.findByText(/Words come in lessons/)).toBeTruthy();
-    expect(screen.queryByText('Back')).toBeNull();
+    // Back again lands on the language picker, which is the first step and
+    // has nothing to return to, so Back is not offered there. It now reads in
+    // German: the answer is known, so there is no reason to fall back.
+    fireEvent.press(screen.getByText('Zurück'));
+    expect(await screen.findByText(/sprichst du schon/i)).toBeTruthy();
+    expect(screen.queryByText('Zurück')).toBeNull();
   });
 });
 

@@ -30,10 +30,13 @@ describe('screen smoke tests', () => {
     });
   });
 
-  it('Welcome opens on the explanation, not on a question', async () => {
+  it('Welcome opens on the language picker, in the seven languages themselves', async () => {
     await renderWithProviders(<WelcomeScreen />);
-    expect(await screen.findByText(/Words come in lessons/)).toBeTruthy();
-    expect(screen.queryByText('🇬🇧 English')).toBeNull();
+    expect(await screen.findByText(/already speak\?/i)).toBeTruthy();
+    expect(screen.getByText('🇩🇪 Deutsch')).toBeTruthy();
+    expect(screen.getByText('🇷🇺 Русский')).toBeTruthy();
+    // The explanation waits until it has a language to be written in.
+    expect(screen.queryByText(/Words come in lessons/)).toBeNull();
   });
 
   it('Settings renders its preference rows', async () => {

@@ -6,8 +6,8 @@ import Animated, {
   Easing,
   useReducedMotion,
 } from "react-native-reanimated";
-import { useTranslate } from "../i18n";
-import { CopyKey } from "../i18n/copy";
+import { translate, useTranslate } from "../i18n";
+import { CopyKey, UiLanguage } from "../i18n/copy";
 import { duration, letterSpacing } from "../theme/tokens";
 import { useThemeColors } from "../hooks/useThemeColors";
 
@@ -29,8 +29,18 @@ const STEPS: { title: CopyKey; body: CopyKey }[] = [
  * filled circles. A row of filled circles reads as progress through a wizard,
  * which these are not.
  */
-const HowItWorks: React.FC = () => {
-  const { t } = useTranslate();
+interface Props {
+  /** Names the language explicitly. The first-run wizard shows this before the
+   *  known language is stored, so the context still holds the default and
+   *  reading it would put these four paragraphs in the wrong language. */
+  language?: UiLanguage;
+}
+
+const HowItWorks: React.FC<Props> = ({ language }) => {
+  const fromContext = useTranslate();
+  const t = language
+    ? (key: CopyKey) => translate(language, key)
+    : fromContext.t;
   const colors = useThemeColors();
   const reducedMotion = useReducedMotion();
 

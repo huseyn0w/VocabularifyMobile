@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { View, Text, Dimensions, ActivityIndicator } from "react-native";
 import {
   PanGestureHandler,
@@ -26,9 +26,11 @@ import { useFlashcardDeck } from "../hooks/useFlashcardDeck";
 import ProgressBar from "../components/ProgressBar";
 import AmbientBackground, { WordGlow } from "../components/AmbientBackground";
 import SentenceText, { SelectedWord } from "../components/SentenceText";
+import CoachMarks, { CoachStep, Rect } from "../components/CoachMarks";
 import { joinTokens } from "../utils/items";
-import { deckKey } from "../services/storage";
+import { deckKey, getHomeTourSeen, setHomeTourSeen } from "../services/storage";
 import { useDeckRevision } from "../services/deckSignal";
+import { useTourRequest } from "../services/tourSignal";
 import { duration, letterSpacing } from "../theme/tokens";
 
 const { width } = Dimensions.get("window");
@@ -36,6 +38,8 @@ const SWIPE_THRESHOLD = 0.25 * width;
 // A lesson jump is deliberately harder to trigger than a card change, so a
 // sloppy horizontal swipe never skips 9 words.
 const LESSON_SWIPE_THRESHOLD = 90;
+// How long the walkthrough waits for one region to report its position.
+const MEASURE_TIMEOUT = 250;
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
@@ -63,6 +67,8 @@ const HomeScreen: React.FC = () => {
   // The Progress screen writes this deck's position from the Settings tab
   // while this screen stays mounted behind it; the signal is how it says so.
   const deckRevision = useDeckRevision();
+  // Settings can ask for the walkthrough again from the other tab.
+  const tourRequest = useTourRequest();
 
   const { items, placements, loading } = useItems(settings);
   const {
@@ -96,6 +102,82 @@ const HomeScreen: React.FC = () => {
   useEffect(() => {
     setSelected(null);
   }, [currentIndex]);
+
+  // The walkthrough points at two regions of this screen, so this screen is
+  // what measures them. `measureInWindow` is read once, when the tour opens:
+  // the mount animation is a transform, and measuring under it would place the
+  // hole where the card was rather than where it settles.
+  const cardRef = useRef<View>(null);
+  const footerRef = useRef<View>(null);
+  const [tour, setTour] = useState<CoachStep[] | null>(null);
+
+  // A measurement that never comes back must not take the walkthrough with
+  // it: `measureInWindow` is a native call, and a step with no rect still
+  // shows its caption over a plain dim.
+  const measure = (ref: React.RefObject<View | null>) =>
+    new Promise<Rect | null>((resolve) => {
+      const node = ref.current;
+      if (!node || typeof node.measureInWindow !== "function") {
+        return resolve(null);
+      }
+      const timer = setTimeout(() => resolve(null), MEASURE_TIMEOUT);
+      node.measureInWindow((x, y, width, height) => {
+        clearTimeout(timer);
+        resolve(width > 0 && height > 0 ? { x, y, width, height } : null);
+      });
+    });
+
+  const openTour = useCallback(async () => {
+    const [card, footer] = await Promise.all([
+      measure(cardRef),
+      measure(footerRef),
+    ]);
+    const steps: CoachStep[] = [
+      { rect: card, title: "tour.cardTitle", body: "tour.cardBody" },
+      { rect: card, title: "tour.swipeTitle", body: "tour.swipeBody" },
+    ];
+    if (lessonCount > 0) {
+      steps.push({
+        rect: card,
+        title: "tour.lessonTitle",
+        body: "tour.lessonBody",
+      });
+      steps.push({
+        rect: card,
+        title: "tour.sentenceTitle",
+        body: "tour.sentenceBody",
+      });
+    }
+    steps.push({
+      rect: footer,
+      title: "tour.progressTitle",
+      body: "tour.progressBody",
+    });
+    setTour(steps);
+  }, [lessonCount]);
+
+  // Once the deck is actually on screen, not while it is still loading: a hole
+  // measured around a spinner would be in the wrong place.
+  const checkedFor = useRef(-1);
+  useEffect(() => {
+    if (loading || currentIndex === null || total === 0) return undefined;
+    if (checkedFor.current === tourRequest) return undefined;
+    checkedFor.current = tourRequest;
+    let cancelled = false;
+    const timer = setTimeout(async () => {
+      if (await getHomeTourSeen()) return;
+      if (!cancelled) void openTour();
+    }, duration.slower + 120);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [loading, currentIndex, total, openTour, tourRequest]);
+
+  const closeTour = useCallback(() => {
+    setTour(null);
+    void setHomeTourSeen(true);
+  }, []);
 
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
@@ -284,89 +366,96 @@ const HomeScreen: React.FC = () => {
           {/* Still no surface and no shadow: the word sits on the field, lit
               by the one brass glow behind it, exactly as on Desktop. The
               hairline border is the single exception. */}
-          <Animated.View
-            className="w-full items-center justify-center px-6 py-8"
-            style={[
-              { minHeight: 220, borderWidth: 1, borderRadius: 28 },
-              animatedCardStyle,
-              frameStyle,
-            ]}
-          >
-            {current?.kind === "word" && (
-              <>
-                <Text
-                  className="text-center font-semibold text-ink"
-                  style={{
-                    fontSize: 46,
-                    lineHeight: 52,
-                    letterSpacing: letterSpacing.display,
-                  }}
-                  numberOfLines={3}
-                  adjustsFontSizeToFit
-                >
-                  {current.target}
-                </Text>
-                <Animated.View style={revealStyle} className="mt-4">
-                  <Text className="text-center font-medium text-xl text-ink-muted">
-                    {current.source}
-                  </Text>
-                </Animated.View>
-              </>
-            )}
-
-            {current?.kind === "sentence" && (
-              <>
-                <SentenceText
-                  tokens={current.target}
-                  gloss={current.gloss}
-                  selectedToken={selected?.token ?? null}
-                  onSelectWord={setSelected}
-                  style={{
-                    textAlign: "center",
-                    fontSize: type.fontSize,
-                    lineHeight: type.lineHeight,
-                    fontWeight: "600",
-                    letterSpacing: letterSpacing.sentence,
-                    color: colors.ink,
-                  }}
-                />
-                <Animated.View style={revealStyle} className="mt-4">
+          {/* A plain wrapper the walkthrough can measure. The card itself
+              carries the drag transform and the mount scale, and
+              measureInWindow reports where a transform has put a view, not
+              where it rests - so the hole would land wherever the card
+              happened to be. This wrapper is the same width and never moves. */}
+          <View ref={cardRef} className="w-full">
+            <Animated.View
+              className="w-full items-center justify-center px-6 py-8"
+              style={[
+                { minHeight: 220, borderWidth: 1, borderRadius: 28 },
+                animatedCardStyle,
+                frameStyle,
+              ]}
+            >
+              {current?.kind === "word" && (
+                <>
                   <Text
-                    className="text-center text-ink-muted"
+                    className="text-center font-semibold text-ink"
                     style={{
-                      fontSize: type.source,
-                      lineHeight: type.source * 1.4,
+                      fontSize: 46,
+                      lineHeight: 52,
+                      letterSpacing: letterSpacing.display,
                     }}
+                    numberOfLines={3}
+                    adjustsFontSizeToFit
                   >
-                    {current.source}
+                    {current.target}
                   </Text>
-                </Animated.View>
-                {/* Desktop shows the dictionary form on hover; a phone has no
+                  <Animated.View style={revealStyle} className="mt-4">
+                    <Text className="text-center font-medium text-xl text-ink-muted">
+                      {current.source}
+                    </Text>
+                  </Animated.View>
+                </>
+              )}
+
+              {current?.kind === "sentence" && (
+                <>
+                  <SentenceText
+                    tokens={current.target}
+                    gloss={current.gloss}
+                    selectedToken={selected?.token ?? null}
+                    onSelectWord={setSelected}
+                    style={{
+                      textAlign: "center",
+                      fontSize: type.fontSize,
+                      lineHeight: type.lineHeight,
+                      fontWeight: "600",
+                      letterSpacing: letterSpacing.sentence,
+                      color: colors.ink,
+                    }}
+                  />
+                  <Animated.View style={revealStyle} className="mt-4">
+                    <Text
+                      className="text-center text-ink-muted"
+                      style={{
+                        fontSize: type.source,
+                        lineHeight: type.source * 1.4,
+                      }}
+                    >
+                      {current.source}
+                    </Text>
+                  </Animated.View>
+                  {/* Desktop shows the dictionary form on hover; a phone has no
                     hover, so the tapped word's form lands here. The slot is
                     always reserved, or the sentence would jump on every tap. */}
-                <View className="mt-6 h-5 justify-center">
-                  {selected ? (
-                    <Text className="text-center text-sm text-ink">
-                      {selected.citation}
-                      <Text className="text-ink-subtle">
-                        {"  \u00b7  "}
-                        {selected.translation}
+                  <View className="mt-6 h-5 justify-center">
+                    {selected ? (
+                      <Text className="text-center text-sm text-ink">
+                        {selected.citation}
+                        <Text className="text-ink-subtle">
+                          {"  \u00b7  "}
+                          {selected.translation}
+                        </Text>
                       </Text>
-                    </Text>
-                  ) : (
-                    <Text className="text-center text-sm text-ink-subtle">
-                      {t("home.tapHint")}
-                    </Text>
-                  )}
-                </View>
-              </>
-            )}
-          </Animated.View>
+                    ) : (
+                      <Text className="text-center text-sm text-ink-subtle">
+                        {t("home.tapHint")}
+                      </Text>
+                    )}
+                  </View>
+                </>
+              )}
+            </Animated.View>
+          </View>
         </Animated.View>
       </PanGestureHandler>
 
       {/* In the layout flow, not pinned over it. */}
-      <View className="items-center px-7 pb-10">
+      <View ref={footerRef} className="items-center px-7 pb-10">
         <View className="mb-3 w-full flex-row items-baseline justify-between">
           <Text className="font-semibold text-base text-ink">
             {pad(currentIndex + 1)}
@@ -387,6 +476,8 @@ const HomeScreen: React.FC = () => {
           {lessonCount > 0 ? t("home.swipeBoth") : t("home.swipeOnly")}
         </Text>
       </View>
+
+      {tour && <CoachMarks steps={tour} onDone={closeTour} />}
     </GestureHandlerRootView>
   );
 };
