@@ -664,7 +664,7 @@
             },
             "that being said": {
               "t": "wobei",
-              "s": "впрочем"
+              "s": "при этом"
             },
             "important": {
               "t": "wichtig",
@@ -825,7 +825,7 @@
             },
             "to taste": {
               "t": "schmecken",
-              "s": "вкусный"
+              "s": "быть вкусным"
             },
             "in": {
               "t": "in",
@@ -1456,7 +1456,7 @@
             },
             "to evaluate": {
               "t": "auswerten",
-              "s": "анализировать"
+              "s": "разбирать"
             },
             "answer": {
               "t": "die Antwort",
@@ -1593,7 +1593,7 @@
           "gloss": {
             "report": {
               "t": "der Bericht",
-              "s": "отчет"
+              "s": "отчёт"
             },
             "to highlight": {
               "t": "hervorheben",
@@ -1676,7 +1676,7 @@
             },
             "way": {
               "t": "der Weg",
-              "s": "путь"
+              "s": "дорога"
             },
             "right": {
               "t": "rechts",
@@ -1750,7 +1750,7 @@
             },
             "report": {
               "t": "der Bericht",
-              "s": "отчет"
+              "s": "отчёт"
             },
             "therefore": {
               "t": "deshalb",
@@ -2592,7 +2592,7 @@
             },
             "to worsen": {
               "t": "verschlechtern",
-              "s": "ухудшать"
+              "s": "усугубляться"
             }
           }
         },
@@ -2637,7 +2637,7 @@
             },
             "to offset": {
               "t": "kompensieren",
-              "s": "компенсировать"
+              "s": "уравновешивать"
             },
             "loss": {
               "t": "der Verlust",
@@ -2946,7 +2946,7 @@
             },
             "to reflect": {
               "t": "reflektieren",
-              "s": "размышлять"
+              "s": "отражать"
             },
             "his": {
               "t": "sein/seine",
@@ -3173,7 +3173,7 @@
             },
             "to drive": {
               "t": "fahren",
-              "s": "водить"
+              "s": "ехать"
             },
             "to be": {
               "t": "sein",
@@ -3790,7 +3790,7 @@
             },
             "selection": {
               "t": "die Auswahl",
-              "s": "выбор"
+              "s": "подборка"
             },
             "to show": {
               "t": "zeigen",
@@ -3866,7 +3866,7 @@
             },
             "perspective": {
               "t": "die Perspektive",
-              "s": "перспектива"
+              "s": "точка зрения"
             },
             "to change": {
               "t": "ändern",
@@ -5461,7 +5461,7 @@
             },
             "substantial": {
               "t": "erheblich",
-              "s": "существенный"
+              "s": "весомый"
             },
             "to rise": {
               "t": "steigen",
@@ -5686,7 +5686,7 @@
             },
             "wish": {
               "t": "der Wunsch",
-              "s": "желание"
+              "s": "мечта"
             },
             "to be": {
               "t": "sein",
@@ -6062,7 +6062,7 @@
             },
             "report": {
               "t": "der Bericht",
-              "s": "отчет"
+              "s": "отчёт"
             },
             "unbiased": {
               "t": "unvoreingenommen",
@@ -6397,7 +6397,7 @@
             },
             "efficient": {
               "t": "effizient",
-              "s": "эффективный"
+              "s": "производительный"
             },
             "and": {
               "t": "und",
@@ -7190,7 +7190,7 @@
             },
             "authority": {
               "t": "die Behörde",
-              "s": "власть"
+              "s": "ведомство"
             },
             "to have": {
               "t": "haben",
@@ -7245,7 +7245,7 @@
             },
             "authority": {
               "t": "die Behörde",
-              "s": "власть"
+              "s": "ведомство"
             },
             "to protect": {
               "t": "schützen",
@@ -7455,7 +7455,7 @@
             },
             "to begin": {
               "t": "beginnen",
-              "s": "начинать"
+              "s": "приступать"
             },
             "at": {
               "t": "um",
@@ -7802,7 +7802,7 @@
             },
             "human": {
               "t": "menschlich",
-              "s": "человечный"
+              "s": "человеческий"
             },
             "to invest": {
               "t": "investieren",
@@ -7878,7 +7878,7 @@
             },
             "some": {
               "t": "einige",
-              "s": "несколько"
+              "s": "некоторые"
             },
             "company": {
               "t": "die Firma",
@@ -8414,7 +8414,7 @@
           "gloss": {
             "report": {
               "t": "der Bericht",
-              "s": "отчет"
+              "s": "отчёт"
             },
             "to shed light on": {
               "t": "beleuchten",
@@ -8510,7 +8510,7 @@
             },
             "to sketch": {
               "t": "skizzieren",
-              "s": "набрасывать"
+              "s": "обрисовывать"
             },
             "next": {
               "t": "nächster/nächste/nächstes",
@@ -8892,7 +8892,7 @@
             },
             "validity": {
               "t": "die Gültigkeit",
-              "s": "достоверность"
+              "s": "обоснованность"
             },
             "and": {
               "t": "und",
@@ -8900,7 +8900,7 @@
             },
             "precision": {
               "t": "die Präzision",
-              "s": "точность"
+              "s": "прецизионность"
             },
             "to stay": {
               "t": "bleiben",
@@ -9021,7 +9021,7 @@
           "gloss": {
             "validity": {
               "t": "die Gültigkeit",
-              "s": "достоверность"
+              "s": "обоснованность"
             },
             "test": {
               "t": "der Test",
@@ -9095,7 +9095,7 @@
           "gloss": {
             "precision": {
               "t": "die Präzision",
-              "s": "точность"
+              "s": "прецизионность"
             },
             "to be": {
               "t": "sein",
@@ -9275,7 +9275,7 @@
           "gloss": {
             "limitation": {
               "t": "die Einschränkung",
-              "s": "ограничение"
+              "s": "предел"
             },
             "to be": {
               "t": "sein",
@@ -9484,7 +9484,7 @@
             },
             "to be acquainted with": {
               "t": "kennen",
-              "s": "знать"
+              "s": "быть знакомым"
             },
             "it": {
               "t": "es",
@@ -9929,7 +9929,7 @@
             },
             "to let": {
               "t": "lassen",
-              "s": "оставлять"
+              "s": "позволять"
             },
             "oneself": {
               "t": "sich",
@@ -10035,7 +10035,7 @@
             },
             "viewpoint": {
               "t": "der Standpunkt",
-              "s": "точка зрения"
+              "s": "угол зрения"
             },
             "different": {
               "t": "anders",
@@ -10288,7 +10288,7 @@
             },
             "around": {
               "t": "da",
-              "s": "там"
+              "s": "вокруг"
             },
             "to be": {
               "t": "sein",
@@ -10674,7 +10674,7 @@
             },
             "to drive": {
               "t": "fahren",
-              "s": "водить"
+              "s": "ехать"
             },
             "never": {
               "t": "nie",
@@ -10763,7 +10763,7 @@
             },
             "to be acquainted with": {
               "t": "kennen",
-              "s": "знать"
+              "s": "быть знакомым"
             }
           }
         },
@@ -11035,7 +11035,7 @@
             },
             "worrying": {
               "t": "besorgniserregend",
-              "s": "тревожный"
+              "s": "вызывающий беспокойство"
             },
             "for": {
               "t": "denn",
@@ -11047,7 +11047,7 @@
             },
             "human": {
               "t": "menschlich",
-              "s": "человечный"
+              "s": "человеческий"
             },
             "liable to": {
               "t": "anfällig für",
@@ -11251,7 +11251,7 @@
             },
             "to be acquainted with": {
               "t": "kennen",
-              "s": "знать"
+              "s": "быть знакомым"
             },
             "she": {
               "t": "sie",
@@ -11457,7 +11457,7 @@
             },
             "random": {
               "t": "beliebig",
-              "s": "произвольный"
+              "s": "случайный"
             },
             "to stay": {
               "t": "bleiben",
@@ -13411,7 +13411,7 @@
             },
             "disorganized": {
               "t": "(un-)organisiert",
-              "s": "(не-)организованный"
+              "s": "неорганизованный"
             },
             "to work": {
               "t": "arbeiten",
@@ -13465,11 +13465,11 @@
             },
             "conscientious": {
               "t": "verantwortungsbewusst",
-              "s": "ответственный"
+              "s": "добросовестный"
             },
             "human": {
               "t": "menschlich",
-              "s": "человечный"
+              "s": "человеческий"
             },
             "to find": {
               "t": "finden",
@@ -14162,7 +14162,7 @@
             },
             "should": {
               "t": "sollen",
-              "s": "должен"
+              "s": "следует"
             },
             "to match the interests and qualifications": {
               "t": "den Interessen und Qualifikationen entsprechen",
@@ -15152,7 +15152,7 @@
             },
             "human": {
               "t": "menschlich",
-              "s": "человечный"
+              "s": "человеческий"
             },
             "to work": {
               "t": "arbeiten",
@@ -16351,7 +16351,7 @@
             },
             "to be dependent on": {
               "t": "angewiesen sein auf",
-              "s": "быть вынужденным"
+              "s": "зависеть от"
             }
           }
         },
@@ -16546,7 +16546,7 @@
             },
             "should": {
               "t": "sollen",
-              "s": "должен"
+              "s": "следует"
             },
             "to shut down the laptop": {
               "t": "den Laptop herunterfahren",
@@ -16887,7 +16887,7 @@
             },
             "to spend money": {
               "t": "… Euro ausgeben",
-              "s": "выдавать ... евро"
+              "s": "тратить деньги"
             },
             "because": {
               "t": "weil",
@@ -17231,7 +17231,7 @@
             },
             "to consider irrelevant": {
               "t": "etw. als gegenstandslos betrachten",
-              "s": "считать что-л. неуместным"
+              "s": "считать неуместным"
             },
             "because": {
               "t": "weil",
@@ -17382,7 +17382,7 @@
             },
             "divided by": {
               "t": "(geteilt) durch",
-              "s": "(деленное) на"
+              "s": "делённое на"
             },
             "ten": {
               "t": "zehn",
@@ -17390,7 +17390,7 @@
             },
             "to calculate": {
               "t": "rechnen",
-              "s": "считать"
+              "s": "вычислять"
             },
             "to stay": {
               "t": "bleiben",
@@ -17512,7 +17512,7 @@
           "gloss": {
             "evaluation": {
               "t": "die Bewertung",
-              "s": "оценка"
+              "s": "аттестация"
             },
             "number": {
               "t": "die Nummer",
@@ -17584,11 +17584,11 @@
             },
             "hard": {
               "t": "hart",
-              "s": "твердый"
+              "s": "твёрдый"
             },
             "around": {
               "t": "da",
-              "s": "там"
+              "s": "вокруг"
             },
             "to help": {
               "t": "helfen",
@@ -17720,7 +17720,7 @@
             },
             "to begin": {
               "t": "beginnen",
-              "s": "начинать"
+              "s": "приступать"
             },
             "because": {
               "t": "weil",
@@ -17861,7 +17861,7 @@
             },
             "to generalize": {
               "t": "etw. verallgemeinern",
-              "s": "обобщать что-л."
+              "s": "обобщать"
             },
             "case": {
               "t": "der Fall",
@@ -18188,7 +18188,7 @@
             },
             "to regret": {
               "t": "etw. bedauern",
-              "s": "сожалеть о чем-л."
+              "s": "сожалеть"
             }
           }
         },
@@ -18231,7 +18231,7 @@
             },
             "to make amends": {
               "t": "etw. wiedergutmachen",
-              "s": "возмещать что-л."
+              "s": "загладить вину"
             },
             "and": {
               "t": "und",
@@ -18929,7 +18929,7 @@
             },
             "should": {
               "t": "sollen",
-              "s": "должен"
+              "s": "следует"
             },
             "to improve the economic situation": {
               "t": "die wirtschaftliche Situation verbessern",
@@ -19759,7 +19759,7 @@
           "gloss": {
             "outlook": {
               "t": "der Ausblick",
-              "s": "перспектива"
+              "s": "виды на будущее"
             },
             "to be": {
               "t": "sein",
@@ -20457,7 +20457,7 @@
             },
             "around": {
               "t": "da",
-              "s": "там"
+              "s": "вокруг"
             },
             "to be": {
               "t": "sein",
@@ -20964,7 +20964,7 @@
             },
             "should": {
               "t": "sollen",
-              "s": "должен"
+              "s": "следует"
             },
             "to give first aid": {
               "t": "Erste Hilfe leisten",
@@ -21332,7 +21332,7 @@
             },
             "mutually": {
               "t": "beiderseits",
-              "s": "взаимный"
+              "s": "взаимно"
             },
             "to apply": {
               "t": "gelten",
@@ -21493,7 +21493,7 @@
             },
             "to be acquainted with": {
               "t": "kennen",
-              "s": "знать"
+              "s": "быть знакомым"
             },
             "his": {
               "t": "sein/seine",
@@ -21560,7 +21560,7 @@
             },
             "hard": {
               "t": "hart",
-              "s": "твердый"
+              "s": "твёрдый"
             },
             "because": {
               "t": "weil",
@@ -21889,7 +21889,7 @@
             },
             "to hang": {
               "t": "hängen",
-              "s": "вешать"
+              "s": "висеть"
             },
             "on": {
               "t": "an",
@@ -21901,7 +21901,7 @@
             },
             "to be dependent on": {
               "t": "angewiesen sein auf",
-              "s": "быть вынужденным"
+              "s": "зависеть от"
             }
           }
         },
@@ -22157,7 +22157,7 @@
             },
             "to hang": {
               "t": "hängen",
-              "s": "вешать"
+              "s": "висеть"
             },
             "on": {
               "t": "an",
@@ -22189,7 +22189,7 @@
             },
             "to be dependent on": {
               "t": "angewiesen sein auf",
-              "s": "быть вынужденным"
+              "s": "зависеть от"
             }
           }
         },
@@ -22532,7 +22532,7 @@
           "gloss": {
             "either": {
               "t": "entweder",
-              "s": "или"
+              "s": "любой из двух"
             },
             "you": {
               "t": "du",

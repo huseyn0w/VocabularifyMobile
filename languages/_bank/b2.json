@@ -177,7 +177,7 @@
     "es": "valorar",
     "it": "esaminare",
     "tr": "incelemek",
-    "ru": "анализировать"
+    "ru": "разбирать"
   },
   {
     "en": "to justify",
@@ -420,7 +420,7 @@
     "es": "reflexionar",
     "it": "riflettere",
     "tr": "düşünmek",
-    "ru": "размышлять"
+    "ru": "отражать"
   },
   {
     "en": "to propose",
@@ -573,7 +573,7 @@
     "es": "la perspectiva",
     "it": "la prospettiva",
     "tr": "bakış açısı",
-    "ru": "перспектива"
+    "ru": "точка зрения"
   },
   {
     "en": "context",
@@ -897,7 +897,7 @@
     "es": "la autoridad",
     "it": "l'autorità",
     "tr": "yetkili makam",
-    "ru": "власть"
+    "ru": "ведомство"
   },
   {
     "en": "citizen",
@@ -1122,7 +1122,7 @@
     "es": "sustancial",
     "it": "sostanziale",
     "tr": "önemli ölçüde",
-    "ru": "существенный"
+    "ru": "весомый"
   },
   {
     "en": "considerable",
@@ -1266,7 +1266,7 @@
     "es": "eficiente",
     "it": "efficiente",
     "tr": "verimli",
-    "ru": "эффективный"
+    "ru": "производительный"
   },
   {
     "en": "flexible",
@@ -1662,7 +1662,7 @@
     "es": "desorganizado",
     "it": "disorganizzato",
     "tr": "düzensiz",
-    "ru": "(не-)организованный"
+    "ru": "неорганизованный"
   },
   {
     "en": "team player",
@@ -1680,7 +1680,7 @@
     "es": "concienzudo",
     "it": "coscienzioso",
     "tr": "sorumluluk sahibi",
-    "ru": "ответственный"
+    "ru": "добросовестный"
   },
   {
     "en": "intermediary",
@@ -2328,7 +2328,7 @@
     "es": "depender de",
     "it": "dipendere da",
     "tr": "muhtaç olmak",
-    "ru": "быть вынужденным"
+    "ru": "зависеть от"
   },
   {
     "en": "to balance work and family",
@@ -2490,7 +2490,7 @@
     "es": "gastar euros",
     "it": "spendere euro",
     "tr": "para harcamak",
-    "ru": "выдавать ... евро"
+    "ru": "тратить деньги"
   },
   {
     "en": "an amount of",
@@ -2571,7 +2571,7 @@
     "es": "considerar algo irrelevante",
     "it": "considerare qualcosa irrilevante",
     "tr": "konu dışı saymak",
-    "ru": "считать что-л. неуместным"
+    "ru": "считать неуместным"
   },
   {
     "en": "comma",
@@ -2598,7 +2598,7 @@
     "es": "dividido por",
     "it": "diviso per",
     "tr": "bölü",
-    "ru": "(деленное) на"
+    "ru": "делённое на"
   },
   {
     "en": "to manage finances well or poorly",
@@ -2625,7 +2625,7 @@
     "es": "la valoración",
     "it": "il giudizio",
     "tr": "değerlendirme",
-    "ru": "оценка"
+    "ru": "аттестация"
   },
   {
     "en": "consequences",
@@ -2688,7 +2688,7 @@
     "es": "generalizar",
     "it": "generalizzare",
     "tr": "genellemek",
-    "ru": "обобщать что-л."
+    "ru": "обобщать"
   },
   {
     "en": "to be forced to",
@@ -2769,7 +2769,7 @@
     "es": "lamentar algo",
     "it": "rammaricarsi di qualcosa",
     "tr": "üzüntü duymak",
-    "ru": "сожалеть о чем-л."
+    "ru": "сожалеть"
   },
   {
     "en": "to make amends",
@@ -2778,7 +2778,7 @@
     "es": "reparar algo",
     "it": "rimediare a qualcosa",
     "tr": "telafi etmek",
-    "ru": "возмещать что-л."
+    "ru": "загладить вину"
   },
   {
     "en": "it won't happen again",
@@ -3183,7 +3183,7 @@
     "es": "la perspectiva",
     "it": "le prospettive",
     "tr": "gelecek görünümü",
-    "ru": "перспектива"
+    "ru": "виды на будущее"
   },
   {
     "en": "controlling",
@@ -3660,7 +3660,7 @@
     "es": "mutuamente",
     "it": "reciprocamente",
     "tr": "karşılıklı olarak",
-    "ru": "взаимный"
+    "ru": "взаимно"
   },
   {
     "en": "expiry of the notice period",
@@ -3984,7 +3984,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "многообразие"
   },
   {
     "en": "abundant",
@@ -4011,7 +4011,7 @@
     "es": "si bien",
     "it": "detto questo",
     "tr": "gerçi",
-    "ru": "впрочем"
+    "ru": "при этом"
   },
   {
     "en": "gradually",
@@ -4092,7 +4092,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "сохранять"
   },
   {
     "en": "infrastructure",
@@ -4236,7 +4236,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "определяющий"
   },
   {
     "en": "neutral",
@@ -4272,7 +4272,7 @@
     "es": "el punto de vista",
     "it": "il punto di vista",
     "tr": "bakış açısı",
-    "ru": "точка зрения"
+    "ru": "угол зрения"
   },
   {
     "en": "validity",
@@ -4281,7 +4281,7 @@
     "es": "la validez",
     "it": "la validità",
     "tr": "geçerlilik",
-    "ru": "достоверность"
+    "ru": "обоснованность"
   },
   {
     "en": "regression",
@@ -4407,7 +4407,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "прогнозировать"
   },
   {
     "en": "probability",
@@ -4443,7 +4443,7 @@
     "es": "la limitación",
     "it": "la limitazione",
     "tr": "kısıtlama",
-    "ru": "ограничение"
+    "ru": "предел"
   },
   {
     "en": "statistic",
@@ -4551,7 +4551,7 @@
     "es": "arbitrario",
     "it": "arbitrario",
     "tr": "rastgele",
-    "ru": "произвольный"
+    "ru": "случайный"
   },
   {
     "en": "qualitative",
@@ -4587,7 +4587,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "обследовать"
   },
   {
     "en": "to promote",
@@ -4623,7 +4623,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "строгий"
   },
   {
     "en": "considerably",
@@ -4632,7 +4632,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "существенно"
   },
   {
     "en": "to worsen",
@@ -4641,7 +4641,7 @@
     "es": "empeorar",
     "it": "peggiorare",
     "tr": "kötüleştirmek",
-    "ru": "ухудшать"
+    "ru": "усугубляться"
   },
   {
     "en": "all the more so as",
@@ -4776,7 +4776,7 @@
     "es": "compensar",
     "it": "compensare",
     "tr": "dengelemek",
-    "ru": "компенсировать"
+    "ru": "уравновешивать"
   },
   {
     "en": "to sketch",
@@ -4785,7 +4785,7 @@
     "es": "esbozar",
     "it": "abbozzare",
     "tr": "taslağını çizmek",
-    "ru": "набрасывать"
+    "ru": "обрисовывать"
   },
   {
     "en": "precision",
@@ -4794,7 +4794,7 @@
     "es": "la precisión",
     "it": "la precisione",
     "tr": "kesinlik",
-    "ru": "точность"
+    "ru": "прецизионность"
   },
   {
     "en": "leeway",
@@ -4956,7 +4956,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "формулировать"
   },
   {
     "en": "to shed light on",
@@ -5010,7 +5010,7 @@
     "es": "preocupante",
     "it": "preoccupante",
     "tr": "endişe verici",
-    "ru": "тревожный"
+    "ru": "вызывающий беспокойство"
   },
   {
     "en": "unbiased",
@@ -5118,7 +5118,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "наклон"
   },
   {
     "en": "concerning",
@@ -5145,7 +5145,7 @@
     "es": "o bien",
     "it": "oppure",
     "tr": "ya",
-    "ru": "или"
+    "ru": "любой из двух"
   },
   {
     "en": "neither",

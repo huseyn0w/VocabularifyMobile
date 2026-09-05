@@ -159,7 +159,7 @@
     "es": "la oportunidad",
     "it": "l'opportunità",
     "tr": "fırsat",
-    "ru": "случай"
+    "ru": "удобный случай"
   },
   {
     "en": "solution",
@@ -1392,7 +1392,7 @@
     "es": "natural",
     "it": "naturale",
     "tr": "doğal",
-    "ru": "природный"
+    "ru": "естественный"
   },
   {
     "en": "social",
@@ -1905,7 +1905,7 @@
     "es": "el gas de escape",
     "it": "il gas di scarico",
     "tr": "egzoz gazı",
-    "ru": "выброс"
+    "ru": "выхлоп"
   },
   {
     "en": "exhaust gases",
@@ -1941,7 +1941,7 @@
     "es": "la sección",
     "it": "la sezione",
     "tr": "kesit",
-    "ru": "отрезок"
+    "ru": "раздел"
   },
   {
     "en": "intention",
@@ -1959,7 +1959,7 @@
     "es": "el aparcamiento",
     "it": "il posto auto",
     "tr": "bırakma yeri",
-    "ru": "парковка"
+    "ru": "место для хранения"
   },
   {
     "en": "department head",
@@ -1995,7 +1995,7 @@
     "es": "la gestión",
     "it": "la gestione",
     "tr": "yürütme",
-    "ru": "управление"
+    "ru": "обработка"
   },
   {
     "en": "promotion",
@@ -2040,7 +2040,7 @@
     "es": "el aliado",
     "it": "l'alleato",
     "tr": "müttefik",
-    "ru": "союзник"
+    "ru": "союзнический"
   },
   {
     "en": "alphabet",
@@ -2067,7 +2067,7 @@
     "es": "el cuidador de ancianos",
     "it": "l'assistente per anziani",
     "tr": "yaşlı bakıcısı",
-    "ru": "уход за престарелыми"
+    "ru": "специалист по уходу за престарелыми"
   },
   {
     "en": "retirement home",
@@ -2076,7 +2076,7 @@
     "es": "la residencia de ancianos",
     "it": "la casa di riposo",
     "tr": "yaşlılar yurdu",
-    "ru": "дом престарелых"
+    "ru": "пансионат для пожилых"
   },
   {
     "en": "used oil",
@@ -2130,7 +2130,7 @@
     "es": "el proveedor",
     "it": "il fornitore",
     "tr": "sağlayıcı",
-    "ru": "поставщик"
+    "ru": "поставщик услуг"
   },
   {
     "en": "alteration",
@@ -2139,7 +2139,7 @@
     "es": "la modificación",
     "it": "la modifica",
     "tr": "değişiklik",
-    "ru": "изменение"
+    "ru": "переделка"
   },
   {
     "en": "recognition",
@@ -2157,7 +2157,7 @@
     "es": "la instalación",
     "it": "l'impianto",
     "tr": "tesis",
-    "ru": "объект"
+    "ru": "сооружение"
   },
   {
     "en": "manual",
@@ -2193,7 +2193,7 @@
     "es": "la reclamación",
     "it": "la rivendicazione",
     "tr": "hak talebi",
-    "ru": "требование"
+    "ru": "притязание"
   },
   {
     "en": "hiring",
@@ -2310,7 +2310,7 @@
     "es": "la clase",
     "it": "il genere",
     "tr": "tür",
-    "ru": "тип"
+    "ru": "разновидность"
   },
   {
     "en": "article number",
@@ -2355,7 +2355,7 @@
     "es": "el aliento",
     "it": "il respiro",
     "tr": "nefes",
-    "ru": "дыхание"
+    "ru": "вдох"
   },
   {
     "en": "breathing",
@@ -2382,7 +2382,7 @@
     "es": "la grabación",
     "it": "la registrazione",
     "tr": "çekim",
-    "ru": "запись"
+    "ru": "снимок"
   },
   {
     "en": "excitement",
@@ -2418,7 +2418,7 @@
     "es": "el encargo",
     "it": "l'incarico",
     "tr": "iş siparişi",
-    "ru": "заказ"
+    "ru": "поручение"
   },
   {
     "en": "job number",
@@ -2427,7 +2427,7 @@
     "es": "el número de pedido",
     "it": "il numero d'ordine",
     "tr": "iş numarası",
-    "ru": "номер заказа"
+    "ru": "номер работы"
   },
   {
     "en": "stage performance",
@@ -2445,7 +2445,7 @@
     "es": "el instante",
     "it": "l'istante",
     "tr": "an",
-    "ru": "момент"
+    "ru": "мгновение"
   },
   {
     "en": "expression",
@@ -2490,7 +2490,7 @@
     "es": "el retrovisor",
     "it": "lo specchietto retrovisore",
     "tr": "yan ayna",
-    "ru": "зеркало"
+    "ru": "боковое зеркало"
   },
   {
     "en": "pronunciation",
@@ -2517,7 +2517,7 @@
     "es": "la selección",
     "it": "la selezione",
     "tr": "seçki",
-    "ru": "выбор"
+    "ru": "подборка"
   },
   {
     "en": "emigrant",
@@ -2679,7 +2679,7 @@
     "es": "la tramitación",
     "it": "l'elaborazione",
     "tr": "işleme (inceleme)",
-    "ru": "обработка"
+    "ru": "рассмотрение"
   },
   {
     "en": "need",
@@ -2760,7 +2760,7 @@
     "es": "el comprobante",
     "it": "il giustificativo",
     "tr": "makbuz",
-    "ru": "квитанция"
+    "ru": "чек"
   },
   {
     "en": "insult",
@@ -2814,7 +2814,7 @@
     "es": "la actividad laboral",
     "it": "l'attività professionale",
     "tr": "çalışma durumu",
-    "ru": "работа"
+    "ru": "трудоустройство"
   },
   {
     "en": "occupation zone",
@@ -2922,7 +2922,7 @@
     "es": "la tutoría",
     "it": "l'assistenza",
     "tr": "rehberlik",
-    "ru": "куратор"
+    "ru": "руководство"
   },
   {
     "en": "enterprise",
@@ -2958,7 +2958,7 @@
     "es": "la bolsa",
     "it": "il sacchetto",
     "tr": "torba",
-    "ru": "сумка"
+    "ru": "мешочек"
   },
   {
     "en": "cover letter",
@@ -2985,7 +2985,7 @@
     "es": "la operación de pago",
     "it": "l'operazione di pagamento",
     "tr": "ödeme işlemi",
-    "ru": "платеж"
+    "ru": "платёж"
   },
   {
     "en": "beer garden",
@@ -3129,7 +3129,7 @@
     "es": "el chaval",
     "it": "il ragazzo",
     "tr": "oğlan",
-    "ru": "мальчик"
+    "ru": "парнишка"
   },
   {
     "en": "bookstore",
@@ -3183,7 +3183,7 @@
     "es": "la fortaleza",
     "it": "la fortezza",
     "tr": "kale",
-    "ru": "замок"
+    "ru": "крепость"
   },
   {
     "en": "civil war",
@@ -3246,7 +3246,7 @@
     "es": "el cepillo",
     "it": "la spazzola",
     "tr": "fırça",
-    "ru": "щетка"
+    "ru": "щётка"
   },
   {
     "en": "camper",
@@ -3264,7 +3264,7 @@
     "es": "el camping",
     "it": "il campeggio",
     "tr": "kamp yeri",
-    "ru": "кемпинг"
+    "ru": "палаточный лагерь"
   },
   {
     "en": "catering",
@@ -3327,7 +3327,7 @@
     "es": "el contenedor",
     "it": "il container",
     "tr": "yük konteyneri",
-    "ru": "контейнер"
+    "ru": "грузовой контейнер"
   },
   {
     "en": "couch",
@@ -3444,7 +3444,7 @@
     "es": "el postre",
     "it": "il dessert",
     "tr": "tatlı tabağı",
-    "ru": "десерт"
+    "ru": "десертное блюдо"
   },
   {
     "en": "particular",
@@ -3525,7 +3525,7 @@
     "es": "el servicio",
     "it": "il servizio",
     "tr": "hizmet",
-    "ru": "услуга"
+    "ru": "удобство"
   },
   {
     "en": "business trip",
@@ -3723,7 +3723,7 @@
     "es": "la ocurrencia",
     "it": "l'idea",
     "tr": "akla gelen fikir",
-    "ru": "идея"
+    "ru": "озарение"
   },
   {
     "en": "introduction",
@@ -3741,7 +3741,7 @@
     "es": "la compra",
     "it": "la spesa",
     "tr": "alışveriş",
-    "ru": "покупка"
+    "ru": "закупки"
   },
   {
     "en": "intake",
@@ -3777,7 +3777,7 @@
     "es": "la fecha de ingreso",
     "it": "la data di ingresso",
     "tr": "giriş tarihi",
-    "ru": "дата вступления"
+    "ru": "дата въезда"
   },
   {
     "en": "immigration",
@@ -3804,7 +3804,7 @@
     "es": "el individual",
     "it": "il singolo",
     "tr": "tekli oyun",
-    "ru": "отдельный"
+    "ru": "одиночная игра"
   },
   {
     "en": "ice hockey",
@@ -3849,7 +3849,7 @@
     "es": "la recepción",
     "it": "il ricevimento",
     "tr": "resepsiyon",
-    "ru": "приём"
+    "ru": "стойка регистрации"
   },
   {
     "en": "energy costs",
@@ -3894,7 +3894,7 @@
     "es": "la distancia",
     "it": "la lontananza",
     "tr": "uzaklık",
-    "ru": "удаление"
+    "ru": "запас хода"
   },
   {
     "en": "dismissal",
@@ -3939,7 +3939,7 @@
     "es": "el acontecimiento",
     "it": "l'avvenimento",
     "tr": "olay",
-    "ru": "событие"
+    "ru": "происшествие"
   },
   {
     "en": "supplement",
@@ -3975,7 +3975,7 @@
     "es": "la vivencia",
     "it": "l'esperienza",
     "tr": "yaşantı",
-    "ru": "приключение"
+    "ru": "эпизод"
   },
   {
     "en": "relief",
@@ -4011,7 +4011,7 @@
     "es": "la inauguración",
     "it": "l'inaugurazione",
     "tr": "açılış",
-    "ru": "открытие"
+    "ru": "торжественное открытие"
   },
   {
     "en": "replacement",
@@ -4074,7 +4074,7 @@
     "es": "la planta",
     "it": "il piano",
     "tr": "kat (bina)",
-    "ru": "этаж"
+    "ru": "ярус"
   },
   {
     "en": "introduction of the euro",
@@ -4209,7 +4209,7 @@
     "es": "la butaca",
     "it": "la poltrona",
     "tr": "koltuk (İsviçre)",
-    "ru": "кресло"
+    "ru": "мягкое кресло"
   },
   {
     "en": "field",
@@ -4290,7 +4290,7 @@
     "es": "fluido",
     "it": "fluente",
     "tr": "akıcı",
-    "ru": "свободный"
+    "ru": "свободно"
   },
   {
     "en": "flute",
@@ -4407,7 +4407,7 @@
     "es": "la fotocopia",
     "it": "la fotocopia",
     "tr": "fotokopi",
-    "ru": "копия"
+    "ru": "ксерокопия"
   },
   {
     "en": "volunteer",
@@ -4416,7 +4416,7 @@
     "es": "el voluntario",
     "it": "il volontario",
     "tr": "gönüllü kişi",
-    "ru": "волонтер"
+    "ru": "волонтёр"
   },
   {
     "en": "foreign language",
@@ -4452,7 +4452,7 @@
     "es": "el peinado",
     "it": "l'acconciatura",
     "tr": "saç modeli",
-    "ru": "прическа"
+    "ru": "причёска"
   },
   {
     "en": "fruit (botanical)",
@@ -4551,7 +4551,7 @@
     "es": "el pasillo",
     "it": "il passaggio",
     "tr": "geçit",
-    "ru": "коридор"
+    "ru": "проход"
   },
   {
     "en": "guarantee",
@@ -4614,7 +4614,7 @@
     "es": "la región",
     "it": "la regione",
     "tr": "bölge",
-    "ru": "область"
+    "ru": "регион"
   },
   {
     "en": "mountains",
@@ -5019,7 +5019,7 @@
     "es": "la trama",
     "it": "la trama",
     "tr": "olay örgüsü",
-    "ru": "действие"
+    "ru": "сюжет"
   },
   {
     "en": "craftsman",
@@ -5037,7 +5037,7 @@
     "es": "el operario",
     "it": "l'operaio specializzato",
     "tr": "esnaf",
-    "ru": "ремесленник"
+    "ru": "мастеровой"
   },
   {
     "en": "durum wheat",
@@ -5046,7 +5046,7 @@
     "es": "el trigo duro",
     "it": "il grano duro",
     "tr": "durum buğdayı",
-    "ru": "твердая пшеница"
+    "ru": "твёрдая пшеница"
   },
   {
     "en": "hazelnut",
@@ -5073,7 +5073,7 @@
     "es": "la residencia",
     "it": "la residenza",
     "tr": "bakımevi",
-    "ru": "дом"
+    "ru": "дом ухода"
   },
   {
     "en": "homesickness",
@@ -5145,7 +5145,7 @@
     "es": "la fabricación",
     "it": "la fabbricazione",
     "tr": "imalat",
-    "ru": "производство"
+    "ru": "изготовление"
   },
   {
     "en": "hint",
@@ -5154,7 +5154,7 @@
     "es": "la indicación",
     "it": "l'indicazione",
     "tr": "uyarı notu",
-    "ru": "замечание"
+    "ru": "намёк"
   },
   {
     "en": "heat",
@@ -5172,7 +5172,7 @@
     "es": "la crecida",
     "it": "la piena",
     "tr": "sel",
-    "ru": "наводнение"
+    "ru": "паводок"
   },
   {
     "en": "height",
@@ -5190,7 +5190,7 @@
     "es": "la madera",
     "it": "il legno",
     "tr": "ahşap",
-    "ru": "дерево"
+    "ru": "древесина"
   },
   {
     "en": "listener",
@@ -5325,7 +5325,7 @@
     "es": "el anuncio de prensa",
     "it": "l'inserzione",
     "tr": "gazete ilanı",
-    "ru": "объявление"
+    "ru": "газетное объявление"
   },
   {
     "en": "maintenance",
@@ -5334,7 +5334,7 @@
     "es": "el mantenimiento",
     "it": "la manutenzione",
     "tr": "bakım",
-    "ru": "обслуживание"
+    "ru": "техобслуживание"
   },
   {
     "en": "institute",
@@ -5415,7 +5415,7 @@
     "es": "la juventud",
     "it": "la gioventù",
     "tr": "gençlik",
-    "ru": "молодёжь"
+    "ru": "юность"
   },
   {
     "en": "cabin",
@@ -5640,7 +5640,7 @@
     "es": "la reina",
     "it": "la regina",
     "tr": "kraliçe",
-    "ru": "королева"
+    "ru": "монарх"
   },
   {
     "en": "rivalry",
@@ -5721,7 +5721,7 @@
     "es": "el disfraz",
     "it": "il costume",
     "tr": "kostüm",
-    "ru": "костюм"
+    "ru": "наряд"
   },
   {
     "en": "power plant",
@@ -5757,7 +5757,7 @@
     "es": "la ambulancia",
     "it": "l'ambulanza",
     "tr": "hasta nakil aracı",
-    "ru": "скорая помощь"
+    "ru": "перевозка больных"
   },
   {
     "en": "scratch",
@@ -5847,7 +5847,7 @@
     "es": "el bolígrafo",
     "it": "la penna a sfera",
     "tr": "tükenmez kalem",
-    "ru": "ручка"
+    "ru": "шариковая ручка"
   },
   {
     "en": "customer survey",
@@ -5883,7 +5883,7 @@
     "es": "el material sintético",
     "it": "il materiale sintetico",
     "tr": "plastik",
-    "ru": "пластик"
+    "ru": "синтетика"
   },
   {
     "en": "course leader",
@@ -5901,7 +5901,7 @@
     "es": "la curva",
     "it": "la curva",
     "tr": "viraj",
-    "ru": "кривая"
+    "ru": "поворот"
   },
   {
     "en": "location",
@@ -6045,7 +6045,7 @@
     "es": "la línea",
     "it": "la linea",
     "tr": "hat",
-    "ru": "линия"
+    "ru": "телефонная линия"
   },
   {
     "en": "lighthouse",
@@ -6063,7 +6063,7 @@
     "es": "la enciclopedia",
     "it": "l'enciclopedia",
     "tr": "ansiklopedi",
-    "ru": "словарь"
+    "ru": "лексикон"
   },
   {
     "en": "love",
@@ -6162,7 +6162,7 @@
     "es": "la comida",
     "it": "il pasto",
     "tr": "öğün",
-    "ru": "прием пищи"
+    "ru": "приём пищи"
   },
   {
     "en": "occasion",
@@ -6216,7 +6216,7 @@
     "es": "el muro",
     "it": "il muro",
     "tr": "duvar (sur)",
-    "ru": "стена"
+    "ru": "кирпичная стена"
   },
   {
     "en": "construction of the wall",
@@ -6270,7 +6270,7 @@
     "es": "los costes adicionales",
     "it": "i costi aggiuntivi",
     "tr": "ek masraf",
-    "ru": "дополнительные расходы"
+    "ru": "добавочные расходы"
   },
   {
     "en": "champion",
@@ -6279,7 +6279,7 @@
     "es": "el campeón",
     "it": "il campione",
     "tr": "usta",
-    "ru": "мастер"
+    "ru": "чемпион"
   },
   {
     "en": "bulletin",
@@ -6288,7 +6288,7 @@
     "es": "el aviso",
     "it": "il comunicato",
     "tr": "duyuru",
-    "ru": "сообщение"
+    "ru": "сводка"
   },
   {
     "en": "dining hall",
@@ -6315,7 +6315,7 @@
     "es": "el menú",
     "it": "il menù",
     "tr": "tabldot",
-    "ru": "меню"
+    "ru": "комплексный обед"
   },
   {
     "en": "metal",
@@ -6459,7 +6459,7 @@
     "es": "el centro del campo",
     "it": "il centrocampo",
     "tr": "orta saha",
-    "ru": "поле"
+    "ru": "полузащита"
   },
   {
     "en": "mobile voicemail",
@@ -6468,7 +6468,7 @@
     "es": "el buzón de voz",
     "it": "la segreteria telefonica",
     "tr": "telesekreter",
-    "ru": "голосовая почта"
+    "ru": "мобильная голосовая почта"
   },
   {
     "en": "moderation",
@@ -6540,7 +6540,7 @@
     "es": "el esfuerzo",
     "it": "la fatica",
     "tr": "zahmet",
-    "ru": "усилие"
+    "ru": "тяжкий труд"
   },
   {
     "en": "garbage can",
@@ -6711,7 +6711,7 @@
     "es": "la red",
     "it": "la rete",
     "tr": "ağ",
-    "ru": "сеть"
+    "ru": "интернет"
   },
   {
     "en": "network",
@@ -6783,7 +6783,7 @@
     "es": "las urgencias",
     "it": "il pronto soccorso",
     "tr": "acil servis",
-    "ru": "приемное отделение"
+    "ru": "приёмное отделение"
   },
   {
     "en": "emergency exit",
@@ -6819,7 +6819,7 @@
     "es": "el alojamiento de emergencia",
     "it": "l'alloggio di emergenza",
     "tr": "geçici barınak",
-    "ru": "временное жилье"
+    "ru": "временное жильё"
   },
   {
     "en": "license plate",
@@ -6846,7 +6846,7 @@
     "es": "el camarero",
     "it": "il cameriere",
     "tr": "şef garson",
-    "ru": "официант"
+    "ru": "метрдотель"
   },
   {
     "en": "cream (Austrian)",
@@ -6882,7 +6882,7 @@
     "es": "la apertura",
     "it": "l'apertura",
     "tr": "açıklık",
-    "ru": "открытие"
+    "ru": "отверстие"
   },
   {
     "en": "veteran",
@@ -6891,7 +6891,7 @@
     "es": "el coche clásico",
     "it": "l'auto d'epoca",
     "tr": "klasik araba",
-    "ru": "ветеран"
+    "ru": "ретроавтомобиль"
   },
   {
     "en": "operation",
@@ -7008,7 +7008,7 @@
     "es": "el hueco para aparcar",
     "it": "il posto per parcheggiare",
     "tr": "park boşluğu",
-    "ru": "парковочное место"
+    "ru": "парковочный карман"
   },
   {
     "en": "traveler",
@@ -7017,7 +7017,7 @@
     "es": "el viajero",
     "it": "il viaggiatore",
     "tr": "yolcu",
-    "ru": "пассажир"
+    "ru": "путешественник"
   },
   {
     "en": "passport control",
@@ -7035,7 +7035,7 @@
     "es": "la pensión",
     "it": "la pensione",
     "tr": "pansiyon",
-    "ru": "пенсия"
+    "ru": "пансион"
   },
   {
     "en": "retiree",
@@ -7080,7 +7080,7 @@
     "es": "los daños personales",
     "it": "i danni alle persone",
     "tr": "bedensel zarar",
-    "ru": "ущерб"
+    "ru": "вред здоровью"
   },
   {
     "en": "civil status",
@@ -7134,7 +7134,7 @@
     "es": "el cuidador",
     "it": "il badante",
     "tr": "bakıcı",
-    "ru": "сиделка"
+    "ru": "опекун"
   },
   {
     "en": "phase",
@@ -7161,7 +7161,7 @@
     "es": "la píldora",
     "it": "la pillola",
     "tr": "doğum kontrol hapı",
-    "ru": "таблетка"
+    "ru": "противозачаточная таблетка"
   },
   {
     "en": "pilot strike",
@@ -7206,7 +7206,7 @@
     "es": "el franqueo",
     "it": "l'affrancatura",
     "tr": "posta ücreti",
-    "ru": "почтовые расходы"
+    "ru": "почтовый сбор"
   },
   {
     "en": "postage costs",
@@ -7422,7 +7422,7 @@
     "es": "el envío de devolución",
     "it": "la restituzione",
     "tr": "geri gönderim",
-    "ru": "возврат"
+    "ru": "обратная посылка"
   },
   {
     "en": "consideration",
@@ -7431,7 +7431,7 @@
     "es": "la consideración",
     "it": "il riguardo",
     "tr": "saygı gösterme",
-    "ru": "уважение"
+    "ru": "чуткость"
   },
   {
     "en": "quiet time",
@@ -7512,7 +7512,7 @@
     "es": "el daño",
     "it": "il danno",
     "tr": "zarar",
-    "ru": "вред"
+    "ru": "ущерб"
   },
   {
     "en": "case of damage",
@@ -7539,7 +7539,7 @@
     "es": "el cristal",
     "it": "il vetro",
     "tr": "cam levha",
-    "ru": "стекло"
+    "ru": "диск"
   },
   {
     "en": "headlight",
@@ -7584,7 +7584,7 @@
     "es": "el escrito",
     "it": "la corrispondenza",
     "tr": "yazışma",
-    "ru": "письмо"
+    "ru": "переписка"
   },
   {
     "en": "soap opera",
@@ -7611,7 +7611,7 @@
     "es": "el hogar de mayores",
     "it": "la residenza per anziani",
     "tr": "yaşlı bakımevi",
-    "ru": "дом престарелых"
+    "ru": "резиденция для пожилых"
   },
   {
     "en": "series",
@@ -7701,7 +7701,7 @@
     "es": "la terraza",
     "it": "la terrazza soleggiata",
     "tr": "güneş terası",
-    "ru": "терраса"
+    "ru": "солнечная терраса"
   },
   {
     "en": "sunset",
@@ -7908,7 +7908,7 @@
     "es": "el estudio",
     "it": "lo studio",
     "tr": "araştırma",
-    "ru": "исследование"
+    "ru": "научное исследование"
   },
   {
     "en": "daily routine",
@@ -7962,7 +7962,7 @@
     "es": "la división",
     "it": "la divisione",
     "tr": "bölünme",
-    "ru": "разделение"
+    "ru": "перегородка"
   },
   {
     "en": "telecommunications",
@@ -8025,7 +8025,7 @@
     "es": "el difunto",
     "it": "il defunto",
     "tr": "ölü kişi",
-    "ru": "мертвый"
+    "ru": "умерший"
   },
   {
     "en": "trend",
@@ -8070,7 +8070,7 @@
     "es": "la pernoctación",
     "it": "il pernottamento",
     "tr": "geceleme",
-    "ru": "ночевка"
+    "ru": "ночёвка"
   },
   {
     "en": "flood",
@@ -8115,7 +8115,7 @@
     "es": "el trato",
     "it": "il trattamento",
     "tr": "muamele",
-    "ru": "обращение"
+    "ru": "обхождение"
   },
   {
     "en": "surroundings",
@@ -8232,7 +8232,7 @@
     "es": "el gasto",
     "it": "il consumo",
     "tr": "tüketim miktarı",
-    "ru": "потребление"
+    "ru": "расход"
   },
   {
     "en": "consumer",
@@ -8385,7 +8385,7 @@
     "es": "el senderista",
     "it": "l'escursionista",
     "tr": "yürüyüşçü",
-    "ru": "путешественник"
+    "ru": "турист"
   },
   {
     "en": "hiking tour",
@@ -8394,7 +8394,7 @@
     "es": "la ruta de senderismo",
     "it": "il giro escursionistico",
     "tr": "doğa yürüyüşü",
-    "ru": "поход"
+    "ru": "пеший тур"
   },
   {
     "en": "shopping cart",
@@ -8556,7 +8556,7 @@
     "es": "el huracán",
     "it": "il ciclone",
     "tr": "kasırga",
-    "ru": "тропический шторм"
+    "ru": "ураган"
   },
   {
     "en": "caravan",
@@ -8592,7 +8592,7 @@
     "es": "el cepillo de dientes",
     "it": "lo spazzolino da denti",
     "tr": "diş fırçası",
-    "ru": "зубная щетка"
+    "ru": "зубная щётка"
   },
   {
     "en": "animated film",
@@ -8754,7 +8754,7 @@
     "es": "el acceso",
     "it": "l'accesso",
     "tr": "giriş hakkı",
-    "ru": "доступ"
+    "ru": "вход"
   },
   {
     "en": "reliability",
@@ -8763,7 +8763,7 @@
     "es": "la fiabilidad",
     "it": "l'affidabilità",
     "tr": "güvenilirlik",
-    "ru": "надежность"
+    "ru": "надёжность"
   },
   {
     "en": "to cover",
@@ -8808,7 +8808,7 @@
     "es": "acordar",
     "it": "accordarsi",
     "tr": "kararlaştırmak (anlaşmak)",
-    "ru": "договариваться"
+    "ru": "сходиться на"
   },
   {
     "en": "to subscribe",
@@ -8826,7 +8826,7 @@
     "es": "enviar",
     "it": "inviare",
     "tr": "yollamak",
-    "ru": "отправлять"
+    "ru": "высылать"
   },
   {
     "en": "to transcribe",
@@ -8862,7 +8862,7 @@
     "es": "concertar",
     "it": "concordare",
     "tr": "sözleşmek",
-    "ru": "договариваться"
+    "ru": "согласовывать"
   },
   {
     "en": "downwards",
@@ -8880,7 +8880,7 @@
     "es": "fregar",
     "it": "lavare i piatti",
     "tr": "bulaşık yıkamak",
-    "ru": "мыть"
+    "ru": "мыть посуду"
   },
   {
     "en": "varied",
@@ -8916,7 +8916,7 @@
     "es": "eso sí",
     "it": "tuttavia",
     "tr": "ne var ki",
-    "ru": "однако"
+    "ru": "впрочем"
   },
   {
     "en": "allergic",
@@ -8961,7 +8961,7 @@
     "es": "estatal",
     "it": "amministrativo",
     "tr": "resmi (makam)",
-    "ru": "официальный"
+    "ru": "государственный"
   },
   {
     "en": "continuous",
@@ -8970,7 +8970,7 @@
     "es": "continuo",
     "it": "continuo",
     "tr": "aralıksız",
-    "ru": "постоянный"
+    "ru": "непрерывный"
   },
   {
     "en": "on the other hand",
@@ -8988,7 +8988,7 @@
     "es": "arrancar",
     "it": "partire",
     "tr": "hareket etmek (araç)",
-    "ru": "прибывать"
+    "ru": "отъезжать"
   },
   {
     "en": "initially",
@@ -9006,7 +9006,7 @@
     "es": "tocar",
     "it": "toccare",
     "tr": "dokunmak",
-    "ru": "касаться"
+    "ru": "трогать"
   },
   {
     "en": "pleasant",
@@ -9078,7 +9078,7 @@
     "es": "adquirir",
     "it": "acquistare",
     "tr": "edinmek",
-    "ru": "покупать"
+    "ru": "приобретать"
   },
   {
     "en": "to look at",
@@ -9096,7 +9096,7 @@
     "es": "abrocharse el cinturón",
     "it": "allacciare la cintura",
     "tr": "kemer takmak",
-    "ru": "пристегивать"
+    "ru": "пристёгиваться"
   },
   {
     "en": "in lieu of",
@@ -9168,7 +9168,7 @@
     "es": "médico",
     "it": "medico",
     "tr": "tıbbi",
-    "ru": "медицинский"
+    "ru": "клинический"
   },
   {
     "en": "breathable",
@@ -9186,7 +9186,7 @@
     "es": "subir",
     "it": "alzare",
     "tr": "açmak (sesi)",
-    "ru": "поворачивать"
+    "ru": "прибавлять"
   },
   {
     "en": "to call upon",
@@ -9213,7 +9213,7 @@
     "es": "surgir",
     "it": "sorgere",
     "tr": "belirmek",
-    "ru": "приходить"
+    "ru": "возникать"
   },
   {
     "en": "to dissolve",
@@ -9240,7 +9240,7 @@
     "es": "grabar",
     "it": "registrare",
     "tr": "kaydetmek (çekmek)",
-    "ru": "принимать"
+    "ru": "записывать"
   },
   {
     "en": "to divide",
@@ -9285,7 +9285,7 @@
     "es": "debatir",
     "it": "confrontarsi",
     "tr": "hesaplaşmak",
-    "ru": "вступать в полемику"
+    "ru": "заниматься"
   },
   {
     "en": "trained",
@@ -9312,7 +9312,7 @@
     "es": "salir del aparcamiento",
     "it": "uscire dal parcheggio",
     "tr": "park yerinden çıkmak",
-    "ru": "парковаться"
+    "ru": "выезжать с парковки"
   },
   {
     "en": "to test out",
@@ -9339,7 +9339,7 @@
     "es": "transmitir",
     "it": "riferire",
     "tr": "yöneltmek (iletmek)",
-    "ru": "передавать"
+    "ru": "выравнивать"
   },
   {
     "en": "to switch off",
@@ -9420,7 +9420,7 @@
     "es": "liberado",
     "it": "liberato",
     "tr": "muaf",
-    "ru": "освобожденный"
+    "ru": "освобождённый"
   },
   {
     "en": "to encounter",
@@ -9447,7 +9447,7 @@
     "es": "entusiasmado",
     "it": "entusiasta",
     "tr": "coşkulu",
-    "ru": "вдохновленный"
+    "ru": "вдохновлённый"
   },
   {
     "en": "to authenticate",
@@ -9501,7 +9501,7 @@
     "es": "dominar",
     "it": "padroneggiare",
     "tr": "hakim olmak",
-    "ru": "владеть"
+    "ru": "осваивать"
   },
   {
     "en": "disabled",
@@ -9510,7 +9510,7 @@
     "es": "discapacitado",
     "it": "disabile",
     "tr": "engelli",
-    "ru": "инвалид"
+    "ru": "нетрудоспособный"
   },
   {
     "en": "to enclose",
@@ -9546,7 +9546,7 @@
     "es": "dar a conocer",
     "it": "rendere noto",
     "tr": "ilan etmek",
-    "ru": "объявлять"
+    "ru": "разглашать"
   },
   {
     "en": "to burden",
@@ -9582,7 +9582,7 @@
     "es": "observar",
     "it": "osservare",
     "tr": "gözlemlemek",
-    "ru": "наблюдать"
+    "ru": "разглядывать"
   },
   {
     "en": "entitled",
@@ -9636,7 +9636,7 @@
     "es": "dañado",
     "it": "danneggiato",
     "tr": "hasarlı",
-    "ru": "поврежденный"
+    "ru": "повреждённый"
   },
   {
     "en": "to employ",
@@ -9645,7 +9645,7 @@
     "es": "emplear",
     "it": "impiegare",
     "tr": "istihdam etmek",
-    "ru": "занимать"
+    "ru": "трудоустраивать"
   },
   {
     "en": "to certify",
@@ -9654,7 +9654,7 @@
     "es": "certificar",
     "it": "certificare",
     "tr": "belgelemek",
-    "ru": "заверять"
+    "ru": "удостоверять"
   },
   {
     "en": "to swear at",
@@ -9717,7 +9717,7 @@
     "es": "atender",
     "it": "prendersi cura di",
     "tr": "bakmak (ilgilenmek)",
-    "ru": "курировать"
+    "ru": "заботиться"
   },
   {
     "en": "drunk",
@@ -9735,7 +9735,7 @@
     "es": "valorar",
     "it": "valutare",
     "tr": "değerlendirmek",
-    "ru": "оценивать"
+    "ru": "судить"
   },
   {
     "en": "conscious",
@@ -9780,7 +9780,7 @@
     "es": "solamente",
     "it": "soltanto",
     "tr": "sırf",
-    "ru": "только"
+    "ru": "всего лишь"
   },
   {
     "en": "to bloom",
@@ -9852,7 +9852,7 @@
     "es": "el monedero",
     "it": "il portamonete",
     "tr": "para cüzdanı",
-    "ru": "кошелек"
+    "ru": "кошелёк"
   },
   {
     "en": "chicken (Swiss)",
@@ -9861,7 +9861,7 @@
     "es": "el pollo",
     "it": "il pollo",
     "tr": "piliç (İsviçre)",
-    "ru": "цыпленок"
+    "ru": "цыплёнок"
   },
   {
     "en": "lodgings",
@@ -9870,7 +9870,7 @@
     "es": "el alojamiento",
     "it": "l'alloggio",
     "tr": "konak yeri",
-    "ru": "квартал"
+    "ru": "жильё"
   },
   {
     "en": "bike",
@@ -9924,7 +9924,7 @@
     "es": "la pieza",
     "it": "il pezzo",
     "tr": "parça",
-    "ru": "часть"
+    "ru": "компонент"
   },
   {
     "en": "pace",
@@ -9933,7 +9933,7 @@
     "es": "el ritmo",
     "it": "il ritmo",
     "tr": "tempo",
-    "ru": "скорость"
+    "ru": "темп"
   },
   {
     "en": "prohibition",
@@ -9951,7 +9951,7 @@
     "es": "las cosas",
     "it": "la roba",
     "tr": "eşya",
-    "ru": "вещь"
+    "ru": "барахло"
   },
   {
     "en": "wrath",
@@ -10005,7 +10005,7 @@
     "es": "el empleado de correos",
     "it": "l'impiegato postale",
     "tr": "posta dağıtıcısı",
-    "ru": "почтальон"
+    "ru": "почтовый служащий"
   },
   {
     "en": "intern",
@@ -10131,7 +10131,7 @@
     "es": "la mugre",
     "it": "la sporcizia",
     "tr": "kir",
-    "ru": "грязь"
+    "ru": "копоть"
   },
   {
     "en": "fright",
@@ -10167,7 +10167,7 @@
     "es": "el asiento",
     "it": "il sedile",
     "tr": "oturak",
-    "ru": "место"
+    "ru": "сиденье"
   },
   {
     "en": "social worker",
@@ -10275,7 +10275,7 @@
     "es": "el reproche",
     "it": "il rimprovero",
     "tr": "suçlama",
-    "ru": "упрек"
+    "ru": "упрёк"
   },
   {
     "en": "waiting hall",
@@ -10293,7 +10293,7 @@
     "es": "la manopla de baño",
     "it": "il guanto da bagno",
     "tr": "lif bezi",
-    "ru": "полотенце"
+    "ru": "мочалка"
   },
   {
     "en": "scientist",
@@ -10302,7 +10302,7 @@
     "es": "el científico",
     "it": "lo scienziato",
     "tr": "bilim insanı",
-    "ru": "ученый"
+    "ru": "учёный"
   },
   {
     "en": "pointer",
@@ -10329,7 +10329,7 @@
     "es": "el contexto",
     "it": "il nesso",
     "tr": "bağlam",
-    "ru": "контекст"
+    "ru": "взаимосвязь"
   },
   {
     "en": "the same",
@@ -10446,7 +10446,7 @@
     "es": "la pesquisa",
     "it": "l'indagine",
     "tr": "araştırma çalışması",
-    "ru": "исследование"
+    "ru": "расследование"
   },
   {
     "en": "commercial",
@@ -10473,7 +10473,7 @@
     "es": "el número de teléfono",
     "it": "il numero di telefono",
     "tr": "telefon numarası",
-    "ru": "номер телефона"
+    "ru": "контактный номер"
   },
   {
     "en": "sightseeing drive",
@@ -10482,7 +10482,7 @@
     "es": "el recorrido turístico",
     "it": "il giro turistico",
     "tr": "şehir turu",
-    "ru": "экскурсия"
+    "ru": "обзорная поездка"
   },
   {
     "en": "season (activity)",
@@ -10626,7 +10626,7 @@
     "es": "el acto",
     "it": "l'atto",
     "tr": "eylem",
-    "ru": "действие"
+    "ru": "поступок"
   },
   {
     "en": "technique",
@@ -10698,7 +10698,7 @@
     "es": "la suplencia",
     "it": "la supplenza",
     "tr": "vekalet",
-    "ru": "замещение"
+    "ru": "представительство"
   },
   {
     "en": "forgiveness",
@@ -10707,7 +10707,7 @@
     "es": "el perdón",
     "it": "il perdono",
     "tr": "af",
-    "ru": "извинение"
+    "ru": "прощение"
   },
   {
     "en": "hike",
@@ -10860,7 +10860,7 @@
     "es": "tonto",
     "it": "stupido",
     "tr": "salak",
-    "ru": "глупый"
+    "ru": "тупой"
   },
   {
     "en": "double",
@@ -10905,7 +10905,7 @@
     "es": "dentro",
     "it": "dentro",
     "tr": "içeride (orada)",
-    "ru": "внутри"
+    "ru": "там внутри"
   },
   {
     "en": "mixed up",
@@ -10914,7 +10914,7 @@
     "es": "desordenado",
     "it": "in disordine",
     "tr": "karmakarışık",
-    "ru": "впопыхах"
+    "ru": "перепутанный"
   },
   {
     "en": "permeable",
@@ -10977,7 +10977,7 @@
     "es": "independiente",
     "it": "autonomo",
     "tr": "kendi sorumluluğunda",
-    "ru": "ответственный"
+    "ru": "самостоятельный"
   },
   {
     "en": "to rush",
@@ -11103,7 +11103,7 @@
     "es": "matricularse",
     "it": "iscriversi",
     "tr": "kayıt yaptırmak",
-    "ru": "регистрироваться"
+    "ru": "поступать"
   },
   {
     "en": "unilateral",
@@ -11130,7 +11130,7 @@
     "es": "ajustar",
     "it": "regolare",
     "tr": "ayarlamak",
-    "ru": "устанавливать"
+    "ru": "настраивать"
   },
   {
     "en": "emotional",
@@ -11166,7 +11166,7 @@
     "es": "descubrir",
     "it": "scoprire",
     "tr": "keşfetmek",
-    "ru": "открывать"
+    "ru": "раскрывать"
   },
   {
     "en": "to remove",
@@ -11238,7 +11238,7 @@
     "es": "disponible",
     "it": "reperibile",
     "tr": "temin edilebilir",
-    "ru": "доступный"
+    "ru": "продающийся"
   },
   {
     "en": "to make inquiries",
@@ -11283,7 +11283,7 @@
     "es": "serio",
     "it": "serio",
     "tr": "ciddi",
-    "ru": "серьёзный"
+    "ru": "степенный"
   },
   {
     "en": "exhausted",
@@ -11301,7 +11301,7 @@
     "es": "elaborar",
     "it": "elaborare",
     "tr": "düzenlemek (hazırlamak)",
-    "ru": "составлять"
+    "ru": "оформлять"
   },
   {
     "en": "to raise a child",
@@ -11310,7 +11310,7 @@
     "es": "educar",
     "it": "educare",
     "tr": "yetiştirmek (çocuk)",
-    "ru": "воспитывать"
+    "ru": "растить"
   },
   {
     "en": "to escalate",
@@ -11328,7 +11328,7 @@
     "es": "quizá",
     "it": "eventualmente",
     "tr": "olası",
-    "ru": "возможно"
+    "ru": "может быть"
   },
   {
     "en": "eternal",
@@ -11364,7 +11364,7 @@
     "es": "justo",
     "it": "giusto",
     "tr": "adil",
-    "ru": "честный"
+    "ru": "справедливый"
   },
   {
     "en": "due",
@@ -11391,7 +11391,7 @@
     "es": "teñir",
     "it": "tingere",
     "tr": "renklendirmek",
-    "ru": "красить"
+    "ru": "окрашивать"
   },
   {
     "en": "colored",
@@ -11499,7 +11499,7 @@
     "es": "formal",
     "it": "formale",
     "tr": "törensel",
-    "ru": "формальный"
+    "ru": "церемонный"
   },
   {
     "en": "nonviolent",
@@ -11589,7 +11589,7 @@
     "es": "utilizar",
     "it": "utilizzare",
     "tr": "kullanmak (yararlanmak)",
-    "ru": "использовать"
+    "ru": "задействовать"
   },
   {
     "en": "honored",
@@ -11598,7 +11598,7 @@
     "es": "estimado",
     "it": "stimato",
     "tr": "muhterem",
-    "ru": "уважаемый"
+    "ru": "польщённый"
   },
   {
     "en": "suitable",
@@ -11634,7 +11634,7 @@
     "es": "expectante",
     "it": "curioso",
     "tr": "meraklı",
-    "ru": "заинтригованный"
+    "ru": "взволнованный"
   },
   {
     "en": "permitted",
@@ -11652,7 +11652,7 @@
     "es": "avalar",
     "it": "garantire",
     "tr": "temin etmek (güvence)",
-    "ru": "гарантировать"
+    "ru": "ручаться"
   },
   {
     "en": "to get used to",
@@ -11841,7 +11841,7 @@
     "es": "venir",
     "it": "provenire",
     "tr": "gelmek (kökenli)",
-    "ru": "приходить"
+    "ru": "быть родом"
   },
   {
     "en": "to power down",
@@ -11850,7 +11850,7 @@
     "es": "apagar el ordenador",
     "it": "spegnere il computer",
     "tr": "bilgisayarı kapatmak",
-    "ru": "выключать"
+    "ru": "отключать"
   },
   {
     "en": "today's",
@@ -11904,7 +11904,7 @@
     "es": "como máximo",
     "it": "al massimo",
     "tr": "en fazla",
-    "ru": "максимум"
+    "ru": "не больше чем"
   },
   {
     "en": "to honk",
@@ -11994,7 +11994,7 @@
     "es": "por dentro",
     "it": "all'interno",
     "tr": "iç tarafta",
-    "ru": "внутри"
+    "ru": "изнутри"
   },
   {
     "en": "inner",
@@ -12012,7 +12012,7 @@
     "es": "dentro de",
     "it": "entro",
     "tr": "içinde (süre)",
-    "ru": "внутри"
+    "ru": "в пределах"
   },
   {
     "en": "insofar",
@@ -12075,7 +12075,7 @@
     "es": "los vaqueros",
     "it": "i jeans",
     "tr": "kot pantolon",
-    "ru": "джинсы"
+    "ru": "джинсовая ткань"
   },
   {
     "en": "every time",
@@ -12147,7 +12147,7 @@
     "es": "íntegro",
     "it": "completo",
     "tr": "eksiksiz",
-    "ru": "полный"
+    "ru": "весь"
   },
   {
     "en": "to consume",
@@ -12174,7 +12174,7 @@
     "es": "correcto",
     "it": "corretto",
     "tr": "düzgün",
-    "ru": "правильный"
+    "ru": "надлежащий"
   },
   {
     "en": "to crash",
@@ -12183,7 +12183,7 @@
     "es": "estrellarse",
     "it": "schiantarsi",
     "tr": "gümlemek",
-    "ru": "громыхать"
+    "ru": "разбиваться"
   },
   {
     "en": "critical",
@@ -12291,7 +12291,7 @@
     "es": "animado",
     "it": "vivace",
     "tr": "canlı",
-    "ru": "оживленный"
+    "ru": "оживлённый"
   },
   {
     "en": "to suffer",
@@ -12318,7 +12318,7 @@
     "es": "acorde al rendimiento",
     "it": "commisurato al rendimento",
     "tr": "performansa dayalı",
-    "ru": "оправданный"
+    "ru": "сдельный"
   },
   {
     "en": "to direct",
@@ -12327,7 +12327,7 @@
     "es": "dirigir",
     "it": "dirigere",
     "tr": "yönetmek",
-    "ru": "руководить"
+    "ru": "возглавлять"
   },
   {
     "en": "to steer",
@@ -12336,7 +12336,7 @@
     "es": "girar",
     "it": "sterzare",
     "tr": "direksiyon çevirmek",
-    "ru": "поворачивать"
+    "ru": "вести"
   },
   {
     "en": "in stock",
@@ -12363,7 +12363,7 @@
     "es": "relajado",
     "it": "allentato",
     "tr": "gevşek",
-    "ru": "расслабленный"
+    "ru": "просторный"
   },
   {
     "en": "to be worth it",
@@ -12435,7 +12435,7 @@
     "es": "humano",
     "it": "umano",
     "tr": "insani",
-    "ru": "человечный"
+    "ru": "человеческий"
   },
   {
     "en": "odd",
@@ -12498,7 +12498,7 @@
     "es": "opinar",
     "it": "dire la propria",
     "tr": "söz sahibi olmak",
-    "ru": "участвовать"
+    "ru": "иметь право голоса"
   },
   {
     "en": "to notify",
@@ -12507,7 +12507,7 @@
     "es": "comunicar",
     "it": "comunicare",
     "tr": "haberdar etmek",
-    "ru": "сообщать"
+    "ru": "уведомлять"
   },
   {
     "en": "small and medium-sized",
@@ -12525,7 +12525,7 @@
     "es": "en medio",
     "it": "in mezzo",
     "tr": "ortasında",
-    "ru": "в центре"
+    "ru": "посреди"
   },
   {
     "en": "in the meantime",
@@ -12588,7 +12588,7 @@
     "es": "valiente",
     "it": "coraggioso",
     "tr": "cesur",
-    "ru": "смелый"
+    "ru": "отважный"
   },
   {
     "en": "thoughtful",
@@ -12606,7 +12606,7 @@
     "es": "consultar",
     "it": "consultare",
     "tr": "sözlükten bakmak",
-    "ru": "справляться"
+    "ru": "искать в словаре"
   },
   {
     "en": "to check on",
@@ -12660,7 +12660,7 @@
     "es": "el otro día",
     "it": "l'altro giorno",
     "tr": "geçen gün",
-    "ru": "недавно"
+    "ru": "на днях"
   },
   {
     "en": "low",
@@ -12750,7 +12750,7 @@
     "es": "unos cuantos",
     "it": "un paio",
     "tr": "birkaç",
-    "ru": "пара"
+    "ru": "парочка"
   },
   {
     "en": "passive",
@@ -12777,7 +12777,7 @@
     "es": "embarazoso",
     "it": "imbarazzante",
     "tr": "utandırıcı",
-    "ru": "неудобный"
+    "ru": "неловкий"
   },
   {
     "en": "perfect",
@@ -12786,7 +12786,7 @@
     "es": "perfecto",
     "it": "perfetto",
     "tr": "kusursuz",
-    "ru": "идеальный"
+    "ru": "безупречный"
   },
   {
     "en": "to plant",
@@ -12822,7 +12822,7 @@
     "es": "de moda",
     "it": "di moda",
     "tr": "popüler",
-    "ru": "популярный"
+    "ru": "модный"
   },
   {
     "en": "postage free",
@@ -12858,7 +12858,7 @@
     "es": "transversal",
     "it": "di traverso",
     "tr": "enine",
-    "ru": "поперек"
+    "ru": "поперёк"
   },
   {
     "en": "to squeak",
@@ -12930,7 +12930,7 @@
     "es": "arreglar",
     "it": "sistemare",
     "tr": "yoluna koymak",
-    "ru": "управлять"
+    "ru": "улаживать"
   },
   {
     "en": "to regulate",
@@ -12957,7 +12957,7 @@
     "es": "limpiar",
     "it": "pulire",
     "tr": "arındırmak",
-    "ru": "убирать"
+    "ru": "вычищать"
   },
   {
     "en": "relatively",
@@ -12966,7 +12966,7 @@
     "es": "relativamente",
     "it": "relativamente",
     "tr": "görece",
-    "ru": "относительный"
+    "ru": "сравнительно"
   },
   {
     "en": "to rescue",
@@ -13002,7 +13002,7 @@
     "es": "tirar",
     "it": "buttare giù",
     "tr": "aşağı atmak",
-    "ru": "выбрасывать"
+    "ru": "сбрасывать"
   },
   {
     "en": "to slide",
@@ -13029,7 +13029,7 @@
     "es": "todos",
     "it": "tutti quanti",
     "tr": "hepsi",
-    "ru": "все"
+    "ru": "все до одного"
   },
   {
     "en": "to harm",
@@ -13047,7 +13047,7 @@
     "es": "dañar",
     "it": "danneggiare",
     "tr": "sakatlamak",
-    "ru": "повредить"
+    "ru": "ухудшать"
   },
   {
     "en": "to shift",
@@ -13074,7 +13074,7 @@
     "es": "maquillarse",
     "it": "truccarsi",
     "tr": "makyaj yapmak",
-    "ru": "красить"
+    "ru": "краситься"
   },
   {
     "en": "guilty",
@@ -13128,7 +13128,7 @@
     "es": "singular",
     "it": "strano",
     "tr": "garip",
-    "ru": "странный"
+    "ru": "своеобразный"
   },
   {
     "en": "to bring down",
@@ -13254,7 +13254,7 @@
     "es": "triunfar",
     "it": "vincere",
     "tr": "galip gelmek",
-    "ru": "побеждать"
+    "ru": "одерживать победу"
   },
   {
     "en": "senseless",
@@ -13317,7 +13317,7 @@
     "es": "por lo que",
     "it": "per quanto",
     "tr": "olduğu kadarıyla",
-    "ru": "так что"
+    "ru": "насколько"
   },
   {
     "en": "economical",
@@ -13344,7 +13344,7 @@
     "es": "puntiagudo",
     "it": "appuntito",
     "tr": "sivri",
-    "ru": "острый"
+    "ru": "заострённый"
   },
   {
     "en": "very angry",
@@ -13524,7 +13524,7 @@
     "es": "atropellar",
     "it": "investire",
     "tr": "ezmek (araçla)",
-    "ru": "переезжать"
+    "ru": "сбивать"
   },
   {
     "en": "to hand off",
@@ -13533,7 +13533,7 @@
     "es": "entregar",
     "it": "consegnare",
     "tr": "teslim etmek (devretmek)",
-    "ru": "передавать"
+    "ru": "отдавать"
   },
   {
     "en": "overjoyed",
@@ -13569,7 +13569,7 @@
     "es": "dar la vuelta",
     "it": "girare",
     "tr": "ters çevirmek",
-    "ru": "поворачивать"
+    "ru": "разворачивать"
   },
   {
     "en": "to fall over",
@@ -13578,7 +13578,7 @@
     "es": "caerse",
     "it": "cadere",
     "tr": "devrilmek",
-    "ru": "падать"
+    "ru": "сваливаться"
   },
   {
     "en": "to handle",
@@ -13596,7 +13596,7 @@
     "es": "de inmediato",
     "it": "immediatamente",
     "tr": "derhal",
-    "ru": "срочный"
+    "ru": "незамедлительно"
   },
   {
     "en": "the more",
@@ -13722,7 +13722,7 @@
     "es": "quedar",
     "it": "prendere un appuntamento",
     "tr": "sözleşip buluşmak",
-    "ru": "договариваться"
+    "ru": "назначать встречу"
   },
   {
     "en": "annoyed",
@@ -13731,7 +13731,7 @@
     "es": "enfadado",
     "it": "arrabbiato",
     "tr": "kızgın (bozulmuş)",
-    "ru": "раздраженный"
+    "ru": "раздражённый"
   },
   {
     "en": "to use up",
@@ -13740,7 +13740,7 @@
     "es": "gastar",
     "it": "consumare",
     "tr": "harcamak (tüketmek)",
-    "ru": "потреблять"
+    "ru": "израсходовать"
   },
   {
     "en": "connected",
@@ -13812,7 +13812,7 @@
     "es": "el placer",
     "it": "il piacere",
     "tr": "keyif",
-    "ru": "удовольствие"
+    "ru": "наслаждение"
   },
   {
     "en": "to enlarge",
@@ -13821,7 +13821,7 @@
     "es": "ampliar",
     "it": "ingrandire",
     "tr": "büyütmek",
-    "ru": "увеличивать"
+    "ru": "укрупнять"
   },
   {
     "en": "to place under arrest",
@@ -13857,7 +13857,7 @@
     "es": "entremezclar",
     "it": "mischiare",
     "tr": "harmanlamak",
-    "ru": "смешивать"
+    "ru": "размешивать"
   },
   {
     "en": "to long for",
@@ -13866,7 +13866,7 @@
     "es": "echar de menos",
     "it": "mancare",
     "tr": "özlemek",
-    "ru": "скучать"
+    "ru": "тосковать"
   },
   {
     "en": "to suspect",
@@ -13875,7 +13875,7 @@
     "es": "sospechar",
     "it": "supporre",
     "tr": "tahmin yürütmek",
-    "ru": "предполагать"
+    "ru": "подозревать"
   },
   {
     "en": "reasonable",
@@ -13947,7 +13947,7 @@
     "es": "expedir",
     "it": "spedire",
     "tr": "sevk etmek",
-    "ru": "отправлять"
+    "ru": "отгружать"
   },
   {
     "en": "to insure",
@@ -13965,7 +13965,7 @@
     "es": "abastecer",
     "it": "rifornire",
     "tr": "tedarik etmek",
-    "ru": "обеспечивать"
+    "ru": "снабжать"
   },
   {
     "en": "to violate",
@@ -13983,7 +13983,7 @@
     "es": "soportar",
     "it": "sopportare",
     "tr": "kaldırmak (tahammül)",
-    "ru": "выдерживать"
+    "ru": "терпеть"
   },
   {
     "en": "to cause",
@@ -14010,7 +14010,7 @@
     "es": "aprovechar",
     "it": "sfruttare",
     "tr": "değerlendirmek (yararlanmak)",
-    "ru": "использовать"
+    "ru": "пускать в ход"
   },
   {
     "en": "completely",
@@ -14082,7 +14082,7 @@
     "es": "tirar a la basura",
     "it": "buttare via",
     "tr": "fırlatıp atmak",
-    "ru": "выбрасывать"
+    "ru": "выкидывать"
   },
   {
     "en": "painful",
@@ -14091,7 +14091,7 @@
     "es": "doloroso",
     "it": "doloroso",
     "tr": "acı veren",
-    "ru": "больно"
+    "ru": "болезненный"
   },
   {
     "en": "wise",
@@ -14145,7 +14145,7 @@
     "es": "resistente al clima",
     "it": "resistente alle intemperie",
     "tr": "hava koşullarına dayanıklı",
-    "ru": "водонепроницаемый"
+    "ru": "всепогодный"
   },
   {
     "en": "to revoke",
@@ -14226,7 +14226,7 @@
     "es": "hacer zapeo",
     "it": "fare zapping",
     "tr": "kanal değiştirmek",
-    "ru": "щелкать"
+    "ru": "щёлкать"
   },
   {
     "en": "to conjure",
@@ -14298,7 +14298,7 @@
     "es": "rápido",
     "it": "rapido",
     "tr": "çabuk",
-    "ru": "быстрый"
+    "ru": "проворный"
   },
   {
     "en": "to permit",
@@ -14361,7 +14361,7 @@
     "es": "entregar a domicilio",
     "it": "recapitare",
     "tr": "teslim etmek (dağıtmak)",
-    "ru": "доставлять"
+    "ru": "завозить"
   },
   {
     "en": "to consent",
@@ -14370,7 +14370,7 @@
     "es": "estar de acuerdo",
     "it": "acconsentire",
     "tr": "onay vermek",
-    "ru": "соглашаться"
+    "ru": "давать согласие"
   },
   {
     "en": "to set up",
@@ -14577,7 +14577,7 @@
     "es": "el preámbulo",
     "it": "l'introduzione",
     "tr": "önsöz",
-    "ru": "введение"
+    "ru": "преамбула"
   },
   {
     "en": "to put out",
@@ -14604,7 +14604,7 @@
     "es": "asignar",
     "it": "assegnare",
     "tr": "eşleştirmek",
-    "ru": "назначать"
+    "ru": "поручать"
   },
   {
     "en": "to rot",
@@ -14667,7 +14667,7 @@
     "es": "la consumición",
     "it": "la consumazione",
     "tr": "tüketim (yeme)",
-    "ru": "потребление"
+    "ru": "поедание"
   },
   {
     "en": "inspiration",
@@ -14694,7 +14694,7 @@
     "es": "la carencia",
     "it": "la mancanza",
     "tr": "eksiklik",
-    "ru": "недостаток"
+    "ru": "нехватка"
   },
   {
     "en": "item",
@@ -14991,7 +14991,7 @@
     "es": "la disposición",
     "it": "la disposizione",
     "tr": "hüküm",
-    "ru": "положение"
+    "ru": "оговорка"
   },
   {
     "en": "organism",
@@ -15072,7 +15072,7 @@
     "es": "la función",
     "it": "lo spettacolo",
     "tr": "temsil (sahne)",
-    "ru": "представление"
+    "ru": "постановка"
   },
   {
     "en": "prediction",
@@ -15144,7 +15144,7 @@
     "es": "la suma",
     "it": "la somma",
     "tr": "toplam tutar",
-    "ru": "сумма"
+    "ru": "совокупность"
   },
   {
     "en": "sphere",
@@ -15216,7 +15216,7 @@
     "es": "el estado mayor",
     "it": "lo stato maggiore",
     "tr": "kurmay",
-    "ru": "штаб"
+    "ru": "корпус"
   },
   {
     "en": "core",
@@ -15288,7 +15288,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "вылечить"
   },
   {
     "en": "neighbourhood",
@@ -15297,7 +15297,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "округа"
   },
   {
     "en": "powerful",
@@ -15306,7 +15306,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "могущественный"
   },
   {
     "en": "luckily",
@@ -15315,7 +15315,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "к счастью"
   },
   {
     "en": "to trust",
@@ -15324,7 +15324,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "доверять"
   },
   {
     "en": "to gain weight",
@@ -15333,7 +15333,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "набирать вес"
   },
   {
     "en": "on the whole",
@@ -15342,7 +15342,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "в целом"
   },
   {
     "en": "to take an exam",
@@ -15351,7 +15351,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "сдавать экзамен"
   },
   {
     "en": "to confirm",
@@ -15360,7 +15360,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "подтверждать"
   },
   {
     "en": "wage",
@@ -15369,7 +15369,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "заработная плата"
   },
   {
     "en": "to hire",
@@ -15387,7 +15387,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "срок подачи"
   },
   {
     "en": "to relax",
@@ -15396,7 +15396,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "расслабляться"
   },
   {
     "en": "agriculture",
@@ -15405,7 +15405,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "сельское хозяйство"
   },
   {
     "en": "anxious",
@@ -15414,7 +15414,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "тревожный"
   },
   {
     "en": "normally",
@@ -15423,7 +15423,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "как правило"
   },
   {
     "en": "to hesitate",
@@ -15432,7 +15432,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "колебаться"
   },
   {
     "en": "to lose weight",
@@ -15441,7 +15441,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "худеть"
   },
   {
     "en": "jealous",
@@ -15450,7 +15450,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "ревнивый"
   },
   {
     "en": "to translate",
@@ -15459,7 +15459,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "переводить"
   },
   {
     "en": "to get married",
@@ -15468,7 +15468,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "жениться"
   },
   {
     "en": "to resign",
@@ -15486,7 +15486,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "кампания"
   },
   {
     "en": "expense",
@@ -15495,7 +15495,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "расход"
   },
   {
     "en": "to fire",
@@ -15504,7 +15504,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "увольнять"
   },
   {
     "en": "schedule",
@@ -15513,7 +15513,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "график"
   },
   {
     "en": "target",
@@ -15522,7 +15522,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "цель"
   },
   {
     "en": "to lend",
@@ -15531,7 +15531,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "одалживать"
   },
   {
     "en": "reward",
@@ -15540,7 +15540,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "награда"
   },
   {
     "en": "embarrassed",
@@ -15549,7 +15549,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "смущённый"
   },
   {
     "en": "rarely",
@@ -15558,7 +15558,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "редко"
   },
   {
     "en": "to be worth the effort",
@@ -15567,7 +15567,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "стоить усилий"
   },
   {
     "en": "to fail",
@@ -15576,7 +15576,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "потерпеть неудачу"
   },
   {
     "en": "because of",
@@ -15594,7 +15594,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "везучий"
   },
   {
     "en": "to weigh",
@@ -15603,7 +15603,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "весить"
   },
   {
     "en": "to get divorced",
@@ -15612,7 +15612,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "разводиться"
   },
   {
     "en": "brand",
@@ -15621,7 +15621,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "марка"
   },
   {
     "en": "debit",
@@ -15630,7 +15630,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "списание"
   },
   {
     "en": "debt",
@@ -15639,7 +15639,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "долг"
   },
   {
     "en": "threat",
@@ -15648,7 +15648,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "угроза"
   },
   {
     "en": "to explore",
@@ -15657,7 +15657,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "исследовать"
   },
   {
     "en": "ordinary",
@@ -15666,7 +15666,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "обыкновенный"
   },
   {
     "en": "talented",
@@ -15675,7 +15675,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "талантливый"
   },
   {
     "en": "unless",
@@ -15684,7 +15684,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "если не"
   },
   {
     "en": "to take advantage of",
@@ -15693,7 +15693,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "воспользоваться"
   },
   {
     "en": "to vote",
@@ -15711,7 +15711,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "благодаря"
   },
   {
     "en": "to welcome",
@@ -15720,7 +15720,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "приветствовать"
   },
   {
     "en": "to measure",
@@ -15729,7 +15729,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "измерять"
   },
   {
     "en": "achievement",
@@ -15738,7 +15738,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "достижение"
   },
   {
     "en": "to collect",
@@ -15747,7 +15747,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "собирать"
   },
   {
     "en": "usual",
@@ -15756,7 +15756,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "обычный"
   },
   {
     "en": "frightening",
@@ -15765,7 +15765,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "пугающий"
   },
   {
     "en": "election",
@@ -15774,7 +15774,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "выборы"
   },
   {
     "en": "even if",
@@ -15783,7 +15783,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "даже если"
   },
   {
     "en": "to plug in",
@@ -15792,7 +15792,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "подключать"
   },
   {
     "en": "to guide",
@@ -15801,7 +15801,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "направлять"
   },
   {
     "en": "competitor",
@@ -15810,7 +15810,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "конкурент"
   },
   {
     "en": "savings",
@@ -15819,7 +15819,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "сбережения"
   },
   {
     "en": "to encourage",
@@ -15828,7 +15828,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "поощрять"
   },
   {
     "en": "recent",
@@ -15837,7 +15837,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "недавний"
   },
   {
     "en": "impressive",
@@ -15846,7 +15846,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "впечатляющий"
   },
   {
     "en": "to have fun",
@@ -15873,7 +15873,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "вкратце"
   },
   {
     "en": "to download",
@@ -15882,7 +15882,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "скачивать"
   },
   {
     "en": "to analyze",
@@ -15900,7 +15900,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "выдумывать"
   },
   {
     "en": "since (because)",
@@ -15909,7 +15909,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "так как"
   },
   {
     "en": "regarding",
@@ -15918,7 +15918,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "относительно"
   },
   {
     "en": "likely",
@@ -15927,7 +15927,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "вероятный"
   },
   {
     "en": "accustomed",
@@ -15936,7 +15936,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "привыкший"
   },
   {
     "en": "to erase",
@@ -15945,7 +15945,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "стирать"
   },
   {
     "en": "to question",
@@ -15954,7 +15954,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "ставить под вопрос"
   },
   {
     "en": "to draft",
@@ -15963,7 +15963,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "набрасывать"
   },
   {
     "en": "to reimburse",
@@ -15972,7 +15972,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "компенсировать"
   },
   {
     "en": "to get hurt",
@@ -15981,7 +15981,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "пораниться"
   },
   {
     "en": "to raise (children)",
@@ -15990,7 +15990,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "воспитывать"
   },
   {
     "en": "to lend a hand",
@@ -15999,7 +15999,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "выручать"
   },
   {
     "en": "roughly",
@@ -16008,7 +16008,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "примерно"
   },
   {
     "en": "aware",
@@ -16017,7 +16017,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "осведомлённый"
   },
   {
     "en": "to reject",
@@ -16026,7 +16026,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "отклонять"
   },
   {
     "en": "to tidy up",
@@ -16035,7 +16035,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "прибираться"
   },
   {
     "en": "to grade",
@@ -16044,7 +16044,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "ставить оценки"
   },
   {
     "en": "to decrease",
@@ -16053,7 +16053,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "снижаться"
   },
   {
     "en": "to age",
@@ -16062,7 +16062,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "стареть"
   },
   {
     "en": "to feed",
@@ -16080,7 +16080,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "ссориться"
   },
   {
     "en": "to rely on",
@@ -16089,7 +16089,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "полагаться"
   },
   {
     "en": "hearing",
@@ -16098,7 +16098,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "слух"
   },
   {
     "en": "wholesome",
@@ -16107,7 +16107,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "полезный для здоровья"
   },
   {
     "en": "to be late",
@@ -16116,7 +16116,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "опаздывать"
   },
   {
     "en": "to get bored",
@@ -16125,7 +16125,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "скучать"
   },
   {
     "en": "to foresee",
@@ -16134,7 +16134,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "предвидеть"
   },
   {
     "en": "cutoff date",
@@ -16143,7 +16143,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "крайний срок"
   },
   {
     "en": "prospect",
@@ -16152,7 +16152,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "перспектива"
   },
   {
     "en": "affair",
@@ -16161,7 +16161,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "дело"
   },
   {
     "en": "alike",
@@ -16170,7 +16170,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "одинаковый"
   },
   {
     "en": "to postpone",
@@ -16179,7 +16179,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "переносить"
   },
   {
     "en": "to relocate",
@@ -16188,7 +16188,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "перебираться"
   },
   {
     "en": "abruptly",
@@ -16197,7 +16197,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "внезапно"
   },
   {
     "en": "to treat (medically)",
@@ -16206,7 +16206,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "лечить"
   },
   {
     "en": "current events",
@@ -16215,7 +16215,7 @@
     "es": "",
     "it": "",
     "tr": "",
-    "ru": ""
+    "ru": "текущие события"
   },
   {
     "en": "after (conjunction)",
