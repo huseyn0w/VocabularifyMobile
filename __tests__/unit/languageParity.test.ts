@@ -119,6 +119,7 @@ describe('course parity', () => {
     'de/tr',
     'de/ru',
     'en/de',
+    'en/es',
     'en/ru',
     'en/tr',
   ];
@@ -132,7 +133,7 @@ describe('course parity', () => {
         [...ABOVE_A1].sort(),
       );
     }
-    expect(lessonFiles).toHaveLength(78);
+    expect(lessonFiles).toHaveLength(82);
   });
 
   it.each(lessonFiles)('$pair fits its word file', ({ pair, file, words }) => {
