@@ -107,10 +107,10 @@ describe('course parity', () => {
 
   // A1 has a course for every one of the 42 pairs. Above A1 the written
   // targets are German from all six sources, and English from German,
-  // Russian and Turkish - the English course was authored German-first and
-  // the other sources were added one at a time, so en/es, en/fr and en/it
-  // still fall back to the shared A1 course and must not silently gain a
-  // level of their own.
+  // Russian, Turkish, Spanish and French - the English course was authored
+  // German-first and the other sources were added one at a time, so en/it
+  // still falls back to the shared A1 course and must not silently gain a
+  // level of its own.
   const ABOVE_A1 = [
     'de/en',
     'de/fr',
@@ -120,6 +120,7 @@ describe('course parity', () => {
     'de/ru',
     'en/de',
     'en/es',
+    'en/fr',
     'en/ru',
     'en/tr',
   ];
@@ -133,7 +134,7 @@ describe('course parity', () => {
         [...ABOVE_A1].sort(),
       );
     }
-    expect(lessonFiles).toHaveLength(82);
+    expect(lessonFiles).toHaveLength(86);
   });
 
   it.each(lessonFiles)('$pair fits its word file', ({ pair, file, words }) => {
