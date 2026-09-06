@@ -302,6 +302,10 @@
           "c": "government"
         },
         {
+          "t": "non",
+          "c": "not"
+        },
+        {
           "t": "ha",
           "c": "to have"
         },
@@ -1303,10 +1307,10 @@
           "c": "to wait"
         },
         {
-          "t": "fino a",
-          "c": "until"
+          "t": "fino alla",
+          "c": "until",
+          "g": "fino a"
         },
-        "la",
         {
           "t": "primavera",
           "c": "spring"
@@ -5464,6 +5468,10 @@
         {
           "t": "risposta",
           "c": "answer"
+        },
+        {
+          "t": "non",
+          "c": "not"
         },
         {
           "t": "ha fatto",
@@ -21341,7 +21349,7 @@
           "c": "government"
         },
         {
-          "t": "ha caduto",
+          "t": "è caduto",
           "c": "to fall"
         },
         {
@@ -33755,6 +33763,10 @@
           "c": "elaboration"
         },
         {
+          "t": "non",
+          "c": "not"
+        },
+        {
           "t": "porta",
           "c": "to bring"
         },
@@ -43657,6 +43669,10 @@
           "c": "director"
         },
         {
+          "t": "non",
+          "c": "not"
+        },
+        {
           "t": "ha detto",
           "c": "to say"
         },
@@ -43688,7 +43704,7 @@
           "c": "might"
         },
         {
-          "t": "avercelo",
+          "t": "averlo",
           "c": "to have"
         },
         {
@@ -53996,10 +54012,10 @@
           "c": "to waver"
         },
         {
-          "t": "fino a",
-          "c": "until"
+          "t": "fino alla",
+          "c": "until",
+          "g": "fino a"
         },
-        "la",
         {
           "t": "fine",
           "c": "end"
@@ -59221,6 +59237,10 @@
         {
           "t": "risposta",
           "c": "answer"
+        },
+        {
+          "t": "non",
+          "c": "not"
         },
         {
           "t": "ha cambiato",
@@ -72878,6 +72898,10 @@
           "c": "assimilation"
         },
         {
+          "t": "non",
+          "c": "not"
+        },
+        {
           "t": "ha detto",
           "c": "to say"
         },
@@ -74404,6 +74428,10 @@
           "c": "administration"
         },
         {
+          "t": "non",
+          "c": "not"
+        },
+        {
           "t": "ha",
           "c": "to have"
         },
@@ -75838,6 +75866,10 @@
         {
           "t": "commerciale",
           "c": "for-profit"
+        },
+        {
+          "t": "non",
+          "c": "not"
         },
         {
           "t": "risponde",
@@ -85512,7 +85544,7 @@
           "c": "student"
         },
         {
-          "t": "ha caduto",
+          "t": "è caduta",
           "c": "to fall"
         },
         "."
@@ -92016,6 +92048,10 @@
           "c": "answer"
         },
         {
+          "t": "non",
+          "c": "not"
+        },
+        {
           "t": "ha impressionato",
           "c": "to impress"
         },
@@ -94788,6 +94824,10 @@
         {
           "t": "forzato",
           "c": "forced"
+        },
+        {
+          "t": "non",
+          "c": "not"
         },
         {
           "t": "aiuta",
